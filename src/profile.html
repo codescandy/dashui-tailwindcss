@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
+    <link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
+    @@include("partials/head.html")
+    <title>Profile</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="p-6">
+      <div class="flex items-center mb-6 border-b border-gray-300 pb-4">
+        <h1 class="inline-block text-2xl font-bold">Overview</h1>
+      </div>
+      <div
+        class="flex items-center p-5 rounded-t-xl shadow-md bg-cover bg-no-repeat pt-28"
+        style="background-image: url(assets/img/background/profile-cover.jpg)"
+      ></div>
+      <div class="bg-white rounded-b-xl shadow-sm mb-6">
+        <div class="flex items-center justify-between pt-4 pb-6 px-4">
+          <div class="flex items-center">
+            <!-- avatar -->
+            <div class="w-24 h-24 mr-2 relative flex justify-end items-end -mt-10">
+              <img src="assets/img/avatar/avatar-1.jpg" class="rounded-full border-4 border-white" alt="" />
+              <a
+                href="#!"
+                class="absolute top-0 right-0 mr-2"
+                data-bs-toggle="tooltip"
+                data-placement="top"
+                title=""
+                data-original-title="Verified"
+                data-bs-original-title=""
+              >
+                <img src="assets/img/svg/checked-mark.svg" alt="" height="30" width="30" />
+              </a>
+            </div>
+            <!-- text -->
+            <div class="leading-4">
+              <h2 class="mb-2">
+                Jitu Chauhan
+                <a
+                  href="#!"
+                  class="text-decoration-none"
+                  data-bs-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Beginner"
+                  data-bs-original-title=""
+                >
+                </a>
+              </h2>
+              <p class="mb-0 text-gray-500">@imjituchauhan</p>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="btn-primary md:visible invisible">Edit Profile</a>
+          </div>
+        </div>
+        <!-- nav -->
+
+        <div class="text-base font-medium text-center text-gray-500 border-gray-200 border-t">
+          <ul class="flex flex-no-wrap -mb-px overflow-auto">
+            <li class="mr-2">
+              <a href="#" class="inline-block p-4 text-blue-600 border-t-2 border-blue-600 active" aria-current="page"
+                >Overview</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                href="#"
+                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
+                >Profile</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                href="#"
+                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
+                >Files</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                href="#"
+                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
+                >Teams</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                href="#"
+                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
+                >Follwers</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                href="#"
+                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
+                >Activity</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mb-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-2">
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <!-- card title -->
+          <h4 class="card-title">About Me</h4>
+          <span class="uppercase font-medium text-dark">Bio</span>
+          <!-- text -->
+          <p class="mt-2 mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse var ius enim in eros elementum
+            tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+            erat.
+          </p>
+          <!-- row -->
+          <div class="mb-5">
+            <!-- text -->
+            <h6 class="uppercase tracking-widest text-sm font-bold">Position</h6>
+            <p class="mb-0">Theme designer at Bootstrap.</p>
+          </div>
+          <div class="flex flex-row justify-between mb-5">
+            <div class="">
+              <h6 class="uppercase tracking-widest text-sm font-bold">Phone</h6>
+              <p class="mb-0">+32112345689</p>
+            </div>
+            <div class="">
+              <h6 class="uppercase tracking-widest text-sm font-bold">Date of Birth</h6>
+              <p class="mb-0">01.10.1997</p>
+            </div>
+          </div>
+          <div class="flex flex-row justify-between mb-5">
+            <div class="">
+              <h6 class="uppercase tracking-widest text-sm font-bold">Email</h6>
+              <p class="mb-0">Dashui@gmail.com</p>
+            </div>
+            <div class="">
+              <h6 class="uppercase tracking-widest text-sm font-bold">Location</h6>
+              <p class="mb-0">Ahmedabad, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold">Active Task</h3>
+            <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-list-task"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"
+                />
+                <path
+                  d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col gap-1 text-base">
+            <div class="text-4xl font-bold">132</div>
+            <div><span class="">28</span> <span class="text-gray-500">Completed</span></div>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold">Teams</h3>
+            <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-people"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col gap-1 text-base">
+            <div class="text-4xl font-bold">12</div>
+            <div><span class="">1</span> <span class="text-gray-500">Completed</span></div>
+          </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold">Productivity</h3>
+            <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-bullseye"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col gap-1 text-base">
+            <div class="text-4xl font-bold">76%</div>
+            <div><span class="text-green-600">5%</span> <span class="text-gray-500">Completed</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    @@include("partials/scripts.html")
+  </body>
+</html>

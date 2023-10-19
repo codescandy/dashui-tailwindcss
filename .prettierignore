@@ -1,0 +1,4 @@
+/dist
+/node_modules
+/src/.tmp
+/src/assets/css

@@ -1,0 +1,39 @@
+{
+  "name": "dashui-tailwindcss",
+  "version": "1.0.0",
+  "description": "dashui-tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apexcharts": "^3.44.0",
+    "simplebar": "^6.2.5",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "del": "^6.1.1",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cached": "1.1.1",
+    "gulp-clean-css": "4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "2.3.0",
+    "gulp-if": "3.0.0",
+    "gulp-npm-dist": "1.0.4",
+    "gulp-postcss": "^9.0.1",
+    "gulp-replace": "1.1.4",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-useref": "5.0.0",
+    "postcss": "^8.4.31"
+  }
+}
