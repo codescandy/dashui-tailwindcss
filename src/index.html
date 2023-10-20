@@ -1,994 +1,742 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
-    <link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
-    @@include("partials/head.html")
-    <title>Homepage</title>
-  </head>
-  <body class="bg-gray-100">
-    <div class="bg-blue-600 px-8 pt-14 pb-16">
-      <h1 class="text-3xl text-white">Project</h1>
-    </div>
-    <div class="-mt-12 mx-6 mb-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="bg-white p-5 rounded-xl shadow-md">
-        <div class="flex justify-between items-center">
-          <h3 class="text-lg font-semibold">Projects</h3>
-          <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-briefcase"
-            >
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-            </svg>
-          </div>
-        </div>
-        <div class="mt-4 flex flex-col gap-1 text-base">
-          <div class="text-4xl font-bold">18</div>
-          <div><span class="">2</span> <span class="text-gray-500">Completed</span></div>
-        </div>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow-md">
-        <div class="flex justify-between items-center">
-          <h3 class="text-lg font-semibold">Active Task</h3>
-          <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-list-task"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"
-              />
-              <path
-                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="mt-4 flex flex-col gap-1 text-base">
-          <div class="text-4xl font-bold">132</div>
-          <div><span class="">28</span> <span class="text-gray-500">Completed</span></div>
-        </div>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow-md">
-        <div class="flex justify-between items-center">
-          <h3 class="text-lg font-semibold">Teams</h3>
-          <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-people"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="mt-4 flex flex-col gap-1 text-base">
-          <div class="text-4xl font-bold">12</div>
-          <div><span class="">1</span> <span class="text-gray-500">Completed</span></div>
-        </div>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow-md">
-        <div class="flex justify-between items-center">
-          <h3 class="text-lg font-semibold">Productivity</h3>
-          <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-bullseye"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-            </svg>
-          </div>
-        </div>
-        <div class="mt-4 flex flex-col gap-1 text-base">
-          <div class="text-4xl font-bold">76%</div>
-          <div><span class="text-green-600">5%</span> <span class="text-gray-500">Completed</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="mx-6 grid grid-cols-3 grid-rows-1 grid-flow-row-dense gap-6">
-      <div class="col-span-2">
-        <div class="bg-white rounded-xl shadow-md h-full relative">
-          <div class="border-b px-5 py-4">
-            <h4 class="text-lg font-semibold">Active Projects</h4>
-          </div>
+	<head>
+		<link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
+		<link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
+		@@include("partials/head.html")
+		<title>Homepage</title>
+	</head>
+	<body class="bg-gray-100">
+		<div class="bg-blue-600 px-8 pt-14 pb-16">
+			<h1 class="text-3xl text-white">Project</h1>
+		</div>
+		<div class="-mt-12 mx-6 mb-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+			<div class="bg-white p-5 rounded-xl shadow-md">
+				<div class="flex justify-between items-center">
+					<h3 class="text-lg font-semibold">Projects</h3>
+					<div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-briefcase"
+						>
+							<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+							<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="mt-4 flex flex-col gap-1 text-base">
+					<div class="text-4xl font-bold">18</div>
+					<div>
+						<span class="">2</span>
+						<span class="text-gray-500">Completed</span>
+					</div>
+				</div>
+			</div>
+			<div class="bg-white p-5 rounded-xl shadow-md">
+				<div class="flex justify-between items-center">
+					<h3 class="text-lg font-semibold">Active Task</h3>
+					<div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+							<path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+							<path
+								fill-rule="evenodd"
+								d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="mt-4 flex flex-col gap-1 text-base">
+					<div class="text-4xl font-bold">132</div>
+					<div>
+						<span class="">28</span>
+						<span class="text-gray-500">Completed</span>
+					</div>
+				</div>
+			</div>
+			<div class="bg-white p-5 rounded-xl shadow-md">
+				<div class="flex justify-between items-center">
+					<h3 class="text-lg font-semibold">Teams</h3>
+					<div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+							<path
+								d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="mt-4 flex flex-col gap-1 text-base">
+					<div class="text-4xl font-bold">12</div>
+					<div>
+						<span class="">1</span>
+						<span class="text-gray-500">Completed</span>
+					</div>
+				</div>
+			</div>
+			<div class="bg-white p-5 rounded-xl shadow-md">
+				<div class="flex justify-between items-center">
+					<h3 class="text-lg font-semibold">Productivity</h3>
+					<div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+							<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+							<path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+							<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+							<path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+						</svg>
+					</div>
+				</div>
+				<div class="mt-4 flex flex-col gap-1 text-base">
+					<div class="text-4xl font-bold">76%</div>
+					<div>
+						<span class="text-green-600">5%</span>
+						<span class="text-gray-500">Completed</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mx-6 grid grid-cols-3 grid-rows-1 grid-flow-row-dense gap-6">
+			<div class="col-span-2">
+				<div class="bg-white rounded-xl shadow-md h-full relative">
+					<div class="border-b px-5 py-4">
+						<h4 class="text-lg font-semibold">Active Projects</h4>
+					</div>
 
-          <div class="relative overflow-x-auto">
-            <table class="text-left w-full">
-              <thead class="text-[14px] text-gray-700 whitespace-nowrap">
-                <tr>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Project name</th>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Hours</th>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Priority</th>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Members</th>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Progress</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex flex-row items-center gap-3">
-                      <div class=""><img src="./assets/img/svg/brand-logo-1.svg" /></div>
-                      <h5 class="mb-1"><a href="#!">Dropbox Design System</a></h5>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">34</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-yellow-200 px-2 py-1 text-yellow-700 text-[.65rem] font-medium rounded-full"
-                      >Medium</span
-                    >
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="-space-x-5">
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-1.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-2.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white"
-                        src="./assets/img/avatar/avatar-1.jpg"
-                        alt="Profile image"
-                      />
-                      <div
-                        class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white"
-                      >
-                        2+
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 pe-6 text-left">
-                    <div class="flex items-center gap-2">
-                      <div>15%</div>
-                      <div class="w-full bg-gray-200 rounded-full h-1.5">
-                        <div class="bg-blue-600 h-1.5 rounded-full" style="width: 15%"></div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex flex-row items-center gap-3">
-                      <div class=""><img src="./assets/img/svg/brand-logo-2.svg" /></div>
-                      <h5 class="mb-1"><a href="#!">Slack Team UI Design</a></h5>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">47</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-red-200 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-full">High</span>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="-space-x-5">
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-4.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-5.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white"
-                        src="./assets/img/avatar/avatar-6.jpg"
-                        alt="Profile image"
-                      />
-                      <div
-                        class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white"
-                      >
-                        2+
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 pe-6 text-left">
-                    <div class="flex items-center gap-2">
-                      <div>35%</div>
-                      <div class="w-full bg-gray-200 rounded-full h-1.5">
-                        <div class="bg-blue-600 h-1.5 rounded-full" style="width: 35%"></div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex flex-row items-center gap-3">
-                      <div class=""><img src="./assets/img/svg/brand-logo-3.svg" /></div>
-                      <h5 class="mb-1"><a href="#!">GitHub Satellite</a></h5>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">120</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-cyan-200 px-2 py-1 text-cyan-700 text-[.65rem] font-medium rounded-full">Low</span>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="-space-x-5">
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-7.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-8.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white"
-                        src="./assets/img/avatar/avatar-9.jpg"
-                        alt="Profile image"
-                      />
-                      <div
-                        class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white"
-                      >
-                        5+
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 pe-6 text-left">
-                    <div class="flex items-center gap-2">
-                      <div>75%</div>
-                      <div class="w-full bg-gray-200 rounded-full h-1.5">
-                        <div class="bg-blue-600 h-1.5 rounded-full" style="width: 75%"></div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex flex-row items-center gap-3">
-                      <div class=""><img src="./assets/img/svg/brand-logo-4.svg" /></div>
-                      <h5 class="mb-1"><a href="#!">3D Character Modelling</a></h5>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">89</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-yellow-200 px-2 py-1 text-yellow-700 text-[.65rem] font-medium rounded-full"
-                      >Medium</span
-                    >
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="-space-x-5">
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-10.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-11.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white"
-                        src="./assets/img/avatar/avatar-12.jpg"
-                        alt="Profile image"
-                      />
-                      <div
-                        class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white"
-                      >
-                        5+
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 pe-6 text-left">
-                    <div class="flex items-center gap-2">
-                      <div>63%</div>
-                      <div class="w-full bg-gray-200 rounded-full h-1.5">
-                        <div class="bg-blue-600 h-1.5 rounded-full" style="width: 63%"></div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex flex-row items-center gap-3">
-                      <div class=""><img src="./assets/img/svg/brand-logo-5.svg" /></div>
-                      <h5 class="mb-1"><a href="#!">Webapp Design System</a></h5>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">89</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-green-200 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-full"
-                      >Track</span
-                    >
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="-space-x-5">
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-13.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-11.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white"
-                        src="./assets/img/avatar/avatar-12.jpg"
-                        alt="Profile image"
-                      />
-                      <div
-                        class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white"
-                      >
-                        5+
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 pe-6 text-left">
-                    <div class="flex items-center gap-2">
-                      <div>100%</div>
-                      <div class="w-full bg-gray-200 rounded-full h-1.5">
-                        <div class="bg-green-600 h-1.5 rounded-full" style="width: 100%"></div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex flex-row items-center gap-3">
-                      <div class=""><img src="./assets/img/svg/brand-logo-6.svg" /></div>
-                      <h5 class="mb-1"><a href="#!"> Github Event Design</a></h5>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">120</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-cyan-200 px-2 py-1 text-cyan-700 text-[.65rem] font-medium rounded-full">Low</span>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="-space-x-5">
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-13.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 rounded-full border-white border-2"
-                        src="./assets/img/avatar/avatar-11.jpg"
-                        alt="Profile image"
-                      />
-                      <img
-                        class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white"
-                        src="./assets/img/avatar/avatar-12.jpg"
-                        alt="Profile image"
-                      />
-                      <div
-                        class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white"
-                      >
-                        4+
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 pe-6 text-left">
-                    <div class="flex items-center gap-2">
-                      <div>75%</div>
-                      <div class="w-full bg-gray-200 rounded-full h-1.5">
-                        <div class="bg-blue-600 h-1.5 rounded-full" style="width: 75%"></div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+					<div class="relative overflow-x-auto">
+						<table class="text-left w-full">
+							<thead class="text-[14px] text-gray-700 whitespace-nowrap">
+								<tr>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Project name</th>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Hours</th>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Priority</th>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Members</th>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Progress</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex flex-row items-center gap-3">
+											<div class=""><img src="./assets/img/svg/brand-logo-1.svg" /></div>
+											<h5 class="mb-1"><a href="#!">Dropbox Design System</a></h5>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">34</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-yellow-200 px-2 py-1 text-yellow-700 text-[.65rem] font-medium rounded-full">Medium</span>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="-space-x-5">
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-2.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+											<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">2+</div>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 pe-6 text-left">
+										<div class="flex items-center gap-2">
+											<div>15%</div>
+											<div class="w-full bg-gray-200 rounded-full h-1.5">
+												<div class="bg-blue-600 h-1.5 rounded-full" style="width: 15%"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex flex-row items-center gap-3">
+											<div class=""><img src="./assets/img/svg/brand-logo-2.svg" /></div>
+											<h5 class="mb-1"><a href="#!">Slack Team UI Design</a></h5>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">47</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-red-200 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-full">High</span>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="-space-x-5">
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-4.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-5.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-6.jpg" alt="Profile image" />
+											<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">2+</div>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 pe-6 text-left">
+										<div class="flex items-center gap-2">
+											<div>35%</div>
+											<div class="w-full bg-gray-200 rounded-full h-1.5">
+												<div class="bg-blue-600 h-1.5 rounded-full" style="width: 35%"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex flex-row items-center gap-3">
+											<div class=""><img src="./assets/img/svg/brand-logo-3.svg" /></div>
+											<h5 class="mb-1"><a href="#!">GitHub Satellite</a></h5>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">120</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-cyan-200 px-2 py-1 text-cyan-700 text-[.65rem] font-medium rounded-full">Low</span>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="-space-x-5">
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-7.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-8.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-9.jpg" alt="Profile image" />
+											<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">5+</div>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 pe-6 text-left">
+										<div class="flex items-center gap-2">
+											<div>75%</div>
+											<div class="w-full bg-gray-200 rounded-full h-1.5">
+												<div class="bg-blue-600 h-1.5 rounded-full" style="width: 75%"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex flex-row items-center gap-3">
+											<div class=""><img src="./assets/img/svg/brand-logo-4.svg" /></div>
+											<h5 class="mb-1"><a href="#!">3D Character Modelling</a></h5>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">89</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-yellow-200 px-2 py-1 text-yellow-700 text-[.65rem] font-medium rounded-full">Medium</span>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="-space-x-5">
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-10.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-11.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-12.jpg" alt="Profile image" />
+											<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">5+</div>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 pe-6 text-left">
+										<div class="flex items-center gap-2">
+											<div>63%</div>
+											<div class="w-full bg-gray-200 rounded-full h-1.5">
+												<div class="bg-blue-600 h-1.5 rounded-full" style="width: 63%"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex flex-row items-center gap-3">
+											<div class=""><img src="./assets/img/svg/brand-logo-5.svg" /></div>
+											<h5 class="mb-1"><a href="#!">Webapp Design System</a></h5>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">89</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-green-200 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-full">Track</span>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="-space-x-5">
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-13.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-11.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-12.jpg" alt="Profile image" />
+											<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">5+</div>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 pe-6 text-left">
+										<div class="flex items-center gap-2">
+											<div>100%</div>
+											<div class="w-full bg-gray-200 rounded-full h-1.5">
+												<div class="bg-green-600 h-1.5 rounded-full" style="width: 100%"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex flex-row items-center gap-3">
+											<div class=""><img src="./assets/img/svg/brand-logo-6.svg" /></div>
+											<h5 class="mb-1"><a href="#!">Github Event Design</a></h5>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">120</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-cyan-200 px-2 py-1 text-cyan-700 text-[.65rem] font-medium rounded-full">Low</span>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="-space-x-5">
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-13.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-11.jpg" alt="Profile image" />
+											<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-12.jpg" alt="Profile image" />
+											<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">4+</div>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 pe-6 text-left">
+										<div class="flex items-center gap-2">
+											<div>75%</div>
+											<div class="w-full bg-gray-200 rounded-full h-1.5">
+												<div class="bg-blue-600 h-1.5 rounded-full" style="width: 75%"></div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
 
-      <div class="bg-white rounded-xl shadow-md h-full relative">
-        <div class="border-b px-5 py-4 flex justify-between items-center">
-          <h4 class="text-lg font-semibold">Tasks Performance</h4>
-          <div class="dropdown leading-4">
-            <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                />
-              </svg>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="p-4">
-          <div id="perfomanceChart"></div>
-          <div class="flex items-center justify-around py-4">
-            <div class="text-center">
-              <div class="mb-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-8 h-8 mx-auto text-green-600"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
+			<div class="bg-white rounded-xl shadow-md h-full relative">
+				<div class="border-b px-5 py-4 flex justify-between items-center">
+					<h4 class="text-lg font-semibold">Tasks Performance</h4>
+					<div class="dropdown leading-4">
+						<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+								/>
+							</svg>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="p-4">
+					<div id="perfomanceChart"></div>
+					<div class="flex items-center justify-around py-4">
+						<div class="text-center">
+							<div class="mb-1">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mx-auto text-green-600">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
 
-              <h1 class="text-2xl font-bold">76%</h1>
-              <p class="text-gray-600">Completed</p>
-            </div>
-            <div class="text-center">
-              <div class="mb-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-8 h-8 mx-auto text-yellow-600"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
-                  />
-                </svg>
-              </div>
+							<h1 class="text-2xl font-bold">76%</h1>
+							<p class="text-gray-600">Completed</p>
+						</div>
+						<div class="text-center">
+							<div class="mb-1">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mx-auto text-yellow-600">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+								</svg>
+							</div>
 
-              <h1 class="text-2xl font-bold">32%</h1>
-              <p class="text-gray-600">In-Progress</p>
-            </div>
-            <div class="text-center">
-              <div class="mb-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-8 h-8 mx-auto text-red-600"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181"
-                  />
-                </svg>
-              </div>
-              <h1 class="text-2xl font-bold">13%</h1>
-              <p class="text-gray-600">Behind</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mx-6 my-6 grid grid-cols-2 grid-rows-1 grid-flow-row-dense gap-6">
-      <div class="">
-        <div class="bg-white rounded-xl shadow-md h-full relative">
-          <div class="border-b px-5 py-4 flex items-center w-full justify-between">
-            <div>
-              <h4 class="text-lg font-semibold">My Task</h4>
-            </div>
-            <div>
-              <div class="dropdown leading-4">
-                <button
-                  class="bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Add Task
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+							<h1 class="text-2xl font-bold">32%</h1>
+							<p class="text-gray-600">In-Progress</p>
+						</div>
+						<div class="text-center">
+							<div class="mb-1">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mx-auto text-red-600">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181" />
+								</svg>
+							</div>
+							<h1 class="text-2xl font-bold">13%</h1>
+							<p class="text-gray-600">Behind</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mx-6 my-6 grid grid-cols-2 grid-rows-1 grid-flow-row-dense gap-6">
+			<div class="">
+				<div class="bg-white rounded-xl shadow-md h-full relative">
+					<div class="border-b px-5 py-4 flex items-center w-full justify-between">
+						<div>
+							<h4 class="text-lg font-semibold">My Task</h4>
+						</div>
+						<div>
+							<div class="dropdown leading-4">
+								<button
+									class="bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5"
+									type="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Add Task
+								</button>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-          <div class="relative overflow-x-auto">
-            <table class="text-left w-full">
-              <thead class="text-[14px] text-gray-700 whitespace-nowrap">
-                <tr>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Name</th>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Deadline</th>
-                  <th scope="col" class="border-b bg-gray-100 px-6 py-3">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex items-center">
-                      <input class="form-checkbox border-slate-400 rounded" type="checkbox" id="checkboxOne" />
-                      <label for="checkboxOne" class="text-base ml-2 text-slate-600"
-                        >Design a FreshCart Home page</label
-                      >
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">Today</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-green-100 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-md"
-                      >Approved</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex items-center">
-                      <input class="form-checkbox border-slate-400 rounded" type="checkbox" id="checkboxTwo" />
-                      <label for="checkboxTwo" class="text-base ml-2 text-slate-600">Dash UI Dark Version Design</label>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">Yesterday</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-red-100 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-md">Pending</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex items-center">
-                      <input class="form-checkbox border-slate-400 rounded" type="checkbox" id="checkboxThree" />
-                      <label for="checkboxThree" class="text-base ml-2 text-slate-600"
-                        >Dash UI landing page design</label
-                      >
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">16 Sept, 2023</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-yellow-100 px-2 py-1 text-yellow-700 text-[.65rem] font-medium rounded-md"
-                      >In Progress</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex items-center">
-                      <input class="form-checkbox border-slate-400 rounded" type="checkbox" id="checkboxFour" />
-                      <label for="checkboxFour" class="text-base ml-2 text-slate-600">Next.js Dash UI version</label>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">23 Sept, 2023</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-green-100 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-md"
-                      >Approved</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex items-center">
-                      <input class="form-checkbox border-slate-400 rounded" type="checkbox" id="checkboxFive" />
-                      <label for="checkboxFive" class="text-base ml-2 text-slate-600">Develop a Dash UI Laravel</label>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">20 Sept, 2023</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-red-100 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-md">Pending</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex items-center">
-                      <input class="form-checkbox border-slate-400 rounded" type="checkbox" id="checkboxSix" />
-                      <label for="checkboxSix" class="text-base ml-2 text-slate-600">Coach home page design</label>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">12 Sept, 2023</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-green-100 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-md"
-                      >Approved</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <div class="flex items-center">
-                      <input class="form-checkbox border-slate-400 rounded" type="checkbox" id="checkboxSeven" />
-                      <label for="checkboxSeven" class="text-base ml-2 text-slate-600">Develop a Dash UI Laravel</label>
-                    </div>
-                  </td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">11 Sept, 2023</td>
-                  <td class="border-b font-medium py-3 pl-6 text-left">
-                    <span class="bg-red-100 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-md">Pending</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+					<div class="relative overflow-x-auto">
+						<table class="text-left w-full">
+							<thead class="text-[14px] text-gray-700 whitespace-nowrap">
+								<tr>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Name</th>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Deadline</th>
+									<th scope="col" class="border-b bg-gray-100 px-6 py-3">Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex items-center">
+											<input class="border-slate-400 rounded" type="checkbox" id="checkboxOne" />
+											<label for="checkboxOne" class="text-base ml-2 text-slate-600">Design a FreshCart Home page</label>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">Today</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-green-100 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-md">Approved</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex items-center">
+											<input class="border-slate-400 rounded" type="checkbox" id="checkboxTwo" />
+											<label for="checkboxTwo" class="text-base ml-2 text-slate-600">Dash UI Dark Version Design</label>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">Yesterday</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-red-100 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-md">Pending</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex items-center">
+											<input class="border-slate-400 rounded" type="checkbox" id="checkboxThree" />
+											<label for="checkboxThree" class="text-base ml-2 text-slate-600">Dash UI landing page design</label>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">16 Sept, 2023</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-yellow-100 px-2 py-1 text-yellow-700 text-[.65rem] font-medium rounded-md">In Progress</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex items-center">
+											<input class="border-slate-400 rounded" type="checkbox" id="checkboxFour" />
+											<label for="checkboxFour" class="text-base ml-2 text-slate-600">Next.js Dash UI version</label>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">23 Sept, 2023</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-green-100 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-md">Approved</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex items-center">
+											<input class="border-slate-400 rounded" type="checkbox" id="checkboxFive" />
+											<label for="checkboxFive" class="text-base ml-2 text-slate-600">Develop a Dash UI Laravel</label>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">20 Sept, 2023</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-red-100 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-md">Pending</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex items-center">
+											<input class="border-slate-400 rounded" type="checkbox" id="checkboxSix" />
+											<label for="checkboxSix" class="text-base ml-2 text-slate-600">Coach home page design</label>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">12 Sept, 2023</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-green-100 px-2 py-1 text-green-700 text-[.65rem] font-medium rounded-md">Approved</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<div class="flex items-center">
+											<input class="border-slate-400 rounded" type="checkbox" id="checkboxSeven" />
+											<label for="checkboxSeven" class="text-base ml-2 text-slate-600">Develop a Dash UI Laravel</label>
+										</div>
+									</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">11 Sept, 2023</td>
+									<td class="border-b font-medium py-3 pl-6 text-left">
+										<span class="bg-red-100 px-2 py-1 text-red-700 text-[.65rem] font-medium rounded-md">Pending</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
 
-      <div class="bg-white rounded-xl shadow-md h-full relative">
-        <div class="border-b px-5 py-4">
-          <h4 class="text-lg font-semibold">Teams</h4>
-        </div>
-        <div class="relative overflow-x-auto" data-simplebar="" style="max-height: 380px">
-          <table class="text-left w-full">
-            <thead class="text-[14px] text-gray-700 whitespace-nowrap">
-              <tr>
-                <th scope="col" class="border-b bg-gray-100 px-6 py-3">Name</th>
-                <th scope="col" class="border-b bg-gray-100 px-6 py-3">Role</th>
-                <th scope="col" class="border-b bg-gray-100 px-6 py-3">Last Activity</th>
-                <th scope="col" class="border-b bg-gray-100 px-6 py-3"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="flex items-center">
-                    <div>
-                      <a href="#!"
-                        ><img
-                          src="assets/img/avatar/avatar-2.jpg"
-                          alt="Image"
-                          class="avatar-md avatar rounded-full h-10 w-10"
-                      /></a>
-                    </div>
-                    <div class="ms-3 leading-4">
-                      <h5 class="mb-1"><a href="#!" class="">Anita Parmar</a></h5>
-                      <p class="mb-0 text-gray-500">anita@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Front End Developer</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="dropdown leading-4">
-                    <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="flex items-center">
-                    <div>
-                      <a href="#!"
-                        ><img
-                          src="assets/img/avatar/avatar-3.jpg"
-                          alt="Image"
-                          class="avatar-md avatar rounded-full h-10 w-10"
-                      /></a>
-                    </div>
-                    <div class="ms-3 leading-4">
-                      <h5 class="mb-1"><a href="#!" class="">Jitu Chauhan</a></h5>
-                      <p class="mb-0 text-gray-500">jituchauhan@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Project Director</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Today</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="dropdown leading-4">
-                    <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="flex items-center">
-                    <div>
-                      <a href="#!"
-                        ><img
-                          src="assets/img/avatar/avatar-4.jpg"
-                          alt="Image"
-                          class="avatar-md avatar rounded-full h-10 w-10"
-                      /></a>
-                    </div>
-                    <div class="ms-3 leading-4">
-                      <h5 class="mb-1"><a href="#!" class="">Sandeep Chauhan</a></h5>
-                      <p class="mb-0 text-gray-500">sandeepchauhan@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Full- Stack Developer</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Yesterday</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="dropdown leading-4">
-                    <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="flex items-center">
-                    <div>
-                      <a href="#!"
-                        ><img
-                          src="assets/img/avatar/avatar-5.jpg"
-                          alt="Image"
-                          class="avatar-md avatar rounded-full h-10 w-10"
-                      /></a>
-                    </div>
-                    <div class="ms-3 leading-4">
-                      <h5 class="mb-1"><a href="#!" class="">Amanda Darnell</a></h5>
-                      <p class="mb-0 text-gray-500">amandadarnell@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Digital Marketer</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="dropdown leading-4">
-                    <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="flex items-center">
-                    <div>
-                      <a href="#!"
-                        ><img
-                          src="assets/img/avatar/avatar-6.jpg"
-                          alt="Image"
-                          class="avatar-md avatar rounded-full h-10 w-10"
-                      /></a>
-                    </div>
-                    <div class="ms-3 leading-4">
-                      <h5 class="mb-1"><a href="#!" class="">Patricia Murrill</a></h5>
-                      <p class="mb-0 text-gray-500">patriciamurrill@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Account Manager</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="dropdown leading-4">
-                    <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="flex items-center">
-                    <div>
-                      <a href="#!"
-                        ><img
-                          src="assets/img/avatar/avatar-7.jpg"
-                          alt="Image"
-                          class="avatar-md avatar rounded-full h-10 w-10"
-                      /></a>
-                    </div>
-                    <div class="ms-3 leading-4">
-                      <h5 class="mb-1"><a href="#!" class="">Darshini Nair</a></h5>
-                      <p class="mb-0 text-gray-500">darshininair@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Front End Developer</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="dropdown leading-4">
-                    <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="flex items-center">
-                    <div>
-                      <a href="#!"
-                        ><img
-                          src="assets/img/avatar/avatar-8.jpg"
-                          alt="Image"
-                          class="avatar-md avatar rounded-full h-10 w-10"
-                      /></a>
-                    </div>
-                    <div class="ms-3 leading-4">
-                      <h5 class="mb-1"><a href="#!" class="">Patricia Murrill</a></h5>
-                      <p class="mb-0 text-gray-500">patriciamurrill@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="border-b font-medium py-3 pl-6 text-left">Account Manager</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
-                <td class="border-b font-medium py-3 pl-6 text-left">
-                  <div class="dropdown leading-4">
-                    <button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+			<div class="bg-white rounded-xl shadow-md h-full relative">
+				<div class="border-b px-5 py-4">
+					<h4 class="text-lg font-semibold">Teams</h4>
+				</div>
+				<div class="relative overflow-x-auto" data-simplebar="" style="max-height: 380px">
+					<table class="text-left w-full">
+						<thead class="text-[14px] text-gray-700 whitespace-nowrap">
+							<tr>
+								<th scope="col" class="border-b bg-gray-100 px-6 py-3">Name</th>
+								<th scope="col" class="border-b bg-gray-100 px-6 py-3">Role</th>
+								<th scope="col" class="border-b bg-gray-100 px-6 py-3">Last Activity</th>
+								<th scope="col" class="border-b bg-gray-100 px-6 py-3"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="flex items-center">
+										<div>
+											<a href="#!"><img src="assets/img/avatar/avatar-2.jpg" alt="Image" class="avatar-md avatar rounded-full h-10 w-10" /></a>
+										</div>
+										<div class="ms-3 leading-4">
+											<h5 class="mb-1"><a href="#!" class="">Anita Parmar</a></h5>
+											<p class="mb-0 text-gray-500">anita@example.com</p>
+										</div>
+									</div>
+								</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Front End Developer</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												></path>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="flex items-center">
+										<div>
+											<a href="#!"><img src="assets/img/avatar/avatar-3.jpg" alt="Image" class="avatar-md avatar rounded-full h-10 w-10" /></a>
+										</div>
+										<div class="ms-3 leading-4">
+											<h5 class="mb-1"><a href="#!" class="">Jitu Chauhan</a></h5>
+											<p class="mb-0 text-gray-500">jituchauhan@example.com</p>
+										</div>
+									</div>
+								</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Project Director</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Today</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												></path>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="flex items-center">
+										<div>
+											<a href="#!"><img src="assets/img/avatar/avatar-4.jpg" alt="Image" class="avatar-md avatar rounded-full h-10 w-10" /></a>
+										</div>
+										<div class="ms-3 leading-4">
+											<h5 class="mb-1"><a href="#!" class="">Sandeep Chauhan</a></h5>
+											<p class="mb-0 text-gray-500">sandeepchauhan@example.com</p>
+										</div>
+									</div>
+								</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Full- Stack Developer</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Yesterday</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												></path>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="flex items-center">
+										<div>
+											<a href="#!"><img src="assets/img/avatar/avatar-5.jpg" alt="Image" class="avatar-md avatar rounded-full h-10 w-10" /></a>
+										</div>
+										<div class="ms-3 leading-4">
+											<h5 class="mb-1"><a href="#!" class="">Amanda Darnell</a></h5>
+											<p class="mb-0 text-gray-500">amandadarnell@example.com</p>
+										</div>
+									</div>
+								</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Digital Marketer</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												></path>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="flex items-center">
+										<div>
+											<a href="#!"><img src="assets/img/avatar/avatar-6.jpg" alt="Image" class="avatar-md avatar rounded-full h-10 w-10" /></a>
+										</div>
+										<div class="ms-3 leading-4">
+											<h5 class="mb-1"><a href="#!" class="">Patricia Murrill</a></h5>
+											<p class="mb-0 text-gray-500">patriciamurrill@example.com</p>
+										</div>
+									</div>
+								</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Account Manager</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												></path>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="flex items-center">
+										<div>
+											<a href="#!"><img src="assets/img/avatar/avatar-7.jpg" alt="Image" class="avatar-md avatar rounded-full h-10 w-10" /></a>
+										</div>
+										<div class="ms-3 leading-4">
+											<h5 class="mb-1"><a href="#!" class="">Darshini Nair</a></h5>
+											<p class="mb-0 text-gray-500">darshininair@example.com</p>
+										</div>
+									</div>
+								</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Front End Developer</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												></path>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="flex items-center">
+										<div>
+											<a href="#!"><img src="assets/img/avatar/avatar-8.jpg" alt="Image" class="avatar-md avatar rounded-full h-10 w-10" /></a>
+										</div>
+										<div class="ms-3 leading-4">
+											<h5 class="mb-1"><a href="#!" class="">Patricia Murrill</a></h5>
+											<p class="mb-0 text-gray-500">patriciamurrill@example.com</p>
+										</div>
+									</div>
+								</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">Account Manager</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">3 May, 2023</td>
+								<td class="border-b font-medium py-3 pl-6 text-left">
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												></path>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 
-    <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+		<script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+		<script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
 
-    @@include("partials/scripts.html")
-  </body>
+		@@include("partials/scripts.html")
+	</body>
 </html>

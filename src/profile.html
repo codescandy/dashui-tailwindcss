@@ -1,234 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
-    <link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
-    @@include("partials/head.html")
-    <title>Profile</title>
-  </head>
-  <body class="bg-gray-100">
-    <div class="p-6">
-      <div class="flex items-center mb-6 border-b border-gray-300 pb-4">
-        <h1 class="inline-block text-2xl font-bold">Overview</h1>
-      </div>
-      <div
-        class="flex items-center p-5 rounded-t-xl shadow-md bg-cover bg-no-repeat pt-28"
-        style="background-image: url(assets/img/background/profile-cover.jpg)"
-      ></div>
-      <div class="bg-white rounded-b-xl shadow-sm mb-6">
-        <div class="flex items-center justify-between pt-4 pb-6 px-4">
-          <div class="flex items-center">
-            <!-- avatar -->
-            <div class="w-24 h-24 mr-2 relative flex justify-end items-end -mt-10">
-              <img src="assets/img/avatar/avatar-1.jpg" class="rounded-full border-4 border-white" alt="" />
-              <a
-                href="#!"
-                class="absolute top-0 right-0 mr-2"
-                data-bs-toggle="tooltip"
-                data-placement="top"
-                title=""
-                data-original-title="Verified"
-                data-bs-original-title=""
-              >
-                <img src="assets/img/svg/checked-mark.svg" alt="" height="30" width="30" />
-              </a>
-            </div>
-            <!-- text -->
-            <div class="leading-4">
-              <h2 class="mb-2">
-                Jitu Chauhan
-                <a
-                  href="#!"
-                  class="text-decoration-none"
-                  data-bs-toggle="tooltip"
-                  data-placement="top"
-                  title=""
-                  data-original-title="Beginner"
-                  data-bs-original-title=""
-                >
-                </a>
-              </h2>
-              <p class="mb-0 text-gray-500">@imjituchauhan</p>
-            </div>
-          </div>
-          <div>
-            <a href="#" class="btn-primary md:visible invisible">Edit Profile</a>
-          </div>
-        </div>
-        <!-- nav -->
+	<head>
+		<link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
+		<link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
+		@@include("partials/head.html")
+		<title>Profile</title>
+	</head>
+	<body class="bg-gray-100">
+		<div class="p-6">
+			<div class="flex items-center mb-6 border-b border-gray-300 pb-4">
+				<h1 class="inline-block text-2xl font-semibold">Overview</h1>
+			</div>
+			<div class="flex items-center p-5 rounded-t-xl shadow-md bg-cover bg-no-repeat pt-28" style="background-image: url(assets/img/background/profile-cover.jpg)"></div>
+			<div class="bg-white rounded-b-xl shadow-sm mb-6">
+				<div class="flex items-center justify-between pt-4 pb-6 px-4">
+					<div class="flex items-center">
+						<!-- avatar -->
+						<div class="w-24 h-24 mr-2 relative flex justify-end items-end -mt-10">
+							<img src="assets/img/avatar/avatar-1.jpg" class="rounded-full border-4 border-white" alt="" />
+							<a href="#!" class="absolute top-0 right-0 mr-2" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Verified" data-bs-original-title="">
+								<img src="assets/img/svg/checked-mark.svg" alt="" height="30" width="30" />
+							</a>
+						</div>
+						<!-- text -->
+						<div class="leading-4">
+							<h2 class="mb-2">
+								Jitu Chauhan
+								<a href="#!" class="text-decoration-none" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Beginner" data-bs-original-title=""></a>
+							</h2>
+							<p class="mb-0 text-gray-500">@imjituchauhan</p>
+						</div>
+					</div>
+					<div>
+						<a href="#" class="btn-primary md:visible invisible">Edit Profile</a>
+					</div>
+				</div>
+				<!-- nav -->
 
-        <div class="text-base font-medium text-center text-gray-500 border-gray-200 border-t">
-          <ul class="flex flex-no-wrap -mb-px overflow-auto">
-            <li class="mr-2">
-              <a href="#" class="inline-block p-4 text-blue-600 border-t-2 border-blue-600 active" aria-current="page"
-                >Overview</a
-              >
-            </li>
-            <li class="mr-2">
-              <a
-                href="#"
-                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
-                >Profile</a
-              >
-            </li>
-            <li class="mr-2">
-              <a
-                href="#"
-                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
-                >Files</a
-              >
-            </li>
-            <li class="mr-2">
-              <a
-                href="#"
-                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
-                >Teams</a
-              >
-            </li>
-            <li class="mr-2">
-              <a
-                href="#"
-                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
-                >Follwers</a
-              >
-            </li>
-            <li class="mr-2">
-              <a
-                href="#"
-                class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300"
-                >Activity</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="mb-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-2">
-        <div class="bg-white p-5 rounded-xl shadow-md">
-          <!-- card title -->
-          <h4 class="card-title">About Me</h4>
-          <span class="uppercase font-medium text-dark">Bio</span>
-          <!-- text -->
-          <p class="mt-2 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse var ius enim in eros elementum
-            tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
-            erat.
-          </p>
-          <!-- row -->
-          <div class="mb-5">
-            <!-- text -->
-            <h6 class="uppercase tracking-widest text-sm font-bold">Position</h6>
-            <p class="mb-0">Theme designer at Bootstrap.</p>
-          </div>
-          <div class="flex flex-row justify-between mb-5">
-            <div class="">
-              <h6 class="uppercase tracking-widest text-sm font-bold">Phone</h6>
-              <p class="mb-0">+32112345689</p>
-            </div>
-            <div class="">
-              <h6 class="uppercase tracking-widest text-sm font-bold">Date of Birth</h6>
-              <p class="mb-0">01.10.1997</p>
-            </div>
-          </div>
-          <div class="flex flex-row justify-between mb-5">
-            <div class="">
-              <h6 class="uppercase tracking-widest text-sm font-bold">Email</h6>
-              <p class="mb-0">Dashui@gmail.com</p>
-            </div>
-            <div class="">
-              <h6 class="uppercase tracking-widest text-sm font-bold">Location</h6>
-              <p class="mb-0">Ahmedabad, India</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-md">
-          <div class="flex justify-between items-center">
-            <h3 class="font-semibold">Active Task</h3>
-            <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-list-task"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"
-                />
-                <path
-                  d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="mt-4 flex flex-col gap-1 text-base">
-            <div class="text-4xl font-bold">132</div>
-            <div><span class="">28</span> <span class="text-gray-500">Completed</span></div>
-          </div>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-md">
-          <div class="flex justify-between items-center">
-            <h3 class="font-semibold">Teams</h3>
-            <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-people"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="mt-4 flex flex-col gap-1 text-base">
-            <div class="text-4xl font-bold">12</div>
-            <div><span class="">1</span> <span class="text-gray-500">Completed</span></div>
-          </div>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-md">
-          <div class="flex justify-between items-center">
-            <h3 class="font-semibold">Productivity</h3>
-            <div class="bg-blue-100 rounded-lg w-10 h-10 flex items-center justify-center text-center text-blue-600">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-bullseye"
-                viewBox="0 0 16 16"
-              >
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-              </svg>
-            </div>
-          </div>
-          <div class="mt-4 flex flex-col gap-1 text-base">
-            <div class="text-4xl font-bold">76%</div>
-            <div><span class="text-green-600">5%</span> <span class="text-gray-500">Completed</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
+				<div class="text-base font-medium text-center text-gray-500 border-gray-200 border-t">
+					<ul class="flex flex-no-wrap -mb-px overflow-auto">
+						<li class="mr-2">
+							<a href="#" class="inline-block p-4 text-blue-600 border-t-2 border-blue-600 active" aria-current="page">Overview</a>
+						</li>
+						<li class="mr-2">
+							<a href="#" class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300">Profile</a>
+						</li>
+						<li class="mr-2">
+							<a href="#" class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300">Files</a>
+						</li>
+						<li class="mr-2">
+							<a href="#" class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300">Teams</a>
+						</li>
+						<li class="mr-2">
+							<a href="#" class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300">Follwers</a>
+						</li>
+						<li class="mr-2">
+							<a href="#" class="inline-block p-4 border-t-2 border-transparent hover:text-gray-600 hover:border-gray-300">Activity</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mb-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-2">
+				<div class="bg-white p-5 rounded-xl shadow-md">
+					<!-- card title -->
+					<h4 class="mb-6 text-lg font-semibold">About Me</h4>
+					<span class="uppercase font-medium text-dark">Bio</span>
+					<!-- text -->
+					<p class="mt-2 mb-6">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse var ius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+						diam libero vitae erat.
+					</p>
+					<!-- row -->
+					<div class="mb-5">
+						<!-- text -->
+						<h6 class="uppercase tracking-widest text-sm font-semibold">Position</h6>
+						<p class="mb-0">Theme designer at Bootstrap.</p>
+					</div>
+					<div class="flex flex-row justify-between mb-5">
+						<div class="">
+							<h6 class="uppercase tracking-widest text-sm font-semibold">Phone</h6>
+							<p class="mb-0">+32112345689</p>
+						</div>
+						<div class="">
+							<h6 class="uppercase tracking-widest text-sm font-semibold">Date of Birth</h6>
+							<p class="mb-0">01.10.1997</p>
+						</div>
+					</div>
+					<div class="flex flex-row justify-between mb-5">
+						<div class="">
+							<h6 class="uppercase tracking-widest text-sm font-semibold">Email</h6>
+							<p class="mb-0">Dashui@gmail.com</p>
+						</div>
+						<div class="">
+							<h6 class="uppercase tracking-widest text-sm font-semibold">Location</h6>
+							<p class="mb-0">Ahmedabad, India</p>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white p-5 rounded-xl shadow-md">
+					<div class="">
+						<!-- card title -->
 
-    <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+						<h4 class="mb-6 text-lg font-semibold">Projects Contributions</h4>
+						<div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<div>
+									<div class="border p-3 rounded">
+										<img src="assets/img/brand/slack-logo.svg" alt="" class="w-5 h-5" />
+									</div>
+								</div>
+								<!-- text -->
+								<div class="ml-3">
+									<h5 class="text-gray-800 text-lg font-semibold">
+										<a href="#" class="">Slack Figma Design UI</a>
+									</h5>
+									<p>Project description and details about...</p>
+								</div>
+							</div>
+							<div class="flex items-center ms-10 ms-md-0 mt-3">
+								<!-- avatar group -->
+								<div class="-space-x-3 flex">
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-2.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+								</div>
+								<div class="ml-3">
+									<!-- dropdown -->
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												/>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<div>
+									<!-- icon shape -->
+									<div class="border p-3 rounded">
+										<img src="assets/img/brand/3dsmax-logo.svg" alt="" class="w-5 h-5" />
+									</div>
+								</div>
+								<!-- text -->
+								<div class="ml-3">
+									<h5 class="text-gray-800 text-lg font-semibold">
+										<a href="#" class="">Design 3d Character</a>
+									</h5>
+									<p class="mb-0">Project description and details about...</p>
+								</div>
+							</div>
 
-    @@include("partials/scripts.html")
-  </body>
+							<div class="flex items-center ms-10 ms-md-0 mt-3">
+								<!-- avatar group -->
+								<div class="-space-x-3 flex">
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-2.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+								</div>
+								<div class="ml-3">
+									<!-- dropdown -->
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												/>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<div>
+									<!-- icon shape -->
+									<div class="border p-3 rounded">
+										<img src="assets/img/brand/github-logo.svg" alt="" class="w-5 h-5" />
+									</div>
+								</div>
+								<!-- text -->
+								<div class="ml-3">
+									<h5 class="text-gray-800 text-lg font-semibold">
+										<a href="#" class="">Github Development</a>
+									</h5>
+									<p>Project description and details about...</p>
+								</div>
+							</div>
+							<div class="flex items-center ms-10 ms-md-0 mt-3">
+								<!-- avatar group -->
+								<div class="-space-x-3 flex">
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-2.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+								</div>
+								<div class="ml-3">
+									<!-- dropdown -->
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												/>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<!-- icon shape -->
+								<div>
+									<div class="border p-3 rounded">
+										<img src="assets/img/brand/dropbox-logo.svg" alt="" class="w-5 h-5" />
+									</div>
+								</div>
+								<!-- text -->
+								<div class="ml-3">
+									<h5 class="text-gray-800 text-lg font-semibold">
+										<a href="#" class="">Dropbox Design System</a>
+									</h5>
+									<p>Project description and details about...</p>
+								</div>
+							</div>
+							<div class="flex items-center ms-10 ms-md-0 mt-3">
+								<!-- avatar group -->
+								<div class="-space-x-3 flex">
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-2.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+								</div>
+								<div class="ml-3">
+									<!-- dropdown -->
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												/>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex justify-between items-center">
+							<div class="flex items-center">
+								<!-- icon shape -->
+								<div>
+									<div class="border p-3 rounded bg-blue-600">
+										<img src="assets/img/brand/layers-logo.svg" alt="" class="w-5 h-5" />
+									</div>
+								</div>
+								<!-- text -->
+								<div class="ml-3">
+									<h5 class="text-gray-800 text-lg font-semibold">
+										<a href="#" class="">Project Management</a>
+									</h5>
+									<p>Project description and details about...</p>
+								</div>
+							</div>
+							<div class="flex items-center ms-10 ms-md-0 mt-3">
+								<!-- avatar group -->
+								<div class="-space-x-3 flex">
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-2.jpg" alt="Profile image" />
+									<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+								</div>
+								<div class="ml-3">
+									<!-- dropdown -->
+									<div class="dropdown leading-4">
+										<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+												/>
+											</svg>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+        </div>
+        <div class="mb-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-2">
+				<div class="bg-white p-5 rounded-xl shadow-md">
+					<div class="">
+						<div class="flex justify-between mb-5 items-center">
+							<!-- avatar -->
+							<div class="flex items-center">
+								<div>
+									<img src="assets/img/avatar/avatar-1.jpg" alt="" class="w-12 h-12 rounded-full" />
+								</div>
+								<div class="ml-3">
+									<h5 class="font-semibold">Jitu Chauhan</h5>
+									<p>19 minutes ago</p>
+								</div>
+							</div>
+							<div>
+								<!-- dropdown -->
+								<div class="dropdown leading-4">
+									<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+											/>
+										</svg>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li><a class="dropdown-item" href="#">Another action</a></li>
+										<li><a class="dropdown-item" href="#">Something else here</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4">
+							<!-- text -->
+							<p class="mb-4">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen disse var ius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+								commodo diam libero vitae erat.
+							</p>
+							<img src="assets/img/blog/blog-img-1.jpg" class="rounded-xl w-full" alt="" />
+						</div>
+						<!-- icons -->
+						<div class="mb-4 flex gap-8 w-full">
+							<span class="flex items-center">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+									/>
+								</svg>
+								<span class="ml-1">20 Like</span>
+							</span>
+							<span class="flex items-center">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+									/>
+								</svg>
+
+								<span class="ml-1">12 Comment</span>
+							</span>
+							<span class="flex items-center">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+									/>
+								</svg>
+
+								<span class="ml-1">Share</span>
+							</span>
+						</div>
+						<div class="border-b border-t py-5 flex items-center mb-4">
+							<!-- avatar group -->
+							<div class="-space-x-3 flex">
+								<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+								<img class="relative inline object-cover w-8 h-8 rounded-full border-white border-2" src="./assets/img/avatar/avatar-2.jpg" alt="Profile image" />
+								<img class="relative inline object-cover w-8 h-8 border-2 rounded-full border-white" src="./assets/img/avatar/avatar-1.jpg" alt="Profile image" />
+							</div>
+							<div class="ml-4 text-gray-600">You and 20 more liked this</div>
+						</div>
+						<!-- row -->
+						<div class="flex">
+							<div class="flex-shrink-1">
+								<!-- avatar -->
+								<img src="assets/img/avatar/avatar-1.jpg" class="w-10 h-10 rounded-full" alt="" />
+							</div>
+							<!-- input -->
+							<div class="ml-3 flex-grow">
+								<form class="flex gap-4 items-center justify-between w-full">
+									<div class="">
+										<label for="name" class="col-form-label">Name</label>
+									</div>
+									<div class="w-full">
+										<input type="password" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" />
+									</div>
+									<div class="">
+										<button type="submit" class="btn btn-primary">Post</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="">
+				<div class="bg-white p-5 rounded-xl shadow-md h-[400px] mb-6">
+					<div class="">
+						<!-- card title -->
+						<h4 class="mb-6 text-lg font-semibold">My Team</h4>
+						<div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<!-- img -->
+								<div>
+									<img src="assets/img/avatar/avatar-1.jpg" class="rounded-full w-10 h-10" alt="" />
+								</div>
+								<!-- text -->
+								<div class="ml-4">
+									<h5 class="font-semibold">Dianna Smiley</h5>
+									<p class="text-base">UI / UX Designer</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-4">
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<!-- img -->
+								<div>
+									<img src="assets/img/avatar/avatar-2.jpg" class="rounded-full w-10 h-10" alt="" />
+								</div>
+								<!-- content -->
+								<div class="ml-4">
+									<h5 class="font-semibold">Anne Brewer</h5>
+									<p class="text-base">Senior UX Designer</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-4">
+								<!-- icons -->
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+            <div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<!-- img -->
+								<div>
+									<img src="assets/img/avatar/avatar-4.jpg" class="rounded-full w-10 h-10" alt="" />
+								</div>
+								<!-- content -->
+								<div class="ml-4">
+									<h5 class="font-semibold">Lisa Ewer</h5>
+									<p class="text-base">Senior UX Designer</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-4">
+								<!-- icons -->
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-4">
+							<div class="flex items-center">
+								<!-- img -->
+								<div>
+									<img src="assets/img/avatar/avatar-3.jpg" class="rounded-full w-10 h-10" alt="" />
+								</div>
+								<!-- text -->
+								<div class="ml-4">
+									<h5 class="font-semibold">Richard Christmas</h5>
+									<p class="text-base">Front-End Engineer</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-4">
+								<!-- icons -->
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-4">
+							<!-- img -->
+							<div class="flex items-center">
+								<div>
+									<img src="assets/img/avatar/avatar-4.jpg" class="rounded-full w-10 h-10" alt="" />
+								</div>
+								<!-- text -->
+								<div class="ml-4">
+									<h5 class="font-semibold">Nicholas Binder</h5>
+									<p class="text-base">Content Marketing Manager</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-4">
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-muted text-primary-hover">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-600">
+										<path
+											stroke-linecap="round"
+											d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="bg-white p-5 rounded-xl shadow-md h-[400px]">
+					<div class="">
+						<!-- card title -->
+						<h4 class="mb-6 text-lg font-semibold">Activity Feed</h4>
+            <div class="">
+
+
+              <div class="flex mb-5">
+                <!-- img -->
+                <div>
+                  <img src="assets/img/avatar/avatar-6.jpg" class="w-10 h-10 rounded-full " alt="">
+                </div>
+                <!-- content -->
+                <div class="ml-3 ">
+                  <h5 class="font-semibold">Dianna Smiley</h5>
+                  <p class="mb-1">Just create a new Project in Dashui...
+                  </p>
+                  <p class=" text-gray-400">2m ago</p>
+                </div>
+              </div>
+              <div class="flex mb-5">
+                <!-- img -->
+                <div>
+                  <img src="assets/img/avatar/avatar-7.jpg" class="w-10 h-10 rounded-full " alt="">
+                </div>
+                <!-- content -->
+                <div class="ml-3 ">
+                  <h5 class="font-semibold">Irene Hargrove</h5>
+                  <p class="mb-1">Comment on Bootstrap Tutorial Says Hi, I m irene...
+                  </p>
+                  <p class=" text-gray-400">1hour ago</p>
+                </div>
+              </div>
+              <div class="flex">
+                <!-- img -->
+                <div>
+                  <img src="assets/img/avatar/avatar-9.jpg" class="w-10 h-10 rounded-full " alt="">
+                </div>
+                <!-- content -->
+                <div class="ml-3 ">
+                  <h5 class="font-semibold">Trevor Bradley</h5>
+                  <p class="mb-1">Just share your article on Social Media..
+                  </p>
+                  <p class="text-gray-400">2month ago</p>
+                </div>
+              </div>
+            </div>
+
+					</div>
+				</div>
+        </div>
+
+      </div>
+			</div>
+		</div>
+
+		<script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+		<script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+
+		@@include("partials/scripts.html")
+	</body>
 </html>
