@@ -1,0 +1,305 @@
+.navbar-vertical {
+	margin-left: -17rem;
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 250px;
+	padding: 0rem;
+	background-color: #212b36;
+	border-right: 1px solid #212b36;
+	transition: margin 0.25s ease-out;
+}
+.navbar-vertical .slimScrollDiv {
+	height: 100% !important;
+	overflow-y: auto;
+}
+.navbar-vertical .nav-scroller {
+	height: 100% !important;
+	overflow-y: auto;
+}
+.navbar-vertical .navbar-brand {
+	padding: 1rem 1.5rem 1.5rem;
+	margin-right: 0px;
+	display: block;
+}
+.navbar-vertical .navbar-brand img {
+	height: 1.875rem;
+}
+.navbar-vertical .navbar-heading {
+	color: #454f5b;
+	padding: 1rem 1.5rem;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08rem;
+	font-weight: 700;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link {
+	padding: 0.5rem 1.5rem;
+	display: flex;
+	align-items: center;
+	color: #919eab;
+	font-weight: 500;
+	line-height: 1.8;
+	-webkit-transition: all 0.5s;
+	white-space: nowrap;
+	transition: all 0.5s;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link:hover {
+	color: #f4f6f8;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link:hover .nav-icon {
+	color: #f4f6f8;
+	opacity: 1;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link.active {
+	color: #f4f6f8;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link.active .nav-icon {
+	color: #f4f6f8;
+	opacity: 1;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link[data-bs-toggle='collapse'] {
+	position: relative;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link[data-bs-toggle='collapse']:after {
+	display: block;
+	content: '';
+	background: url(../fonts/feather-icons/icons/chevron-down.svg);
+	font-family: Feather;
+	margin-left: auto;
+	transition: 0.5s ease;
+	position: absolute;
+	right: 1.5rem;
+	height: 24px;
+	width: 24px;
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+	-webkit-transform: scale(0.7);
+	transform: scale(0.7);
+}
+.navbar-vertical .navbar-nav .nav-icon {
+	opacity: 0.6;
+	font-size: 0.875rem;
+	transition: all 0.5s;
+}
+.navbar-vertical .navbar-nav .sub-nav-icon {
+	font-size: 0.35rem;
+	margin-right: 0.5rem;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav-link {
+	color: #919eab;
+	padding: 0.25rem 3rem;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav-link:hover {
+	color: #fff;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav-link.active {
+	color: #fff;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav .nav-item .nav-link {
+	color: #919eab;
+	padding: 0.25rem 3.5rem;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav .nav-item .nav-link:hover {
+	color: #fff;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav .nav-item .nav-link.active {
+	color: #fff;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav .nav-item .nav .nav-item .nav-link {
+	color: #919eab;
+	padding: 0.25rem 4.2rem;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav .nav-item .nav .nav-item .nav-link:hover {
+	color: #fff;
+}
+.navbar-vertical .navbar-nav .nav .nav-item .nav .nav-item .nav .nav-item .nav-link.active {
+	color: #fff;
+}
+
+.collapse.in {
+	display: block;
+}
+
+.docs-header .docs-header-btn {
+	display: flex;
+	align-items: center;
+}
+.docs-header .navbar {
+	margin-left: 15.625rem;
+	padding: 0.5rem 0.625rem;
+	border-bottom: 1px solid #f4f6f8;
+}
+@media (max-width: 576px) {
+	.docs-header .navbar {
+		margin-left: 0rem;
+	}
+}
+.docs-header .navbar .dropdown-menu {
+	margin: 0rem;
+	border: 1px solid rgb(239, 238, 241);
+}
+.docs-header .navbar .navbar-nav .nav-item .nav-link {
+	font-size: 1rem;
+	line-height: 1.75rem;
+	padding: 0.875rem;
+	margin-bottom: 0rem;
+	color: #454f5b;
+}
+.docs-header .navbar .navbar-nav .nav-item .nav-link:hover {
+	color: #000;
+}
+
+.docs-main-wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.docs-wrapper {
+	position: relative;
+	left: 0;
+	margin-left: 15.625rem;
+	background-color: #f1f5f9;
+	top: 35px;
+}
+
+.docs-content {
+	margin: 4.0625rem 0rem;
+}
+
+.docs-content-head {
+	padding: 4.375rem 0rem;
+}
+
+.navbar-classic {
+	background-color: #fff;
+
+	padding: 10px 1.5rem;
+}
+.navbar-classic .navbar-right-wrap .list-group-item {
+	padding: 1rem 1.25rem;
+}
+.navbar-classic .nav-badge {
+	position: absolute;
+	top: -9px;
+	right: 3px;
+}
+
+@media (min-width: 1200px) {
+	.navbar-classic .dropdown-menu-end {
+		right: 0;
+		left: auto;
+	}
+	.navbar-classic .dropdown-menu-start {
+		right: auto;
+		left: 0;
+	}
+	.navbar-classic .dropdown-menu {
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+		transition: all 0.3s ease-in;
+	}
+	.navbar-classic .dropdown:hover > .dropdown-menu {
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+		opacity: 1;
+		visibility: visible;
+	}
+	.navbar-classic .dropdown-submenu:hover > .dropdown-menu {
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@media (max-width: 992px) {
+	.navbar-classic .navbar-nav .dropdown-menu {
+		margin: 0px;
+	}
+	.navbar-classic .navbar-nav .dropdown-menu .dropdown-submenu .dropdown-menu {
+		box-shadow: none;
+		margin: 0;
+	}
+	.navbar-classic {
+		flex-direction: row;
+	}
+	.navbar-classic .dropdown {
+		position: static;
+	}
+	.navbar-classic .dropdown-menu {
+		position: absolute;
+		margin: 0.25rem -1.25rem !important;
+	}
+	.navbar-classic .dropdown-menu .dropdown-submenu .dropdown-menu {
+		position: relative;
+		top: -7px !important;
+		padding: 0px !important;
+	}
+}
+
+#db-wrapper {
+	overflow-x: hidden;
+	display: flex;
+}
+
+#page-content {
+	min-height: 100vh;
+	min-width: 100vw;
+	margin-left: 15.625rem;
+	transition: margin 0.25s ease-out;
+}
+
+#db-wrapper.toggled .navbar-vertical {
+	margin-left: 0;
+}
+
+#db-wrapper.toggled #page-content {
+	margin-left: 0;
+}
+
+#db-wrapper.toggled #page-content .inner-wrapper-sticky {
+	left: 20px !important;
+}
+
+#db-wrapper.toggled #page-content .inner-wrapper-sticky .setting-nav {
+	width: 354px;
+}
+@media (max-width: 1024px) {
+	#db-wrapper.toggled #page-content .inner-wrapper-sticky .setting-nav {
+		width: 204px;
+	}
+}
+
+@media (max-width: 576px) {
+	#page-content {
+		margin-left: 0rem;
+	}
+	#db-wrapper.toggled #page-content {
+		margin-left: 15.6875rem;
+	}
+}
+@media (min-width: 768px) {
+	.navbar-vertical {
+		margin-left: 0rem;
+	}
+	#page-content {
+		min-width: 0rem;
+		width: 100%;
+	}
+	#db-wrapper.toggled .navbar-vertical {
+		margin-left: -16rem;
+	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#page-content {
+		margin-left: 0rem;
+	}
+	#db-wrapper.toggled #page-content {
+		margin-left: 15.6875rem;
+	}
+}

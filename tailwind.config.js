@@ -1,3 +1,5 @@
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	content: ['./src/**/*.html'],
 	theme: {
@@ -11,8 +13,29 @@ module.exports = {
 			'4xl': '2.441rem',
 			'5xl': '3.052rem',
 		},
-		extend: {},
+		extend: {
+			typography: (theme) => ({
+				DEFAULT: {
+					css: {
+						color: '#333',
+						a: {
+							color: '#3182ce',
+							'&:hover': {
+								color: '#624BFF',
+							},
+						},
+					},
+				},
+			}),
+
+			colors: {
+				blue: {
+					600: '#624bff',
+					800: '#5340d9',
+				},
+			},
+		},
 	},
 	variants: {},
-	plugins: [require('@tailwindcss/forms')],
+	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
