@@ -6,25 +6,25 @@
 
 @layer base {
 	h1 {
-		@apply text-4xl;
+		@apply text-3xl text-gray-800 font-medium;
 	}
 	h2 {
-		@apply text-3xl;
+		@apply text-2xl text-gray-800 font-medium;
 	}
 	h3 {
-		@apply text-2xl;
+		@apply text-xl text-gray-800 font-medium;
 	}
 	h4 {
-		@apply text-xl;
+		@apply text-lg text-gray-800 font-medium;
 	}
 	h5 {
-		@apply text-lg;
+		@apply text-base text-gray-800 font-medium;
 	}
 	h6 {
-		@apply text-base;
+		@apply text-sm text-gray-800 font-medium;
 	}
 	body {
-		@apply text-base;
+		@apply text-base bg-gray-100 font-normal;
 	}
 	/* ... */
 }
@@ -34,26 +34,17 @@
 		@apply bg-transparent border border-transparent rounded-md text-white cursor-pointer inline-block text-base font-semibold py-2 px-4 text-center transition align-middle select-none;
 	}
 	.btn-primary {
-		@apply bg-blue-600 text-white border-blue-600 hover:bg-blue-800 hover:border-blue-800  active:bg-blue-800 active:border-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300;
+		@apply bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800  active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300;
 	}
 	.btn-outline-primary {
-		@apply bg-transparent text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white hover:border-blue-600  active:bg-blue-600 active:text-white active:border-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300;
+		@apply bg-transparent text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white hover:border-indigo-600  active:bg-indigo-600 active:text-white active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300;
+	}
+
+	.btn-white {
+		@apply bg-white text-gray-800 border-gray-600 hover:bg-gray-100 hover:text-gray-800 hover:border-gray-100  active:bg-gray-100 active:text-gray-800 active:border-gray-100 focus:outline-none focus:ring-4 focus:ring-indigo-300;
 	}
 }
 
 @import './components/dropdown.css';
 @import './components/navbar.css';
-
-.collapse:not(.show) {
-	display: none;
-}
-
-.collapsing {
-	height: 0;
-	overflow: hidden;
-	transition: height 0.35s ease;
-}
-
-.collapse {
-	visibility: visible;
-}
+@import './components/collapse.css';

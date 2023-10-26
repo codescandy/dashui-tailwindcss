@@ -7,7 +7,7 @@
 		<!-- Navbar nav -->
 		<ul class="navbar-nav flex-col" id="sideNavbar">
 			<li class="nav-item">
-				<a class="nav-link active" href="./index.html">
+				<a class="nav-link @@if (context.page === 'dashboard') { active }" href="./index.html">
 					<i data-feather="home" class="w-4 h-4 mr-2"></i>
 					Dashboard
 				</a>
@@ -20,29 +20,29 @@
 
 			<!-- Nav item -->
 			<li class="nav-item">
-				<a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#navPages" aria-expanded="false" aria-controls="navPages">
+				<a class="nav-link @@if (context.page_group !== 'pages') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navPages" aria-expanded="false" aria-controls="navPages">
 					<i data-feather="layers" class="w-4 h-4 mr-2"></i>
 					Pages
 				</a>
 
-				<div id="navPages" class="collapse" data-bs-parent="#sideNavbar">
+				<div id="navPages" class="collapse @@if (context.page_group === 'pages') { show }" data-bs-parent="#sideNavbar">
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a class="nav-link" href="profile.html">Profile</a>
+							<a class="nav-link @@if (context.page === 'profile') { active }" href="profile.html">Profile</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="settings.html">Settings</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="billing.html">Billing</a>
+							<a class="nav-link @@if (context.page === 'settings') { active }" href="settings.html">Settings</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="pricing.html">Pricing</a>
+							<a class="nav-link @@if (context.page === 'billing') { active }" href="billing.html">Billing</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'pricing') { active }" href="pricing.html">Pricing</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="404-error.html">404 Error</a>
+							<a class="nav-link @@if (context.page === '404error') { active }" href="404-error.html">404 Error</a>
 						</li>
 					</ul>
 				</div>
@@ -50,26 +50,33 @@
 
 			<!-- Nav item -->
 			<li class="nav-item">
-				<a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#navAuthentication" aria-expanded="false" aria-controls="navAuthentication">
+				<a
+					class="nav-link @@if (context.page_group !== 'authentication') { collapsed }"
+					href="#!"
+					data-bs-toggle="collapse"
+					data-bs-target="#navAuthentication"
+					aria-expanded="false"
+					aria-controls="navAuthentication"
+				>
 					<i data-feather="lock" class="w-4 h-4 mr-2"></i>
 					Authentication
 				</a>
-				<div id="navAuthentication" class="collapse" data-bs-parent="#sideNavbar">
+				<div id="navAuthentication" class="collapse @@if (context.page_group === 'authentication') { show }" data-bs-parent="#sideNavbar">
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a class="nav-link" href="sign-in.html">Sign In</a>
+							<a class="nav-link @@if (context.page === 'signin') { active }" href="sign-in.html">Sign In</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="sign-up.html">Sign Up</a>
+							<a class="nav-link @@if (context.page === 'signup') { active }" href="sign-up.html">Sign Up</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="forget-password.html">Forget Password</a>
+							<a class="nav-link @@if (context.page === 'forgetpassword') { active }" href="forget-password.html">Forget Password</a>
 						</li>
 					</ul>
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="layout.html">
+				<a class="nav-link @@if (context.page === 'layout') { active }" href="layout.html">
 					<i data-feather="sidebar" class="w-4 h-4 mr-2"></i>
 					Layouts
 				</a>

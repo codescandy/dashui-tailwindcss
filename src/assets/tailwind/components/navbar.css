@@ -11,14 +11,7 @@
 	border-right: 1px solid #212b36;
 	transition: margin 0.25s ease-out;
 }
-.navbar-vertical .slimScrollDiv {
-	height: 100% !important;
-	overflow-y: auto;
-}
-.navbar-vertical .nav-scroller {
-	height: 100% !important;
-	overflow-y: auto;
-}
+
 .navbar-vertical .navbar-brand {
 	padding: 1rem 1.5rem 1.5rem;
 	margin-right: 0px;
@@ -178,14 +171,6 @@
 
 	padding: 10px 1.5rem;
 }
-.navbar-classic .navbar-right-wrap .list-group-item {
-	padding: 1rem 1.25rem;
-}
-.navbar-classic .nav-badge {
-	position: absolute;
-	top: -9px;
-	right: 3px;
-}
 
 @media (min-width: 1200px) {
 	.navbar-classic .dropdown-menu-end {
@@ -260,19 +245,6 @@
 
 #db-wrapper.toggled #page-content {
 	margin-left: 0;
-}
-
-#db-wrapper.toggled #page-content .inner-wrapper-sticky {
-	left: 20px !important;
-}
-
-#db-wrapper.toggled #page-content .inner-wrapper-sticky .setting-nav {
-	width: 354px;
-}
-@media (max-width: 1024px) {
-	#db-wrapper.toggled #page-content .inner-wrapper-sticky .setting-nav {
-		width: 204px;
-	}
 }
 
 @media (max-width: 576px) {

@@ -1,25 +1,30 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
 	content: ['./src/**/*.html'],
 	theme: {
+		fontFamily: {
+			sans: ['"Inter var", sans-serif'],
+		},
 		fontSize: {
 			sm: '0.75rem',
 			base: '0.9375rem',
-			lg: '1rem',
-			xl: '1.25rem',
-			'2xl': '1.563rem',
-			'3xl': '1.953rem',
+			lg: '1.125rem',
+			xl: '1.5rem',
+			'2xl': '1.875rem',
+			'3xl': '2.25rem',
 			'4xl': '2.441rem',
 			'5xl': '3.052rem',
 		},
+
 		extend: {
 			typography: (theme) => ({
 				DEFAULT: {
 					css: {
-						color: '#333',
+						color: '#637381',
 						a: {
-							color: '#3182ce',
+							color: '#637381',
 							'&:hover': {
 								color: '#624BFF',
 							},
@@ -29,7 +34,18 @@ module.exports = {
 			}),
 
 			colors: {
-				blue: {
+				gray: {
+					100: '#f1f5f9',
+					200: '#f4f6f8',
+					300: '#dfe3e8',
+					400: '#c4cdd5',
+					500: '#919eab',
+					600: '#637381',
+					700: '#454f5b',
+					800: '#212b36',
+					900: '#161c24',
+				},
+				indigo: {
 					600: '#624bff',
 					800: '#5340d9',
 				},
@@ -37,5 +53,13 @@ module.exports = {
 		},
 	},
 	variants: {},
-	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+	plugins: [
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography'),
+		plugin(({ addBase, theme }) => {
+			addBase({
+				html: { color: theme('colors.gray.600') },
+			});
+		}),
+	],
 };
