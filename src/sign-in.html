@@ -1,86 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
-		<link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
-		<link rel="stylesheet" href="../node_modules/dropzone/dist/dropzone.css" />
-		@@include("partials/head.html")
-		<title>Pricing</title>
-	</head>
-	<body>
-		<!-- container -->
+   <head>
+      <link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
+      <link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
+      <link rel="stylesheet" href="../node_modules/dropzone/dist/dropzone.css" />
+      @@include("partials/head.html")
+      <title>Sign In - TailwindCSS HTML Admin Template Free - Dash UI</title>
+   </head>
+   <body>
+      <!-- container -->
 
-		<div class="flex flex-col items-center justify-center g-0 h-screen px-4">
-			<!-- Card -->
-			<div class="justify-center items-center w-full bg-white rounded-lg shadow-lg lg:flex md:mt-0 max-w-prose xl:p-0">
-				<!-- Card body -->
-				<div class="p-6 w-full sm:p-8 lg:p-10">
-					<div class="mb-4">
-						<a href="index.html"><img src="assets/img/brand/logo/logo-primary.svg" class="mb-2" alt="" /></a>
-						<p class="mb-6">Please enter your user information.</p>
-					</div>
-					<!-- Form -->
-					<form>
-						<!-- Username -->
-						<div class="mb-3">
-							<label for="email" class="inline-block mb-2">Username or email</label>
-							<input
-								type="email"
-								id="email"
-								class="border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
-								name="email"
-								placeholder="Email address here"
-								required=""
-							/>
-						</div>
-						<!-- Password -->
-						<div class="mb-3">
-							<label for="password" class="inline-block mb-2">Password</label>
-							<input
-								type="password"
-								id="password"
-								class="border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
-								name="password"
-								placeholder="**************"
-								required=""
-							/>
-						</div>
-						<!-- Checkbox -->
-						<div class="lg:flex justify-between items-center mb-4">
-							<div class="">
-								<input type="checkbox" class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-400 focus:outline-none focus:ring-2" id="rememberme" />
-								<label class="inline-block" for="rememberme">Remember me</label>
-							</div>
-						</div>
-						<div>
-							<!-- Button -->
-							<div class="grid">
-								<button type="submit" class="btn btn-primary">Sign in</button>
-							</div>
+      <div class="flex flex-col items-center justify-center g-0 h-screen px-4">
+         <!-- Card -->
+         <div class="justify-center items-center w-full bg-white rounded-lg shadow-lg lg:flex md:mt-0 max-w-prose xl:p-0">
+            <!-- Card body -->
+            <div class="p-6 w-full sm:p-8 lg:p-10">
+               <div class="mb-4">
+                  <a href="index.html"><img src="assets/img/brand/logo/logo-primary.svg" class="mb-2" alt="" /></a>
+                  <p class="mb-6">Please enter your user information.</p>
+               </div>
+               <!-- Form -->
+               <form>
+                  <!-- Username -->
+                  <div class="mb-3">
+                     <label for="email" class="inline-block mb-2">Username or email</label>
+                     <input
+                        type="email"
+                        id="email"
+                        class="border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
+                        name="email"
+                        placeholder="Email address here"
+                        required="" />
+                  </div>
+                  <!-- Password -->
+                  <div class="mb-3">
+                     <label for="password" class="inline-block mb-2">Password</label>
+                     <input
+                        type="password"
+                        id="password"
+                        class="border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
+                        name="password"
+                        placeholder="**************"
+                        required="" />
+                  </div>
+                  <!-- Checkbox -->
+                  <div class="lg:flex justify-between items-center mb-4">
+                     <div class="">
+                        <input type="checkbox" class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-400 focus:outline-none focus:ring-2" id="rememberme" />
+                        <label class="inline-block" for="rememberme">Remember me</label>
+                     </div>
+                  </div>
+                  <div>
+                     <!-- Button -->
+                     <div class="grid">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                     </div>
 
-							<div class="md:flex justify-between mt-4">
-								<div class="mb-2">
-									<a href="sign-up.html" class="">Create An Account</a>
-								</div>
-								<div>
-									<a href="forget-password.html" class="">Forgot your password?</a>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+                     <div class="md:flex justify-between mt-4">
+                        <div class="mb-2">
+                           <a href="sign-up.html" class="">Create An Account</a>
+                        </div>
+                        <div>
+                           <a href="forget-password.html" class="">Forgot your password?</a>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
 
-		<script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
-		<script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
-		<script src="@@webRoot/node_modules/dropzone/dist/dropzone-min.js"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"
-		></script>
+      <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+      <script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
+      <script src="@@webRoot/node_modules/dropzone/dist/dropzone-min.js"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+         crossorigin="anonymous"></script>
 
-		@@include("partials/scripts.html")
-	</body>
+      @@include("partials/scripts.html")
+   </body>
 </html>

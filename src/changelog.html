@@ -5,29 +5,28 @@
       <link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
       <link rel="stylesheet" href="../node_modules/dropzone/dist/dropzone.css" />
       @@include("partials/head.html")
-      <title>404 Error - TailwindCSS HTML Admin Template Free - Dash UI</title>
+      <title>Changelog - TailwindCSS HTML Admin Template Free - Dash UI</title>
    </head>
    <body>
-      <!-- Error page -->
-      <div class="h-screen flex justify-center items-center mx-auto">
-         <!-- row -->
-         <div class="flex flex-col">
-            <!-- col -->
-
-            <!-- content -->
-            <div class="text-center">
-               <div class="mb-3">
-                  <!-- img -->
-                  <img src="./assets/img/error/404-error-img.png" alt="" class="mw-100" />
+      <main>
+         <div id="db-wrapper">
+            @@include("partials/navbar-vertical.html", { "page": "layout" })
+            <div id="page-content">
+               @@include("partials/top-navbar.html")
+               <div class="p-6">
+                  <div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+                     <h1 class="block font-semibold mb-3">Changelog</h1>
+                     <p>Keep a changelog. All notable changes to this project will be documented in this file.</p>
+                  </div>
+                  <div class="grid lg:grid-cols-9 gap-4">
+                     <div class="flex flex-row gap-4"><span><code class="text-red-600">1.0.0</code></span> <span>Intial Release</span></div> 
+                     </div>
+                  </div>
                </div>
-               <!-- text -->
-               <h1 class="text-5xl font-bold">Oops! the page not found.</h1>
-               <p class="mb-8 text-xl">Or simply leverage the expertise of our consultation team.</p>
-               <!-- button -->
-               <a href="./index.html" class="btn btn-primary">Go Home</a>
             </div>
          </div>
-      </div>
+      </main>
+
       <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
       <script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
       <script src="@@webRoot/node_modules/dropzone/dist/dropzone-min.js"></script>
