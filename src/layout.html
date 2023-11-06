@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" href="../node_modules/apexcharts/dist/apexcharts.css" />
-      <link rel="stylesheet" href="../node_modules/simplebar/dist/simplebar.min.css" />
-      <link rel="stylesheet" href="../node_modules/dropzone/dist/dropzone.css" />
-      @@include("partials/head.html")
-      <title>Layouts - TailwindCSS HTML Admin Template Free - Dash UI</title>
-   </head>
-   <body>
-      <main>
-         <div id="db-wrapper">
-            @@include("partials/navbar-vertical.html", { "page": "layout" })
-            <div id="page-content">
-               @@include("partials/top-navbar.html")
-               <div class="p-6">
-                  <div class="flex flex-col mb-6 border-b border-gray-300 pb-6 text-center">
-                     <h1 class="block font-semibold mb-3">Layouts</h1>
-                     <p>Customize your overview page layout. Choose the one that best fits your needs.</p>
-                  </div>
-                  <div class="grid lg:grid-cols-9 gap-4">
-                     <!-- Card -->
-                     <div class="lg:col-start-4 col-span-3">
-                        <a class="bg-white rounded-md overflow-hidden flex flex-col relative shadow" href="../index.html">
-                           <img class="img-fluid" src="../assets/img/layouts/default-classic.svg" alt="Image Description" />
-                           <span class="p-4 text-center">
-                              <h5 class="mb-0">Classic</h5>
-                           </span>
-                        </a>
-                        <!-- End Card -->
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </main>
+	<head>
+		@@include("partials/head.html")
+		<title>Layouts - TailwindCSS HTML Admin Template Free - Dash UI</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("partials/navbar-vertical.html", { "page": "layout" })
+				<div id="page-content">
+					@@include("partials/top-navbar.html")
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6 text-center">
+							<h1 class="block font-semibold mb-3">Layouts</h1>
+							<p>Customize your overview page layout. Choose the one that best fits your needs.</p>
+						</div>
+						<div class="grid lg:grid-cols-9 gap-4">
+							<!-- Card -->
+							<div class="lg:col-start-4 col-span-3">
+								<a class="bg-white rounded-md overflow-hidden flex flex-col relative shadow" href="../index.html">
+									<img class="img-fluid" src="../assets/img/layouts/default-classic.svg" alt="Image Description" />
+									<span class="p-4 text-center">
+										<h5 class="mb-0">Classic</h5>
+									</span>
+								</a>
+								<!-- End Card -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 
-      <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
-      <script src="@@webRoot/node_modules/simplebar/dist/simplebar.min.js"></script>
-      <script src="@@webRoot/node_modules/dropzone/dist/dropzone-min.js"></script>
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-         crossorigin="anonymous"></script>
-
-      @@include("partials/scripts.html")
-   </body>
+		@@include("partials/scripts.html")
+	</body>
 </html>
