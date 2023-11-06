@@ -1064,6 +1064,10 @@ html {
   margin-top: 1.5rem;
 }
 
+.me-4 {
+  margin-inline-end: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1156,6 +1160,10 @@ html {
   height: 100vh;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1200,6 +1208,26 @@ html {
   width: 100%;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1234,6 +1262,26 @@ html {
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-\[4\] {
+  flex-shrink: 4;
+}
+
+.flex-shrink-\[2\] {
+  flex-shrink: 2;
+}
+
+.flex-shrink-\[6\] {
+  flex-shrink: 6;
+}
+
+.flex-shrink-\[8\] {
+  flex-shrink: 8;
 }
 
 .flex-grow {
@@ -1412,14 +1460,19 @@ html {
   border-radius: 0.75rem;
 }
 
+.rounded-b-md {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
 .rounded-b-xl {
   border-bottom-right-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
 }
 
-.rounded-t-xl {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
+.rounded-t-md {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
 }
 
 .border {
@@ -1885,15 +1938,14 @@ html {
   color: rgb(161 98 7 / var(--tw-text-opacity));
 }
 
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1923,6 +1975,10 @@ html {
 
 .ring-gray-400\/10 {
   --tw-ring-color: rgb(196 205 213 / 0.1);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all {
