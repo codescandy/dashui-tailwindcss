@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include("partials/head.html")
+		<title>Documentation - TailwindCSS HTML Admin Template Free - Dash UI</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("partials/navbar-vertical.html", { "page": "docs" })
+				<div id="page-content">
+					@@include("partials/top-navbar.html")
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold mb-3">Introduction</h1>
+							<p>Get started with Dash-ui, Responsive Website Template for building responsive, mobile-first sites, with Tailwind CSS and a template starter page.</p>
+						</div>
+						<div class="flex flex-col">
+							<div class="mb-10">
+								<h2>Core libraries used</h2>
+								<p>Here is a list of some core libraries that we use in Dashui:</p>
+								<div class="mt-8">
+									<ul class="flex flex-col gap-4">
+										<li>
+											<a class="font-bold text-gray-800" href="https://tailwindcss.com/" target="_blank" rel="noreferrer">TailwindCSS</a>
+											<p class="mt-1">A utility-first CSS framework packed with classes.</p>
+										</li>
+										<li>
+											<a class="font-bold text-gray-800" href="https://gulpjs.com/" target="_blank" rel="noreferrer">Gulp</a>
+											<p class="mt-1">We use Gulp as our build tool to bundle JavaScript &amp; Css.</p>
+										</li>
+										<li>
+											<a class="font-bold text-gray-800" href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap(Javascript)</a>
+											<p class="mt-1">We included Bootstrap, but only javascript part for the ease of some component functionality.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="mb-10">
+								<h2>Quick Start</h2>
+								<p>Using this step you can run Dashui Tailwind Project.</p>
+								<div class="mt-8">
+									<ul class="flex flex-col gap-4">
+										<li>
+											<span class="text-gray-800 font-bold">npm install -g gulp-cli</span>
+										</li>
+										<li>
+											<span class="text-gray-800 font-bold">npm install</span>
+										</li>
+										<li><span class="text-gray-800 font-bold">run - gulp</span></li>
+										<li><span class="text-gray-800 font-bold">build - gulp build</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include("partials/scripts.html")
+	</body>
+</html>

@@ -1,13 +1,13 @@
 <nav class="navbar-vertical navbar">
 	<div class="" data-simplebar>
 		<!-- Brand logo -->
-		<a class="navbar-brand" href="./index.html">
+		<a class="navbar-brand" href="@@webRoot/index.html">
 			<img src="@@webRoot/assets/img/brand/logo/logo.svg" alt="" />
 		</a>
 		<!-- Navbar nav -->
 		<ul class="navbar-nav flex-col" id="sideNavbar">
 			<li class="nav-item">
-				<a class="nav-link @@if (context.page === 'dashboard') { active }" href="./index.html">
+				<a class="nav-link @@if (context.page === 'dashboard') { active }" href="@@webRoot/index.html">
 					<i data-feather="home" class="w-4 h-4 mr-2"></i>
 					Dashboard
 				</a>
@@ -28,21 +28,21 @@
 				<div id="navPages" class="collapse @@if (context.page_group === 'pages') { show }" data-bs-parent="#sideNavbar">
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'profile') { active }" href="profile.html">Profile</a>
+							<a class="nav-link @@if (context.page === 'profile') { active }" href="@@webRoot/profile.html">Profile</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'settings') { active }" href="settings.html">Settings</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'billing') { active }" href="billing.html">Billing</a>
+							<a class="nav-link @@if (context.page === 'settings') { active }" href="@@webRoot/settings.html">Settings</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'pricing') { active }" href="pricing.html">Pricing</a>
+							<a class="nav-link @@if (context.page === 'billing') { active }" href="@@webRoot/billing.html">Billing</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'pricing') { active }" href="@@webRoot/pricing.html">Pricing</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === '404error') { active }" href="404-error.html">404 Error</a>
+							<a class="nav-link @@if (context.page === '404error') { active }" href="@@webRoot/404-error.html">404 Error</a>
 						</li>
 					</ul>
 				</div>
@@ -64,19 +64,19 @@
 				<div id="navAuthentication" class="collapse @@if (context.page_group === 'authentication') { show }" data-bs-parent="#sideNavbar">
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'signin') { active }" href="sign-in.html">Sign In</a>
+							<a class="nav-link @@if (context.page === 'signin') { active }" href="@@webRoot/sign-in.html">Sign In</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'signup') { active }" href="sign-up.html">Sign Up</a>
+							<a class="nav-link @@if (context.page === 'signup') { active }" href="@@webRoot/sign-up.html">Sign Up</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'forgetpassword') { active }" href="forget-password.html">Forget Password</a>
+							<a class="nav-link @@if (context.page === 'forgetpassword') { active }" href="@@webRoot/forget-password.html">Forget Password</a>
 						</li>
 					</ul>
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link @@if (context.page === 'layout') { active }" href="layout.html">
+				<a class="nav-link @@if (context.page === 'layout') { active }" href="@@webRoot/layout.html">
 					<i data-feather="sidebar" class="w-4 h-4 mr-2"></i>
 					Layouts
 				</a>
@@ -89,7 +89,7 @@
 
 			<!-- Nav item -->
 			<li class="nav-item">
-				<a class="nav-link" href="./docs/accordions.html">
+				<a class="nav-link" href="#!">
 					<i data-feather="package" class="w-4 h-4 mr-2"></i>
 					Components
 				</a>
@@ -146,13 +146,13 @@
 
 			<!-- Nav item -->
 			<li class="nav-item">
-				<a class="nav-link" href="./docs/index.html">
+				<a class="nav-link @@if (context.page === 'docs') { active }" href="@@webRoot/docs.html">
 					<i data-feather="clipboard" class="w-4 h-4 mr-2"></i>
 					Docs
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="./changelog.html">
+				<a class="nav-link @@if (context.page === 'changelog') { active }" href="@@webRoot/changelog.html">
 					<i data-feather="git-pull-request" class="w-4 h-4 mr-2"></i>
 					Changelog
 				</a>

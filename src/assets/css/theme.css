@@ -1056,6 +1056,22 @@ html {
   margin-top: 1.5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1146,6 +1162,10 @@ html {
 
 .h-screen {
   height: 100vh;
+}
+
+.min-h-0 {
+  min-height: 0px;
 }
 
 .w-10 {
@@ -1483,6 +1503,11 @@ html {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
 .bg-cyan-200 {
