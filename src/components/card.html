@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include("../partials/head.html")
+		<title>Card - Dash UI - TailwindCSS HTML Admin Template Free</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("../partials/navbar-vertical.html", { "page": "card", "page_group": "components" })
+				<div id="page-content">
+					@@include("../partials/top-navbar.html")
+
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold mb-3">Card</h1>
+							<p>Cards provide a flexible and extensible content container with multiple variants and options.</p>
+						</div>
+						<div class="flex flex-col">
+							<div class="">
+								<div class="">
+									<div class="mb-4">
+										<h2 class="text-xl mb-1">Basic Card</h2>
+										<p>Use this example to quote an external source inside a blockquote element.</p>
+									</div>
+
+									<div class="card mb-10">
+										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 border-b nav-link font-semibold active"
+													id="pills-design-card-tab"
+													data-bs-toggle="pill"
+													href="#pills-design-card"
+													type="button"
+													role="tab"
+													aria-controls="pills-design-card"
+													aria-selected="true"
+												>
+													Design
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 font-semibold nav-link"
+													id="pills-html-card-tab"
+													data-bs-toggle="pill"
+													href="#pills-html-card"
+													type="button"
+													role="tab"
+													aria-controls="pills-html-card"
+													aria-selected="false"
+												>
+													HTML
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content p-6" id="pills-tabContent">
+											<div class="tab-pane fade show active" id="pills-design-card" role="tabpanel" aria-labelledby="pills-design-card-tab" tabindex="0">
+												<div class="card shadow-md" style="width: 390px">
+													<img class="w-full h-auto rounded-t-md" src="../assets/img/blog/blog-img-1.jpg" alt="Image Description" />
+													<div class="card-body">
+														<h3 class="text-lg font-bold">Card title</h3>
+														<p class="mt-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<a class="mt-2 btn bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none" href="#">Go somewhere</a>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="pills-html-card" role="tabpanel" aria-labelledby="pills-html-card-tab" tabindex="0">
+												<pre
+													class="language-markup"
+													tabindex="0"
+												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card shadow-md<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-full h-auto rounded-t-md<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/img/blog/blog-img-1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Image Description<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-lg font-bold<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Card title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2 btn bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Go somewhere<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include("../partials/scripts.html")
+	</body>
+</html>
