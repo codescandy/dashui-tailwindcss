@@ -86,13 +86,25 @@
 			<li class="nav-item">
 				<div class="navbar-heading">UI Components</div>
 			</li>
-
-			<!-- Nav item -->
 			<li class="nav-item">
-				<a class="nav-link" href="#!">
+				<a
+					class="nav-link @@if (context.page_group !== 'components') { collapsed }"
+					href="#!"
+					data-bs-toggle="collapse"
+					data-bs-target="#navComponents"
+					aria-expanded="false"
+					aria-controls="navComponents"
+				>
 					<i data-feather="package" class="w-4 h-4 mr-2"></i>
 					Components
 				</a>
+				<div id="navComponents" class="collapse @@if (context.page_group === 'components') { show }" data-bs-parent="#sideNavbar">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'accordion') { active }" href="@@webRoot/components/index.html">Accordions</a>
+						</li>
+					</ul>
+				</div>
 			</li>
 
 			<li class="nav-item">

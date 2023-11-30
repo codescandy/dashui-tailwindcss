@@ -11,3 +11,7 @@
 .collapse {
 	visibility: visible;
 }
+
+button[aria-expanded='true'] .collapse-icon {
+	transform: rotate(180deg);
+}
