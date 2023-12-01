@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include("../partials/head.html")
+		<title>Lists - Dash UI - TailwindCSS HTML Admin Template Free</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("../partials/navbar-vertical.html", { "page": "lists", "page_group": "components" })
+				<div id="page-content">
+					@@include("../partials/top-navbar.html")
+
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold mb-3">Lists</h1>
+							<p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
+						</div>
+						<div class="flex flex-col">
+							<div class="">
+								<div class="">
+									<div class="mb-4">
+										<h2 class="text-xl mb-1">Example</h2>
+
+										<p class="">
+											To create bulleted or numeric lists, use the
+											<code class="text-red-500">.list-disc</code>
+											and
+											<code class="text-red-500">.list-decimal</code>
+											utilities.
+										</p>
+									</div>
+
+									<div class="card mb-10">
+										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 border-b nav-link font-semibold active"
+													id="pills-design-lists-example-tab"
+													data-bs-toggle="pill"
+													href="#pills-design-lists-example"
+													type="button"
+													role="tab"
+													aria-controls="pills-design-lists-example"
+													aria-selected="true"
+												>
+													Design
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 font-semibold nav-link"
+													id="pills-html-breadcrumb-example-tab"
+													data-bs-toggle="pill"
+													href="#pills-html-breadcrumb-example"
+													type="button"
+													role="tab"
+													aria-controls="pills-html-breadcrumb-example"
+													aria-selected="false"
+												>
+													HTML
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content p-6" id="pills-tabContent">
+											<div class="tab-pane fade show active" id="pills-design-lists-example" role="tabpanel" aria-labelledby="pills-design-lists-example-tab" tabindex="0">
+												<ul class="list-disc list-inside">
+													<li>Now this is a story all about how, my life got flipped turned upside down</li>
+													<li>And I like to take a minute and sit right here</li>
+													<li>I'll tell you how I became the prince of a town called Bel-Air</li>
+												</ul>
+												<br />
+
+												<ol class="list-decimal list-inside">
+													<li>Now this is a story all about how, my life got flipped turned upside down</li>
+													<li>And I like to take a minute and sit right here</li>
+													<li>I'll tell you how I became the prince of a town called Bel-Air</li>
+												</ol>
+												<br />
+
+												<ul class="list-none list-inside">
+													<li>Now this is a story all about how, my life got flipped turned upside down</li>
+													<li>And I like to take a minute and sit right here</li>
+													<li>I'll tell you how I became the prince of a town called Bel-Air</li>
+												</ul>
+											</div>
+											<div class="tab-pane fade" id="pills-html-breadcrumb-example" role="tabpanel" aria-labelledby="pills-html-breadcrumb-example-tab" tabindex="0"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include("../partials/scripts.html")
+	</body>
+</html>
