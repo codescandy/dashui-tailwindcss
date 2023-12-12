@@ -16,66 +16,64 @@
 							<h1 class="block font-semibold mb-3">Collapse</h1>
 							<p>Toggle the visibility of content.</p>
 						</div>
-						<div class="flex flex-col">
-							<div class="">
-								<div class="">
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">Collapse</h2>
-										<p>Click the buttons below to show and hide another element via class changes.</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-collapse-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-collapse"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-collapse"
-													aria-selected="true"
-												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-collapse-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-collapse"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-collapse"
-													aria-selected="false"
-												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-collapse" role="tabpanel" aria-labelledby="pills-design-collapse-tab" tabindex="0">
-												<a
-													class="btn bg-indigo-600 text-white hover:bg-indigo-600 hover:text-gray-800 active:bg-gray-100 active:text-gray-800 active:border-gray-100 focus:outline-none focus:ring-4 focus:ring-indigo-300 collapsed"
-													href="#!"
-													data-bs-toggle="collapse"
-													data-bs-target="#collapseContent"
-													aria-expanded="false"
-													aria-controls="collapseContent"
-												>
-													Collapse
-												</a>
-												<div id="collapseContent" class="collapse">
-													<div class="card card-body shadow-md border mt-4">
-														Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-													</div>
+						<div class="flex flex-col gap-8">
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Collapse</h2>
+									<p>Click the buttons below to show and hide another element via class changes.</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-collapse-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-collapse"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-collapse"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-collapse-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-collapse"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-collapse"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-collapse" role="tabpanel" aria-labelledby="pills-design-collapse-tab" tabindex="0">
+											<a
+												class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 collapsed"
+												href="#!"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseContent"
+												aria-expanded="false"
+												aria-controls="collapseContent"
+											>
+												Collapse
+											</a>
+											<div id="collapseContent" class="collapse">
+												<div class="card card-body shadow-md border mt-4">
+													Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
 												</div>
 											</div>
-											<div class="tab-pane fade" id="pills-html-collapse" role="tabpanel" aria-labelledby="pills-html-collapse-tab" tabindex="0">
-												<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
-  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn bg-indigo-600 text-white hover:bg-indigo-600 hover:text-gray-800 active:bg-gray-100 active:text-gray-800 active:border-gray-100 focus:outline-none focus:ring-4 focus:ring-indigo-300 collapsed<span class="token punctuation">"</span></span>
+										</div>
+										<div class="tab-pane fade" id="pills-html-collapse" role="tabpanel" aria-labelledby="pills-html-collapse-tab" tabindex="0">
+											<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 collapsed<span class="token punctuation">"</span></span>
   <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#!<span class="token punctuation">"</span></span>
   <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>collapse<span class="token punctuation">"</span></span>
   <span class="token attr-name">data-bs-target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#collapseContent<span class="token punctuation">"</span></span>
@@ -89,7 +87,6 @@
         Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
 								</div>

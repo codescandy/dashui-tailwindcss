@@ -10,74 +10,71 @@
 				@@include("../partials/navbar-vertical.html", { "page": "dropdown", "page_group": "components" })
 				<div id="page-content">
 					@@include("../partials/top-navbar.html")
-
 					<div class="p-6">
 						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
 							<h1 class="block font-semibold mb-3">Dropdown</h1>
 							<p>The Dropdown component is designed to present users with a neat and organized list of actions or additional content.</p>
 						</div>
-						<div class="flex flex-col">
-							<div class="">
-								<div class="">
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">Default Dropdown</h2>
-										<p>The default dropdown menu appearance.</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-default-dropdown-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-default-dropdown"
+						<div class="flex flex-col gap-8">
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Default Dropdown</h2>
+									<p>The default dropdown menu appearance.</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-default-dropdown-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-default-dropdown"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-default-dropdown"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-button-group-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-button-group"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-button-group"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-default-dropdown" role="tabpanel" aria-labelledby="pills-design-default-dropdown-tab" tabindex="0">
+											<div class="dropdown">
+												<button
+													class="btn dropdown-toggle gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dropdown-toggle"
 													type="button"
-													role="tab"
-													aria-controls="pills-design-default-dropdown"
-													aria-selected="true"
+													data-bs-toggle="dropdown"
+													aria-expanded="false"
 												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-button-group-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-button-group"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-button-group"
-													aria-selected="false"
-												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-default-dropdown" role="tabpanel" aria-labelledby="pills-design-default-dropdown-tab" tabindex="0">
-												<div class="dropdown">
-													<button
-														class="btn dropdown-toggle gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dropdown-toggle"
-														type="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown button
-													</button>
-													<ul class="dropdown-menu">
-														<li><a class="dropdown-item" href="#">Action</a></li>
-														<li><a class="dropdown-item" href="#">Another action</a></li>
-														<li><a class="dropdown-item" href="#">Something else here</a></li>
-													</ul>
-												</div>
+													Dropdown button
+												</button>
+												<ul class="dropdown-menu">
+													<li><a class="dropdown-item" href="#">Action</a></li>
+													<li><a class="dropdown-item" href="#">Another action</a></li>
+													<li><a class="dropdown-item" href="#">Something else here</a></li>
+												</ul>
 											</div>
-											<div class="tab-pane fade" id="pills-html-button-group" role="tabpanel" aria-labelledby="pills-html-button-group-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dropdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+										</div>
+										<div class="tab-pane fade" id="pills-html-button-group" role="tabpanel" aria-labelledby="pills-html-button-group-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dropdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
 	 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn dropdown-toggle gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dropdown-toggle<span class="token punctuation">"</span></span>
 	 <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
@@ -92,7 +89,6 @@ Dropdown button
 	 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dropdown-item<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Something else here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
 								</div>

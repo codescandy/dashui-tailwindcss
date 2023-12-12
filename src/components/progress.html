@@ -16,125 +16,126 @@
 							<h1 class="block font-semibold mb-3">Progressbar</h1>
 							<p>A progress bar displays the status of a given process.</p>
 						</div>
-						<div class="flex flex-col">
-							<div class="">
-								<div class="">
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">Example</h2>
-										<p>Determinate progress bars fill the container from 0 to 100%. This reflects the progress of the process.</p>
-									</div>
+						<div class="flex flex-col gap-8">
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Example</h2>
+									<p>Determinate progress bars fill the container from 0 to 100%. This reflects the progress of the process.</p>
+								</div>
 
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-progressbar-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-progressbar"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-progressbar"
-													aria-selected="true"
-												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-progressbar-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-progressbar"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-progressbar"
-													aria-selected="false"
-												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-progressbar" role="tabpanel" aria-labelledby="pills-design-progressbar-tab" tabindex="0">
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-progressbar-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-progressbar"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-progressbar"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-progressbar-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-progressbar"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-progressbar"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-progressbar" role="tabpanel" aria-labelledby="pills-design-progressbar-tab" tabindex="0">
+											<div class="w-full bg-gray-200 rounded-full h-1.5">
+												<div class="bg-indigo-600 h-1.5 rounded-full" style="width: 15%"></div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-html-progressbar" role="tabpanel" aria-labelledby="pills-html-progressbar-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-full bg-gray-200 rounded-full h-1.5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-indigo-600 h-1.5 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width: 15%<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Color variants</h2>
+									<p>Change the appearance of individual progress bars.</p>
+								</div>
+
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-progressbar-color-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-progressbar-color"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-progressbar-color"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-progressbar-color-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-progressbar-color"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-progressbar-color"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-progressbar-color" role="tabpanel" aria-labelledby="pills-design-progressbar-color-tab" tabindex="0">
+											<div class="space-y-3">
 												<div class="w-full bg-gray-200 rounded-full h-1.5">
 													<div class="bg-indigo-600 h-1.5 rounded-full" style="width: 15%"></div>
 												</div>
-											</div>
-											<div class="tab-pane fade" id="pills-html-progressbar" role="tabpanel" aria-labelledby="pills-html-progressbar-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-full bg-gray-200 rounded-full h-1.5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-indigo-600 h-1.5 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width: 15%<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
-										</div>
-									</div>
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">Color variants</h2>
-										<p>Change the appearance of individual progress bars.</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-progressbar-color-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-progressbar-color"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-progressbar-color"
-													aria-selected="true"
-												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-progressbar-color-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-progressbar-color"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-progressbar-color"
-													aria-selected="false"
-												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-progressbar-color" role="tabpanel" aria-labelledby="pills-design-progressbar-color-tab" tabindex="0">
-												<div class="space-y-3">
-													<div class="w-full bg-gray-200 rounded-full h-1.5">
-														<div class="bg-indigo-600 h-1.5 rounded-full" style="width: 15%"></div>
-													</div>
-													<div class="w-full bg-gray-200 rounded-full h-1.5">
-														<div class="bg-gray-300 h-1.5 rounded-full" style="width: 15%"></div>
-													</div>
-													<div class="w-full bg-gray-200 rounded-full h-1.5">
-														<div class="bg-teal-500 h-1.5 rounded-full" style="width: 15%"></div>
-													</div>
-													<div class="w-full bg-gray-200 rounded-full h-1.5">
-														<div class="bg-blue-500 h-1.5 rounded-full" style="width: 15%"></div>
-													</div>
-													<div class="w-full bg-gray-200 rounded-full h-1.5">
-														<div class="bg-red-500 h-1.5 rounded-full" style="width: 15%"></div>
-													</div>
-													<div class="w-full bg-gray-200 rounded-full h-1.5">
-														<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 15%"></div>
-													</div>
-													<div class="w-full bg-gray-200 rounded-full h-1.5">
-														<div class="bg-gray-800 h-1.5 rounded-full" style="width: 15%"></div>
-													</div>
+												<div class="w-full bg-gray-200 rounded-full h-1.5">
+													<div class="bg-gray-300 h-1.5 rounded-full" style="width: 15%"></div>
+												</div>
+												<div class="w-full bg-gray-200 rounded-full h-1.5">
+													<div class="bg-teal-500 h-1.5 rounded-full" style="width: 15%"></div>
+												</div>
+												<div class="w-full bg-gray-200 rounded-full h-1.5">
+													<div class="bg-blue-500 h-1.5 rounded-full" style="width: 15%"></div>
+												</div>
+												<div class="w-full bg-gray-200 rounded-full h-1.5">
+													<div class="bg-red-500 h-1.5 rounded-full" style="width: 15%"></div>
+												</div>
+												<div class="w-full bg-gray-200 rounded-full h-1.5">
+													<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 15%"></div>
+												</div>
+												<div class="w-full bg-gray-200 rounded-full h-1.5">
+													<div class="bg-gray-800 h-1.5 rounded-full" style="width: 15%"></div>
 												</div>
 											</div>
-											<div class="tab-pane fade" id="pills-html-progressbar-color" role="tabpanel" aria-labelledby="pills-html-progressbar-color-tab" tabindex="0">
-												<pre class="language-markup" tabindex="0"><code class="language-markup">
+										</div>
+										<div class="tab-pane fade" id="pills-html-progressbar-color" role="tabpanel" aria-labelledby="pills-html-progressbar-color-tab" tabindex="0">
+											<pre class="language-markup" tabindex="0"><code class="language-markup">
                           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-full bg-gray-200 rounded-full h-1.5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-indigo-600 h-1.5 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width: 15%<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
@@ -157,7 +158,6 @@
                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-gray-800 h-1.5 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width: 15%<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                        </code></pre>
-											</div>
 										</div>
 									</div>
 								</div>

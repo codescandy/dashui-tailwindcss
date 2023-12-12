@@ -1,6 +1,9 @@
+/* Navbar */
+
 .navbar-vertical {
 	margin-left: -17rem;
 	display: block;
+	height: 100vh;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -274,4 +277,8 @@
 	#db-wrapper.toggled #page-content {
 		margin-left: 15.6875rem;
 	}
+}
+
+.simplebar-scrollbar::before {
+	background-color: #333;
 }

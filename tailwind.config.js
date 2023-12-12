@@ -2,10 +2,11 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
+	darkMode: 'class',
 	content: ['./src/**/*.html'],
 	theme: {
 		fontFamily: {
-			sans: ['"Inter var", sans-serif'],
+			sans: ['"Inter", sans-serif'],
 		},
 		fontSize: {
 			sm: '0.75rem',

@@ -16,78 +16,76 @@
 							<h1 class="block font-semibold mb-3">Lists</h1>
 							<p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
 						</div>
-						<div class="flex flex-col">
-							<div class="">
-								<div class="">
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">Example</h2>
-										<p class="">
-											To create bulleted or numeric lists, use the
-											<code class="text-red-500">.list-disc</code>
-											and
-											<code class="text-red-500">.list-decimal</code>
-											utilities.
-										</p>
-									</div>
+						<div class="flex flex-col gap-8">
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Example</h2>
+									<p>
+										To create bulleted or numeric lists, use the
+										<code class="text-red-500">.list-disc</code>
+										and
+										<code class="text-red-500">.list-decimal</code>
+										utilities.
+									</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-lists-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-lists-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-lists-example"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-lists-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-lists-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-lists-example"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-lists-example" role="tabpanel" aria-labelledby="pills-design-lists-example-tab" tabindex="0">
+											<ul class="list-disc list-inside">
+												<li>Now this is a story all about how, my life got flipped turned upside down</li>
+												<li>And I like to take a minute and sit right here</li>
+												<li>I'll tell you how I became the prince of a town called Bel-Air</li>
+											</ul>
+											<br />
 
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-lists-example-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-lists-example"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-lists-example"
-													aria-selected="true"
-												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-lists-example-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-lists-example"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-lists-example"
-													aria-selected="false"
-												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-lists-example" role="tabpanel" aria-labelledby="pills-design-lists-example-tab" tabindex="0">
-												<ul class="list-disc list-inside">
-													<li>Now this is a story all about how, my life got flipped turned upside down</li>
-													<li>And I like to take a minute and sit right here</li>
-													<li>I'll tell you how I became the prince of a town called Bel-Air</li>
-												</ul>
-												<br />
+											<ol class="list-decimal list-inside">
+												<li>Now this is a story all about how, my life got flipped turned upside down</li>
+												<li>And I like to take a minute and sit right here</li>
+												<li>I'll tell you how I became the prince of a town called Bel-Air</li>
+											</ol>
+											<br />
 
-												<ol class="list-decimal list-inside">
-													<li>Now this is a story all about how, my life got flipped turned upside down</li>
-													<li>And I like to take a minute and sit right here</li>
-													<li>I'll tell you how I became the prince of a town called Bel-Air</li>
-												</ol>
-												<br />
-
-												<ul class="list-none list-inside">
-													<li>Now this is a story all about how, my life got flipped turned upside down</li>
-													<li>And I like to take a minute and sit right here</li>
-													<li>I'll tell you how I became the prince of a town called Bel-Air</li>
-												</ul>
-											</div>
-											<div class="tab-pane fade" id="pills-html-lists-example" role="tabpanel" aria-labelledby="pills-html-lists-example-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-disc list-inside<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+											<ul class="list-none list-inside">
+												<li>Now this is a story all about how, my life got flipped turned upside down</li>
+												<li>And I like to take a minute and sit right here</li>
+												<li>I'll tell you how I became the prince of a town called Bel-Air</li>
+											</ul>
+										</div>
+										<div class="tab-pane fade" id="pills-html-lists-example" role="tabpanel" aria-labelledby="pills-html-lists-example-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list-disc list-inside<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Now this is a story all about how, my life got flipped turned upside down<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>And I like to take a minute and sit right here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>I'll tell you how I became the prince of a town called Bel-Air<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
@@ -104,130 +102,132 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>And I like to take a minute and sit right here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>I'll tell you how I became the prince of a town called Bel-Air<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">List marker</h2>
-										<p class="">
-											Style the counters or bullets in lists using the
-											<code class="text-red-500">`marker`</code>
-											modifier:
-										</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-lists-marker-example-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-lists-marker-example"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-lists-marker-example"
-													aria-selected="true"
-												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-lists-marker-example-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-lists-marker-example"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-lists-marker-example"
-													aria-selected="false"
-												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-lists-marker-example" role="tabpanel" aria-labelledby="pills-design-lists-marker-example-tab" tabindex="0">
-												<ul role="list" class="marker:text-indigo-600 list-disc ps-5 space-y-2 text-base">
-													<li>FAQ</li>
-													<li>License</li>
-													<li>Terms & Conditions</li>
-												</ul>
-											</div>
-											<div class="tab-pane fade" id="pills-html-lists-marker-example" role="tabpanel" aria-labelledby="pills-html-lists-marker-example-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>marker:text-indigo-600 list-disc ps-5 space-y-2 text-base<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">List marker</h2>
+									<p>
+										Style the counters or bullets in lists using the
+										<code class="text-red-500">`marker`</code>
+										modifier:
+									</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-lists-marker-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-lists-marker-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-lists-marker-example"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-lists-marker-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-lists-marker-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-lists-marker-example"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-lists-marker-example" role="tabpanel" aria-labelledby="pills-design-lists-marker-example-tab" tabindex="0">
+											<ul role="list" class="marker:text-indigo-600 list-disc ps-5 space-y-2 text-base">
+												<li>FAQ</li>
+												<li>License</li>
+												<li>Terms & Conditions</li>
+											</ul>
+										</div>
+										<div class="tab-pane fade" id="pills-html-lists-marker-example" role="tabpanel" aria-labelledby="pills-html-lists-marker-example-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>list<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>marker:text-indigo-600 list-disc ps-5 space-y-2 text-base<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>FAQ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>License<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Terms &amp; Conditions<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">List Group</h2>
-										<p class="">The most basic list group is an unordered list with list items.</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-list-group-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-list-group"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-list-group"
-													aria-selected="true"
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">List Group</h2>
+									<p>The most basic list group is an unordered list with list items.</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-list-group-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-list-group"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-list-group"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-list-group-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-list-group"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-list-group"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-list-group" role="tabpanel" aria-labelledby="pills-design-list-group-tab" tabindex="0">
+											<ul class="max-w-xs flex flex-col">
+												<li
+													class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
 												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-list-group-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-list-group"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-list-group"
-													aria-selected="false"
+													Profile
+												</li>
+												<li
+													class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
 												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-list-group" role="tabpanel" aria-labelledby="pills-design-list-group-tab" tabindex="0">
-												<ul class="max-w-xs flex flex-col">
-													<li
-														class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
-													>
-														Profile
-													</li>
-													<li
-														class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
-													>
-														Settings
-													</li>
-													<li
-														class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
-													>
-														Newsletter
-													</li>
-												</ul>
-											</div>
-											<div class="tab-pane fade" id="pills-html-list-group" role="tabpanel" aria-labelledby="pills-html-list-group-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+													Settings
+												</li>
+												<li
+													class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
+												>
+													Newsletter
+												</li>
+											</ul>
+										</div>
+										<div class="tab-pane fade" id="pills-html-list-group" role="tabpanel" aria-labelledby="pills-html-list-group-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span>
 	 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg<span class="token punctuation">"</span></span>
 	 <span class="token punctuation">&gt;</span></span>
@@ -244,76 +244,77 @@
 	 Newsletter
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">List group Active Items</h2>
-										<p>
-											Add
-											<code class="text-red-500">.active</code>
-											to a
-											<code class="text-red-500">.list-group-item</code>
-											to indicate the current active selection.
-										</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-list-group-active-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-list-group-active"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-list-group-active"
-													aria-selected="true"
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">List group Active Items</h2>
+									<p>
+										Add
+										<code class="text-red-500">.active</code>
+										to a
+										<code class="text-red-500">.list-group-item</code>
+										to indicate the current active selection.
+									</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-list-group-active-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-list-group-active"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-list-group-active"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-list-group-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-list-group-active"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-list-group-active"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-list-group-active" role="tabpanel" aria-labelledby="pills-design-list-group-active-tab" tabindex="0">
+											<ul class="max-w-xs flex flex-col">
+												<li
+													class="active inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium border border-indigo-600 text-white -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg bg-indigo-600"
 												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-list-group-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-list-group-active"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-list-group-active"
-													aria-selected="false"
+													Profile
+												</li>
+												<li
+													class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
 												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-list-group-active" role="tabpanel" aria-labelledby="pills-design-list-group-active-tab" tabindex="0">
-												<ul class="max-w-xs flex flex-col">
-													<li
-														class="active inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium border border-indigo-600 text-white -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg bg-indigo-600"
-													>
-														Profile
-													</li>
-													<li
-														class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
-													>
-														Settings
-													</li>
-													<li
-														class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
-													>
-														Newsletter
-													</li>
-												</ul>
-											</div>
-											<div class="tab-pane fade" id="pills-html-list-group-active" role="tabpanel" aria-labelledby="pills-html-list-group-active-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+													Settings
+												</li>
+												<li
+													class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
+												>
+													Newsletter
+												</li>
+											</ul>
+										</div>
+										<div class="tab-pane fade" id="pills-html-list-group-active" role="tabpanel" aria-labelledby="pills-html-list-group-active-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span>
 		 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>active inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium border border-indigo-600 text-white -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg bg-indigo-600<span class="token punctuation">"</span></span>
 		 <span class="token punctuation">&gt;</span></span>
@@ -330,79 +331,80 @@
 		 Newsletter
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">Link</h2>
-										<p>
-											Add
-											<code class="text-red-500">.active</code>
-											to a
-											<code class="text-red-500">.list-group-item</code>
-											to indicate the current active selection.
-										</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Link</h2>
+									<p>
+										Add
+										<code class="text-red-500">.active</code>
+										to a
+										<code class="text-red-500">.list-group-item</code>
+										to indicate the current active selection.
+									</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-list-group-link-active-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-list-group-link-active"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-list-group-link-active"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-list-group-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-list-group-link-active"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-list-group-link-active"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-list-group-link-active" role="tabpanel" aria-labelledby="pills-design-list-group-link-active-tab" tabindex="0">
+											<div class="max-w-xs flex flex-col">
 												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-list-group-link-active-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-list-group-link-active"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-list-group-link-active"
-													aria-selected="true"
+													href="#"
+													class="active inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium border border-indigo-600 text-white -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg bg-indigo-600"
 												>
-													Design
+													Profile
 												</a>
-											</li>
-											<li class="nav-item" role="presentation">
 												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-list-group-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-list-group-link-active"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-list-group-link-active"
-													aria-selected="false"
+													href="#"
+													class="inline-flex hover:bg-gray-200 items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
 												>
-													HTML
+													Settings
 												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-list-group-link-active" role="tabpanel" aria-labelledby="pills-design-list-group-link-active-tab" tabindex="0">
-												<div class="max-w-xs flex flex-col">
-													<a
-														href="#"
-														class="active inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium border border-indigo-600 text-white -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg bg-indigo-600"
-													>
-														Profile
-													</a>
-													<a
-														href="#"
-														class="inline-flex hover:bg-gray-200 items-center gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
-													>
-														Settings
-													</a>
-													<a
-														href="#"
-														class="inline-flex items-center hover:bg-gray-200 gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
-													>
-														Newsletter
-													</a>
-												</div>
+												<a
+													href="#"
+													class="inline-flex items-center hover:bg-gray-200 gap-x-2 py-3 px-4 text-base font-medium bg-white border border-gray-300 text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg"
+												>
+													Newsletter
+												</a>
 											</div>
-											<div class="tab-pane fade" id="pills-html-list-group-link-active" role="tabpanel" aria-labelledby="pills-html-list-group-link-active-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+										</div>
+										<div class="tab-pane fade" id="pills-html-list-group-link-active" role="tabpanel" aria-labelledby="pills-html-list-group-link-active-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 													<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
 														<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
 														<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>active inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium border border-indigo-600 text-white -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg bg-indigo-600<span class="token punctuation">"</span></span>
@@ -422,63 +424,63 @@
 														Newsletter
 													<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
 												<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
-									<div class="mb-4">
-										<h2 class="text-xl mb-1">Flush</h2>
-										<p>Remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
-									</div>
-
-									<div class="card mb-10">
-										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 border-b nav-link font-semibold active"
-													id="pills-design-list-group-link-flush-tab"
-													data-bs-toggle="pill"
-													href="#pills-design-list-group-link-flush"
-													type="button"
-													role="tab"
-													aria-controls="pills-design-list-group-link-flush"
-													aria-selected="true"
-												>
-													Design
-												</a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a
-													class="p-3 px-6 font-semibold nav-link"
-													id="pills-html-list-group-tab"
-													data-bs-toggle="pill"
-													href="#pills-html-list-group-link-flush"
-													type="button"
-													role="tab"
-													aria-controls="pills-html-list-group-link-flush"
-													aria-selected="false"
-												>
-													HTML
-												</a>
-											</li>
-										</ul>
-										<div class="tab-content p-6" id="pills-tabContent">
-											<div class="tab-pane fade show active" id="pills-design-list-group-link-flush" role="tabpanel" aria-labelledby="pills-design-list-group-link-flush-tab" tabindex="0">
-												<ul class="max-w-xs flex flex-col divide-y divide-gray-300">
-													<li class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium">Profile</li>
-													<li class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium">Settings</li>
-													<li class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium">Newsletter</li>
-												</ul>
-											</div>
-											<div class="tab-pane fade" id="pills-html-list-group-link-flush" role="tabpanel" aria-labelledby="pills-html-list-group-link-flush-tab" tabindex="0">
-												<pre
-													class="language-markup"
-													tabindex="0"
-												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col divide-y divide-gray-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Flush</h2>
+									<p>Remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-list-group-link-flush-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-list-group-link-flush"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-list-group-link-flush"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-list-group-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-list-group-link-flush"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-list-group-link-flush"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-list-group-link-flush" role="tabpanel" aria-labelledby="pills-design-list-group-link-flush-tab" tabindex="0">
+											<ul class="max-w-xs flex flex-col divide-y divide-gray-300">
+												<li class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium">Profile</li>
+												<li class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium">Settings</li>
+												<li class="inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium">Newsletter</li>
+											</ul>
+										</div>
+										<div class="tab-pane fade" id="pills-html-list-group-link-flush" role="tabpanel" aria-labelledby="pills-html-list-group-link-flush-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col divide-y divide-gray-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Profile<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Settings<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 py-3 px-4 text-base font-medium<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Newsletter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
-											</div>
 										</div>
 									</div>
 								</div>
