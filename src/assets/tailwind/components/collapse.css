@@ -1,3 +1,5 @@
+/* Collapse */
+
 .collapse:not(.show) {
 	display: none;
 }
@@ -9,5 +11,9 @@
 }
 
 .collapse {
-	visibility: visible;
+	visibility: visible !important;
+}
+
+button[aria-expanded='true'] .collapse-icon {
+	transform: rotate(180deg);
 }

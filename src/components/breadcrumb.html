@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include("../partials/head.html")
+		<title>Breadcrumb - Dash UI - TailwindCSS HTML Admin Template Free</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("../partials/navbar-vertical.html", { "page": "breadcrumb", "page_group": "components" })
+				<div id="page-content">
+					@@include("../partials/top-navbar.html")
+
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold mb-3">Breadcrumb</h1>
+							<p>Breadcrumbs are a navigation system used to show a user's location in a site or app.</p>
+						</div>
+						<div class="flex flex-col gap-8">
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Example</h2>
+									<p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
+								</div>
+
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-breadcrumb-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-breadcrumb-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-breadcrumb-example"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-breadcrumb-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-breadcrumb-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-breadcrumb-example"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-breadcrumb-example" role="tabpanel" aria-labelledby="pills-design-breadcrumb-example-tab" tabindex="0">
+											<ol class="flex items-center whitespace-nowrap" aria-label="Breadcrumb">
+												<li class="inline-flex items-center">
+													<a class="flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600" href="#">Home</a>
+													<svg class="flex-shrink-0 h-5 w-5 text-gray-400 mx-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+														<path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
+													</svg>
+												</li>
+												<li class="inline-flex items-center">
+													<a class="flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600" href="#">
+														Library
+														<svg class="flex-shrink-0 h-5 w-5 text-gray-400 mx-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+															<path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
+														</svg>
+													</a>
+												</li>
+												<li class="inline-flex items-center text-base font-semibold text-gray-800 truncate" aria-current="page">Data</li>
+											</ol>
+										</div>
+										<div class="tab-pane fade" id="pills-html-breadcrumb-example" role="tabpanel" aria-labelledby="pills-html-breadcrumb-example-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center whitespace-nowrap<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600 <span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 h-5 w-5 text-gray-400 mx-2<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>16<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>16<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 16 16<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M6 13L10 3<span class="token punctuation">"</span></span> <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                Library
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 h-5 w-5 text-gray-400 mx-2<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>16<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>16<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 16 16<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M6 13L10 3<span class="token punctuation">"</span></span> <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center text-base font-semibold text-gray-800 truncate<span class="token punctuation">"</span></span> <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Data<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Divider</h2>
+									<p>The simple form of chevron breadcrumbs.</p>
+								</div>
+
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-breadcrumb-arrow-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-breadcrumb-arrow"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-breadcrumb-arrow"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-breadcrumb-arrow-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-breadcrumb-arrow"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-breadcrumb-arrow"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-breadcrumb-arrow" role="tabpanel" aria-labelledby="pills-design-breadcrumb-arrow-tab" tabindex="0">
+											<ol class="flex items-center whitespace-nowrap" aria-label="Breadcrumb">
+												<li class="inline-flex items-center">
+													<a class="flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600" href="#">Home</a>
+													<svg
+														class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400"
+														xmlns="http://www.w3.org/2000/svg"
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														fill="none"
+														stroke="currentColor"
+														stroke-width="2"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													>
+														<path d="m9 18 6-6-6-6" />
+													</svg>
+												</li>
+												<li class="inline-flex items-center">
+													<a class="flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600" href="#">
+														Library
+														<svg
+															class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400"
+															xmlns="http://www.w3.org/2000/svg"
+															width="24"
+															height="24"
+															viewBox="0 0 24 24"
+															fill="none"
+															stroke="currentColor"
+															stroke-width="2"
+															stroke-linecap="round"
+															stroke-linejoin="round"
+														>
+															<path d="m9 18 6-6-6-6" />
+														</svg>
+													</a>
+												</li>
+												<li class="inline-flex items-center text-base font-semibold text-gray-800 truncate" aria-current="page">Data</li>
+											</ol>
+										</div>
+										<div class="tab-pane fade" id="pills-html-breadcrumb-arrow" role="tabpanel" aria-labelledby="pills-html-breadcrumb-arrow-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center whitespace-nowrap<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+                                <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
+                                <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
+                                <span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m9 18 6-6-6-6<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center text-base text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                Library
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+                                   <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
+                                   <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
+                                   <span class="token punctuation">&gt;</span></span>
+                                   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m9 18 6-6-6-6<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center text-base font-semibold text-gray-800 truncate<span class="token punctuation">"</span></span> <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Data<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include("../partials/scripts.html")
+	</body>
+</html>

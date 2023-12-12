@@ -36,7 +36,6 @@ const paths = {
 		fonts: './src/assets/fonts/**/*',
 		assets: './src/assets/**/*',
 		partials: '.src/partials/**/*',
-		components: '.src/components/**/*',
 	},
 	temp: {
 		basetemp: './.temp',
@@ -82,7 +81,7 @@ function fonts(callback) {
 
 // HTML
 function html(callback) {
-	return src([paths.src.html, '!./src/partials/**/*', '!./src/components/**/*'])
+	return src([paths.src.html, '!./src/partials/**/*'])
 		.pipe(
 			fileinclude({
 				prefix: '@@',
@@ -102,7 +101,7 @@ function html(callback) {
 
 // File include task for temp
 function fileincludeTask(callback) {
-	return src([paths.src.html, '!./src/partials/**/*', '!./src/components/**/*'])
+	return src([paths.src.html, '!./src/partials/**/*'])
 		.pipe(
 			fileinclude({
 				prefix: '@@',

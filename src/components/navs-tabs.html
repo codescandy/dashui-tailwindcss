@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include("../partials/head.html")
+		<title>Navs-Tabs - Dash UI - TailwindCSS HTML Admin Template Free</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("../partials/navbar-vertical.html", { "page": "navs-tabs", "page_group": "components" })
+				<div id="page-content">
+					@@include("../partials/top-navbar.html")
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold mb-3">Navs & Tabs</h1>
+							<p>Navigation components using Tailwind CSS.</p>
+						</div>
+						<div class="flex flex-col gap-8">
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Example</h2>
+									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+								</div>
+
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-nav-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-nav-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-nav-example"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-nav-example-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-nav-example"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-nav-example"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-nav-example" role="tabpanel" aria-labelledby="pills-design-nav-example-tab" tabindex="0">
+											<nav class="flex space-x-6">
+												<a class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700" href="#">Link</a>
+												<a
+													class="inline-flex items-center gap-x-2 text-base font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700"
+													href="#"
+													aria-current="page"
+												>
+													Active
+												</a>
+												<a class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700" href="#">Link</a>
+												<a
+													class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-gray-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700 opacity-50 pointer-events-none"
+													href="#"
+												>
+													Disabled
+												</a>
+											</nav>
+										</div>
+										<div class="tab-pane fade" id="pills-html-nav-example" role="tabpanel" aria-labelledby="pills-html-nav-example-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex space-x-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+     <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 text-base font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span>
+     <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
+     <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span>
+     <span class="token punctuation">&gt;</span></span>
+  Active
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+     <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700 opacity-50 pointer-events-none<span class="token punctuation">"</span></span>
+     <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
+     <span class="token punctuation">&gt;</span></span>
+  Disabled
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Tabs</h2>
+									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-tabs-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-tabs"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-tabs"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-tabs-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-tabs"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-tabs"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-tabs" role="tabpanel" aria-labelledby="pills-design-tabs-tab" tabindex="0">
+											<nav class="flex border-b border-gray-300">
+												<a class="px-4 py-3 rounded-t-md border border-blue-600 hover:border-gray-300 active" href="#" aria-current="page">Active</a>
+												<a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300" href="#">Link</a>
+
+												<a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300" href="#">Link</a>
+												<a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300 pointer-events-none" href="#">Disabled</a>
+											</nav>
+										</div>
+										<div class="tab-pane fade" id="pills-html-tabs" role="tabpanel" aria-labelledby="pills-html-tabs-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex border-b border-gray-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+	 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>px-4 py-3 -mb-px border-gray-300 border rounded-t-md inline-flex items-center gap-x-2 text-base font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span>
+	 <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
+	 <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span>
+	 <span class="token punctuation">&gt;</span></span>
+Active
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+	 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>px-4 py-3 hover:-mb-px hover:border-gray-300 hover:border hover:rounded-t-md inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span>
+	 <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
+	 <span class="token punctuation">&gt;</span></span>
+Link
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+	 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>px-4 py-3 hover:-mb-px hover:border-gray-300 hover:border hover:rounded-t-md inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span>
+	 <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
+	 <span class="token punctuation">&gt;</span></span>
+Link
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+	 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>px-4 py-3 hover:-mb-px hover:border-gray-300 hover:border hover:rounded-t-md inline-flex items-center gap-x-2 text-base whitespace-nowrap text-gray-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700 opacity-50 pointer-events-none<span class="token punctuation">"</span></span>
+	 <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
+	 <span class="token punctuation">&gt;</span></span>
+Disabled
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Javascript Behaviour Tabs</h2>
+									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+								</div>
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-tabs-javascript-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-tabs-javascript"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-tabs-javascript"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-tabs-javascript-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-tabs-javascript"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-tabs-javascript"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-tabs-javascript" role="tabpanel" aria-labelledby="pills-design-tabs-javascript" tabindex="0">
+											<ul class="nav nav-tabs mb-3 border-b border-gray-300" id="pills-tab2" role="tablist">
+												<li class="nav-item" role="presentation">
+													<a
+														class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300 active"
+														id="pills-active-example1-tab"
+														data-bs-toggle="pill"
+														href="#pills-active-example1"
+														type="button"
+														role="tab"
+														aria-controls="pills-active-example1"
+														aria-selected="true"
+													>
+														Active
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a
+														class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300"
+														id="pills-link1-example1-tab"
+														data-bs-toggle="pill"
+														href="#pills-link1-example1"
+														type="button"
+														role="tab"
+														aria-controls="pills-link1-example1"
+														aria-selected="false"
+													>
+														Link
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a
+														class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300"
+														id="pills-link2-example1-tab"
+														data-bs-toggle="pill"
+														href="#pills-link2-example1"
+														type="button"
+														role="tab"
+														aria-controls="pills-link2-example1"
+														aria-selected="false"
+													>
+														Link
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content py-6" id="pills-tabContent">
+												<div class="tab-pane fade show active" id="pills-active-example1" role="tabpanel" aria-labelledby="pills-active-example1" tabindex="0">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit ligula, cursus at orci at, condimentum dignissim dolor. Morbi elit lacus, posuere id urna et, elementum
+													malesuada erat.
+												</div>
+												<div class="tab-pane fade" id="pills-link1-example1" role="tabpanel" aria-labelledby="pills-link1-example1" tabindex="0">
+													Duis metus nisl, varius non mauris sed, commodo sodales arcu. Quisque in tellus semper, tincidunt tortor ut, varius purus. Aliquam erat volutpat.
+												</div>
+												<div class="tab-pane fade" id="pills-link2-example1" role="tabpanel" aria-labelledby="pills-link2-example1" tabindex="0">
+													Mauris sed interdum elit, in sagittis erat. Aliquam sed venenatis nibh. Sed malesuada ornare leo, et consectetur arcu placerat eget. Praesent quam massa, vulputate sed ligula
+													quis, aliquet rutrum enim.
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-html-tabs-javascript" role="tabpanel" aria-labelledby="pills-html-tabs-javascript" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav nav-tabs mb-3 border-b border-gray-300<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-tab2<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tablist<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-item<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>presentation<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+			<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300 active<span class="token punctuation">"</span></span>
+			<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-active-example1-tab<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pill<span class="token punctuation">"</span></span>
+			<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#pills-active-example1<span class="token punctuation">"</span></span>
+			<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
+			<span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab<span class="token punctuation">"</span></span>
+			<span class="token attr-name">aria-controls</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-active-example1<span class="token punctuation">"</span></span>
+			<span class="token attr-name">aria-selected</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
+		<span class="token punctuation">&gt;</span></span>
+			Active
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-item<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>presentation<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+			<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300<span class="token punctuation">"</span></span>
+			<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link1-example1-tab<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pill<span class="token punctuation">"</span></span>
+			<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#pills-link1-example1<span class="token punctuation">"</span></span>
+			<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
+			<span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab<span class="token punctuation">"</span></span>
+			<span class="token attr-name">aria-controls</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link1-example1<span class="token punctuation">"</span></span>
+			<span class="token attr-name">aria-selected</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span>
+		<span class="token punctuation">&gt;</span></span>
+			Link
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-item<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>presentation<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+			<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300<span class="token punctuation">"</span></span>
+			<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link2-example1-tab<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pill<span class="token punctuation">"</span></span>
+			<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#pills-link2-example1<span class="token punctuation">"</span></span>
+			<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
+			<span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab<span class="token punctuation">"</span></span>
+			<span class="token attr-name">aria-controls</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link2-example1<span class="token punctuation">"</span></span>
+			<span class="token attr-name">aria-selected</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span>
+		<span class="token punctuation">&gt;</span></span>
+			Link
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-content py-6<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-tabContent<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-pane fade show active<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-active-example1<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabpanel<span class="token punctuation">"</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-active-example1<span class="token punctuation">"</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit ligula, cursus at orci at, condimentum dignissim dolor. Morbi elit lacus, posuere id urna et, elementum
+		malesuada erat.
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-pane fade<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link1-example1<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabpanel<span class="token punctuation">"</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link1-example1<span class="token punctuation">"</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		Duis metus nisl, varius non mauris sed, commodo sodales arcu. Quisque in tellus semper, tincidunt tortor ut, varius purus. Aliquam erat volutpat.
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tab-pane fade<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link2-example1<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabpanel<span class="token punctuation">"</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-link2-example1<span class="token punctuation">"</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		Mauris sed interdum elit, in sagittis erat. Aliquam sed venenatis nibh. Sed malesuada ornare leo, et consectetur arcu placerat eget. Praesent quam massa, vulputate sed
+		ligula quis, aliquet rutrum enim.
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include("../partials/scripts.html")
+	</body>
+</html>

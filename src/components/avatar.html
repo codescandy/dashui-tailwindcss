@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include("../partials/head.html")
+		<title>Avatar - Dash UI - TailwindCSS HTML Admin Template Free</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("../partials/navbar-vertical.html", { "page": "avatar", "page_group": "components" })
+				<div id="page-content">
+					@@include("../partials/top-navbar.html")
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold mb-3">Avatar</h1>
+							<p>Examples for opting different size of image sizes.</p>
+						</div>
+						<div class="flex flex-col gap-8">
+							<div>
+								<div>
+									<div class="mb-4">
+										<h2 class="text-xl mb-1">Circular avatars</h2>
+										<p>Use the .rounded-full utility class to make avatars circular.</p>
+									</div>
+									<div class="card">
+										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 border-b nav-link font-semibold active"
+													id="pills-design-rounded-avatar-tab"
+													data-bs-toggle="pill"
+													href="#pills-design-rounded-avatar"
+													type="button"
+													role="tab"
+													aria-controls="pills-design-rounded-avatar"
+													aria-selected="true"
+												>
+													Design
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 font-semibold nav-link"
+													id="pills-html-rounded-avatar-tab"
+													data-bs-toggle="pill"
+													href="#pills-html-rounded-avatar"
+													type="button"
+													role="tab"
+													aria-controls="pills-html-rounded-avatar"
+													aria-selected="false"
+												>
+													HTML
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content p-6" id="pills-tabContent">
+											<div class="tab-pane fade show active" id="pills-design-rounded-avatar" role="tabpanel" aria-labelledby="pills-design-rounded-avatar-tab" tabindex="0">
+												<img src="../assets/images/avatar/avatar-2.jpg" alt="Image" class="rounded-full h-24 w-24 inline-block" />
+												<img src="../assets/images/avatar/avatar-2.jpg" alt="Image" class="rounded-full h-20 w-20 inline-block" />
+												<img src="../assets/images/avatar/avatar-2.jpg" alt="Image" class="rounded-full h-16 w-16 inline-block" />
+												<img src="../assets/images/avatar/avatar-2.jpg" alt="Image" class="rounded-full h-10 w-10 inline-block" />
+												<img src="../assets/images/avatar/avatar-2.jpg" alt="Image" class="rounded-full h-8 w-8 inline-block" />
+												<img src="../assets/images/avatar/avatar-2.jpg" alt="Image" class="rounded-full h-6 w-6 inline-block" />
+											</div>
+											<div class="tab-pane fade" id="pills-html-rounded-avatar" role="tabpanel" aria-labelledby="pills-html-rounded-avatar-tab" tabindex="0">
+												<pre
+													class="language-markup"
+													tabindex="0"
+												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full h-24 w-24 inline-block<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full h-20 w-20 inline-block<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full h-16 w-16 inline-block<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full h-10 w-10 inline-block<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full h-8 w-8 inline-block<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full h-6 w-6 inline-block<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="mb-4">
+										<h2 class="text-xl mb-1">Initials</h2>
+										<p>You won't always have an image for every user, so easily use initials instead.</p>
+									</div>
+									<div class="card">
+										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 border-b nav-link font-semibold active"
+													id="pills-design-initials-tab"
+													data-bs-toggle="pill"
+													href="#pills-design-initials"
+													type="button"
+													role="tab"
+													aria-controls="pills-design-initials"
+													aria-selected="true"
+												>
+													Design
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 font-semibold nav-link"
+													id="pills-html-initials-tab"
+													data-bs-toggle="pill"
+													href="#pills-html-initials"
+													type="button"
+													role="tab"
+													aria-controls="pills-html-initials"
+													aria-selected="false"
+												>
+													HTML
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content p-6" id="pills-tabContent">
+											<div class="tab-pane fade show active" id="pills-design-initials" role="tabpanel" aria-labelledby="pills-design-initials-tab" tabindex="0">
+												<div class="relative w-24 h-24 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-xl border-2 border-white">2+</div>
+												<div class="relative w-20 h-20 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-xl border-2 border-white">2+</div>
+												<div class="relative w-16 h-16 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-lg border-2 border-white">2+</div>
+												<div class="relative w-10 h-10 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-md border-2 border-white">2+</div>
+												<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">2+</div>
+												<div class="relative w-6 h-6 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">2+</div>
+											</div>
+											<div class="tab-pane fade" id="pills-html-initials" role="tabpanel" aria-labelledby="pills-html-initials-tab" tabindex="0">
+												<pre
+													class="language-markup"
+													tabindex="0"
+												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-24 h-24 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-xl border-2 border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-20 h-20 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-xl border-2 border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-16 h-16 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-lg border-2 border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-10 h-10 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-md border-2 border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-6 h-6 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="mb-4">
+										<h2 class="text-xl mb-1">Stacked</h2>
+										<p>Use this example if you want to stack a group of users by overlapping the avatar components.</p>
+									</div>
+									<div class="card">
+										<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 border-b nav-link font-semibold active"
+													id="pills-design-stacked-tab"
+													data-bs-toggle="pill"
+													href="#pills-design-stacked"
+													type="button"
+													role="tab"
+													aria-controls="pills-design-stacked"
+													aria-selected="true"
+												>
+													Design
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a
+													class="p-3 px-6 font-semibold nav-link"
+													id="pills-html-stacked-tab"
+													data-bs-toggle="pill"
+													href="#pills-html-stacked"
+													type="button"
+													role="tab"
+													aria-controls="pills-html-stacked"
+													aria-selected="false"
+												>
+													HTML
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content p-6" id="pills-tabContent">
+											<div class="tab-pane fade show active" id="pills-design-stacked" role="tabpanel" aria-labelledby="pills-design-stacked-tab" tabindex="0">
+												<div class="-space-x-5">
+													<img class="relative inline-block object-cover w-8 h-8 rounded-full border-white border-2" src="../assets/images/avatar/avatar-1.jpg" alt="Profile image" />
+													<img class="relative inline-block object-cover w-8 h-8 rounded-full border-white border-2" src="../assets/images/avatar/avatar-2.jpg" alt="Profile image" />
+													<img class="relative inline-block object-cover w-8 h-8 border-2 rounded-full border-white" src="../assets/images/avatar/avatar-1.jpg" alt="Profile image" />
+													<div class="relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white">2+</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="pills-html-stacked" role="tabpanel" aria-labelledby="pills-html-stacked-tab" tabindex="0">
+												<pre
+													class="language-markup"
+													tabindex="0"
+												><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-space-x-5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative inline-block object-cover w-8 h-8 rounded-full border-white border-2<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Profile image<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative inline-block object-cover w-8 h-8 rounded-full border-white border-2<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Profile image<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative inline-block object-cover w-8 h-8 border-2 rounded-full border-white<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/avatar/avatar-1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Profile image<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-8 h-8 bg-indigo-600 rounded-full inline-flex items-center justify-center text-white text-sm border-2 border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include("../partials/scripts.html")
+	</body>
+</html>

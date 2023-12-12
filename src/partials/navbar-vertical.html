@@ -1,8 +1,8 @@
 <nav class="navbar-vertical navbar">
-	<div class="" data-simplebar>
+	<div class="h-screen" data-simplebar>
 		<!-- Brand logo -->
 		<a class="navbar-brand" href="@@webRoot/index.html">
-			<img src="@@webRoot/assets/img/brand/logo/logo.svg" alt="" />
+			<img src="@@webRoot/assets/images/brand/logo/logo.svg" alt="" />
 		</a>
 		<!-- Navbar nav -->
 		<ul class="navbar-nav flex-col" id="sideNavbar">
@@ -47,7 +47,6 @@
 					</ul>
 				</div>
 			</li>
-
 			<!-- Nav item -->
 			<li class="nav-item">
 				<a
@@ -86,13 +85,87 @@
 			<li class="nav-item">
 				<div class="navbar-heading">UI Components</div>
 			</li>
-
-			<!-- Nav item -->
 			<li class="nav-item">
-				<a class="nav-link" href="#!">
+				<a
+					class="nav-link @@if (context.page_group !== 'components') { collapsed }"
+					href="#!"
+					data-bs-toggle="collapse"
+					data-bs-target="#navComponents"
+					aria-expanded="false"
+					aria-controls="navComponents"
+				>
 					<i data-feather="package" class="w-4 h-4 mr-2"></i>
 					Components
 				</a>
+				<div id="navComponents" class="collapse @@if (context.page_group === 'components') { show }" data-bs-parent="#sideNavbar">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'accordion') { active }" href="@@webRoot/components/index.html">Accordions</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'alerts') { active }" href="@@webRoot/components/alerts.html">Alerts</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'avatar') { active }" href="@@webRoot/components/avatar.html">Avatar</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'badge') { active }" href="@@webRoot/components/badge.html">Badges</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'buttons') { active }" href="@@webRoot/components/buttons.html">Buttons</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'button-group') { active }" href="@@webRoot/components/button-group.html">Button Group</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'blockquote') { active }" href="@@webRoot/components/blockquote.html">Blockquote</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'breadcrumb') { active }" href="@@webRoot/components/breadcrumb.html">Breadcrumb</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'card') { active }" href="@@webRoot/components/card.html">Card</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'collapse') { active }" href="@@webRoot/components/collapse.html">Collapse</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'dropdown') { active }" href="@@webRoot/components/dropdown.html">Dropdown</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'offcanvas') { active }" href="@@webRoot/components/offcanvas.html">Offcanvas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'lists') { active }" href="@@webRoot/components/lists.html">Lists</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'navbar') { active }" href="@@webRoot/components/navbar.html">Navbar</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'navs-tabs') { active }" href="@@webRoot/components/navs-tabs.html">Nav & Tabs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'pagination') { active }" href="@@webRoot/components/pagination.html">Pagination</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'progress') { active }" href="@@webRoot/components/progress.html">Progress</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'spinners') { active }" href="@@webRoot/components/spinners.html">Spinners</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'tables') { active }" href="@@webRoot/components/tables.html">Tables</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'toast') { active }" href="@@webRoot/components/toast.html">Toast</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @@if (context.page === 'tooltips') { active }" href="@@webRoot/components/tooltips.html">Tooltips</a>
+						</li>
+					</ul>
+				</div>
 			</li>
 
 			<li class="nav-item">

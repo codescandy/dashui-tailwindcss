@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include("../partials/head.html")
+		<title>Blockquote - Dash UI - TailwindCSS HTML Admin Template Free</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("../partials/navbar-vertical.html", { "page": "blockquote", "page_group": "components" })
+				<div id="page-content">
+					@@include("../partials/top-navbar.html")
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold mb-3">Blockquote</h1>
+							<p>For quoting blocks of content from another source within your document.</p>
+						</div>
+						<div class="flex flex-col gap-8">
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Default Blockquote</h2>
+									<p>Use this example to quote an external source inside a blockquote element.</p>
+								</div>
+
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-blockquote-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-blockquote"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-blockquote"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-rounded-blockquote-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-rounded-blockquote"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-rounded-blockquote"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-blockquote" role="tabpanel" aria-labelledby="pills-design-blockquote-tab" tabindex="0">
+											<blockquote class="text-xl italic font-semibold text-gray-900">
+												<p>"A well-known quote, contained in a blockquote element."</p>
+											</blockquote>
+										</div>
+										<div class="tab-pane fade" id="pills-html-rounded-blockquote" role="tabpanel" aria-labelledby="pills-html-rounded-blockquote-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-xl italic font-semibold text-gray-900 dark:text-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>"A well-known quote, contained in a blockquote element."<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="mb-4">
+									<h2 class="text-xl mb-1">Solid Background</h2>
+									<p>This example can be used as an alternative style to the default one by applying a solid background color.</p>
+								</div>
+
+								<div class="card">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 border-b nav-link font-semibold active"
+												id="pills-design-blockquote-with-bg-tab"
+												data-bs-toggle="pill"
+												href="#pills-design-blockquote-with-bg"
+												type="button"
+												role="tab"
+												aria-controls="pills-design-blockquote-with-bg"
+												aria-selected="true"
+											>
+												Design
+											</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a
+												class="p-3 px-6 font-semibold nav-link"
+												id="pills-html-blockquote-bg-tab"
+												data-bs-toggle="pill"
+												href="#pills-html-blockquote-bg"
+												type="button"
+												role="tab"
+												aria-controls="pills-html-blockquote-bg"
+												aria-selected="false"
+											>
+												HTML
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content p-6" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-design-blockquote-with-bg" role="tabpanel" aria-labelledby="pills-design-blockquote-with-bg-tab" tabindex="0">
+											<blockquote class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
+												<p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">"A well-known quote, contained in a blockquote element."</p>
+											</blockquote>
+										</div>
+										<div class="tab-pane fade" id="pills-html-blockquote-bg" role="tabpanel" aria-labelledby="pills-html-blockquote-bg-tab" tabindex="0">
+											<pre
+												class="language-markup"
+												tabindex="0"
+											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>"A well-known quote, contained in a blockquote element."<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span></code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include("../partials/scripts.html")
+	</body>
+</html>

@@ -1,4 +1,4 @@
-'use strict';
+('use strict');
 
 (function () {
 	// Menu toggle for admin dashboard
@@ -33,11 +33,14 @@
 	}
 
 	// Toast
-	var toastElements = document.querySelectorAll('.toast');
 
-	if (toastElements.length) {
-		toastElements.forEach(function (toastEl) {
-			new Toast(toastEl);
+	const toastTrigger = document.getElementById('liveToastBtn');
+	const toastLiveExample = document.getElementById('liveToast');
+
+	if (toastTrigger) {
+		const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+		toastTrigger.addEventListener('click', () => {
+			toastBootstrap.show();
 		});
 	}
 
@@ -80,11 +83,11 @@
 	var offcanvasElements = document.querySelectorAll('.offcanvas');
 
 	if (offcanvasElements.length) {
-		offcanvasElements.forEach(function (offcanvasEl) {
-			new Offcanvas(offcanvasEl);
-		});
+		const offcanvasElementList = document.querySelectorAll('.offcanvas');
+		const offcanvasList = [...offcanvasElementList].map((offcanvasEl) => new bootstrap.Offcanvas(offcanvasEl));
 	}
 
+	// Dropzone
 	var dropzoneElements = document.querySelectorAll('#my-dropzone');
 
 	if (dropzoneElements.length) {
@@ -110,5 +113,13 @@
 		myDropzone.on('success', function (file, response) {
 			console.log('File uploaded successfully:', response);
 		});
+	}
+
+	// Tooltips
+
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+	if (tooltipTriggerList.length) {
+		const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 	}
 })();
