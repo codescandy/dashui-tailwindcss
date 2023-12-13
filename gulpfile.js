@@ -17,6 +17,10 @@ const uglify = require('gulp-uglify');
 const tailwindcss = require('tailwindcss');
 const TAILWIND_CONFIG = './tailwind.config.js';
 
+const imagemin = require('gulp-imagemin');
+const jpegrecompress = require('imagemin-jpeg-recompress');
+const pngquant = require('imagemin-pngquant');
+
 // Paths to project folders
 
 const paths = {
@@ -69,7 +73,20 @@ function vendorJs(callback) {
 
 // Image
 function images(callback) {
-	return src(paths.src.images).pipe(dest(paths.dist.images));
+	return src(paths.src.images)
+		.pipe(
+			imagemin([
+				imagemin.gifsicle({ interlaced: true }),
+				jpegrecompress({
+					progressive: true,
+					max: 90,
+					min: 80,
+				}),
+				pngquant(),
+				imagemin.svgo({ plugins: [{ removeViewBox: false }] }),
+			])
+		)
+		.pipe(dest(paths.dist.images));
 	callback();
 }
 
