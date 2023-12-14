@@ -3,15 +3,6 @@
 	<head>
 		@@include("../partials/head.html")
 		<title>Toast - Dash UI - TailwindCSS HTML Admin Template Free</title>
-
-		<script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-				document.documentElement.classList.add('dark');
-			} else {
-				document.documentElement.classList.remove('dark');
-			}
-		</script>
 	</head>
 	<body>
 		<main>
@@ -40,32 +31,32 @@
 								<div class="card">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
 										<li class="nav-item" role="presentation">
-											<a
+											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
 												id="pills-design-basic-toast-tab"
 												data-bs-toggle="pill"
-												href="#pills-design-basic-toast"
+												data-bs-target="#pills-design-basic-toast"
 												type="button"
 												role="tab"
 												aria-controls="pills-design-basic-toast"
 												aria-selected="true"
 											>
 												Design
-											</a>
+											</button>
 										</li>
 										<li class="nav-item" role="presentation">
-											<a
-												class="p-3 px-6 font-semibold nav-link"
+											<button
+												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
 												id="pills-html-basic-toast-tab"
 												data-bs-toggle="pill"
-												href="#pills-html-basic-toast"
+												data-bs-target="#pills-html-basic-toast"
 												type="button"
 												role="tab"
 												aria-controls="pills-html-basic-toast"
 												aria-selected="false"
 											>
 												HTML
-											</a>
+											</button>
 										</li>
 									</ul>
 									<div class="tab-content p-6" id="pills-tabContent">
@@ -133,37 +124,37 @@
 								</div>
 
 								<div class="card">
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
 										<li class="nav-item" role="presentation">
-											<a
+											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
 												id="pills-design-live-toast-tab"
 												data-bs-toggle="pill"
-												href="#pills-design-live-toast"
+												data-bs-target="#pills-design-live-toast"
 												type="button"
 												role="tab"
 												aria-controls="pills-design-live-toast"
 												aria-selected="true"
 											>
 												Design
-											</a>
+											</button>
 										</li>
 										<li class="nav-item" role="presentation">
-											<a
-												class="p-3 px-6 font-semibold nav-link"
+											<button
+												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
 												id="pills-html-live-toast-tab"
 												data-bs-toggle="pill"
-												href="#pills-html-live-toast"
+												data-bs-target="#pills-html-live-toast"
 												type="button"
 												role="tab"
 												aria-controls="pills-html-live-toast"
 												aria-selected="false"
 											>
 												HTML
-											</a>
+											</button>
 										</li>
 									</ul>
-									<div class="tab-content p-6" id="pills-tabContent">
+									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active" id="pills-design-live-toast" role="tabpanel" aria-labelledby="pills-design-live-toast-tab" tabindex="0">
 											<button
 												type="button"

@@ -3,15 +3,6 @@
 	<head>
 		@@include("../partials/head.html")
 		<title>Tooltips - Dash UI - TailwindCSS HTML Admin Template Free</title>
-
-		<script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-				document.documentElement.classList.add('dark');
-			} else {
-				document.documentElement.classList.remove('dark');
-			}
-		</script>
 	</head>
 	<body>
 		<main>
@@ -36,32 +27,32 @@
 								<div class="card">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
 										<li class="nav-item" role="presentation">
-											<a
+											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
 												id="pills-design-basic-tooltip-tab"
 												data-bs-toggle="pill"
-												href="#pills-design-basic-tooltip"
+												data-bs-target="#pills-design-basic-tooltip"
 												type="button"
 												role="tab"
 												aria-controls="pills-design-basic-tooltip"
 												aria-selected="true"
 											>
 												Design
-											</a>
+											</button>
 										</li>
 										<li class="nav-item" role="presentation">
-											<a
-												class="p-3 px-6 font-semibold nav-link"
+											<button
+												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
 												id="pills-html-basic-tooltip-tab"
 												data-bs-toggle="pill"
-												href="#pills-html-basic-tooltip"
+												data-bs-target="#pills-html-basic-tooltip"
 												type="button"
 												role="tab"
 												aria-controls="pills-html-basic-tooltip"
 												aria-selected="false"
 											>
 												HTML
-											</a>
+											</button>
 										</li>
 									</ul>
 									<div class="tab-content p-6" id="pills-tabContent">
