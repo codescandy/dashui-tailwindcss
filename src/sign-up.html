@@ -9,9 +9,9 @@
 
 		<div class="flex flex-col items-center justify-center g-0 h-screen px-4">
 			<!-- Card -->
-			<div class="justify-center items-center w-full bg-white rounded-md shadow-md lg:flex md:mt-0 max-w-prose xl:p-0">
+			<div class="justify-center items-center w-full bg-white rounded-md shadow-md lg:flex md:mt-0 max-w-md xl:p-0">
 				<!-- Card body -->
-				<div class="p-6 w-full sm:p-8 lg:p-10">
+				<div class="p-6 w-full sm:p-8 lg:p-8">
 					<div class="mb-4">
 						<a href="index.html"><img src="assets/images/brand/logo/logo-primary.svg" class="mb-2" alt="" /></a>
 						<p class="mb-6">Please enter your user information.</p>
@@ -19,28 +19,30 @@
 					<!-- Form -->
 					<form>
 						<!-- Username -->
-						<div class="mb-3">
-							<label for="username" class="inline-block mb-2">User Name</label>
-							<input
-								type="text"
-								id="username"
-								class="border border-gray-300 text-gray-900 rounded-md focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
-								name="username"
-								placeholder="User Name"
-								required=""
-							/>
-						</div>
-						<!-- Email -->
-						<div class="mb-3">
-							<label for="email" class="inline-block mb-2">Email</label>
-							<input
-								type="email"
-								id="email"
-								class="border border-gray-300 text-gray-900 rounded-md focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
-								name="email"
-								placeholder="Email address here"
-								required=""
-							/>
+						<div class="lg:flex 2xl:block gap-4">
+							<div class="mb-3">
+								<label for="username" class="inline-block mb-2">User Name</label>
+								<input
+									type="text"
+									id="username"
+									class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+									name="username"
+									placeholder="User Name"
+									required=""
+								/>
+							</div>
+							<!-- Email -->
+							<div class="mb-3">
+								<label for="email" class="inline-block mb-2">Email</label>
+								<input
+									type="email"
+									id="email"
+									class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+									name="email"
+									placeholder="Email address here"
+									required=""
+								/>
+							</div>
 						</div>
 						<!-- Password -->
 						<div class="mb-3">
@@ -48,19 +50,19 @@
 							<input
 								type="password"
 								id="password"
-								class="border border-gray-300 text-gray-900 rounded-md focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
+								class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
 								name="password"
 								placeholder="**************"
 								required=""
 							/>
 						</div>
 						<!-- Password -->
-						<div class="mb-3">
+						<div class="mb-5">
 							<label for="confirm-password" class="inline-block mb-2">Confirm Password</label>
 							<input
 								type="password"
 								id="confirm-password"
-								class="border border-gray-300 text-gray-900 rounded-md focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 px-3"
+								class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
 								name="password"
 								placeholder="**************"
 								required=""
@@ -68,14 +70,14 @@
 						</div>
 						<!-- Checkbox -->
 						<div class="mb-5">
-							<div>
-								<input type="checkbox" class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-400 focus:outline-none focus:ring-2" id="agreeCheck" />
+							<div class="flex items-start gap-2">
+								<input type="checkbox" class="mr-1 mt-1 w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2" id="agreeCheck" />
 								<label class="inline-block" for="agreeCheck">
-									<span class="fs-5">
+									<span class="">
 										I agree to the
-										<a href="terms-condition-page.html">Terms of Service</a>
+										<a href="#!" class="text-indigo-600 hover:text-indigo-600">Terms of Service</a>
 										and
-										<a href="terms-condition-page.html">Privacy Policy.</a>
+										<a href="#!" class="text-indigo-600 hover:text-indigo-600">Privacy Policy.</a>
 									</span>
 								</label>
 							</div>
@@ -92,10 +94,11 @@
 							</div>
 							<div class="md:flex md:justify-between mt-4">
 								<div class="mb-2 mb-md-0">
-									<a href="sign-up.html" class="fs-5">Already member? Login</a>
+									Already member?
+									<a href="sign-in.html" class="text-indigo-600 hover:text-indigo-600">Login</a>
 								</div>
 								<div>
-									<a href="forget-password.html" class="text-inherit fs-5">Forgot your password?</a>
+									<a href="forget-password.html" class="text-indigo-600 hover:text-indigo-600">Forgot your password?</a>
 								</div>
 							</div>
 						</div>

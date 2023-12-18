@@ -10,13 +10,23 @@ module.exports = {
 		},
 		fontSize: {
 			sm: '0.75rem',
-			base: '0.9375rem',
+			base: '0.875rem',
 			lg: '1.125rem',
 			xl: '1.5rem',
 			'2xl': '1.875rem',
 			'3xl': '2.25rem',
 			'4xl': '2.441rem',
 			'5xl': '3.052rem',
+		},
+		borderRadius: {
+			none: '0',
+			sm: '0.125rem',
+			DEFAULT: '0.25rem',
+			DEFAULT: '4px',
+			md: '0.375rem',
+			lg: '0.5rem',
+			full: '9999px',
+			large: '12px',
 		},
 
 		extend: {
@@ -55,11 +65,16 @@ module.exports = {
 	},
 	variants: {},
 	plugins: [
-		require('@tailwindcss/forms'),
+		require('@tailwindcss/forms')({
+			strategy: 'base', // only generate global styles
+		}),
 		require('@tailwindcss/typography'),
 		plugin(({ addBase, theme }) => {
 			addBase({
-				html: { color: theme('colors.gray.600') },
+				html: {
+					color: theme('colors.gray.600'),
+					fontSize: theme('.875rem'),
+				},
 			});
 		}),
 	],
