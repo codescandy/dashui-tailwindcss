@@ -24,7 +24,7 @@
 		@apply text-sm text-gray-800 font-medium;
 	}
 	body {
-		@apply text-base bg-gray-100 text-gray-600 font-normal;
+		@apply text-base bg-gray-100 text-gray-600 font-normal antialiased;
 	}
 	/* ... */
 }
