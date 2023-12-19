@@ -11,46 +11,171 @@
 				<div id="page-content">
 					@@include("partials/top-navbar.html")
 					<div class="p-6">
-						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
-							<h1 class="block font-semibold">Introduction</h1>
-							<p class="text-lg">Get started with Dash-ui, Responsive Website Template for building responsive, mobile-first sites, with Tailwind CSS and a template starter page.</p>
-						</div>
-						<div class="flex flex-col">
-							<div class="mb-10">
-								<h2 class="font-semibold">Core libraries used</h2>
-								<p>Here is a list of some core libraries that we use in Dashui:</p>
-								<div class="mt-8">
-									<ul class="flex flex-col gap-4">
-										<li>
-											<a class="font-bold text-gray-800" href="https://tailwindcss.com/" target="_blank" rel="noreferrer">TailwindCSS</a>
-											<p class="mt-1">A utility-first CSS framework packed with classes.</p>
-										</li>
-										<li>
-											<a class="font-bold text-gray-800" href="https://gulpjs.com/" target="_blank" rel="noreferrer">Gulp</a>
-											<p class="mt-1">We use Gulp as our build tool to bundle JavaScript &amp; Css.</p>
-										</li>
-										<li>
-											<a class="font-bold text-gray-800" href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap(Javascript)</a>
-											<p class="mt-1">We included Bootstrap, but only javascript part for the ease of some component functionality.</p>
-										</li>
-									</ul>
+						<div class="flex">
+							<div class="w-full p-4 pr-24">
+								<div class="tab-content" id="pills-tabSecondContent">
+									<div class="tab-pane fade show active" id="pills-intro-tabs" role="tabpanel" aria-labelledby="pills-intro-tabs-tab" tabindex="0">
+										<div>
+											<h1 class="mb-3">Introduction</h1>
+											<p class="mb-6">
+												Dash UI is beautifully designed, expertly crafted components UI kit for building a high-quality website and web apps using web technologies — HTML, TailwindCSS, and JavaScript.
+											</p>
+											<h2 class="text-xl font-semibold">Core libraries used</h2>
+											<p class="mb-8">Here is a list of some core libraries that we use in Dash UI:</p>
+											<ul class="list-disc pl-4 mt-4 flex flex-col gap-4">
+												<li>
+													<a class="font-semibold text-gray-800 text-lg" href="https://tailwindcss.com/" target="_blank" rel="noreferrer">TailwindCSS</a>
+													<p class="mt-1">A utility-first CSS framework packed with classes.</p>
+												</li>
+												<li>
+													<a class="font-semibold text-gray-800 text-lg" href="https://gulpjs.com/" target="_blank" rel="noreferrer">Gulp</a>
+													<p class="mt-1">We use Gulp as our build tool to bundle JavaScript &amp; Css.</p>
+												</li>
+												<li>
+													<a class="font-semibold text-gray-800 text-lg" href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap(Javascript)</a>
+													<p class="mt-1">We included Bootstrap, but only javascript part for the ease of some component functionality.</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-installation-tabs" role="tabpanel" aria-labelledby="pills-installation-tabs-tab" tabindex="0">
+										<div>
+											<h1 class="mb-3">Installation</h1>
+											<h4 class="my-4">Prerequisites</h4>
+											<p class="mb-6">Before you begin with Dash UI, you may need to install the following tools make sure your development environment able to run the template.</p>
+
+											<ul class="list-disc pl-4 my-8 flex flex-col gap-4">
+												<li>
+													<a href="https://nodejs.org" target="_blank" rel="noreferrer" class="text-gray-800 font-semibold">Node.js</a>
+												</li>
+												<li>
+													<a href="https://www.npmjs.com/" target="_blank" rel="noreferrer" class="text-gray-800 font-semibold">npm</a>
+												</li>
+												<li>
+													<a href="https://gulpjs.com/" target="_blank" rel="noreferrer" class="text-gray-800 font-semibold">gulp</a>
+												</li>
+											</ul>
+											<p class="mb-6">
+												After choosing the package you want to install, navigate to project root directory, where the
+												<code class="text-red-600">package.json</code>
+												located and run the command below in console:
+											</p>
+
+											<pre class="language-js"><code class=" language-js">node --version</code></pre>
+											<pre class="language-js"><code class=" language-js">npm --version</code></pre>
+											<div class="mt-10">
+												<h4 class="font-semibold">Installing Gulp.js</h4>
+												<p class="mb-4">Please note, first Gulp should be installed globally and for that reason -g command is used.</p>
+												<pre class="language-js"><code class="language-js">$ npm install --global gulp-cli</code></pre>
+											</div>
+											<div class="mt-10">
+												<h4 class="font-semibold">Now Working with Theme Folder</h4>
+												<p class="mb-4">
+													Navigate to the root
+													<code class="text-red-600">/Dash UI</code>
+													directory and run
+													<code class="text-red-600">npm install</code>
+													to install our local dependencies listed in package.json.
+												</p>
+												<div class="mb-6">
+													<h5 class="mb-2 font-semibold">1. Installing NPM modules</h5>
+													<pre class="language-js"><code class="language-js">$ npm i</code></pre>
+													<p class="mt-3">
+														If you check the project folder when the command has finished executing, you should see that Gulp has created a
+														<code class="text-red-600">node_modules</code>
+														folder
+													</p>
+												</div>
+												<div class="mb-6">
+													<h5 class="mb-2 font-semibold">2. Run Gulp</h5>
+													<p class="mb-4">
+														Compile and watch the SCSS/JS/HTML, use Live Reload to update browsers instantly, start a server, and pop a tab in your default browser. Any changes made to the source
+														files will be compiled as soon as you save the file. To try it out run:
+													</p>
+													<pre class="language-js"><code class="language-js">$ gulp</code></pre>
+												</div>
+												<div class="mb-6">
+													<h5 class="mb-2 font-semibold">3. Build Production Files</h5>
+													<p class="mb-4">
+														Generates a
+														<code class="text-red-600">/dist</code>
+														with all the production files.
+													</p>
+													<pre class="language-js"><code class="language-js">$ gulp build</code></pre>
+												</div>
+											</div>
+
+											<p class="">This will take some time and install all necessary dependencies into the node_modules directory in order for you to start developing.</p>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-tailwind-tabs" role="tabpanel" aria-labelledby="pills-tailwind-tabs-tab" tabindex="0">
+										<div>
+											<h2 class="mb-3 text-2xl">TailwindCSS</h2>
+
+											<p>
+												Tailwind CSS is a utility-first CSS framework with predefined classes that you can use to build and design the UI directly in the HTML. We use Tailwind as our core CSS
+												framework, most of the UI in Elstar is built entirely with it features, so you can easily update the theme &amp; base by altering
+												<code class="text-gray-900">`tailwind.config.js`</code>
+												under the root directory.
+											</p>
+											<div class="mt-4">
+												<h3>Tooling</h3>
+												<p class="mt-1">
+													If you are using VS Code as your IDE, we suggest to install
+													<a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" rel="noreferrer" target="_blank" class="text-indigo-600">Tailwind CSS IntelliSense</a>
+													plugin, it provides autocomplete, syntax highlighting, and linting based on your Tailwind config which can speed up your development.
+												</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="mb-10">
-								<h2 class="font-semibold">Quick Start</h2>
-								<p>Using this step you can run Dashui Tailwind Project.</p>
-								<div class="mt-8">
-									<ul class="flex flex-col gap-4">
-										<li>
-											<span class="text-gray-800 font-bold">npm install -g gulp-cli</span>
-										</li>
-										<li>
-											<span class="text-gray-800 font-bold">npm install</span>
-										</li>
-										<li><span class="text-gray-800 font-bold">run - gulp</span></li>
-										<li><span class="text-gray-800 font-bold">build - gulp build</span></li>
-									</ul>
-								</div>
+							<div class="lg:w-[280px] px-4">
+								<div class="font-semibold text-gray-900 mb-3 text-xl">Getting Started</div>
+								<ul class="nav flex flex-col gap-2 nav-standalone" id="pills-tabSecond" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button
+											class="nav-link active px-4"
+											id="pills-intro-tabs-tab"
+											data-bs-toggle="pill"
+											data-bs-target="#pills-intro-tabs"
+											type="button"
+											role="tab"
+											aria-controls="pills-intro-tabs"
+											aria-selected="true"
+										>
+											Introduction
+										</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button
+											class="nav-link px-4"
+											id="pills-installation-tabs-tab"
+											data-bs-toggle="pill"
+											data-bs-target="#pills-installation-tabs"
+											type="button"
+											role="tab"
+											aria-controls="pills-installation-tabs"
+											aria-selected="false"
+										>
+											Installation
+										</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button
+											class="nav-link px-4"
+											id="pills-tailwind-tabs-tab"
+											data-bs-toggle="pill"
+											data-bs-target="#pills-tailwind-tabs"
+											type="button"
+											role="tab"
+											aria-controls="pills-tailwind-tabs"
+											aria-selected="false"
+										>
+											TailwindCSS
+										</button>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>

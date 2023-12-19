@@ -16,7 +16,6 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const tailwindcss = require('tailwindcss');
 const TAILWIND_CONFIG = './tailwind.config.js';
-
 const imagemin = require('gulp-imagemin');
 const jpegrecompress = require('imagemin-jpeg-recompress');
 const pngquant = require('imagemin-pngquant');

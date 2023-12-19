@@ -38,8 +38,22 @@
 /* Tabs */
 
 .nav-line-bottom .nav-item .nav-link.active {
-	border-bottom: 1px solid #624bff;
-	color: #624bff;
+	border-bottom: 1px solid rgb(98, 75, 255);
+	color: rgb(98, 75, 255);
+}
+
+/* Tabs standalone */
+
+.nav-standalone {
+	border-left: 1px solid rgb(223, 227, 232);
+	color: rgb(99, 115, 129);
+	font-weight: 500;
+}
+
+.nav-standalone .nav-item .nav-link.active {
+	margin-left: -1px;
+	border-left: 1px solid #624bff;
+	color: rgb(98, 75, 255);
 }
 
 .tab-content > .tab-pane {
