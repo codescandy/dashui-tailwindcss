@@ -26,7 +26,7 @@
 				</a>
 
 				<div id="navPages" class="collapse @@if (context.page_group === 'pages') { show }" data-bs-parent="#sideNavbar">
-					<ul class="nav flex-column">
+					<ul class="nav flex-col">
 						<li class="nav-item">
 							<a class="nav-link @@if (context.page === 'profile') { active }" href="@@webRoot/profile.html">Profile</a>
 						</li>
@@ -61,7 +61,7 @@
 					Authentication
 				</a>
 				<div id="navAuthentication" class="collapse @@if (context.page_group === 'authentication') { show }" data-bs-parent="#sideNavbar">
-					<ul class="nav flex-column">
+					<ul class="nav flex-col">
 						<li class="nav-item">
 							<a class="nav-link @@if (context.page === 'signin') { active }" href="@@webRoot/sign-in.html">Sign In</a>
 						</li>
@@ -98,7 +98,7 @@
 					Components
 				</a>
 				<div id="navComponents" class="collapse @@if (context.page_group === 'components') { show }" data-bs-parent="#sideNavbar">
-					<ul class="nav flex-column">
+					<ul class="nav flex-col">
 						<li class="nav-item">
 							<a class="nav-link @@if (context.page === 'accordion') { active }" href="@@webRoot/components/index.html">Accordions</a>
 						</li>
@@ -177,11 +177,11 @@
 					Menu Level
 				</a>
 				<div id="navMenuLevel" class="collapse" data-bs-parent="#sideNavbar">
-					<ul class="nav flex-column">
+					<ul class="nav flex-col">
 						<li class="nav-item">
 							<a class="nav-link" href="#!" data-bs-toggle="collapse" data-bs-target="#navMenuLevelSecond" aria-expanded="false" aria-controls="navMenuLevelSecond">Two Level</a>
 							<div id="navMenuLevelSecond" class="collapse" data-bs-parent="#navMenuLevel">
-								<ul class="nav flex-column">
+								<ul class="nav flex-col">
 									<li class="nav-item">
 										<a class="nav-link" href="#!">NavItem 1</a>
 									</li>
@@ -194,11 +194,11 @@
 						<li class="nav-item">
 							<a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#navMenuLevelThree" aria-expanded="false" aria-controls="navMenuLevelThree">Three Level</a>
 							<div id="navMenuLevelThree" class="collapse" data-bs-parent="#navMenuLevel">
-								<ul class="nav flex-column">
+								<ul class="nav flex-col">
 									<li class="nav-item">
 										<a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#navMenuLevelThreeOne" aria-expanded="false" aria-controls="navMenuLevelThreeOne">NavItem 1</a>
 										<div id="navMenuLevelThreeOne" class="collapse" data-bs-parent="#navMenuLevelThree">
-											<ul class="nav flex-column">
+											<ul class="nav flex-col">
 												<li class="nav-item">
 													<a class="nav-link" href="#!">NavChild Item 1</a>
 												</li>

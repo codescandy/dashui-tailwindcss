@@ -12,7 +12,7 @@
 					@@include("partials/top-navbar.html")
 					<div class="p-6">
 						<div class="flex">
-							<div class="w-full p-4 pr-24">
+							<div class="w-full lg:w-[1300px] p-4 pr-24">
 								<div class="tab-content" id="pills-tabSecondContent">
 									<div class="tab-pane fade show active" id="pills-intro-tabs" role="tabpanel" aria-labelledby="pills-intro-tabs-tab" tabindex="0">
 										<div>
@@ -118,13 +118,99 @@
 												<code class="text-gray-900">`tailwind.config.js`</code>
 												under the root directory.
 											</p>
-											<div class="mt-4">
+
+											<div class="mt-4 mb-6">
 												<h3>Tooling</h3>
 												<p class="mt-1">
 													If you are using VS Code as your IDE, we suggest to install
 													<a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" rel="noreferrer" target="_blank" class="text-indigo-600">Tailwind CSS IntelliSense</a>
 													plugin, it provides autocomplete, syntax highlighting, and linting based on your Tailwind config which can speed up your development.
 												</p>
+											</div>
+											<div class="alert p-4 relative flex bg-indigo-100 text-indigo-600 rounded-lg" type="info" style="opacity: 1">
+												<div class="flex">
+													<span class="text-2xl text-indigo-600">
+														<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+															<path
+																fill-rule="evenodd"
+																d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+																clip-rule="evenodd"
+															></path>
+														</svg>
+													</span>
+													<div class="ml-2 text-lg">
+														<div class="font-semibold mb-1 text-indigo-700 dark:text-blue-100">Note</div>
+														Some of our UI component use sematic class with tailwind
+														<code>@apply</code>
+														directive underlying, in some cases, applying tailwind classes on these component might not working, you might need to use
+														<code>!important</code>
+														modifier to override the default high specificity selectors.
+													</div>
+												</div>
+											</div>
+											<p class="mt-6 mb-3">You can make any utility important by adding a ! character to the beginning, E.g:</p>
+											<pre
+												class="language-html"
+											><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+											<p class="mt-4">
+												You can always visit the official doc to find out classes usage &amp; Tailwind configuration:
+												<a href="https://tailwindcss.com/" rel="noreferrer" target="_blank" class="text-indigo-600">https://tailwindcss.com/</a>
+											</p>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-starter-tabs" role="tabpanel" aria-labelledby="pills-starter-tabs-tab" tabindex="0">
+										<div>
+											<h2 class="mb-3 text-2xl">Starter</h2>
+
+											<p class="mb-6">
+												As we mentioned in Installation section, we have provided a starter version with minimum core components and functionality setup, we strongly recommend developer use this
+												version to build the app on top.
+											</p>
+											<p>
+												After opened the starter pack, you can run
+												<code class="text-gray-900">`npm run dev`</code>
+												commands and start working
+											</p>
+											<div class="mt-6">
+												<div class="bg-white border border-gray-300 relative overflow-x-auto">
+													<table class="table text-left">
+														<thead class="text-gray-700">
+															<tr>
+																<th class="border-b bg-gray-100 px-6 py-3">
+																	<b>COMMAND</b>
+																</th>
+																<th class="border-b bg-gray-100 px-6 py-3">
+																	<b>DESCRIPTION</b>
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>npm run dev</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	Create a
+																	<code>build</code>
+																	directory &amp; start a local static HTML web server
+																	<a href="http://localhost:9050">http://localhost:9050</a>
+																	which will which auto update &amp; refresh when any html, css, js files was changes.
+																</td>
+															</tr>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>npm run build</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	It will create a
+																	<code>dist</code>
+																	folder &amp; copy all compiled &amp; minimized files into it for production ready.
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -173,6 +259,20 @@
 											aria-selected="false"
 										>
 											TailwindCSS
+										</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button
+											class="nav-link px-4"
+											id="pills-starter-tabs-tab"
+											data-bs-toggle="pill"
+											data-bs-target="#pills-starter-tabs"
+											type="button"
+											role="tab"
+											aria-controls="pills-starter-tabs"
+											aria-selected="false"
+										>
+											Starter
 										</button>
 									</li>
 								</ul>

@@ -122,6 +122,7 @@
 	if (tooltipTriggerList.length) {
 		const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 	}
+
 	// Feather.js
 	feather.replace();
 })();

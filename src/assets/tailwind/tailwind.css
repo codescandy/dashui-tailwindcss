@@ -6,25 +6,25 @@
 
 @layer base {
 	h1 {
-		@apply text-3xl text-gray-800 font-medium;
+		@apply text-3xl text-gray-800 font-semibold;
 	}
 	h2 {
-		@apply text-2xl text-gray-800 font-medium;
+		@apply text-2xl text-gray-800 font-semibold;
 	}
 	h3 {
-		@apply text-xl text-gray-800 font-medium;
+		@apply text-xl text-gray-800 font-semibold;
 	}
 	h4 {
-		@apply text-lg text-gray-800 font-medium;
+		@apply text-lg text-gray-800 font-semibold;
 	}
 	h5 {
-		@apply text-base text-gray-800 font-medium;
+		@apply text-base text-gray-800 font-semibold;
 	}
 	h6 {
-		@apply text-sm text-gray-800 font-medium;
+		@apply text-sm text-gray-800 font-semibold;
 	}
 	body {
-		@apply text-base bg-gray-100 text-gray-600 font-normal antialiased;
+		@apply text-base bg-gray-100 text-gray-600 font-normal;
 	}
 	/* ... */
 }

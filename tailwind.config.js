@@ -18,16 +18,6 @@ module.exports = {
 			'4xl': '2.441rem',
 			'5xl': '3.052rem',
 		},
-		borderRadius: {
-			none: '0',
-			sm: '0.125rem',
-			DEFAULT: '0.25rem',
-			DEFAULT: '4px',
-			md: '0.375rem',
-			lg: '0.5rem',
-			full: '9999px',
-			large: '12px',
-		},
 
 		extend: {
 			typography: (theme) => ({
@@ -69,13 +59,5 @@ module.exports = {
 			strategy: 'base', // only generate global styles
 		}),
 		require('@tailwindcss/typography'),
-		plugin(({ addBase, theme }) => {
-			addBase({
-				html: {
-					color: theme('colors.gray.600'),
-					fontSize: theme('.875rem'),
-				},
-			});
-		}),
 	],
 };

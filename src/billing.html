@@ -11,12 +11,12 @@
 				<div id="page-content">
 					@@include("partials/top-navbar.html")
 					<div class="p-6">
-						<div class="flex items-center mb-6 border-b border-gray-300 border-gray-300 pb-4">
+						<div class="flex items-center mb-6 border-b border-gray-300 pb-4">
 							<h1 class="inline-block text-xl font-bold">Billing</h1>
 						</div>
 
 						<div class="mb-8 flex items-center">
-							<div class="card shadow-md lg:w-[1200px] mx-auto w-full">
+							<div class="card shadow lg:w-[1200px] mx-auto w-full">
 								<div class="border-b border-gray-300 px-5 py-4 flex justify-between items-center">
 									<h4 class="font-semibold">Current Plan Overview</h4>
 								</div>
@@ -29,24 +29,25 @@
 												<p class="mb-0">Current Plan</p>
 												<h3 class="mt-2 mb-3 font-bold">Starter - Jan 2021</h3>
 												<p>Unlimited access to essential tools for design, bootstrap themes, illustrator and icons.</p>
-												<p class="mt-4">
-													Next Payment: on
+												<p class="mt-4 flex items-center gap-1">
+													<span><i data-feather="info" class="w-4 h-4 mr-2"></i></span>
+													<span>Next Payment: on</span>
 													<span class="text-indigo-600">$499.00 USD</span>
-													<span class="text-gray-900 font-bold mt-3">Jan 1, 2022</span>
+													<span class="text-gray-900 font-bold">Jan 1, 2022</span>
 												</p>
 											</div>
 										</div>
 										<!-- col  -->
-										<div class="flex md:justify-end">
+										<div class="md:flex md:justify-end">
 											<!-- content  -->
 											<div>
 												<span>Yearly Payment</span>
-												<h1 class="font-bold">$499 USD</h1>
+												<h1 class="text-indigo-600 font-bold">$499 USD</h1>
 												<a href="#" class="mb-6 block d-block">Learn more about our membership policy</a>
-												<div class="grid gap-3 text-center">
+												<div class="grid gap-2 text-center">
 													<a
 														href="#"
-														class="btn bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
+														class="btn gap-x-2 bg-gray-800 text-white border-gray-800 disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-gray-900 hover:border-gray-900 active:bg-gray-900 active:border-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300"
 														data-bs-toggle="modal"
 														data-bs-target="#planModal"
 													>
@@ -63,11 +64,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="border-t border-gray-300 p-6 bg-white rounded-b-xl">
+								<div class="border-t border-gray-300 px-6 py-4 bg-white rounded-b-xl">
 									<div class="flex flex-col md:flex-row gap-5 justify-between items-center">
 										<!-- text  -->
 										<div class="md:mb-3 lg:mb-0 text-center sm:text-left">
-											<h5 class="text-uppercase mb-0">Payment method</h5>
+											<h5 class="uppercase mb-0">Payment method</h5>
 											<div class="mt-2 flex items-center justify-center gap-3">
 												<img src="assets/images/creditcard/mastercard.svg" alt="" />
 												<span>***8773</span>
@@ -75,16 +76,21 @@
 										</div>
 										<div class="text-center md:text-left">
 											<a href="#" class="text-red-500 mr-4">Remove</a>
-											<a href="#" class="hover:bg-gray-400 py-2 px-5 text-lg font-medium rounded-md text-gray-700 border-2 hover:text-gray-50 transition-all border-gray-400">Change Card</a>
+											<a
+												href="#"
+												class="btn gap-x-2 bg-white text-gray-800 border-gray-300 disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-gray-700 hover:border-gray-700 active:bg-gray-700 active:border-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300"
+											>
+												Change Card
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="mb-8 flex items-center">
-							<div class="card shadow-md lg:w-[1200px] mx-auto w-full">
+							<div class="card shadow lg:w-[1200px] mx-auto w-full">
 								<div class="border-b border-gray-300 px-5 py-4 flex justify-between items-center">
-									<h4 class="font-semibold">Billing Address</h4>
+									<h4 class="">Billing Address</h4>
 								</div>
 								<div class="card-body">
 									<div class="grid lg:grid-cols-2 grid-rows-1 grid-flow-row-dense gap-6 border-b border-gray-300 mb-5 pb-5">
@@ -99,7 +105,7 @@
 														class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full focus:ring-indigo-600 focus:outline-none focus:ring-2"
 														checked=""
 													/>
-													<label for="shippingBillingAddress" class="ml-2">Shipping Billing Address</label>
+													<label for="shippingBillingAddress" class="ml-2 text-gray-800 font-bold">Shipping Billing Address</label>
 													<div class="ml-7 block">
 														<h4 class="mt-3 mb-1">Valarie Tarrant</h4>
 														<span class="block">3757 Morgan Street Tallahassee, FL 32301</span>
@@ -133,7 +139,7 @@
 													class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full focus:ring-indigo-600 focus:outline-none focus:ring-2"
 													name="customRadio"
 												/>
-												<label for="customRadio2" class="ml-2">Default Billing Address</label>
+												<label for="customRadio2" class="ml-2 text-gray-800 font-bold">Default Billing Address</label>
 												<div class="ml-7 block">
 													<h4 class="mt-3 mb-1">Mildred Cantu</h4>
 													<span class="block">3757 Morgan Street Tallahassee, FL 32301</span>
