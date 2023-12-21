@@ -6,6 +6,8 @@
  <br />
   <br />
 
+![Static Badge](https://img.shields.io/badge/tags-v1.0.0-blue) ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
+
 Dash-UI is a TailwindCSS Admin & Dashboard Theme. Dash UI Kit a free & Pro templates kit fully coded with TailwindCSS.
 
 ## Workflow
@@ -14,7 +16,6 @@ This product is built using the following widely used technologies:
 
 - Most popular CSS Framework TailwindCSS
 - Productive workflow tool Gulp
-- Awesome CSS preprocessor Sass
 
 ## Table of Contents
 
