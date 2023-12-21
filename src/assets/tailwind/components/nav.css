@@ -8,9 +8,6 @@
 	list-style: none;
 }
 
-.nav-tabs {
-}
-
 .nav-tabs .nav-item .nav-link.active {
 	border: 1px solid #624bff;
 	color: #624bff;

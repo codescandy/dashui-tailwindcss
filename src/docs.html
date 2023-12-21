@@ -12,7 +12,7 @@
 					@@include("partials/top-navbar.html")
 					<div class="p-6">
 						<div class="flex">
-							<div class="w-full lg:w-[1300px] p-4 pr-24">
+							<div class="w-full lg:w-[1300px] lg:pr-24">
 								<div class="tab-content" id="pills-tabSecondContent">
 									<div class="tab-pane fade show active" id="pills-intro-tabs" role="tabpanel" aria-labelledby="pills-intro-tabs-tab" tabindex="0">
 										<div>
@@ -127,28 +127,8 @@
 													plugin, it provides autocomplete, syntax highlighting, and linting based on your Tailwind config which can speed up your development.
 												</p>
 											</div>
-											<div class="alert p-4 relative flex bg-indigo-100 text-indigo-600 rounded-lg" type="info" style="opacity: 1">
-												<div class="flex">
-													<span class="text-2xl text-indigo-600">
-														<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-															<path
-																fill-rule="evenodd"
-																d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-																clip-rule="evenodd"
-															></path>
-														</svg>
-													</span>
-													<div class="ml-2 text-lg">
-														<div class="font-semibold mb-1 text-indigo-700 dark:text-blue-100">Note</div>
-														Some of our UI component use sematic class with tailwind
-														<code>@apply</code>
-														directive underlying, in some cases, applying tailwind classes on these component might not working, you might need to use
-														<code>!important</code>
-														modifier to override the default high specificity selectors.
-													</div>
-												</div>
-											</div>
-											<p class="mt-6 mb-3">You can make any utility important by adding a ! character to the beginning, E.g:</p>
+
+											<p class="mt-6 mb-3">You can make any your own utility to the beginning, E.g:</p>
 											<pre
 												class="language-html"
 											><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
@@ -167,45 +147,141 @@
 												As we mentioned in Installation section, we have provided a starter version with minimum core components and functionality setup, we strongly recommend developer use this
 												version to build the app on top.
 											</p>
-											<p>
-												After opened the starter pack, you can run
-												<code class="text-gray-900">`npm run dev`</code>
-												commands and start working
-											</p>
+
 											<div class="mt-6">
 												<div class="bg-white border border-gray-300 relative overflow-x-auto">
 													<table class="table text-left">
 														<thead class="text-gray-700">
 															<tr>
-																<th class="border-b bg-gray-100 px-6 py-3">
-																	<b>COMMAND</b>
-																</th>
-																<th class="border-b bg-gray-100 px-6 py-3">
-																	<b>DESCRIPTION</b>
-																</th>
+																<th class="border-b bg-gray-100 px-6 py-3">COMMAND</th>
+																<th class="border-b bg-gray-100 px-6 py-3">DESCRIPTION</th>
 															</tr>
 														</thead>
 														<tbody>
 															<tr>
 																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-																	<code>npm run dev</code>
+																	<code>gulp</code>
 																</td>
 																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-																	Create a
-																	<code>build</code>
-																	directory &amp; start a local static HTML web server
-																	<a href="http://localhost:9050">http://localhost:9050</a>
-																	which will which auto update &amp; refresh when any html, css, js files was changes.
+																	Compile and watch the
+																	<code class="text-red-600">SCSS/JS/HTML</code>
+																	, use Live Reload to update browsers instantly, start a server, and pop a tab in your default browser. Any changes made to the source files will be compiled as soon
+																	as you save the file. To try it out run:
 																</td>
 															</tr>
 															<tr>
 																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-																	<code>npm run build</code>
+																	<code>gulp build</code>
 																</td>
 																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-																	It will create a
-																	<code>dist</code>
-																	folder &amp; copy all compiled &amp; minimized files into it for production ready.
+																	Generates a
+																	<code class="text-red-600">`/dist`</code>
+																	with all the production files.
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-folder-tabs" role="tabpanel" aria-labelledby="pills-folder-tabs-tab" tabindex="0">
+										<div>
+											<h2 class="mb-3 text-2xl">Folder Structure</h2>
+
+											<p class="mb-6">
+												This section will show you how to keep your files organized. Our theme file structure that looks like this.As mentioned previously, the default Geeks themes are some of the
+												best examples of good theme development.
+											</p>
+
+											<pre class="language-md"><code class=" language-md">
+├── src
+│   ├── assets                       # The output css directory
+│       ├── css                      # Compiled CSS
+│       ├── fonts                    # All fonts are used in the theme.
+│       ├── images                   # All the images are used in the theme
+|       ├── js                       # All Javascript source files used in theme.
+│       ├── tailwind                 # CSS files
+│   ├── components                   # All Components for theme.
+│   ├── partials                     # A specific loop header and footer files for the templating.
+│   ├── index.html                   # Index and All HTML file is start file run when the gulp
+├── .gitignore                       # Ignore file for git
+├── gulpfile.js                      # Gulp setup file
+├── package.json
+├── package.lock.json
+├── README.md
+└── tailwind.config.js               # TailwindCSS configuration file
+												</code></pre>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-sources-credits-tabs" role="tabpanel" aria-labelledby="pills-sources-credits-tabs-tab" tabindex="0">
+										<div>
+											<h2 class="mb-3 text-2xl">Resources & Assets</h2>
+
+											<div class="mt-6">
+												<div class="bg-white border border-gray-300 relative overflow-x-auto">
+													<table class="table text-left w-full">
+														<thead class="text-gray-700">
+															<tr>
+																<th class="border-b bg-gray-100 px-6 py-3">Plugins</th>
+																<th class="border-b bg-gray-100 px-6 py-3">URL</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>Apexcharts</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<a href="https://apexcharts.com/" target="_blank" class="text-indigo-600">https://apexcharts.com/</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>Bootstrap</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<a href="https://getbootstrap.com/" target="_blank" class="text-indigo-600">https://getbootstrap.com/</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>Dropzone</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<a href="https://www.dropzonejs.com/" target="_blank" class="text-indigo-600">https://www.dropzonejs.com/</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>Prismjs</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<a href="https://prismjs.com/" target="_blank" class="text-indigo-600">https://prismjs.com/</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>Feather Icons</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<a href="https://feathericons.com/" target="_blank" class="text-indigo-600">https://feathericons.com/</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<code>Simplebar</code>
+																</td>
+																<td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+																	<a href="https://github.com/Grsmto/simplebar" target="_blank" class="text-indigo-600">https://github.com/Grsmto/simplebar</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="font-medium py-3 px-6 text-left">
+																	<code>TailwindCSS</code>
+																</td>
+																<td class="font-medium py-3 px-6 text-left">
+																	<a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="text-indigo-600">https://github.com/tailwindlabs/tailwindcss</a>
 																</td>
 															</tr>
 														</tbody>
@@ -216,8 +292,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="lg:w-[280px] px-4">
-								<div class="font-semibold text-gray-900 mb-3 text-xl">Getting Started</div>
+							<div class="lg:w-[280px] w-0 lg:px-4 lg:visible invisible">
+								<div class="font-semibold text-gray-900 mb-8 mt-2 text-lg">Getting Started</div>
 								<ul class="nav flex flex-col gap-2 nav-standalone" id="pills-tabSecond" role="tablist">
 									<li class="nav-item" role="presentation">
 										<button
@@ -273,6 +349,34 @@
 											aria-selected="false"
 										>
 											Starter
+										</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button
+											class="nav-link px-4"
+											id="pills-folder-tabs-tab"
+											data-bs-toggle="pill"
+											data-bs-target="#pills-folder-tabs"
+											type="button"
+											role="tab"
+											aria-controls="pills-folder-tabs"
+											aria-selected="false"
+										>
+											Folder Structure
+										</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button
+											class="nav-link px-4"
+											id="pills-sources-credits-tabs-tab"
+											data-bs-toggle="pill"
+											data-bs-target="#pills-sources-credits-tabs"
+											type="button"
+											role="tab"
+											aria-controls="pills-sources-credits-tabs"
+											aria-selected="false"
+										>
+											Source Credits
 										</button>
 									</li>
 								</ul>

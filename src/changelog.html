@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+	<head>
+		@@include("partials/head.html")
+		<title>Changelog - TailwindCSS HTML Admin Template Free - Dash UI</title>
+	</head>
+	<body>
+		<main>
+			<div id="db-wrapper">
+				@@include("partials/navbar-vertical.html", { "page": "changelog" })
+				<div id="page-content">
+					@@include("partials/top-navbar.html")
+					<div class="p-6">
+						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+							<h1 class="block font-semibold">Changelog</h1>
+							<p class="text-lg">Keep a changelog. All notable changes to this project will be documented in this file.</p>
+						</div>
+						<div class="grid lg:grid-cols-9 gap-4 grid-cols-2 md:grid-cols-4">
+							<div class="md:col-span-2 col-span-1">
+								<code class="text-red-600">v1.1.0 - January 1, 2024</code>
+							</div>
+							<div class="md:col-span-2 col-span-1">
+								<span>Intial Release</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 
-      @@include("partials/head.html")
-      <title>Changelog - TailwindCSS HTML Admin Template Free - Dash UI</title>
-   </head>
-   <body>
-      <main>
-         <div id="db-wrapper">
-            @@include("partials/navbar-vertical.html", { "page": "changelog" })
-            <div id="page-content">
-               @@include("partials/top-navbar.html")
-               <div class="p-6">
-                  <div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
-                     <h1 class="block font-semibold">Changelog</h1>
-                     <p>Keep a changelog. All notable changes to this project will be documented in this file.</p>
-                  </div>
-                  <div class="grid lg:grid-cols-9 gap-4">
-                     <div class="flex flex-row gap-4"><span><code class="text-red-600">1.0.0</code></span> <span>Intial Release</span></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </main>
-
-
-
-      @@include("partials/scripts.html")
-   </body>
+		@@include("partials/scripts.html")
+	</body>
 </html>

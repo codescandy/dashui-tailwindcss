@@ -1,8 +1,5 @@
 /* Offcanvas */
 
-.offcanvas {
-}
-
 .offcanvas.show:not(.hiding),
 .offcanvas.showing {
 	transform: none;
@@ -28,11 +25,5 @@
 	z-index: 40;
 	width: 100vw;
 	height: 100vh;
-	background-color: #000;
-}
-
-.custom-offcanvas .offcanvas-backdrop.show {
-	opacity: 1;
-	background-color: rgba(5, 79, 251, 0.5);
-	backdrop-filter: blur(8px);
+	background-color: #212b36;
 }

@@ -1,7 +1,7 @@
 /* Tooltips */
 
 .tooltip {
-	background-color: #000;
+	background-color: #212b36;
 	border-radius: 0.25rem;
 	padding: 0.375rem 0.75rem;
 	font-weight: 500;
@@ -28,7 +28,7 @@
 .bs-tooltip-auto[data-popper-placement^='top'] .tooltip-arrow::before {
 	top: -1px;
 	border-width: 0.4rem;
-	border-top-color: #000;
+	border-top-color: #212b36;
 }
 
 .bs-tooltip-end .tooltip-arrow,
@@ -41,7 +41,7 @@
 .bs-tooltip-auto[data-popper-placement^='right'] .tooltip-arrow::before {
 	right: -1px;
 	border-width: 0.4rem;
-	border-right-color: #000;
+	border-right-color: #212b36;
 }
 
 .bs-tooltip-start .tooltip-arrow,
@@ -54,7 +54,7 @@
 .bs-tooltip-auto[data-popper-placement^='left'] .tooltip-arrow::before {
 	left: -1px;
 	border-width: 0.4rem;
-	border-left-color: #000;
+	border-left-color: #212b36;
 }
 
 .bs-tooltip-bottom .tooltip-arrow,
@@ -65,5 +65,5 @@
 .bs-tooltip-auto[data-popper-placement^='bottom'] .tooltip-arrow::before {
 	bottom: -1px;
 	border-width: 0 calc(0.8rem * 0.5) 0.4rem;
-	border-bottom-color: #000;
+	border-bottom-color: #212b36;
 }
