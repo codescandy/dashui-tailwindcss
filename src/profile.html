@@ -6,10 +6,12 @@
 	</head>
 	<body>
 		<main>
+			<!--start profile-->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("partials/navbar-vertical.html", { "page": "profile", "page_group": "pages" })
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("partials/top-navbar.html")
+
 					<div class="p-6">
 						<div class="flex items-center mb-6 border-b border-gray-300 pb-4">
 							<h1 class="inline-block text-xl font-bold">Overview</h1>
@@ -561,6 +563,7 @@
 					</div>
 				</div>
 			</div>
+			<!--end of profile-->
 		</main>
 
 		@@include("partials/scripts.html")
