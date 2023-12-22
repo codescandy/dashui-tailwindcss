@@ -3,7 +3,7 @@
 (function () {
 	// Menu toggle for admin dashboard
 	var navToggle = document.getElementById('nav-toggle');
-	var dbWrapper = document.getElementById('db-wrapper');
+	var dbWrapper = document.getElementById('app-layout');
 
 	if (navToggle) {
 		navToggle.addEventListener('click', function (e) {
@@ -126,3 +126,45 @@
 	// Feather.js
 	feather.replace();
 })();
+
+// Simplbar js
+document.addEventListener('DOMContentLoaded', function () {
+	// Initialize SimpleBar
+	var simpleBar = new SimpleBar(document.getElementById('myScrollableElement'));
+
+	// Get the sidebar element
+	var sidebar = document.getElementById('myScrollableElement');
+
+	// Get all links inside the navbar
+	var links = document.querySelectorAll('.navbar-nav a');
+
+	// Get the last link in the sidebar
+	var lastLink = links[links.length - 1];
+
+	// Scroll to the bottom of the sidebar to show the last link
+	simpleBar.getScrollElement().scrollTop = lastLink.offsetTop - sidebar.offsetTop;
+
+	// Iterate over each link and attach a click event listener
+	links.forEach(function (link) {
+		link.addEventListener('click', function (event) {
+			// Check if the link is an anchor link
+			if (this.getAttribute('href').charAt(0) === '#') {
+				event.preventDefault();
+
+				// Get the target section's ID from the link's href
+				var targetId = this.getAttribute('href').substring(1);
+
+				// Find the target section by ID
+				var targetSection = document.getElementById(targetId);
+
+				if (targetSection) {
+					// Calculate the target position relative to the scrollable container
+					var offsetTop = targetSection.offsetTop;
+
+					// Use SimpleBar's scrollToY method for smooth scrolling
+					simpleBar.getScrollElement().scrollTop = offsetTop - sidebar.offsetTop;
+				}
+			}
+		});
+	});
+});

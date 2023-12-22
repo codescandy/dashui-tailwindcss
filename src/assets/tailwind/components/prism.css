@@ -1,5 +1,9 @@
 /* Prism CSS */
 
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	background: rgb(33, 43, 54);
+}
 div.code-toolbar {
 	position: relative;
 }
@@ -17,9 +21,9 @@ div.code-toolbar > .toolbar > .toolbar-item {
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > button {
-	background: #212b36;
+	background: rgb(69, 79, 91);
 	border-radius: 0.25rem;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	font-size: 0.75rem;
 	font-weight: 600;
 	padding: 0.25rem 0.5rem;

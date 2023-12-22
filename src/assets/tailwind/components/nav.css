@@ -9,8 +9,8 @@
 }
 
 .nav-tabs .nav-item .nav-link.active {
-	border: 1px solid #624bff;
-	color: #624bff;
+	border: 1px solid rgb(98, 75, 255);
+	color: rgb(98, 75, 255);
 }
 
 .navbar-collapse {
@@ -25,12 +25,12 @@
 	transition: height 0.35s ease;
 }
 
-@media (min-width: 990px) {
+/* @media (min-width: 990px) {
 	.navbar-expand .navbar-collapse {
 		display: flex !important;
 		flex-basis: auto;
 	}
-}
+} */
 
 /* Tabs */
 
@@ -52,6 +52,8 @@
 	border-left: 1px solid #624bff;
 	color: rgb(98, 75, 255);
 }
+
+/* tab content */
 
 .tab-content > .tab-pane {
 	display: none;

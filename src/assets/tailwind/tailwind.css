@@ -1,8 +1,12 @@
+/* tailwind css */
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+/* headings, body */
 
 @layer base {
 	h1 {
@@ -26,8 +30,9 @@
 	body {
 		@apply text-base bg-gray-100 text-gray-600 font-normal antialiased;
 	}
-	/* ... */
 }
+
+/* btn, card */
 
 @layer components {
 	.btn {

@@ -38,12 +38,12 @@
 	color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 .dropdown-item:hover {
-	color: #1e293b;
-	background-color: #f1f5f9;
+	color: #212b36;
+	background-color: rgb(241, 245, 249);
 }
 .dropdown-item:active {
-	color: #1e293b;
-	background-color: #f1f5f9;
+	color: #212b36;
+	background-color: rgb(241, 245, 249);
 }
 
 .dropdown-menu.show {
