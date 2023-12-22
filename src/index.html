@@ -13,6 +13,7 @@
 					@@include("partials/top-navbar.html")
 
 					<div class="bg-indigo-600 px-8 pt-14 pb-16 flex justify-between items-center mb-3">
+						<!--title-->
 						<h1 class="text-xl text-white">Project</h1>
 						<a
 							href="#"
@@ -22,8 +23,11 @@
 						</a>
 					</div>
 					<div class="-mt-12 mx-6 mb-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 xl:grid-cols-4">
+						<!--card-->
 						<div class="card shadow">
+							<!--card body-->
 							<div class="card-body">
+								<!--content-->
 								<div class="flex justify-between items-center">
 									<h4 class="">Projects</h4>
 									<div class="bg-indigo-600 bg-opacity-10 rounded-md w-10 h-10 flex items-center justify-center text-center text-indigo-600">
@@ -39,8 +43,11 @@
 								</div>
 							</div>
 						</div>
+						<!--card-->
 						<div class="card shadow">
+							<!--card boduy-->
 							<div class="card-body">
+								<!--content-->
 								<div class="flex justify-between items-center">
 									<h4 class="">Active Task</h4>
 									<div class="bg-indigo-600 bg-opacity-10 rounded-md w-10 h-10 flex items-center justify-center text-center text-indigo-600">
@@ -56,8 +63,11 @@
 								</div>
 							</div>
 						</div>
+						<!--card-->
 						<div class="card shadow">
+							<!--card body-->
 							<div class="card-body">
+								<!--content-->
 								<div class="flex justify-between items-center">
 									<h4 class="">Teams</h4>
 									<div class="bg-indigo-600 bg-opacity-10 rounded-md w-10 h-10 flex items-center justify-center text-center text-indigo-600">
@@ -73,8 +83,11 @@
 								</div>
 							</div>
 						</div>
+						<!--card-->
 						<div class="card shadow">
+							<!--card body-->
 							<div class="card-body">
+								<!--content-->
 								<div class="flex justify-between items-center">
 									<h4 class="">Productivity</h4>
 									<div class="bg-indigo-600 bg-opacity-10 rounded-md w-10 h-10 flex items-center justify-center text-center text-indigo-600">
@@ -94,11 +107,13 @@
 					<div class="mx-6 grid grid-cols-1 xl:grid-cols-3 grid-rows-1 grid-flow-row-dense gap-6">
 						<div class="xl:col-span-2">
 							<div class="card h-full shadow">
+								<!--heading-->
 								<div class="border-b border-gray-300 px-5 py-4">
 									<h4 class="">Active Projects</h4>
 								</div>
 
 								<div class="relative overflow-x-auto">
+									<!--table-->
 									<table class="text-left w-full whitespace-nowrap">
 										<thead class="text-gray-700">
 											<tr>
@@ -284,10 +299,11 @@
 								</div>
 							</div>
 						</div>
-
+						<!--card-->
 						<div class="card h-full shadow">
 							<div class="border-b border-gray-300 px-5 py-4 flex justify-between items-center">
 								<h4 class="">Tasks Performance</h4>
+								<!--dropdown-->
 								<div class="dropdown leading-4">
 									<button class="text-gray-600" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 										<i data-feather="more-vertical" class="w-4 h-4"></i>
@@ -299,9 +315,11 @@
 									</ul>
 								</div>
 							</div>
+							<!--card body-->
 							<div class="card-body">
 								<div id="perfomanceChart"></div>
 								<div class="flex items-center justify-around py-4">
+									<!--content-->
 									<div class="text-center">
 										<div class="mb-3">
 											<i class="w-6 h-6 text-green-500 mx-auto" data-feather="check-circle"></i>
@@ -310,6 +328,7 @@
 										<h1 class="text-2xl font-bold">76%</h1>
 										<p class="text-gray-600">Completed</p>
 									</div>
+									<!--content-->
 									<div class="text-center">
 										<div class="mb-3">
 											<i class="w-6 h-6 text-yellow-500 mx-auto" data-feather="trending-up"></i>
@@ -318,6 +337,7 @@
 										<h1 class="text-2xl font-bold">32%</h1>
 										<p class="text-gray-600">In-Progress</p>
 									</div>
+									<!--content-->
 									<div class="text-center">
 										<div class="mb-3">
 											<i class="w-6 h-6 text-red-500 mx-auto" data-feather="trending-down"></i>
@@ -333,10 +353,12 @@
 						<div>
 							<div class="card h-full shadow">
 								<div class="border-b border-gray-300 px-5 py-4 flex items-center w-full justify-between">
+									<!--title-->
 									<div>
 										<h4 class="">My Task</h4>
 									</div>
 									<div>
+										<!--button-->
 										<div class="dropdown leading-4">
 											<button
 												class="btn btn-sm gap-x-2 bg-white text-gray-800 border-gray-300 border disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-gray-700 hover:border-gray-700 active:bg-gray-700 active:border-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300"
@@ -346,6 +368,7 @@
 											>
 												Add Task
 											</button>
+											<!--list-->
 											<ul class="dropdown-menu dropdown-menu-end">
 												<li><a class="dropdown-item" href="#">Action</a></li>
 												<li><a class="dropdown-item" href="#">Another action</a></li>
@@ -356,6 +379,7 @@
 								</div>
 
 								<div class="relative overflow-x-auto">
+									<!--table-->
 									<table class="text-left w-full whitespace-nowrap">
 										<thead class="text-gray-700">
 											<tr>
@@ -458,12 +482,13 @@
 								</div>
 							</div>
 						</div>
-
+						<!--card-->
 						<div class="card h-full shadow">
 							<div class="border-b border-gray-300 px-5 py-4">
 								<h4 class="">Teams</h4>
 							</div>
 							<div class="relative overflow-x-auto" data-simplebar="" style="max-height: 380px">
+								<!--table-->
 								<table class="text-left w-full whitespace-nowrap">
 									<thead class="text-gray-700">
 										<tr>
