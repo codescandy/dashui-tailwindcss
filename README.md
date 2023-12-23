@@ -6,7 +6,8 @@
  <br />
   <br />
 
-![Static Badge](https://img.shields.io/badge/tags-v1.0.0-blue) ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
+![Static Badge](https://img.shields.io/badge/tags-v1.0.0-blue) ![Static Badge](https://img.shields.io/badge/License-MIT-blue) ![Static Badge](https://img.shields.io/badge/issue-0%20open-green) ![Static Badge](https://img.shields.io/badge/forks-1-blue)  ![Static Badge](https://img.shields.io/badge/starts-2-blue) 
+
 
 Dash-UI is a TailwindCSS Admin & Dashboard Theme. Dash UI Kit a free & Pro templates kit fully coded with TailwindCSS.
 
