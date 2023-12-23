@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start tooltip page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "tooltips", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 
@@ -23,9 +26,11 @@
 									<h2 class="text-xl mb-1">Basic Example</h2>
 									<p></p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -55,6 +60,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active rounded-md" id="pills-design-basic-tooltip" role="tabpanel" aria-labelledby="pills-design-basic-tooltip-tab" tabindex="0">
 											<button
@@ -97,6 +103,7 @@
 											</button>
 										</div>
 										<div class="tab-pane fade" id="pills-html-basic-tooltip" role="tabpanel" aria-labelledby="pills-html-basic-tooltip-tab" tabindex="0">
+											<!-- code -->
 											<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
     <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tooltip<span class="token punctuation">"</span></span>
     <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>top<span class="token punctuation">"</span></span>
@@ -143,7 +150,7 @@
 				</div>
 			</div>
 		</main>
-
 		@@include("../partials/scripts.html")
+		<!-- end tooltip page -->
 	</body>
 </html>

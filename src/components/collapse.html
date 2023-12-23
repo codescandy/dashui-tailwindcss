@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start collapse page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "collapse", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 
@@ -22,8 +25,11 @@
 									<h2 class="text-xl mb-1">Collapse</h2>
 									<p>Click the buttons below to show and hide another element via class changes.</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -38,6 +44,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -53,6 +60,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active" id="pills-design-collapse" role="tabpanel" aria-labelledby="pills-design-collapse-tab" tabindex="0">
 											<a
@@ -72,6 +80,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-collapse" role="tabpanel" aria-labelledby="pills-html-collapse-tab" tabindex="0">
+											<!-- code -->
 											<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
   <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 collapsed<span class="token punctuation">"</span></span>
   <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#!<span class="token punctuation">"</span></span>
@@ -96,7 +105,7 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- end collapse page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

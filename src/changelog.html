@@ -1,38 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		@@include("partials/head.html")
-		<title>Changelog - TailwindCSS HTML Admin Template Free - Dash UI</title>
-	</head>
-	<body>
-		<main>
-			<!--start changelog-->
-			<div id="app-layout" class="overflow-x-hidden flex">
-				@@include("partials/navbar-vertical.html", { "page": "changelog" })
-				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-					@@include("partials/top-navbar.html")
+   <head>
+      @@include("partials/head.html")
+      <title>Changelog - TailwindCSS HTML Admin Template Free - Dash UI</title>
+   </head>
+   <body>
+      <main>
+         <!-- start changelog -->
+         <!-- app layout -->
+         <div id="app-layout" class="overflow-x-hidden flex">
+            @@include("partials/navbar-vertical.html", { "page": "changelog" })
+            <!-- app layout cotnent -->
+            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+               @@include("partials/top-navbar.html")
+               <div class="p-6">
+                  <!-- changelog content -->
+                  <div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
+                     <!-- title -->
+                     <h1 class="block font-semibold">Changelog</h1>
+                     <p class="text-lg">Keep a changelog. All notable changes to this project will be documented in this file.</p>
+                  </div>
+                  <div class="grid lg:grid-cols-9 gap-4 grid-cols-2 md:grid-cols-4">
+                     <div class="md:col-span-2 col-span-1">
+                        <code class="text-red-600">v1.1.0 - January 1, 2024</code>
+                     </div>
+                     <div class="md:col-span-2 col-span-1">
+                        <span>Intial Release</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end of changelog -->
+      </main>
 
-					<div class="p-6">
-						<!--changelog content-->
-						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
-							<!--title-->
-							<h1 class="block font-semibold">Changelog</h1>
-							<p class="text-lg">Keep a changelog. All notable changes to this project will be documented in this file.</p>
-						</div>
-						<div class="grid lg:grid-cols-9 gap-4 grid-cols-2 md:grid-cols-4">
-							<div class="md:col-span-2 col-span-1">
-								<code class="text-red-600">v1.1.0 - January 1, 2024</code>
-							</div>
-							<div class="md:col-span-2 col-span-1">
-								<span>Intial Release</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--end of changelog-->
-		</main>
-
-		@@include("partials/scripts.html")
-	</body>
+      @@include("partials/scripts.html")
+   </body>
 </html>

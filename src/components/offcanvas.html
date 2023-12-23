@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start offcanvas page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "offcanvas", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 					<div class="p-6">
@@ -25,7 +28,7 @@
 									<h2 class="text-xl mb-1">Example</h2>
 									<p>Offcanvas start from Left Side</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
 										<li class="nav-item" role="presentation">
@@ -57,6 +60,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active" id="pills-design-offcanvasLeft" role="tabpanel" aria-labelledby="pills-design-offcanvasLeft-tab" tabindex="0">
 											<button
@@ -105,6 +109,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-offcanvasLeft" role="tabpanel" aria-labelledby="pills-html-offcanvasLeft-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -153,9 +158,11 @@
 									<h2 class="text-xl mb-1">Right Offcanvas</h2>
 									<p>Offcanvas start from Right Side</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -170,6 +177,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -185,6 +193,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active" id="pills-design-offcanvasRight" role="tabpanel" aria-labelledby="pills-design-offcanvasRight-tab" tabindex="0">
 											<button
@@ -233,6 +242,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-offcanvasRight" role="tabpanel" aria-labelledby="pills-html-offcanvasRight-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -281,9 +291,11 @@
 									<h2 class="text-xl mb-1">Bottom Offcanvas</h2>
 									<p>Offcanvas start from Bottom Side</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -298,6 +310,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -313,6 +326,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabThirdContent">
 										<div class="tab-pane fade show active" id="pills-design-offcanvasBottom" role="tabpanel" aria-labelledby="pills-design-offcanvasBottom-tab" tabindex="0">
 											<button
@@ -361,6 +375,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-offcanvasBottom" role="tabpanel" aria-labelledby="pills-html-offcanvasBottom-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -410,9 +425,10 @@
 									<h2 class="text-xl mb-1">Top Offcanvas</h2>
 									<p>Offcanvas start from Top Side</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -427,6 +443,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -442,6 +459,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabFourthContent">
 										<div class="tab-pane fade show active" id="pills-design-offcanvasTop" role="tabpanel" aria-labelledby="pills-design-offcanvasTop-tab" tabindex="0">
 											<button
@@ -490,6 +508,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-offcanvasTop" role="tabpanel" aria-labelledby="pills-html-offcanvasTop-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -538,8 +557,11 @@
 									<h2 class="text-xl mb-1">Body scrolling</h2>
 									<p>Scrolling the &lt;body&gt; element is disabled when an offcanvas and its backdrop are visible. Use the data-bs-scroll attribute to enable &lt;body&lt; scrolling.</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFifth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -554,6 +576,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -569,6 +592,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabFifthContent">
 										<div class="tab-pane fade show active" id="pills-design-offcanvasBodyScroll" role="tabpanel" aria-labelledby="pills-design-offcanvasBodyScroll-tab" tabindex="0">
 											<button
@@ -619,6 +643,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-offcanvasBodyScroll" role="tabpanel" aria-labelledby="pills-html-offcanvasBodyScroll-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -668,7 +693,7 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- end offcanvas page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

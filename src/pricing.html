@@ -1,334 +1,330 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		@@include("partials/head.html")
-		<title>Pricing - TailwindCSS HTML Admin Template Free - Dash UI</title>
-	</head>
-	<body>
-		<main>
-			<!--start pricing-->
-			<div id="app-layout" class="overflow-x-hidden flex">
-				@@include("partials/navbar-vertical.html", { "page": "pricing", "page_group": "pages" })
-				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-					@@include("partials/top-navbar.html")
+   <head>
+      @@include("partials/head.html")
+      <title>Pricing - TailwindCSS HTML Admin Template Free - Dash UI</title>
+   </head>
+   <body>
+      <main>
+         <!-- start pricing -->
+         <!-- app layout -->
+         <div id="app-layout" class="overflow-x-hidden flex">
+            @@include("partials/navbar-vertical.html", { "page": "pricing", "page_group": "pages" })
+            <!-- app layout content -->
+            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+               @@include("partials/top-navbar.html")
+               <div class="p-6">
+                  <div class="flex items-center mb-6 border-b border-gray-300 pb-4">
+                     <!-- title -->
+                     <h1 class="inline-block text-xl font-bold">Pricing</h1>
+                  </div>
+                  <div class="mb-8 flex items-center">
+                     <div class="mx-auto w-full">
+                        <div class="mb-16">
+                           <!-- content -->
+                           <div class="flex-auto">
+                              <h2 class="text-3xl font-bold">Find a plan that s right for you</h2>
+                              <div class="flex flex-col md:flex-row md:items-center items-start gap-4 mt-4">
+                                 <p>Or simply leverage the expertise of our consultation team.</p>
+                              </div>
+                           </div>
+                           <!-- row -->
+                           <div class="overflow-x-auto">
+                              <div class="flex gap-6 mt-10 flex-nowrap pb-4">
+                                 <div class="card flex-[0_0_auto] lg:flex-auto w-full shadow">
+                                    <div class="p-6 border-b">
+                                       <!-- text -->
+                                       <h2 class="mb-3">Standard</h2>
+                                       <p>For early-stage startups that want to spend more time developing and less on manual operations.</p>
+                                       <!-- price -->
+                                       <div class="flex items-end mt-6 mb-6">
+                                          <h1 class="font-bold mr-1 mb-0">$49</h1>
+                                          <p class="mb-0">/mo</p>
+                                       </div>
+                                       <!-- button -->
+                                       <a
+                                          href="#"
+                                          class="btn bg-transparent text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 active:bg-indigo-600 active:text-white active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                          Buy Standard
+                                       </a>
+                                    </div>
+                                    <div class="p-6">
+                                       <p class="mb-0">All core features, including:</p>
+                                       <!-- list -->
+                                       <ul class="list-none gap-2 mt-4 flex flex-col mb-0">
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-					<div class="p-6">
-						<div class="flex items-center mb-6 border-b border-gray-300 pb-4">
-							<!--title-->
-							<h1 class="inline-block text-xl font-bold">Pricing</h1>
-						</div>
+                                             <span>Only Basic Components</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-						<div class="mb-8 flex items-center">
-							<div class="mx-auto w-full">
-								<div class="mb-16">
-									<!--content-->
-									<div class="flex-auto">
-										<h2 class="text-3xl font-bold">Find a plan that s right for you</h2>
-										<div class="flex flex-col md:flex-row md:items-center items-start gap-4 mt-4">
-											<p>Or simply leverage the expertise of our consultation team.</p>
-										</div>
-									</div>
+                                             <span>
+                                                <span class="text-gray-800 font-bold">12+</span>
+                                                Adv. Components
+                                             </span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-									<!-- row  -->
-									<div class="overflow-x-auto">
-										<div class="flex gap-6 mt-10 flex-nowrap pb-4">
-											<div class="card flex-[0_0_auto] lg:flex-auto w-full shadow">
-												<div class="p-6 border-b">
-													<!-- text -->
-													<h2 class="mb-3">Standard</h2>
-													<p>For early-stage startups that want to spend more time developing and less on manual operations.</p>
-													<!-- price -->
-													<div class="flex items-end mt-6 mb-6">
-														<h1 class="font-bold mr-1 mb-0">$49</h1>
-														<p class="mb-0">/mo</p>
-													</div>
-													<!-- button -->
-													<a
-														href="#"
-														class="btn bg-transparent text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 active:bg-indigo-600 active:text-white active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-													>
-														Buy Standard
-													</a>
-												</div>
-												<div class="p-6">
-													<p class="mb-0">All core features, including:</p>
-													<!--list-->
-													<ul class="list-none gap-2 mt-4 flex flex-col mb-0">
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>
+                                                <span class="text-gray-800 font-bold">5</span>
+                                                - Landing page
+                                             </span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>Only Basic Components</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>
+                                                <span class="text-gray-800 font-bold">3</span>
+                                                Dashboard Layouts
+                                             </span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>
-																<span class="text-gray-800 font-bold">12+</span>
-																Adv. Components
-															</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>Documentation</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>
-																<span class="text-gray-800 font-bold">5</span>
-																- Landing page
-															</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>Access to support forums</span>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="card flex-[0_0_auto] lg:flex-auto w-full shadow">
+                                    <div class="p-6 border-b">
+                                       <!-- text -->
+                                       <div class="flex xl:flex-row md:flex-col xl:items-center items-center md:items-start gap-2 mb-3">
+                                          <h2>Multisite</h2>
+                                          <span class="bg-yellow-200 px-3 py-1 text-yellow-700 text-sm font-medium rounded-md inline-block whitespace-nowrap text-center">Most Popular</span>
+                                       </div>
+                                       <p>For early-stage startups that want to spend more time developing and less on manual operations.</p>
+                                       <!-- price -->
+                                       <div class="flex items-end mt-6 mb-6">
+                                          <h1 class="font-bold mr-1 mb-0">$149</h1>
+                                          <p class="mb-0">/mo</p>
+                                       </div>
+                                       <!-- button -->
+                                       <a
+                                          href="#"
+                                          class="btn bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                          Buy Multisite
+                                       </a>
+                                    </div>
+                                    <div class="p-6">
+                                       <p class="mb-0">Everything in Standard +:</p>
+                                       <!-- list -->
+                                       <ul class="list-none gap-2 mt-4 flex flex-col mb-0">
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>
-																<span class="text-gray-800 font-bold">3</span>
-																Dashboard Layouts
-															</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>Offline viewing</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>Documentation</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>
+                                                <span class="text-gray-800 font-bold">Unlimited</span>
+                                                projects
+                                             </span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>Access to support forums</span>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="card flex-[0_0_auto] lg:flex-auto w-full shadow">
-												<div class="p-6 border-b">
-													<!-- text -->
-													<div class="flex xl:flex-row md:flex-col xl:items-center items-center md:items-start gap-2 mb-3">
-														<h2>Multisite</h2>
-														<span class="bg-yellow-200 px-3 py-1 text-yellow-700 text-sm font-medium rounded-md inline-block whitespace-nowrap text-center">Most Popular</span>
-													</div>
-													<p>For early-stage startups that want to spend more time developing and less on manual operations.</p>
-													<!-- price -->
-													<div class="flex items-end mt-6 mb-6">
-														<h1 class="font-bold mr-1 mb-0">$149</h1>
-														<p class="mb-0">/mo</p>
-													</div>
-													<!-- button -->
-													<a
-														href="#"
-														class="btn bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-													>
-														Buy Multisite
-													</a>
-												</div>
-												<div class="p-6">
-													<p class="mb-0">Everything in Standard +:</p>
-													<!--list-->
-													<ul class="list-none gap-2 mt-4 flex flex-col mb-0">
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>
+                                                <span class="text-gray-800 font-bold">Unlimited</span>
+                                                Storage
+                                             </span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>Offline viewing</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>Custom domain support</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>
-																<span class="text-gray-800 font-bold">Unlimited</span>
-																projects
-															</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>Bulk editing</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>
-																<span class="text-gray-800 font-bold">Unlimited</span>
-																Storage
-															</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>12 / 5 support</span>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="card flex-[0_0_auto] lg:flex-auto w-full shadow">
+                                    <div class="p-6 border-b">
+                                       <!-- text -->
+                                       <div class="flex items-center gap-2 mb-3">
+                                          <h2>Extended</h2>
+                                       </div>
+                                       <p>For fast-growth scaleups that want to grow by maximizing efficiencies in their revenue operations.</p>
+                                       <!-- price -->
+                                       <div class="flex items-end mt-6 mb-6">
+                                          <h1 class="font-bold mr-1 mb-0">$490</h1>
+                                          <p class="mb-0">/mo</p>
+                                       </div>
+                                       <!-- button -->
+                                       <a
+                                          href="#"
+                                          class="btn bg-transparent text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 active:bg-indigo-600 active:text-white active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                          Buy Extended
+                                       </a>
+                                    </div>
+                                    <div class="p-6">
+                                       <p class="mb-0">Everything in Multisite +:</p>
+                                       <!-- list -->
+                                       <ul class="list-none gap-2 mt-4 flex flex-col mb-0">
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>Custom domain support</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>Workshop</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>Bulk editing</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>
+                                                <span class="text-gray-800 font-bold">Dedicated</span>
+                                                hardware
+                                             </span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>12 / 5 support</span>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="card flex-[0_0_auto] lg:flex-auto w-full shadow">
-												<div class="p-6 border-b">
-													<!-- text -->
-													<div class="flex items-center gap-2 mb-3">
-														<h2>Extended</h2>
-													</div>
-													<p>For fast-growth scaleups that want to grow by maximizing efficiencies in their revenue operations.</p>
-													<!-- price -->
-													<div class="flex items-end mt-6 mb-6">
-														<h1 class="font-bold mr-1 mb-0">$490</h1>
-														<p class="mb-0">/mo</p>
-													</div>
-													<!-- button -->
-													<a
-														href="#"
-														class="btn bg-transparent text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 active:bg-indigo-600 active:text-white active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-													>
-														Buy Extended
-													</a>
-												</div>
-												<div class="p-6">
-													<p class="mb-0">Everything in Multisite +:</p>
-													<!--list-->
-													<ul class="list-none gap-2 mt-4 flex flex-col mb-0">
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>
+                                                <span class="text-gray-800 font-bold">99.9% uptime</span>
+                                                guarantee
+                                             </span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>Workshop</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>Advanced analytics</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>
-																<span class="text-gray-800 font-bold">Dedicated</span>
-																hardware
-															</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>3rd party integrations</span>
+                                          </li>
+                                          <li class="gap-2 flex items-center">
+                                             <i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
 
-															<span>
-																<span class="text-gray-800 font-bold">99.9% uptime</span>
-																guarantee
-															</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
+                                             <span>24 / 7 supports</span>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mb-16">
+                           <!-- content -->
+                           <div class="flex-auto">
+                              <h2 class="mb-2">Everything you need to build efficiently</h2>
+                              <p>Start building your app using our tools, be efficient, spend less time with details more time with your business.</p>
+                           </div>
+                           <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-10">
+                              <div>
+                                 <!-- content -->
+                                 <div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
+                                    <i class="text-white h-6 w-6" data-feather="edit"></i>
+                                 </div>
+                                 <h4 class="mb-2">Create and Edit Projects</h4>
+                                 <p>Donec posuere felis sit amet felis max imus roin consectetur quis leo id eleifuet, sapien quis fringilla finibus.</p>
+                              </div>
+                              <div>
+                                 <!-- content -->
+                                 <div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
+                                    <i class="text-white h-6 w-6" data-feather="filter"></i>
+                                 </div>
+                                 <h4 class="mb-2">Search and Filter</h4>
+                                 <p>Vestibulum in neque augue. Vivamus sed tempor mi. Integer dolor urna, dictum a arcu vitae, efficitur semper lorem.</p>
+                              </div>
+                              <div>
+                                 <!-- content -->
+                                 <div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
+                                    <i class="text-white h-6 w-6" data-feather="rotate-ccw"></i>
+                                 </div>
+                                 <h4 class="mb-2">Real Time Updates</h4>
+                                 <p>Maecenas nec mauris dui. Sed ut mi a nibh rhoncus blandit. Cras accumsan, eros in malesuada convallis.</p>
+                              </div>
+                              <div>
+                                 <!-- content -->
+                                 <div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
+                                    <i class="text-white h-6 w-6" data-feather="tag"></i>
+                                 </div>
+                                 <h4 class="mb-2">Meta Information</h4>
+                                 <p>Aenean justo lorem, semper non lectus quis, porta semper enim. Integer posuere lorem eu neque pellentesque.</p>
+                              </div>
+                              <div>
+                                 <!-- content -->
+                                 <div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
+                                    <i class="text-white h-6 w-6" data-feather="file-text"></i>
+                                 </div>
+                                 <h4 class="mb-2">Pre rendered Results</h4>
+                                 <p>Donec cursus libero non nibh consectetur sodales tincidunt vitae turpis. Duis feugiat at lorem id iaculis.</p>
+                              </div>
+                              <div>
+                                 <!-- content -->
+                                 <div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
+                                    <i class="text-white h-6 w-6" data-feather="trending-up"></i>
+                                 </div>
+                                 <h4 class="mb-2">Simple Analytics</h4>
+                                 <p>Nulla imperdiet sem quis ipsum condi mentum po ris sit amet libero et turpis vestibulum faucibus at nec lacus.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mb-16">
+                           <!-- title -->
+                           <div class="flex-auto">
+                              <h2>Frequently Asked Questions</h2>
+                           </div>
+                           <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-10">
+                              <!-- content -->
+                              <div>
+                                 <h4 class="mb-3">Will i be charged now for?</h4>
+                                 <p>Vestibulum pulvinar est at erat laoreet fringilla. Nullam imperdiet, augue non vestibulum triuam quat maxim felis.</p>
+                              </div>
+                              <!-- content -->
+                              <div>
+                                 <h4 class="mb-3">How does a subscription work?</h4>
+                                 <p>Donec tempus imperdiet libero quis ultricies. Donec nunc nisi, imperdiet nec porta ultrices, accumsan a nibh.</p>
+                              </div>
+                              <!-- content -->
+                              <div>
+                                 <h4 class="mb-3">Can I cancel anytime?</h4>
+                                 <p>Yes, Pellentesque habitant morbi tristique senectus et netus fficitur eget lacus eu, gravida blandit sem. Duis aliquam convallis tempor</p>
+                              </div>
+                              <!-- content -->
+                              <div>
+                                 <h4 class="mb-3">How long is my personal?</h4>
+                                 <p>Aliquam vel sodales est. Mauris eu dignissim dolor. Praesent scelerisque dolor risus, quis viverra interdum turpis tincidunt interdum.</p>
+                              </div>
+                              <!-- content -->
+                              <div>
+                                 <h4 class="mb-3">What are Multisite plan?</h4>
+                                 <p>Quisque accumsan odio sed congue u eleifend est porttitor nisi lobortis, sit aget dolor rhoncus tincidunt vel a mauris.</p>
+                              </div>
+                              <!-- content -->
+                              <div>
+                                 <h4 class="mb-3">Are the files downloadable?</h4>
+                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fitur eget lacus eu, gravida blandit sem.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end of pricing -->
+      </main>
 
-															<span>Advanced analytics</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
-
-															<span>3rd party integrations</span>
-														</li>
-														<li class="gap-2 flex items-center">
-															<i data-feather="check-circle" class="text-green-500 w-4 h-4"></i>
-
-															<span>24 / 7 supports</span>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="mb-16">
-									<!--content-->
-									<div class="flex-auto">
-										<h2 class="mb-2">Everything you need to build efficiently</h2>
-										<p>Start building your app using our tools, be efficient, spend less time with details more time with your business.</p>
-									</div>
-									<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-10">
-										<div>
-											<!--content-->
-											<div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
-												<i class="text-white h-6 w-6" data-feather="edit"></i>
-											</div>
-											<h4 class="mb-2">Create and Edit Projects</h4>
-											<p>Donec posuere felis sit amet felis max imus roin consectetur quis leo id eleifuet, sapien quis fringilla finibus.</p>
-										</div>
-										<div>
-											<!--content-->
-											<div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
-												<i class="text-white h-6 w-6" data-feather="filter"></i>
-											</div>
-											<h4 class="mb-2">Search and Filter</h4>
-											<p>Vestibulum in neque augue. Vivamus sed tempor mi. Integer dolor urna, dictum a arcu vitae, efficitur semper lorem.</p>
-										</div>
-										<div>
-											<!--content-->
-											<div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
-												<i class="text-white h-6 w-6" data-feather="rotate-ccw"></i>
-											</div>
-											<h4 class="mb-2">Real Time Updates</h4>
-											<p>Maecenas nec mauris dui. Sed ut mi a nibh rhoncus blandit. Cras accumsan, eros in malesuada convallis.</p>
-										</div>
-										<div>
-											<!--content-->
-											<div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
-												<i class="text-white h-6 w-6" data-feather="tag"></i>
-											</div>
-											<h4 class="mb-2">Meta Information</h4>
-											<p>Aenean justo lorem, semper non lectus quis, porta semper enim. Integer posuere lorem eu neque pellentesque.</p>
-										</div>
-										<div>
-											<!--content-->
-											<div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
-												<i class="text-white h-6 w-6" data-feather="file-text"></i>
-											</div>
-											<h4 class="mb-2">Pre rendered Results</h4>
-											<p>Donec cursus libero non nibh consectetur sodales tincidunt vitae turpis. Duis feugiat at lorem id iaculis.</p>
-										</div>
-										<div>
-											<!--content-->
-											<div class="bg-indigo-600 text-white inline-block p-3 rounded-md mb-3">
-												<i class="text-white h-6 w-6" data-feather="trending-up"></i>
-											</div>
-											<h4 class="mb-2">Simple Analytics</h4>
-											<p>Nulla imperdiet sem quis ipsum condi mentum po ris sit amet libero et turpis vestibulum faucibus at nec lacus.</p>
-										</div>
-									</div>
-								</div>
-								<div class="mb-16">
-									<!--title-->
-									<div class="flex-auto">
-										<h2>Frequently Asked Questions</h2>
-									</div>
-									<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-10">
-										<!--content-->
-										<div>
-											<h4 class="mb-3">Will i be charged now for?</h4>
-											<p>Vestibulum pulvinar est at erat laoreet fringilla. Nullam imperdiet, augue non vestibulum triuam quat maxim felis.</p>
-										</div>
-										<!--content-->
-										<div>
-											<h4 class="mb-3">How does a subscription work?</h4>
-											<p>Donec tempus imperdiet libero quis ultricies. Donec nunc nisi, imperdiet nec porta ultrices, accumsan a nibh.</p>
-										</div>
-										<!--content-->
-										<div>
-											<h4 class="mb-3">Can I cancel anytime?</h4>
-											<p>Yes, Pellentesque habitant morbi tristique senectus et netus fficitur eget lacus eu, gravida blandit sem. Duis aliquam convallis tempor</p>
-										</div>
-										<!--content-->
-										<div>
-											<h4 class="mb-3">How long is my personal?</h4>
-											<p>Aliquam vel sodales est. Mauris eu dignissim dolor. Praesent scelerisque dolor risus, quis viverra interdum turpis tincidunt interdum.</p>
-										</div>
-										<!--content-->
-										<div>
-											<h4 class="mb-3">What are Multisite plan?</h4>
-											<p>Quisque accumsan odio sed congue u eleifend est porttitor nisi lobortis, sit aget dolor rhoncus tincidunt vel a mauris.</p>
-										</div>
-										<!--content-->
-										<div>
-											<h4 class="mb-3">Are the files downloadable?</h4>
-											<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fitur eget lacus eu, gravida blandit sem.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--end of pricing-->
-		</main>
-
-		@@include("partials/scripts.html")
-	</body>
+      @@include("partials/scripts.html")
+   </body>
 </html>

@@ -25,13 +25,6 @@
 	transition: height 0.35s ease;
 }
 
-/* @media (min-width: 990px) {
-	.navbar-expand .navbar-collapse {
-		display: flex !important;
-		flex-basis: auto;
-	}
-} */
-
 /* Tabs */
 
 .nav-line-bottom .nav-item .nav-link.active {

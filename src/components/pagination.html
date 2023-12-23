@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start pagiantion page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "pagination", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 
@@ -23,7 +26,7 @@
 									<h2 class="text-xl mb-1">Basic Example</h2>
 									<p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
 										<li class="nav-item" role="presentation">
@@ -142,9 +145,10 @@
 									<h2 class="text-xl mb-1">With Icons</h2>
 									<p>The following pagination component example shows how you can use SVG icons instead of text to show the previous and next pages.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -159,6 +163,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -174,6 +179,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- content -->
 									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active" id="pills-design-icon-pagination" role="tabpanel" aria-labelledby="pills-design-icon-pagination-tab" tabindex="0">
 											<!-- pagination start -->
@@ -243,6 +249,7 @@
 											<!-- pagination end -->
 										</div>
 										<div class="tab-pane fade" id="pills-html-icon-pagination" role="tabpanel" aria-labelledby="pills-html-icon-pagination-tab" tabindex="0">
+											<!-- code -->
 											<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- pagination start --&gt;</span>
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
@@ -317,9 +324,11 @@
 									<h2 class="text-xl mb-1">Disabled and active states</h2>
 									<p>Use the following list of pagination items based on two sizes powered by Tailwind CSS utility classes to indicate a series of content for your website.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -334,6 +343,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -349,6 +359,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabThirdContent">
 										<div class="tab-pane fade show active" id="pills-design-disabled-pagination" role="tabpanel" aria-labelledby="pills-design-disabled-pagination-tab" tabindex="0">
 											<!-- pagination start -->
@@ -419,6 +430,7 @@
 											<!-- pagination end -->
 										</div>
 										<div class="tab-pane fade" id="pills-html-disabled-pagination" role="tabpanel" aria-labelledby="pills-html-disabled-pagination-tab" tabindex="0">
+											<!-- code -->
 											<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- pagination start --&gt;</span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
@@ -494,7 +506,7 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- end pagiantion page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

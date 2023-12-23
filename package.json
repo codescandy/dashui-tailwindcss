@@ -42,6 +42,7 @@
     "gulp-useref": "5.0.0",
     "imagemin-jpeg-recompress": "^7.1.0",
     "imagemin-pngquant": "^9.0.2",
-    "postcss": "^8.4.31"
+    "postcss": "^8.4.31",
+    "prettier": "3.1.1"
   }
 }

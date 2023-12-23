@@ -1,6 +1,8 @@
+/* tailwind css */
+
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
-*//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -309,6 +311,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -349,6 +352,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -382,6 +386,7 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden] {
   display: none;
 }
@@ -556,43 +561,50 @@ select {
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
-	h1 {
+
+h1 {
   font-size: 2.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(33 43 54 / var(--tw-text-opacity));
 }
-	h2 {
+
+h2 {
   font-size: 1.875rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(33 43 54 / var(--tw-text-opacity));
 }
-	h3 {
+
+h3 {
   font-size: 1.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(33 43 54 / var(--tw-text-opacity));
 }
-	h4 {
+
+h4 {
   font-size: 1.125rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(33 43 54 / var(--tw-text-opacity));
 }
-	h5 {
+
+h5 {
   font-size: 0.875rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(33 43 54 / var(--tw-text-opacity));
 }
-	h6 {
+
+h6 {
   font-size: 0.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(33 43 54 / var(--tw-text-opacity));
 }
-	body {
+
+body {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   font-size: 0.875rem;
@@ -602,7 +614,6 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-	/* ... */
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -880,10 +891,6 @@ select {
   top: 0.625rem;
 }
 
-.left-auto {
-  left: auto;
-}
-
 .z-50 {
   z-index: 50;
 }
@@ -894,10 +901,6 @@ select {
 
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .-mx-1 {
@@ -1034,6 +1037,10 @@ select {
   margin-left: 1.75rem;
 }
 
+.ml-\[15\.625rem\] {
+  margin-left: 15.625rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -1088,10 +1095,6 @@ select {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.ml-\[15\.625rem\] {
-  margin-left: 15.625rem;
 }
 
 .block {
@@ -1266,16 +1269,12 @@ select {
   width: 100%;
 }
 
-.min-w-\[36px\] {
-  min-width: 36px;
-}
-
 .min-w-\[100vw\] {
   min-width: 100vw;
 }
 
-.min-w-0 {
-  min-width: 0px;
+.min-w-\[36px\] {
+  min-width: 36px;
 }
 
 .max-w-md {
@@ -2339,13 +2338,13 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
 .\[transition\:margin_0\.25s_ease-out\] {
   transition: margin 0.25s ease-out;
 }
+
+/* headings, body */
+
+/* btn, card */
 
 .marker\:text-indigo-600 *::marker {
   color: rgb(98 75 255 );
@@ -2978,10 +2977,6 @@ select {
     margin-top: 0px;
   }
 
-  .lg\:ml-\[15\.625rem\] {
-    margin-left: 15.625rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -3008,14 +3003,6 @@ select {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:min-w-\[100vw\] {
-    min-width: 100vw;
-  }
-
-  .lg\:min-w-0 {
-    min-width: 0px;
   }
 
   .lg\:flex-auto {
@@ -3098,10 +3085,6 @@ select {
 
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .xl\:min-w-0 {
-    min-width: 0px;
   }
 
   .xl\:grid-cols-2 {
@@ -3257,13 +3240,6 @@ button[aria-expanded='true'] .collapse-icon {
 	transition: height 0.35s ease;
 }
 
-@media (min-width: 990px) {
-	.navbar-expand .navbar-collapse {
-		display: flex !important;
-		flex-basis: auto;
-	}
-}
-
 /* Tabs */
 
 .nav-line-bottom .nav-item .nav-link.active {
@@ -3284,6 +3260,8 @@ button[aria-expanded='true'] .collapse-icon {
 	border-left: 1px solid #624bff;
 	color: rgb(98, 75, 255);
 }
+
+/* tab content */
 
 .tab-content > .tab-pane {
 	display: none;
@@ -3319,7 +3297,7 @@ button[aria-expanded='true'] .collapse-icon {
 
 .navbar-vertical .navbar-brand {
 	padding: 1rem 1.5rem 1.5rem;
-	margin-right: 0px;
+
 	display: block;
 }
 .navbar-vertical .navbar-brand img {
@@ -3407,6 +3385,8 @@ button[aria-expanded='true'] .collapse-icon {
 	margin-left: 0;
 }
 
+/* Responsive breakpoints */
+
 @media (max-width: 576px) {
 	#app-layout-content {
 		margin-left: 0rem;
@@ -3432,6 +3412,8 @@ button[aria-expanded='true'] .collapse-icon {
 		margin-left: 15.6875rem;
 	}
 }
+
+/* simplebar */
 
 .simplebar-scrollbar::before {
 	background-color: rgb(33, 43, 54);
@@ -3468,6 +3450,7 @@ button[aria-expanded='true'] .collapse-icon {
 }
 
 /* Prism CSS */
+
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
 	background: rgb(33, 43, 54);

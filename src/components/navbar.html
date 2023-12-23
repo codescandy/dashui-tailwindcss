@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start navbar page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "navbar", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 
@@ -23,9 +26,10 @@
 									<h2 class="text-xl mb-1">Example</h2>
 									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -40,6 +44,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -55,8 +60,10 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active" id="pills-design-navbar-example" role="tabpanel" aria-labelledby="pills-design-navbar-example-tab" tabindex="0">
+											<!-- nav -->
 											<nav class="bg-white navbar-expand">
 												<div class="flex flex-wrap items-center justify-between p-4">
 													<a href="https://codescandy.com/" class="flex items-center space-x-3">
@@ -99,6 +106,7 @@
 											</nav>
 										</div>
 										<div class="tab-pane fade" id="pills-html-navbar-example" role="tabpanel" aria-labelledby="pills-html-navbar-example-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -153,9 +161,11 @@
 									<h2 class="text-xl mb-1">Alignment</h2>
 									<p>Left aligned navbar.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -170,6 +180,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -185,8 +196,10 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active" id="pills-design-navbar-left-align" role="tabpanel" aria-labelledby="pills-design-navbar-left-align-tab" tabindex="0">
+											<!-- nav -->
 											<nav class="bg-white navbar-expand">
 												<div class="flex flex-wrap items-center justify-between p-4">
 													<a href="https://codescandy.com/" class="flex items-center space-x-3">
@@ -229,6 +242,7 @@
 											</nav>
 										</div>
 										<div class="tab-pane fade" id="pills-html-navbar-left-align" role="tabpanel" aria-labelledby="pills-html-navbar-left-align-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -276,15 +290,16 @@
 									</div>
 								</div>
 							</div>
-							<!-- navbar alignment Left end -->
-							<!-- navbar alignment center start -->
+
 							<div>
 								<div class="mb-4">
 									<p>Center aligned navbar.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -299,6 +314,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -314,6 +330,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabThirdContent">
 										<div class="tab-pane fade show active" id="pills-design-navbar-center-align" role="tabpanel" aria-labelledby="pills-design-navbar-center-align-tab" tabindex="0">
 											<nav class="bg-white navbar-expand">
@@ -368,6 +385,7 @@
 											</nav>
 										</div>
 										<div class="tab-pane fade" id="pills-html-navbar-center-align" role="tabpanel" aria-labelledby="pills-html-navbar-center-align-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -423,16 +441,17 @@
 									</div>
 								</div>
 							</div>
-							<!-- navbar alignment center end -->
 
-							<!-- navbar  color varients start -->
 							<div>
 								<div class="mb-4">
 									<h2 class="text-xl mb-1">Color Varients</h2>
 									<p>Theming the navbar with utility classes.</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -447,6 +466,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -462,8 +482,10 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabFourthContent">
 										<div class="tab-pane fade show active" id="pills-design-navbar-color-varient" role="tabpanel" aria-labelledby="pills-design-navbar-color-varient-tab" tabindex="0">
+											<!-- header -->
 											<header class="bg-gray-900 navbar-expand">
 												<nav class="flex flex-wrap items-center justify-between p-4">
 													<a href="https://codescandy.com/" class="flex items-center space-x-3">
@@ -506,6 +528,7 @@
 													</div>
 												</nav>
 											</header>
+											<!-- header -->
 											<header class="bg-indigo-600 navbar-expand">
 												<nav class="flex flex-wrap items-center justify-between p-4">
 													<a href="https://codescandy.com/" class="flex items-center space-x-3">
@@ -548,6 +571,7 @@
 											</header>
 										</div>
 										<div class="tab-pane fade" id="pills-html-navbar-color-varient" role="tabpanel" aria-labelledby="pills-html-navbar-color-varient-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -597,13 +621,12 @@
 									</div>
 								</div>
 							</div>
-							<!-- navbar color varients end -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-
+		<!-- end navbar page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start tables page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "tables", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 
@@ -23,9 +26,11 @@
 									<h2 class="text-xl mb-1">Basic Example</h2>
 									<p>Using the most basic table markup, here's how tables look.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -40,6 +45,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -55,9 +61,11 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active rounded-md" id="pills-design-basic-table" role="tabpanel" aria-labelledby="pills-design-basic-table-tab" tabindex="0">
 											<div class="relative overflow-x-auto">
+												<!-- table -->
 												<table class="text-left w-full whitespace-nowrap">
 													<thead class="bg-gray-200 text-gray-700">
 														<tr class="border-gray-300 border-b">
@@ -92,6 +100,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-basic-table" role="tabpanel" aria-labelledby="pills-html-basic-table-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -138,9 +147,11 @@
 									<h2 class="text-xl mb-1">Striped Table</h2>
 									<p>Use this example to increase the readability of the data sets by alternating the background color of every second table row.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -155,6 +166,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -170,9 +182,11 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active rounded-md" id="pills-design-striped-table" role="tabpanel" aria-labelledby="pills-design-striped-table-tab" tabindex="0">
 											<div class="relative overflow-x-auto">
+												<!-- table -->
 												<table class="text-left w-full whitespace-nowrap">
 													<thead>
 														<tr class="border-gray-300 border-b">
@@ -213,6 +227,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-striped-table" role="tabpanel" aria-labelledby="pills-html-striped-table-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -264,9 +279,11 @@
 									<h2 class="text-xl mb-1">Hoverable rows</h2>
 									<p>Add hover-state on table row.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -281,6 +298,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -296,6 +314,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabThirdContent">
 										<div class="tab-pane fade show active rounded-md" id="pills-design-hover-table" role="tabpanel" aria-labelledby="pills-design-hover-table-tab" tabindex="0">
 											<div class="relative overflow-x-auto">
@@ -339,6 +358,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-hover-table" role="tabpanel" aria-labelledby="pills-html-hover-table-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -390,8 +410,11 @@
 									<h2 class="text-xl mb-1">Bordered tables</h2>
 									<p>Add border on all sides of the table and cells.</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabforuth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -406,6 +429,8 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
+
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -421,6 +446,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabforuthContent">
 										<div class="tab-pane fade show active rounded-md" id="pills-design-bordered-table" role="tabpanel" aria-labelledby="pills-design-bordered-table-tab" tabindex="0">
 											<div class="relative overflow-x-auto">
@@ -464,6 +490,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-bordered-table" role="tabpanel" aria-labelledby="pills-html-bordered-table-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -512,7 +539,7 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- end tables page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start lists page -->
+			<!-- app layout page -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "lists", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 
@@ -28,8 +31,10 @@
 										utilities.
 									</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -44,6 +49,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -59,6 +65,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active" id="pills-design-lists-example" role="tabpanel" aria-labelledby="pills-design-lists-example-tab" tabindex="0">
 											<ul class="list-disc list-inside">
@@ -82,6 +89,7 @@
 											</ul>
 										</div>
 										<div class="tab-pane fade" id="pills-html-lists-example" role="tabpanel" aria-labelledby="pills-html-lists-example-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -115,8 +123,10 @@
 										modifier:
 									</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -131,6 +141,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -146,6 +157,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active" id="pills-design-lists-marker-example" role="tabpanel" aria-labelledby="pills-design-lists-marker-example-tab" tabindex="0">
 											<ul class="marker:text-indigo-600 list-disc ps-5 space-y-2 text-base">
@@ -155,6 +167,7 @@
 											</ul>
 										</div>
 										<div class="tab-pane fade" id="pills-html-lists-marker-example" role="tabpanel" aria-labelledby="pills-html-lists-marker-example-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -172,8 +185,11 @@
 									<h2 class="text-xl mb-1">List Group</h2>
 									<p>The most basic list group is an unordered list with list items.</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -188,6 +204,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -203,6 +220,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabThirdContent">
 										<div class="tab-pane fade show active" id="pills-design-list-group" role="tabpanel" aria-labelledby="pills-design-list-group-tab" tabindex="0">
 											<ul class="max-w-xs flex flex-col">
@@ -224,6 +242,7 @@
 											</ul>
 										</div>
 										<div class="tab-pane fade" id="pills-html-list-group" role="tabpanel" aria-labelledby="pills-html-list-group-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -259,8 +278,10 @@
 										to indicate the current active selection.
 									</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -275,6 +296,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -290,6 +312,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabFourthContent">
 										<div class="tab-pane fade show active" id="pills-design-list-group-active" role="tabpanel" aria-labelledby="pills-design-list-group-active-tab" tabindex="0">
 											<ul class="max-w-xs flex flex-col">
@@ -311,6 +334,7 @@
 											</ul>
 										</div>
 										<div class="tab-pane fade" id="pills-html-list-group-active" role="tabpanel" aria-labelledby="pills-html-list-group-active-tab" tabindex="0">
+											<!-- nav item -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -346,8 +370,11 @@
 										to indicate the current active selection.
 									</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFifth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -362,6 +389,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -377,6 +405,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabFifthContent">
 										<div class="tab-pane fade show active" id="pills-design-list-group-link-active" role="tabpanel" aria-labelledby="pills-design-list-group-link-active-tab" tabindex="0">
 											<div class="max-w-xs flex flex-col">
@@ -401,6 +430,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-list-group-link-active" role="tabpanel" aria-labelledby="pills-html-list-group-link-active-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -433,8 +463,11 @@
 									<h2 class="text-xl mb-1">Flush</h2>
 									<p>Remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSixth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -449,6 +482,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -464,6 +498,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabSixthContent">
 										<div class="tab-pane fade show active" id="pills-design-link-flush" role="tabpanel" aria-labelledby="pills-design-link-flush-tab" tabindex="0">
 											<ul class="max-w-xs flex flex-col divide-y divide-gray-300">
@@ -473,6 +508,7 @@
 											</ul>
 										</div>
 										<div class="tab-pane fade" id="pills-html-link-flush" role="tabpanel" aria-labelledby="pills-html-link-flush-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -490,7 +526,7 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- end lists page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

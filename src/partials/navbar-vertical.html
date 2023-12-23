@@ -1,11 +1,12 @@
-<!--start navbar-->
+<!-- start navbar -->
 <nav class="navbar-vertical navbar">
 	<div id="myScrollableElement" class="h-screen" data-simplebar>
-		<!-- Brand logo -->
+		<!-- brand logo -->
 		<a class="navbar-brand" href="@@webRoot/index.html">
 			<img src="@@webRoot/assets/images/brand/logo/logo.svg" alt="" />
 		</a>
-		<!-- Navbar nav -->
+
+		<!-- navbar nav -->
 		<ul class="navbar-nav flex-col" id="sideNavbar">
 			<li class="nav-item">
 				<a class="nav-link @@if (context.page === 'dashboard') { active }" href="@@webRoot/index.html">
@@ -14,12 +15,12 @@
 				</a>
 			</li>
 
-			<!-- Nav item -->
+			<!-- nav item -->
 			<li class="nav-item">
 				<div class="navbar-heading">Layouts & Pages</div>
 			</li>
 
-			<!-- Nav item -->
+			<!-- nav item -->
 			<li class="nav-item">
 				<a class="nav-link @@if (context.page_group !== 'pages') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navPages" aria-expanded="false" aria-controls="navPages">
 					<i data-feather="layers" class="w-4 h-4 mr-2"></i>
@@ -48,7 +49,7 @@
 					</ul>
 				</div>
 			</li>
-			<!-- Nav item -->
+			<!-- nav item -->
 			<li class="nav-item">
 				<a
 					class="nav-link @@if (context.page_group !== 'authentication') { collapsed }"
@@ -75,6 +76,7 @@
 					</ul>
 				</div>
 			</li>
+			<!-- nav item -->
 			<li class="nav-item">
 				<a class="nav-link @@if (context.page === 'layout') { active }" href="@@webRoot/layout.html">
 					<i data-feather="sidebar" class="w-4 h-4 mr-2"></i>
@@ -82,10 +84,11 @@
 				</a>
 			</li>
 
-			<!-- Nav item -->
+			<!-- nav heading -->
 			<li class="nav-item">
 				<div class="navbar-heading">UI Components</div>
 			</li>
+			<!-- nav item -->
 			<li class="nav-item">
 				<a
 					class="nav-link @@if (context.page_group !== 'components') { collapsed }"
@@ -101,7 +104,7 @@
 				<div id="navComponents" class="collapse @@if (context.page_group === 'components') { show }" data-bs-parent="#sideNavbar">
 					<ul class="nav flex-col">
 						<li class="nav-item">
-							<a class="nav-link @@if (context.page === 'accordion') { active }" href="@@webRoot/components/index.html">Accordions</a>
+							<a class="nav-link @@if (context.page === 'accordion') { active }" href="@@webRoot/components/accordions.html">Accordions</a>
 						</li>
 
 						<li class="nav-item">
@@ -171,7 +174,7 @@
 					</ul>
 				</div>
 			</li>
-
+			<!-- nav item -->
 			<li class="nav-item">
 				<a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#navMenuLevel" aria-expanded="false" aria-controls="navMenuLevel">
 					<i data-feather="corner-left-down" class="w-4 h-4 mr-2"></i>
@@ -192,6 +195,7 @@
 								</ul>
 							</div>
 						</li>
+						<!-- nav item -->
 						<li class="nav-item">
 							<a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#navMenuLevelThree" aria-expanded="false" aria-controls="navMenuLevelThree">Three Level</a>
 							<div id="navMenuLevelThree" class="collapse" data-bs-parent="#navMenuLevel">
@@ -216,18 +220,19 @@
 				</div>
 			</li>
 
-			<!-- Nav item -->
+			<!-- nav item -->
 			<li class="nav-item">
 				<div class="navbar-heading">Documentation</div>
 			</li>
 
-			<!-- Nav item -->
+			<!-- nav item -->
 			<li class="nav-item">
 				<a class="nav-link @@if (context.page === 'docs') { active }" href="@@webRoot/docs.html">
 					<i data-feather="clipboard" class="w-4 h-4 mr-2"></i>
 					Docs
 				</a>
 			</li>
+			<!-- nav item -->
 			<li class="nav-item">
 				<a class="nav-link @@if (context.page === 'changelog') { active }" href="@@webRoot/changelog.html">
 					<i data-feather="git-pull-request" class="w-4 h-4 mr-2"></i>

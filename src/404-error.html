@@ -1,37 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		@@include("partials/head.html")
-		<title>404 Error - TailwindCSS HTML Admin Template Free - Dash UI</title>
-	</head>
-	<body>
-		<!--start error page-->
-		<div class="h-screen flex justify-center items-center mx-auto">
-			<!-- row -->
-			<div class="flex flex-col">
-				<!-- col -->
+   <head>
+      @@include("partials/head.html")
+      <title>404 Error - TailwindCSS HTML Admin Template Free - Dash UI</title>
+   </head>
+   <body>
+      <!-- start error page -->
+      <div class="h-screen flex justify-center items-center mx-auto">
+         <!-- row -->
+         <div class="flex flex-col">
+            <!-- col -->
+            <!-- content -->
+            <div class="text-center">
+               <div class="mb-3">
+                  <!-- img -->
+                  <img src="./assets/images/error/404-error-img.png" alt="" class="mw-100" />
+               </div>
+               <!-- text -->
+               <h1 class="text-5xl font-bold">Oops! the page not found.</h1>
+               <p class="mb-8 text-xl">Or simply leverage the expertise of our consultation team.</p>
+               <!-- button -->
+               <a
+                  href="./index.html"
+                  class="btn bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                  Go Home
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- end of navbar -->
 
-				<!-- content -->
-				<div class="text-center">
-					<div class="mb-3">
-						<!-- img -->
-						<img src="./assets/images/error/404-error-img.png" alt="" class="mw-100" />
-					</div>
-					<!-- text -->
-					<h1 class="text-5xl font-bold">Oops! the page not found.</h1>
-					<p class="mb-8 text-xl">Or simply leverage the expertise of our consultation team.</p>
-					<!-- button -->
-					<a
-						href="./index.html"
-						class="btn bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-					>
-						Go Home
-					</a>
-				</div>
-			</div>
-		</div>
-		<!--end of navbar-->
-
-		@@include("partials/scripts.html")
-	</body>
+      @@include("partials/scripts.html")
+   </body>
 </html>

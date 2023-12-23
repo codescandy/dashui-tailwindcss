@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start dropdown page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "dropdown", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 					<div class="p-6">
@@ -21,8 +24,11 @@
 									<h2 class="text-xl mb-1">Default Dropdown</h2>
 									<p>The default dropdown menu appearance.</p>
 								</div>
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -37,6 +43,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -52,8 +59,10 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active" id="pills-design-default-dropdown" role="tabpanel" aria-labelledby="pills-design-default-dropdown-tab" tabindex="0">
+											<!-- dropdown -->
 											<div class="dropdown">
 												<button
 													class="btn dropdown-toggle gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dropdown-toggle"
@@ -71,6 +80,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-button-group" role="tabpanel" aria-labelledby="pills-html-button-group-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -98,7 +108,7 @@ Dropdown button
 				</div>
 			</div>
 		</main>
-
+		<!-- end dropdown page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

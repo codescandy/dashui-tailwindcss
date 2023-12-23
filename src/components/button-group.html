@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start button group page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "button-group", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 					<div class="p-6">
@@ -21,9 +24,10 @@
 									<h2 class="text-xl mb-1">Basic example</h2>
 									<p>A button group displays multiple buttons together.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -53,6 +57,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active" id="pills-design-button-group" role="tabpanel" aria-labelledby="pills-design-button-group-tab" tabindex="0">
 											<div class="inline-flex">
@@ -77,6 +82,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-button-group" role="tabpanel" aria-labelledby="pills-html-button-group-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -109,9 +115,10 @@
 									<h2 class="text-xl mb-1">Sizes</h2>
 									<p>A button group displays multiple buttons together.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -126,6 +133,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -141,6 +149,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active" id="pills-design-button-group-size" role="tabpanel" aria-labelledby="pills-design-button-group-size-tab" tabindex="0">
 											<div class="inline-flex mb-2">
@@ -209,6 +218,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-button-group-size" role="tabpanel" aria-labelledby="pills-html-button-group-size-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -281,9 +291,10 @@
 									<h2 class="text-xl mb-1">Verticle</h2>
 									<p>A button group displays multiple buttons together.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -313,6 +324,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabThirdContent">
 										<div class="tab-pane fade show active" id="pills-design-button-group-verticle" role="tabpanel" aria-labelledby="pills-design-button-group-verticle-tab" tabindex="0">
 											<div class="max-w-xs flex flex-col">
@@ -337,6 +349,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-button-group-verticle" role="tabpanel" aria-labelledby="pills-html-button-group-verticle-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -369,9 +382,10 @@
 									<h2 class="text-xl mb-1">Button Toolbar</h2>
 									<p>Editor toolbar button group.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -386,6 +400,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -401,6 +416,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabFourthContent">
 										<div class="tab-pane fade show active" id="pills-design-button-group-toolbar" role="tabpanel" aria-labelledby="pills-design-button-group-toolbar-tab" tabindex="0">
 											<div class="inline-flex">
@@ -447,6 +463,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-button-group-toolbar" role="tabpanel" aria-labelledby="pills-html-button-group-toolbar-tab" tabindex="0">
+											<!-- code -->
 											<pre
 												class="language-markup"
 												tabindex="0"
@@ -501,7 +518,7 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- end button group page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

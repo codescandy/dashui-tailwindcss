@@ -6,8 +6,11 @@
 	</head>
 	<body>
 		<main>
+			<!-- start toast page -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("../partials/navbar-vertical.html", { "page": "toast", "page_group": "components" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("../partials/top-navbar.html")
 
@@ -27,9 +30,11 @@
 										, allowing easy alignment of content thanks to our margin and flexbox utilities.
 									</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -44,6 +49,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -59,6 +65,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabContent">
 										<div class="tab-pane fade show active" id="pills-design-basic-toast" role="tabpanel" aria-labelledby="pills-design-basic-toast-tab" tabindex="0">
 											<div aria-live="assertive" aria-atomic="true" class="toast fade show border border-gray-300 flex flex-col w-full max-w-xs text-gray-500 bg-white rounded-lg" role="alert">
@@ -82,6 +89,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-basic-toast" role="tabpanel" aria-labelledby="pills-html-basic-toast-tab" tabindex="0">
+											<!-- code -->
 											<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
 	<span class="token attr-name">aria-live</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assertive<span class="token punctuation">"</span></span>
 	<span class="token attr-name">aria-atomic</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
@@ -117,9 +125,11 @@
 									<h2 class="text-xl mb-1">Live Toast</h2>
 									<p>Click the button below to show a toast (positioned with our utilities in the lower right corner) that has been hidden by default.</p>
 								</div>
-
+								<!-- card -->
 								<div class="card shadow">
+									<!-- nav -->
 									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 border-b nav-link font-semibold active"
@@ -134,6 +144,7 @@
 												Design
 											</button>
 										</li>
+										<!-- nav item -->
 										<li class="nav-item" role="presentation">
 											<button
 												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
@@ -149,6 +160,7 @@
 											</button>
 										</li>
 									</ul>
+									<!-- tab content -->
 									<div class="tab-content p-6" id="pills-tabSecondContent">
 										<div class="tab-pane fade show active" id="pills-design-live-toast" role="tabpanel" aria-labelledby="pills-design-live-toast-tab" tabindex="0">
 											<button
@@ -181,6 +193,7 @@
 											</div>
 										</div>
 										<div class="tab-pane fade" id="pills-html-live-toast" role="tabpanel" aria-labelledby="pills-html-live-toast-tab" tabindex="0">
+											<!-- code -->
 											<pre class="language-markup" tabindex="0"><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
 		<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
 		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300<span class="token punctuation">"</span></span>
@@ -225,7 +238,7 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- end toast page -->
 		@@include("../partials/scripts.html")
 	</body>
 </html>

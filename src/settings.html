@@ -6,14 +6,16 @@
 	</head>
 	<body>
 		<main>
-			<!--start general setting-->
+			<!-- start general setting -->
+			<!-- app layout -->
 			<div id="app-layout" class="overflow-x-hidden flex">
 				@@include("partials/navbar-vertical.html", { "page": "settings", "page_group": "pages" })
+				<!-- app layout content -->
 				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
 					@@include("partials/top-navbar.html")
 					<div class="p-6">
 						<div class="flex items-center mb-6 border-b border-gray-300 pb-4">
-							<!--title-->
+							<!-- title -->
 							<h1 class="inline-block text-xl">General</h1>
 						</div>
 
@@ -22,12 +24,12 @@
 								<h4 class="mb-1">General Setting</h4>
 								<p class="text-gray-600">Profile configuration settings</p>
 							</div>
-							<!--card-->
+							<!-- card -->
 							<div class="card shadow col-span-3">
-								<!--card body-->
+								<!-- card body -->
 								<div class="card-body">
 									<div class="mb-6">
-										<!--title-->
+										<!-- title -->
 										<h4 class="mb-1">General Settings</h4>
 									</div>
 									<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
@@ -36,19 +38,19 @@
 										</div>
 										<div class="flex-[3]">
 											<div class="flex items-center">
-												<!--image-->
+												<!-- image -->
 												<div class="me-3">
 													<img src="assets/images/avatar/avatar-5.jpg" class="rounded-full w-16 h-16" alt="" />
 												</div>
 												<div>
-													<!--button-->
+													<!-- button -->
 													<button
 														type="button"
 														class="btn gap-x-2 bg-white text-gray-800 border-gray-300 disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-gray-700 hover:border-gray-700 active:bg-gray-700 active:border-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300"
 													>
 														Change
 													</button>
-													<!--button-->
+													<!-- button -->
 													<button
 														type="button"
 														class="btn gap-x-2 bg-white text-gray-800 border-gray-300 disabled:opacity-50 disabled:pointer-events-none hover:text-white hover:bg-gray-700 hover:border-gray-700 active:bg-gray-700 active:border-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300"
@@ -76,7 +78,7 @@
 											<h4 class="mb-1">Basic information</h4>
 										</div>
 										<form>
-											<!--input-->
+											<!-- input -->
 
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="fullName" class="flex-1 text-gray-800 font-semibold">Full name</label>
@@ -99,7 +101,7 @@
 												</div>
 											</div>
 
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="email" class="flex-1 text-gray-800 font-semibold">Email</label>
 												<div class="flex-[3] w-full">
@@ -112,7 +114,7 @@
 													/>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="phone" class="flex-1 text-gray-800 font-semibold">
 													Phone
@@ -128,7 +130,7 @@
 													/>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="location" class="flex-1 text-gray-800 font-semibold">Location</label>
 
@@ -144,7 +146,7 @@
 													</select>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="addressLine" class="flex-1 text-gray-800 font-semibold">Address line 1</label>
 
@@ -158,7 +160,7 @@
 													/>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="addressLineTwo" class="flex-1 text-gray-800 font-semibold">Address line 2</label>
 												<div class="flex-[3] w-full">
@@ -171,7 +173,7 @@
 													/>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="zipcode" class="flex-1 text-gray-800 font-semibold">Zip code</label>
 
@@ -206,19 +208,16 @@
 								<h4 class="mb-1">Email Setting</h4>
 								<p class="text-gray-600">Add an email settings to profile</p>
 							</div>
-
+							<!-- card -->
 							<div class="card shadow col-span-3">
 								<div class="card-body">
 									<div class="mb-6">
 										<h4 class="mb-1">Email</h4>
 									</div>
-
 									<div>
-										<!--form-->
-
+										<!-- form -->
 										<form>
-											<!--input-->
-
+											<!-- input -->
 											<div class="mb-3 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="newEmail" class="flex-1 text-gray-800 font-semibold">New Email</label>
 												<div class="flex-[3] w-full">
@@ -231,7 +230,7 @@
 													/>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<div class="flex-1 text-gray-800 font-semibold"></div>
 												<div class="flex-[3]">
@@ -246,7 +245,7 @@
 											<div class="mb-6">
 												<h4 class="mb-1">Change your password</h4>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="password" class="flex-1 text-gray-800 font-semibold">Current password</label>
 												<div class="flex-[3] w-full">
@@ -259,8 +258,7 @@
 													/>
 												</div>
 											</div>
-
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="newPassword" class="flex-1 text-gray-800 font-semibold">New password</label>
 												<div class="flex-[3] w-full">
@@ -273,7 +271,7 @@
 													/>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="confirmedPassword" class="flex-1 text-gray-800 font-semibold">Confirm new password</label>
 												<div class="flex-[3] w-full">
@@ -292,7 +290,7 @@
 													<div>
 														<h5 class="mb-1">Password requirements:</h5>
 														<p>Ensure that these requirements are met:</p>
-														<!--list-->
+														<!-- list -->
 														<ul class="list-disc list-inside my-4">
 															<li>Minimum 8 characters long the more, the better</li>
 															<li>At least one lowercase character</li>
@@ -300,7 +298,7 @@
 															<li>At least one number, symbol, or whitespace character</li>
 														</ul>
 													</div>
-													<!--button-->
+													<!-- button -->
 													<button
 														type="submit"
 														class="btn bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
@@ -317,7 +315,7 @@
 						</div>
 						<div class="mb-8 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
 							<div class="col-span-1">
-								<!--title-->
+								<!-- title -->
 								<h4 class="mb-1">Preferences</h4>
 								<p class="text-gray-600">Configure your preferences</p>
 							</div>
@@ -326,13 +324,10 @@
 									<div class="mb-6">
 										<h4 class="mb-1">Preferences</h4>
 									</div>
-
 									<div>
-										<!-- border -->
-
+										<!-- form -->
 										<form>
-											<!--select-->
-
+											<!-- select -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="langauge" class="flex-1 text-gray-800 font-semibold">Langauge</label>
 												<div class="flex-[3] w-full">
@@ -348,7 +343,7 @@
 												</div>
 											</div>
 
-											<!--select-->
+											<!-- select -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="timeZone" class="flex-1 text-gray-800 font-semibold">Date Format</label>
 												<div class="flex-[3] w-full">
@@ -377,7 +372,7 @@
 													</select>
 												</div>
 											</div>
-											<!--input-->
+											<!-- input -->
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<label for="confirmedPassword" class="flex-1 text-gray-800 font-semibold">Default</label>
 												<div class="flex-[3] w-full flex gap-5">
@@ -392,7 +387,7 @@
 														/>
 														<label for="radio-option-1" class="ml-1 text-slate-600">On</label>
 													</div>
-													<!--input-->
+													<!-- input -->
 													<div>
 														<input
 															class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full focus:ring-indigo-600 focus:outline-none focus:ring-2 checked:bg-indigo-600"
@@ -405,7 +400,7 @@
 													</div>
 												</div>
 											</div>
-											<!--form-->
+											<!-- form -->
 											<div class="mb-6 inline-flex md:flex gap-3 flex-col md:flex-row w-full">
 												<label for="confirmedPassword" class="flex-1 text-gray-800 font-semibold">Choose option default</label>
 												<div class="flex-[3] w-full">
@@ -426,7 +421,7 @@
 											<div class="mb-6 inline-flex md:flex md:items-center gap-3 flex-col md:flex-row w-full">
 												<div class="flex-1 text-gray-800 font-semibold"></div>
 												<div class="flex-[3]">
-													<!--button-->
+													<!-- button -->
 													<button
 														type="submit"
 														class="btn bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
@@ -445,7 +440,7 @@
 								<h4 class="mb-1">Notifications</h4>
 								<p class="text-gray-600">Change notification settings</p>
 							</div>
-							<!--card-->
+							<!-- card -->
 							<div class="card shadow col-span-3">
 								<div class="card-body">
 									<div class="mb-6">
@@ -686,7 +681,7 @@
 											</table>
 										</div>
 										<div class="relative overflow-x-auto mt-6">
-											<!--table-->
+											<!-- table -->
 											<table class="text-left w-full">
 												<thead class="text-gray-700 whitespace-nowrap">
 													<tr>
@@ -794,7 +789,7 @@
 											</table>
 										</div>
 										<div class="relative overflow-x-auto mt-6 mb-8">
-											<!--table-->
+											<!-- table -->
 											<table class="text-left w-full">
 												<thead class="text-gray-700 whitespace-nowrap">
 													<tr>
@@ -969,7 +964,7 @@
 											</table>
 										</div>
 										<div class="mb-4 inline-flex md:flex gap-3 flex-col md:flex-row w-full">
-											<!--select-->
+											<!-- select -->
 											<div class="flex-1 flex flex-col gap-3">
 												<label for="notification">When should we send you notifications?</label>
 												<select
@@ -983,7 +978,7 @@
 												</select>
 											</div>
 											<div class="flex-1 flex flex-col gap-3">
-												<!--select-->
+												<!-- select -->
 												<label for="dailyDigest">Daily Digest</label>
 												<select
 													class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
@@ -996,7 +991,7 @@
 												</select>
 											</div>
 											<div class="flex-1 flex flex-col gap-3">
-												<!--select-->
+												<!-- select -->
 												<label for="time">Time</label>
 												<select
 													class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
@@ -1009,7 +1004,7 @@
 												</select>
 											</div>
 										</div>
-										<!--button-->
+										<!-- button -->
 										<div class="flex-1 text-gray-800 font-semibold">
 											<button
 												type="submit"
@@ -1024,13 +1019,13 @@
 						</div>
 						<div class="mb-8 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
 							<div class="col-span-1">
-								<!--content-->
+								<!-- content -->
 								<h4 class="mb-1">Delete Account</h4>
 								<p class="text-gray-600">Easily set up social media accounts</p>
 							</div>
-							<!--card-->
+							<!-- card -->
 							<div class="card shadow col-span-3">
-								<!--card body-->
+								<!-- card body -->
 								<div class="card-body">
 									<h4 class="mb-3">Danger Zone</h4>
 									<p class="mb-4">Delete any and all content you have, such as articles, comments, your reading list or chat messages. Allow your username to become available to anyone.</p>
@@ -1055,9 +1050,8 @@
 					</div>
 				</div>
 			</div>
-			<!--end of general setting-->
+			<!-- end of general setting -->
 		</main>
-
 		@@include("partials/scripts.html")
 	</body>
 </html>
