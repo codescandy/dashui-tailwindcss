@@ -99,6 +99,8 @@
    display: block;
 }
 
+/* App layout CSS */
+
 #app-layout.toggled .navbar-vertical {
    margin-left: 0;
 }
