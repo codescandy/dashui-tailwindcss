@@ -1,19 +1,19 @@
 /* Collapse */
 
 .collapse:not(.show) {
-	display: none;
+   display: none;
 }
 
 .collapsing {
-	height: 0;
-	overflow: hidden;
-	transition: height 0.35s ease;
+   height: 0;
+   overflow: hidden;
+   transition: height 0.35s ease;
 }
 
 .collapse {
-	visibility: visible !important;
+   visibility: visible !important;
 }
 
-button[aria-expanded='true'] .collapse-icon {
-	transform: rotate(180deg);
+button[aria-expanded="true"] .collapse-icon {
+   transform: rotate(180deg);
 }

@@ -2,28 +2,28 @@
 
 .offcanvas.show:not(.hiding),
 .offcanvas.showing {
-	transform: none;
+   transform: none;
 }
 
 .offcanvas.hiding,
 .offcanvas.show,
 .offcanvas.showing {
-	visibility: visible;
+   visibility: visible;
 }
 
 .offcanvas-backdrop.fade {
-	opacity: 0;
+   opacity: 0;
 }
 .offcanvas-backdrop.show {
-	opacity: 0.5;
+   opacity: 0.5;
 }
 
 .offcanvas-backdrop {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 40;
-	width: 100vw;
-	height: 100vh;
-	background-color: rgb(33, 43, 54);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 40;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(33, 43, 54);
 }

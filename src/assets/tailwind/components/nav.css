@@ -1,64 +1,64 @@
 /* Nav */
 
 .nav {
-	display: flex;
-	flex-wrap: wrap;
-	padding-left: 0;
-	margin-bottom: 0;
-	list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   padding-left: 0;
+   margin-bottom: 0;
+   list-style: none;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-	border: 1px solid rgb(98, 75, 255);
-	color: rgb(98, 75, 255);
+   border: 1px solid rgb(98, 75, 255);
+   color: rgb(98, 75, 255);
 }
 
 .navbar-collapse {
-	flex-basis: 100%;
-	flex-grow: 1;
-	align-items: center;
+   flex-basis: 100%;
+   flex-grow: 1;
+   align-items: center;
 }
 
 .collapsing {
-	height: 0;
-	overflow: hidden;
-	transition: height 0.35s ease;
+   height: 0;
+   overflow: hidden;
+   transition: height 0.35s ease;
 }
 
 /* Tabs */
 
 .nav-line-bottom .nav-item .nav-link.active {
-	border-bottom: 1px solid rgb(98, 75, 255);
-	color: rgb(98, 75, 255);
+   border-bottom: 1px solid rgb(98, 75, 255);
+   color: rgb(98, 75, 255);
 }
 
 /* Tabs standalone */
 
 .nav-standalone {
-	border-left: 1px solid rgb(223, 227, 232);
-	color: rgb(99, 115, 129);
-	font-weight: 500;
+   border-left: 1px solid rgb(223, 227, 232);
+   color: rgb(99, 115, 129);
+   font-weight: 500;
 }
 
 .nav-standalone .nav-item .nav-link.active {
-	margin-left: -1px;
-	border-left: 1px solid #624bff;
-	color: rgb(98, 75, 255);
+   margin-left: -1px;
+   border-left: 1px solid #624bff;
+   color: rgb(98, 75, 255);
 }
 
 /* tab content */
 
 .tab-content > .tab-pane {
-	display: none;
+   display: none;
 }
 
 .tab-content > .active {
-	display: block;
+   display: block;
 }
 
 .fade:not(.show) {
-	opacity: 0;
+   opacity: 0;
 }
 .fade {
-	transition: opacity 0.15s linear;
+   transition: opacity 0.15s linear;
 }

@@ -1,34 +1,34 @@
 /* Prism CSS */
 
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-	background: rgb(33, 43, 54);
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+   background: rgb(33, 43, 54);
 }
 div.code-toolbar {
-	position: relative;
+   position: relative;
 }
 
 div.code-toolbar > .toolbar {
-	opacity: 0;
-	position: absolute;
-	right: 0.2em;
-	top: 0.3em;
-	transition: opacity 0.3s ease-in-out;
+   opacity: 0;
+   position: absolute;
+   right: 0.2em;
+   top: 0.3em;
+   transition: opacity 0.3s ease-in-out;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item {
-	display: inline-block;
+   display: inline-block;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > button {
-	background: rgb(69, 79, 91);
-	border-radius: 0.25rem;
-	color: rgb(255, 255, 255);
-	font-size: 0.75rem;
-	font-weight: 600;
-	padding: 0.25rem 0.5rem;
+   background: rgb(69, 79, 91);
+   border-radius: 0.25rem;
+   color: rgb(255, 255, 255);
+   font-size: 0.75rem;
+   font-weight: 600;
+   padding: 0.25rem 0.5rem;
 }
 div.code-toolbar:focus-within > .toolbar,
 div.code-toolbar:hover > .toolbar {
-	opacity: 1;
+   opacity: 1;
 }

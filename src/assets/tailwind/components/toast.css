@@ -1,9 +1,9 @@
 /* Toast */
 
 .toast:not(.show) {
-	display: none;
+   display: none;
 }
 
 .fade:not(.show) {
-	opacity: 0;
+   opacity: 0;
 }
