@@ -1,91 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		@@include("../partials/head.html")
-		<title>Navs-Tabs - Dash UI - TailwindCSS HTML Admin Template Free</title>
-	</head>
-	<body>
-		<main>
-			<!-- start navs tabs page -->
-			<!-- app layout -->
-			<div id="app-layout" class="overflow-x-hidden flex">
-				@@include("../partials/navbar-vertical.html", { "page": "navs-tabs", "page_group": "components" })
-				<!-- app layout content -->
-				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-					@@include("../partials/top-navbar.html")
-					<div class="p-6">
-						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
-							<h1 class="block font-semibold">Navs & Tabs</h1>
-							<p class="text-lg">Navigation components using Tailwind CSS.</p>
-						</div>
-						<div class="flex flex-col gap-8">
-							<div>
-								<div class="mb-4">
-									<h2 class="text-xl mb-1">Example</h2>
-									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<!-- nav -->
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-nav-example-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-nav-example"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-nav-example"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-nav-example-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-nav-example"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-nav-example"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabContent">
-										<div class="tab-pane fade show active" id="pills-design-nav-example" role="tabpanel" aria-labelledby="pills-design-nav-example-tab" tabindex="0">
-											<nav class="flex space-x-6">
-												<a class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700" href="#">Link</a>
-												<a
-													class="inline-flex items-center gap-x-2 text-base font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700"
-													href="#"
-													aria-current="page"
-												>
-													Active
-												</a>
-												<a class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700" href="#">Link</a>
-												<a
-													class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-gray-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700 opacity-50 pointer-events-none"
-													href="#"
-												>
-													Disabled
-												</a>
-											</nav>
-										</div>
-										<div class="tab-pane fade" id="pills-html-nav-example" role="tabpanel" aria-labelledby="pills-html-nav-example-tab" tabindex="0">
-											<!-- code -->
-											<pre
-												class="language-markup"
-												tabindex="0"
-											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex space-x-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+   <head>
+      @@include("../partials/head.html")
+      <title>Navs-Tabs - Dash UI - TailwindCSS HTML Admin Template Free</title>
+   </head>
+   <body>
+      <main>
+         <!-- start navs tabs page -->
+         <!-- app layout -->
+         <div id="app-layout" class="overflow-x-hidden flex">
+            @@include("../partials/navbar-vertical.html", { "page": "navs-tabs", "page_group": "components" })
+            <!-- app layout content -->
+            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+               @@include("../partials/top-navbar.html")
+               <div class="p-6">
+                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                     <h1 class="block font-semibold leading-6 text-xl mb-1">Navs & Tabs</h1>
+                     <p class="text-lg">Navigation components using Tailwind CSS.</p>
+                  </div>
+                  <div class="flex flex-col gap-8">
+                     <div>
+                        <div class="mb-4">
+                           <h2 class="text-lg">Example</h2>
+                           <p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <!-- nav -->
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-nav-example-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-nav-example"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-nav-example"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-nav-example-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-nav-example"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-nav-example"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-design-nav-example" role="tabpanel" aria-labelledby="pills-design-nav-example-tab" tabindex="0">
+                                 <nav class="flex space-x-6">
+                                    <a class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700" href="#">
+                                       Link
+                                    </a>
+                                    <a
+                                       class="inline-flex items-center gap-x-2 text-base font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700"
+                                       href="#"
+                                       aria-current="page">
+                                       Active
+                                    </a>
+                                    <a class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700" href="#">
+                                       Link
+                                    </a>
+                                    <a
+                                       class="inline-flex items-center gap-x-2 text-base whitespace-nowrap text-gray-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700 opacity-50 pointer-events-none"
+                                       href="#">
+                                       Disabled
+                                    </a>
+                                 </nav>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-nav-example" role="tabpanel" aria-labelledby="pills-html-nav-example-tab" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex space-x-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 text-base whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex items-center gap-x-2 text-base font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span>
@@ -102,67 +101,64 @@
   Disabled
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="mb-4">
-									<h2 class="text-xl mb-1">Tabs</h2>
-									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<!-- nav -->
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-tabs-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-tabs"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-tabs"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-tabs-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-tabs"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-tabs"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabSecondContent">
-										<div class="tab-pane fade show active" id="pills-design-tabs" role="tabpanel" aria-labelledby="pills-design-tabs-tab" tabindex="0">
-											<nav class="flex border-b border-gray-300">
-												<a class="px-4 py-3 rounded-t-md border border-indigo-600 hover:border-gray-300 active" href="#" aria-current="page">Active</a>
-												<a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300" href="#">Link</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="mb-4">
+                           <h2 class="text-lg">Tabs</h2>
+                           <p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <!-- nav -->
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-tabs-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-tabs"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-tabs"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-tabs-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-tabs"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-tabs"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabSecondContent">
+                              <div class="tab-pane fade show active" id="pills-design-tabs" role="tabpanel" aria-labelledby="pills-design-tabs-tab" tabindex="0">
+                                 <nav class="flex border-b border-gray-300">
+                                    <a class="px-4 py-3 rounded-t-md border border-indigo-600 hover:border-gray-300 active" href="#" aria-current="page">Active</a>
+                                    <a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300" href="#">Link</a>
 
-												<a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300" href="#">Link</a>
-												<a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300 pointer-events-none" href="#">Disabled</a>
-											</nav>
-										</div>
-										<div class="tab-pane fade" id="pills-html-tabs" role="tabpanel" aria-labelledby="pills-html-tabs-tab" tabindex="0">
-											<!-- code -->
-											<pre
-												class="language-markup"
-												tabindex="0"
-											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex border-b border-gray-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                    <a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300" href="#">Link</a>
+                                    <a class="px-4 py-3 rounded-t-md border border-white hover:border-gray-300 pointer-events-none" href="#">Disabled</a>
+                                 </nav>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-tabs" role="tabpanel" aria-labelledby="pills-html-tabs-tab" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex border-b border-gray-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
 	 <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>px-4 py-3 -mb-px border-gray-300 border rounded-t-md inline-flex items-center gap-x-2 text-base font-semibold whitespace-nowrap text-indigo-600 hover:text-indigo-70 focus:outline-none focus:text-indigo-700<span class="token punctuation">"</span></span>
 	 <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span>
@@ -189,119 +185,113 @@ Link
 Disabled
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="mb-4">
-									<h2 class="text-xl mb-1">Javascript Behaviour Tabs</h2>
-									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<!-- nav -->
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-tabs-javascript-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-tabs-javascript"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-tabs-javascript"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-tabs-javascript-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-tabs-javascript"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-tabs-javascript"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabThirdContent">
-										<div class="tab-pane fade show active" id="pills-design-tabs-javascript" role="tabpanel" aria-labelledby="pills-design-tabs-javascript" tabindex="0">
-											<!-- nav -->
-											<ul class="nav nav-tabs mb-3 border-b border-gray-300" id="pills-tab2" role="tablist">
-												<li class="nav-item" role="presentation">
-													<button
-														class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300 active"
-														id="pills-active-example1-tab"
-														data-bs-toggle="pill"
-														data-bs-target="#pills-active-example1"
-														type="button"
-														role="tab"
-														aria-controls="pills-active-example1"
-														aria-selected="true"
-													>
-														Active
-													</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button
-														class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300"
-														id="pills-link1-example1-tab"
-														data-bs-toggle="pill"
-														data-bs-target="#pills-link1-example1"
-														type="button"
-														role="tab"
-														aria-controls="pills-link1-example1"
-														aria-selected="false"
-													>
-														Link
-													</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button
-														class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300"
-														id="pills-link2-example1-tab"
-														data-bs-toggle="pill"
-														data-bs-target="#pills-link2-example1"
-														type="button"
-														role="tab"
-														aria-controls="pills-link2-example1"
-														aria-selected="false"
-													>
-														Link
-													</button>
-												</li>
-											</ul>
-											<!-- nav content -->
-											<div class="tab-content py-6" id="pills-tab2Content">
-												<div class="tab-pane fade show active" id="pills-active-example1" role="tabpanel" aria-labelledby="pills-active-example1" tabindex="0">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit ligula, cursus at orci at, condimentum dignissim dolor. Morbi elit lacus, posuere id urna et, elementum
-													malesuada erat.
-												</div>
-												<div class="tab-pane fade" id="pills-link1-example1" role="tabpanel" aria-labelledby="pills-link1-example1" tabindex="0">
-													Duis metus nisl, varius non mauris sed, commodo sodales arcu. Quisque in tellus semper, tincidunt tortor ut, varius purus. Aliquam erat volutpat.
-												</div>
-												<div class="tab-pane fade" id="pills-link2-example1" role="tabpanel" aria-labelledby="pills-link2-example1" tabindex="0">
-													Mauris sed interdum elit, in sagittis erat. Aliquam sed venenatis nibh. Sed malesuada ornare leo, et consectetur arcu placerat eget. Praesent quam massa, vulputate sed ligula
-													quis, aliquet rutrum enim.
-												</div>
-											</div>
-										</div>
-										<div class="tab-pane fade" id="pills-html-tabs-javascript" role="tabpanel" aria-labelledby="pills-html-tabs-javascript" tabindex="0">
-											<!-- code -->
-											<pre
-												class="language-markup"
-												tabindex="0"
-											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav nav-tabs mb-3 border-b border-gray-300<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-tab2<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tablist<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="mb-4">
+                           <h2 class="text-lg">Javascript Behaviour Tabs</h2>
+                           <p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <!-- nav -->
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-tabs-javascript-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-tabs-javascript"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-tabs-javascript"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-tabs-javascript-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-tabs-javascript"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-tabs-javascript"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabThirdContent">
+                              <div class="tab-pane fade show active" id="pills-design-tabs-javascript" role="tabpanel" aria-labelledby="pills-design-tabs-javascript" tabindex="0">
+                                 <!-- nav -->
+                                 <ul class="nav nav-tabs mb-3 border-b border-gray-300" id="pills-tab2" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                       <button
+                                          class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300 active"
+                                          id="pills-active-example1-tab"
+                                          data-bs-toggle="pill"
+                                          data-bs-target="#pills-active-example1"
+                                          type="button"
+                                          role="tab"
+                                          aria-controls="pills-active-example1"
+                                          aria-selected="true">
+                                          Active
+                                       </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <button
+                                          class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300"
+                                          id="pills-link1-example1-tab"
+                                          data-bs-toggle="pill"
+                                          data-bs-target="#pills-link1-example1"
+                                          type="button"
+                                          role="tab"
+                                          aria-controls="pills-link1-example1"
+                                          aria-selected="false">
+                                          Link
+                                       </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <button
+                                          class="nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300"
+                                          id="pills-link2-example1-tab"
+                                          data-bs-toggle="pill"
+                                          data-bs-target="#pills-link2-example1"
+                                          type="button"
+                                          role="tab"
+                                          aria-controls="pills-link2-example1"
+                                          aria-selected="false">
+                                          Link
+                                       </button>
+                                    </li>
+                                 </ul>
+                                 <!-- nav content -->
+                                 <div class="tab-content py-6" id="pills-tab2Content">
+                                    <div class="tab-pane fade show active" id="pills-active-example1" role="tabpanel" aria-labelledby="pills-active-example1" tabindex="0">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit ligula, cursus at orci at, condimentum dignissim dolor. Morbi elit lacus, posuere id urna et,
+                                       elementum malesuada erat.
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-link1-example1" role="tabpanel" aria-labelledby="pills-link1-example1" tabindex="0">
+                                       Duis metus nisl, varius non mauris sed, commodo sodales arcu. Quisque in tellus semper, tincidunt tortor ut, varius purus. Aliquam erat volutpat.
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-link2-example1" role="tabpanel" aria-labelledby="pills-link2-example1" tabindex="0">
+                                       Mauris sed interdum elit, in sagittis erat. Aliquam sed venenatis nibh. Sed malesuada ornare leo, et consectetur arcu placerat eget. Praesent quam massa,
+                                       vulputate sed ligula quis, aliquet rutrum enim.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-tabs-javascript" role="tabpanel" aria-labelledby="pills-html-tabs-javascript" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav nav-tabs mb-3 border-b border-gray-300<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pills-tab2<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tablist<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-item<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>presentation<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
 			<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav-link px-5 py-3 rounded-t-md border border-white hover:border-gray-300 active<span class="token punctuation">"</span></span>
@@ -358,16 +348,16 @@ Disabled
 		ligula quis, aliquet rutrum enim.
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<!-- end navs tabs page -->
-		@@include("../partials/scripts.html")
-	</body>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- end navs tabs page -->
+      @@include("../partials/scripts.html")
+   </body>
 </html>

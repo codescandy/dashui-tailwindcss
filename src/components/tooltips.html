@@ -1,110 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		@@include("../partials/head.html")
-		<title>Tooltips - Dash UI - TailwindCSS HTML Admin Template Free</title>
-	</head>
-	<body>
-		<main>
-			<!-- start tooltip page -->
-			<!-- app layout -->
-			<div id="app-layout" class="overflow-x-hidden flex">
-				@@include("../partials/navbar-vertical.html", { "page": "tooltips", "page_group": "components" })
-				<!-- app layout content -->
-				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-					@@include("../partials/top-navbar.html")
+   <head>
+      @@include("../partials/head.html")
+      <title>Tooltips - Dash UI - TailwindCSS HTML Admin Template Free</title>
+   </head>
+   <body>
+      <main>
+         <!-- start tooltip page -->
+         <!-- app layout -->
+         <div id="app-layout" class="overflow-x-hidden flex">
+            @@include("../partials/navbar-vertical.html", { "page": "tooltips", "page_group": "components" })
+            <!-- app layout content -->
+            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+               @@include("../partials/top-navbar.html")
 
-					<div class="p-6">
-						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
-							<h1 class="block font-semibold">Tooltip</h1>
-							<p class="text-lg">Use the following Tailwind CSS powered tooltips to show extra content when hovering or focusing on an element</p>
-						</div>
-						<div class="flex flex-col gap-8">
-							<!-- table start -->
-							<div>
-								<div class="mb-4">
-									<h2 class="text-xl mb-1">Basic Example</h2>
-									<p></p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<!-- nav -->
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-basic-tooltip-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-basic-tooltip"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-basic-tooltip"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-basic-tooltip-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-basic-tooltip"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-basic-tooltip"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabContent">
-										<div class="tab-pane fade show active rounded-md" id="pills-design-basic-tooltip" role="tabpanel" aria-labelledby="pills-design-basic-tooltip-tab" tabindex="0">
-											<button
-												data-bs-toggle="tooltip"
-												data-bs-placement="top"
-												data-bs-title="Tooltip on top"
-												type="button"
-												class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-											>
-												Tooltip on Top
-											</button>
+               <div class="p-6">
+                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                     <h1 class="block font-semibold leading-6 text-xl mb-1">Tooltip</h1>
+                     <p class="text-lg">Use the following Tailwind CSS powered tooltips to show extra content when hovering or focusing on an element</p>
+                  </div>
+                  <div class="flex flex-col gap-8">
+                     <!-- table start -->
+                     <div>
+                        <div class="mb-4">
+                           <h2 class="text-lg">Basic Example</h2>
+                           <p></p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <!-- nav -->
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-basic-tooltip-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-basic-tooltip"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-basic-tooltip"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-basic-tooltip-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-basic-tooltip"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-basic-tooltip"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabContent">
+                              <div class="tab-pane fade show active rounded-md" id="pills-design-basic-tooltip" role="tabpanel" aria-labelledby="pills-design-basic-tooltip-tab" tabindex="0">
+                                 <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    data-bs-title="Tooltip on top"
+                                    type="button"
+                                    class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                    Tooltip on Top
+                                 </button>
 
-											<button
-												data-bs-toggle="tooltip"
-												data-bs-placement="bottom"
-												data-bs-title="Tooltip on Bottom"
-												type="button"
-												class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-											>
-												Tooltip on Bottom
-											</button>
+                                 <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    data-bs-title="Tooltip on Bottom"
+                                    type="button"
+                                    class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                    Tooltip on Bottom
+                                 </button>
 
-											<button
-												data-bs-toggle="tooltip"
-												data-bs-placement="right"
-												data-bs-title="Tooltip on Right"
-												type="button"
-												class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-											>
-												Tooltip on Right
-											</button>
-											<button
-												data-bs-toggle="tooltip"
-												data-bs-placement="left"
-												data-bs-title="Tooltip on Left"
-												type="button"
-												class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-											>
-												Tooltip on Left
-											</button>
-										</div>
-										<div class="tab-pane fade" id="pills-html-basic-tooltip" role="tabpanel" aria-labelledby="pills-html-basic-tooltip-tab" tabindex="0">
-											<!-- code -->
-											<pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+                                 <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="right"
+                                    data-bs-title="Tooltip on Right"
+                                    type="button"
+                                    class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                    Tooltip on Right
+                                 </button>
+                                 <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="left"
+                                    data-bs-title="Tooltip on Left"
+                                    type="button"
+                                    class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                    Tooltip on Left
+                                 </button>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-basic-tooltip" role="tabpanel" aria-labelledby="pills-html-basic-tooltip-tab" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
     <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tooltip<span class="token punctuation">"</span></span>
     <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>top<span class="token punctuation">"</span></span>
     <span class="token attr-name">data-bs-title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Tooltip on top<span class="token punctuation">"</span></span>
@@ -140,17 +136,17 @@
     <span class="token punctuation">&gt;</span></span>
  Tooltip on Left
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- table end -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		@@include("../partials/scripts.html")
-		<!-- end tooltip page -->
-	</body>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- table end -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include("../partials/scripts.html")
+      <!-- end tooltip page -->
+   </body>
 </html>

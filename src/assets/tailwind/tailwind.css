@@ -9,45 +9,49 @@
 /* headings, body */
 
 @layer base {
-	h1 {
-		@apply text-3xl text-gray-800 font-semibold;
-	}
-	h2 {
-		@apply text-2xl text-gray-800 font-semibold;
-	}
-	h3 {
-		@apply text-xl text-gray-800 font-semibold;
-	}
-	h4 {
-		@apply text-lg text-gray-800 font-semibold;
-	}
-	h5 {
-		@apply text-base text-gray-800 font-semibold;
-	}
-	h6 {
-		@apply text-sm text-gray-800 font-semibold;
-	}
-	body {
-		@apply text-base bg-gray-100 text-gray-600 font-normal antialiased;
-	}
+   h1 {
+      @apply text-3xl text-gray-800 font-semibold;
+   }
+   h2 {
+      @apply text-2xl text-gray-800 font-semibold;
+   }
+   h3 {
+      @apply text-xl text-gray-800 font-semibold;
+   }
+   h4 {
+      @apply text-lg text-gray-800 font-semibold;
+   }
+   h5 {
+      @apply text-base text-gray-800 font-semibold;
+   }
+   h6 {
+      @apply text-sm text-gray-800 font-semibold;
+   }
+   body {
+      @apply text-base bg-gray-100 text-gray-600 font-normal antialiased;
+   }
+
+   input::placeholder {
+      @apply text-base text-gray-600;
+   }
 }
 
 /* btn, card */
 
 @layer components {
-	.btn {
-		@apply bg-transparent border border-transparent rounded-md text-white cursor-pointer inline-block text-base font-semibold py-2 px-4 text-center transition align-middle select-none;
-	}
-	.btn-sm {
-		@apply py-1 px-2 text-sm rounded-md;
-	}
-	.btn-lg {
-		@apply py-2 px-4 text-lg rounded-lg;
-	}
-	.card {
-		@apply bg-white relative flex flex-col min-w-0 break-words rounded-md;
-	}
-	.card-body {
-		@apply flex-auto p-5;
-	}
+   .btn {
+      @apply bg-transparent border border-transparent rounded-md text-white cursor-pointer inline-block text-base font-semibold py-2 px-4 text-center transition align-middle select-none;
+   }
+   .btn-sm {
+      @apply py-1 px-2 text-sm rounded-md;
+   }
+   .btn-lg {
+      @apply py-2 px-4 text-lg rounded-lg;
+   }
+   .card {
+      @apply bg-white relative flex flex-col min-w-0 break-words rounded-md;
+   }
+   .card-body {
+      @apply flex-auto p-5;
+   }
 }

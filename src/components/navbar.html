@@ -1,116 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		@@include("../partials/head.html")
-		<title>Navbar - Dash UI - TailwindCSS HTML Admin Template Free</title>
-	</head>
-	<body>
-		<main>
-			<!-- start navbar page -->
-			<!-- app layout -->
-			<div id="app-layout" class="overflow-x-hidden flex">
-				@@include("../partials/navbar-vertical.html", { "page": "navbar", "page_group": "components" })
-				<!-- app layout content -->
-				<div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-					@@include("../partials/top-navbar.html")
+   <head>
+      @@include("../partials/head.html")
+      <title>Navbar - Dash UI - TailwindCSS HTML Admin Template Free</title>
+   </head>
+   <body>
+      <main>
+         <!-- start navbar page -->
+         <!-- app layout -->
+         <div id="app-layout" class="overflow-x-hidden flex">
+            @@include("../partials/navbar-vertical.html", { "page": "navbar", "page_group": "components" })
+            <!-- app layout content -->
+            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+               @@include("../partials/top-navbar.html")
 
-					<div class="p-6">
-						<div class="flex flex-col mb-6 border-b border-gray-300 pb-6">
-							<h1 class="block font-semibold">Navbar</h1>
-							<p class="text-lg">Navigation components using Tailwind CSS.</p>
-						</div>
-						<div class="flex flex-col gap-8">
-							<!-- navbar start -->
-							<div>
-								<div class="mb-4">
-									<h2 class="text-xl mb-1">Example</h2>
-									<p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-navbar-example-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-navbar-example"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-navbar-example"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-navbar-example-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-navbar-example"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-navbar-example"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabContent">
-										<div class="tab-pane fade show active" id="pills-design-navbar-example" role="tabpanel" aria-labelledby="pills-design-navbar-example-tab" tabindex="0">
-											<!-- nav -->
-											<nav class="bg-white navbar-expand">
-												<div class="flex flex-wrap items-center justify-between p-4">
-													<a href="https://codescandy.com/" class="flex items-center space-x-3">
-														<img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
-													</a>
-													<button
-														data-bs-toggle="collapse"
-														type="button"
-														class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-														data-bs-target="#navbarSupportedContent"
-														aria-controls="navbarSupportedContent"
-														aria-expanded="false"
-														aria-label="Toggle navigation"
-													>
-														<span class="sr-only">Menu</span>
-														<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-															<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-														</svg>
-													</button>
-													<div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContent">
-														<ul class="ml-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white">
-															<li>
-																<a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">About</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Services</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Pricing</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Contact</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</nav>
-										</div>
-										<div class="tab-pane fade" id="pills-html-navbar-example" role="tabpanel" aria-labelledby="pills-html-navbar-example-tab" tabindex="0">
-											<!-- code -->
-											<pre
-												class="language-markup"
-												tabindex="0"
-											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-white  navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+               <div class="p-6">
+                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                     <h1 class="block font-semibold leading-6 text-xl mb-1">Navbar</h1>
+                     <p class="text-lg">Navigation components using Tailwind CSS.</p>
+                  </div>
+                  <div class="flex flex-col gap-8">
+                     <!-- navbar start -->
+                     <div>
+                        <div class="mb-4">
+                           <h2 class="text-lg">Example</h2>
+                           <p>The base nav component is built with flexbox and provide a strong foundation for building all types of navigation components.</p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-navbar-example-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-navbar-example"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-navbar-example"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-navbar-example-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-navbar-example"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-navbar-example"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-design-navbar-example" role="tabpanel" aria-labelledby="pills-design-navbar-example-tab" tabindex="0">
+                                 <!-- nav -->
+                                 <nav class="bg-white navbar-expand">
+                                    <div class="flex flex-wrap items-center justify-between p-4">
+                                       <a href="https://codescandy.com/" class="flex items-center space-x-3">
+                                          <img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
+                                       </a>
+                                       <button
+                                          data-bs-toggle="collapse"
+                                          type="button"
+                                          class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                          data-bs-target="#navbarSupportedContent"
+                                          aria-controls="navbarSupportedContent"
+                                          aria-expanded="false"
+                                          aria-label="Toggle navigation">
+                                          <span class="sr-only">Menu</span>
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                          </svg>
+                                       </button>
+                                       <div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContent">
+                                          <ul
+                                             class="ml-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white">
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   About
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Services
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Pricing
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Contact
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </nav>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-navbar-example" role="tabpanel" aria-labelledby="pills-html-navbar-example-tab" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-white  navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-wrap items-center justify-between p-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 	 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://codescandy.com/<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center space-x-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 	 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/brand/logo/logo-primary.svg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Codescandy Logo<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
@@ -150,103 +155,108 @@
 	 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- navbar end -->
-							<!-- navbar alignment Left start -->
-							<div>
-								<div class="mb-4">
-									<h2 class="text-xl mb-1">Alignment</h2>
-									<p>Left aligned navbar.</p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<!-- nav -->
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-navbar-left-align-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-navbar-left-align"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-navbar-left-align"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-navbar-left-align-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-navbar-left-align"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-navbar-left-align"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabSecondContent">
-										<div class="tab-pane fade show active" id="pills-design-navbar-left-align" role="tabpanel" aria-labelledby="pills-design-navbar-left-align-tab" tabindex="0">
-											<!-- nav -->
-											<nav class="bg-white navbar-expand">
-												<div class="flex flex-wrap items-center justify-between p-4">
-													<a href="https://codescandy.com/" class="flex items-center space-x-3">
-														<img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
-													</a>
-													<button
-														data-bs-toggle="collapse"
-														type="button"
-														class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-														data-bs-target="#navbarSupportedContentLeft"
-														aria-controls="navbarSupportedContentLeft"
-														aria-expanded="false"
-														aria-label="Toggle navigation"
-													>
-														<span class="sr-only">Menu</span>
-														<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-															<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-														</svg>
-													</button>
-													<div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentLeft">
-														<ul class="lg:ml-10 font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white">
-															<li>
-																<a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">About</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Services</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Pricing</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Contact</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</nav>
-										</div>
-										<div class="tab-pane fade" id="pills-html-navbar-left-align" role="tabpanel" aria-labelledby="pills-html-navbar-left-align-tab" tabindex="0">
-											<!-- code -->
-											<pre
-												class="language-markup"
-												tabindex="0"
-											><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-white  navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- navbar end -->
+                     <!-- navbar alignment Left start -->
+                     <div>
+                        <div class="mb-4">
+                           <h2 class="text-lg">Alignment</h2>
+                           <p>Left aligned navbar.</p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <!-- nav -->
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-navbar-left-align-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-navbar-left-align"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-navbar-left-align"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-navbar-left-align-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-navbar-left-align"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-navbar-left-align"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabSecondContent">
+                              <div class="tab-pane fade show active" id="pills-design-navbar-left-align" role="tabpanel" aria-labelledby="pills-design-navbar-left-align-tab" tabindex="0">
+                                 <!-- nav -->
+                                 <nav class="bg-white navbar-expand">
+                                    <div class="flex flex-wrap items-center justify-between p-4">
+                                       <a href="https://codescandy.com/" class="flex items-center space-x-3">
+                                          <img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
+                                       </a>
+                                       <button
+                                          data-bs-toggle="collapse"
+                                          type="button"
+                                          class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                          data-bs-target="#navbarSupportedContentLeft"
+                                          aria-controls="navbarSupportedContentLeft"
+                                          aria-expanded="false"
+                                          aria-label="Toggle navigation">
+                                          <span class="sr-only">Menu</span>
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                          </svg>
+                                       </button>
+                                       <div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentLeft">
+                                          <ul
+                                             class="lg:ml-10 font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white">
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   About
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Services
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Pricing
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Contact
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </nav>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-navbar-left-align" role="tabpanel" aria-labelledby="pills-html-navbar-left-align-tab" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-white  navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-wrap items-center justify-between p-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://codescandy.com/<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center space-x-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/brand/logo/logo-primary.svg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Codescandy Logo<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
@@ -286,110 +296,114 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 
-							<div>
-								<div class="mb-4">
-									<p>Center aligned navbar.</p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<!-- nav -->
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-navbar-center-align-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-navbar-center-align"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-navbar-center-align"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-navbar-center-align-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-navbar-center-align"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-navbar-center-align"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabThirdContent">
-										<div class="tab-pane fade show active" id="pills-design-navbar-center-align" role="tabpanel" aria-labelledby="pills-design-navbar-center-align-tab" tabindex="0">
-											<nav class="bg-white navbar-expand">
-												<div class="flex flex-wrap items-center justify-between p-4">
-													<div>
-														<a href="https://codescandy.com/" class="flex items-center space-x-3">
-															<img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
-														</a>
-													</div>
-													<div class="inline-flex space-x-2 lg:space-x-0 lg:order-3">
-														<button
-															type="button"
-															class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-														>
-															Button
-														</button>
-														<button
-															data-bs-toggle="collapse"
-															type="button"
-															class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-															data-bs-target="#navbarSupportedContentCenter"
-															aria-controls="navbarSupportedContentCenter"
-															aria-expanded="false"
-															aria-label="Toggle navigation"
-														>
-															<span class="sr-only">Menu</span>
-															<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-															</svg>
-														</button>
-													</div>
-													<div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentCenter">
-														<ul class="mx-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white">
-															<li>
-																<a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">About</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Services</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Pricing</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Contact</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</nav>
-										</div>
-										<div class="tab-pane fade" id="pills-html-navbar-center-align" role="tabpanel" aria-labelledby="pills-html-navbar-center-align-tab" tabindex="0">
-											<!-- code -->
-											<pre
-												class="language-markup"
-												tabindex="0"
-											><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-white  navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                     <div>
+                        <div class="mb-4">
+                           <p>Center aligned navbar.</p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <!-- nav -->
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-navbar-center-align-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-navbar-center-align"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-navbar-center-align"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-navbar-center-align-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-navbar-center-align"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-navbar-center-align"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabThirdContent">
+                              <div class="tab-pane fade show active" id="pills-design-navbar-center-align" role="tabpanel" aria-labelledby="pills-design-navbar-center-align-tab" tabindex="0">
+                                 <nav class="bg-white navbar-expand">
+                                    <div class="flex flex-wrap items-center justify-between p-4">
+                                       <div>
+                                          <a href="https://codescandy.com/" class="flex items-center space-x-3">
+                                             <img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
+                                          </a>
+                                       </div>
+                                       <div class="inline-flex space-x-2 lg:space-x-0 lg:order-3">
+                                          <button
+                                             type="button"
+                                             class="btn gap-x-2 bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                                             Button
+                                          </button>
+                                          <button
+                                             data-bs-toggle="collapse"
+                                             type="button"
+                                             class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                             data-bs-target="#navbarSupportedContentCenter"
+                                             aria-controls="navbarSupportedContentCenter"
+                                             aria-expanded="false"
+                                             aria-label="Toggle navigation">
+                                             <span class="sr-only">Menu</span>
+                                             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                             </svg>
+                                          </button>
+                                       </div>
+                                       <div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentCenter">
+                                          <ul
+                                             class="mx-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-200 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white">
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   About
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Services
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Pricing
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Contact
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </nav>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-navbar-center-align" role="tabpanel" aria-labelledby="pills-html-navbar-center-align-tab" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-white  navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-wrap items-center justify-between p-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://codescandy.com/<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center space-x-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/brand/logo/logo-primary.svg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Codescandy Logo<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
@@ -437,145 +451,156 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 
-							<div>
-								<div class="mb-4">
-									<h2 class="text-xl mb-1">Color Varients</h2>
-									<p>Theming the navbar with utility classes.</p>
-								</div>
-								<!-- card -->
-								<div class="card shadow">
-									<!-- nav -->
-									<ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 border-b nav-link font-semibold active"
-												id="pills-design-navbar-color-varient-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-design-navbar-color-varient"
-												type="button"
-												role="tab"
-												aria-controls="pills-design-navbar-color-varient"
-												aria-selected="true"
-											>
-												Design
-											</button>
-										</li>
-										<!-- nav item -->
-										<li class="nav-item" role="presentation">
-											<button
-												class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-												id="pills-html-navbar-color-varient-tab"
-												data-bs-toggle="pill"
-												data-bs-target="#pills-html-navbar-color-varient"
-												type="button"
-												role="tab"
-												aria-controls="pills-html-navbar-color-varient"
-												aria-selected="false"
-											>
-												HTML
-											</button>
-										</li>
-									</ul>
-									<!-- tab content -->
-									<div class="tab-content p-6" id="pills-tabFourthContent">
-										<div class="tab-pane fade show active" id="pills-design-navbar-color-varient" role="tabpanel" aria-labelledby="pills-design-navbar-color-varient-tab" tabindex="0">
-											<!-- header -->
-											<header class="bg-gray-900 navbar-expand">
-												<nav class="flex flex-wrap items-center justify-between p-4">
-													<a href="https://codescandy.com/" class="flex items-center space-x-3">
-														<img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
-													</a>
-													<button
-														data-bs-toggle="collapse"
-														type="button"
-														class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-														data-bs-target="#navbarSupportedContentColorVarient"
-														aria-controls="navbarSupportedContentColorVarient"
-														aria-expanded="false"
-														aria-label="Toggle navigation"
-													>
-														<span class="sr-only">Menu</span>
-														<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-															<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-														</svg>
-													</button>
-													<div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentColorVarient">
-														<ul
-															class="lg:ml-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-800 rounded-lg bg-gray-800 lg:bg-transparent lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0"
-														>
-															<li>
-																<a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">About</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Services</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Pricing</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Contact</a>
-															</li>
-														</ul>
-													</div>
-												</nav>
-											</header>
-											<!-- header -->
-											<header class="bg-indigo-600 navbar-expand">
-												<nav class="flex flex-wrap items-center justify-between p-4">
-													<a href="https://codescandy.com/" class="flex items-center space-x-3">
-														<img src="../assets/images/brand/logo/logo.svg" alt="Codescandy Logo" />
-													</a>
-													<button
-														data-bs-toggle="collapse"
-														type="button"
-														class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-														data-bs-target="#navbarSupportedContentColorVarientPrimary"
-														aria-controls="navbarSupportedContentColorVarientPrimary"
-														aria-expanded="false"
-														aria-label="Toggle navigation"
-													>
-														<span class="sr-only">Menu</span>
-														<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-															<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-														</svg>
-													</button>
-													<div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentColorVarientPrimary">
-														<ul class="lg:ml-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-white rounded-lg bg-white lg:bg-transparent lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
-															<li>
-																<a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:p-0" aria-current="page">Home</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">About</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Services</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Pricing</a>
-															</li>
-															<li>
-																<a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">Contact</a>
-															</li>
-														</ul>
-													</div>
-												</nav>
-											</header>
-										</div>
-										<div class="tab-pane fade" id="pills-html-navbar-color-varient" role="tabpanel" aria-labelledby="pills-html-navbar-color-varient-tab" tabindex="0">
-											<!-- code -->
-											<pre
-												class="language-markup"
-												tabindex="0"
-											><code class="language-markup">			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-gray-900 navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                     <div>
+                        <div class="mb-4">
+                           <h2 class="text-lg">Color Varients</h2>
+                           <p>Theming the navbar with utility classes.</p>
+                        </div>
+                        <!-- card -->
+                        <div class="card shadow">
+                           <!-- nav -->
+                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 border-b nav-link font-semibold active"
+                                    id="pills-design-navbar-color-varient-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-design-navbar-color-varient"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-design-navbar-color-varient"
+                                    aria-selected="true">
+                                    Design
+                                 </button>
+                              </li>
+                              <!-- nav item -->
+                              <li class="nav-item" role="presentation">
+                                 <button
+                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                    id="pills-html-navbar-color-varient-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-html-navbar-color-varient"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-html-navbar-color-varient"
+                                    aria-selected="false">
+                                    HTML
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- tab content -->
+                           <div class="tab-content p-6" id="pills-tabFourthContent">
+                              <div class="tab-pane fade show active" id="pills-design-navbar-color-varient" role="tabpanel" aria-labelledby="pills-design-navbar-color-varient-tab" tabindex="0">
+                                 <!-- header -->
+                                 <header class="bg-gray-900 navbar-expand">
+                                    <nav class="flex flex-wrap items-center justify-between p-4">
+                                       <a href="https://codescandy.com/" class="flex items-center space-x-3">
+                                          <img src="../assets/images/brand/logo/logo-primary.svg" alt="Codescandy Logo" />
+                                       </a>
+                                       <button
+                                          data-bs-toggle="collapse"
+                                          type="button"
+                                          class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                          data-bs-target="#navbarSupportedContentColorVarient"
+                                          aria-controls="navbarSupportedContentColorVarient"
+                                          aria-expanded="false"
+                                          aria-label="Toggle navigation">
+                                          <span class="sr-only">Menu</span>
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                          </svg>
+                                       </button>
+                                       <div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentColorVarient">
+                                          <ul
+                                             class="lg:ml-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-800 rounded-lg bg-gray-800 lg:bg-transparent lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:text-indigo-700 lg:p-0" aria-current="page">Home</a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   About
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Services
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Pricing
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Contact
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </nav>
+                                 </header>
+                                 <!-- header -->
+                                 <header class="bg-indigo-600 navbar-expand">
+                                    <nav class="flex flex-wrap items-center justify-between p-4">
+                                       <a href="https://codescandy.com/" class="flex items-center space-x-3">
+                                          <img src="../assets/images/brand/logo/logo.svg" alt="Codescandy Logo" />
+                                       </a>
+                                       <button
+                                          data-bs-toggle="collapse"
+                                          type="button"
+                                          class="navbar-toggler inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                          data-bs-target="#navbarSupportedContentColorVarientPrimary"
+                                          aria-controls="navbarSupportedContentColorVarientPrimary"
+                                          aria-expanded="false"
+                                          aria-label="Toggle navigation">
+                                          <span class="sr-only">Menu</span>
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                          </svg>
+                                       </button>
+                                       <div class="w-full lg:block lg:w-auto collapse navbar-collapse" id="navbarSupportedContentColorVarientPrimary">
+                                          <ul
+                                             class="lg:ml-auto font-medium flex flex-col p-4 lg:p-0 mt-4 border border-white rounded-lg bg-white lg:bg-transparent lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-white bg-indigo-700 rounded lg:bg-transparent lg:p-0" aria-current="page">Home</a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   About
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Services
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Pricing
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-700 lg:p-0">
+                                                   Contact
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </nav>
+                                 </header>
+                              </div>
+                              <div class="tab-pane fade" id="pills-html-navbar-color-varient" role="tabpanel" aria-labelledby="pills-html-navbar-color-varient-tab" tabindex="0">
+                                 <!-- code -->
+                                 <pre
+                                    class="language-markup"
+                                    tabindex="0"><code class="language-markup">			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-gray-900 navbar-expand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-wrap items-center justify-between p-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://codescandy.com/<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center space-x-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/brand/logo/logo-primary.svg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Codescandy Logo<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
@@ -617,16 +642,16 @@
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span></code></pre>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<!-- end navbar page -->
-		@@include("../partials/scripts.html")
-	</body>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- end navbar page -->
+      @@include("../partials/scripts.html")
+   </body>
 </html>
