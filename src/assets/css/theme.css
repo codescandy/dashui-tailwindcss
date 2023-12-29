@@ -969,16 +969,6 @@ input::placeholder {
   margin-bottom: 2rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -1759,11 +1749,6 @@ input::placeholder {
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
 }
 
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(69 79 91 / var(--tw-border-opacity));
-}
-
 .border-t-transparent {
   border-top-color: transparent;
 }
@@ -1925,16 +1910,6 @@ input::placeholder {
 .bg-yellow-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(69 79 91 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-10 {
@@ -2130,10 +2105,6 @@ input::placeholder {
 
 .text-2xl {
   font-size: 1.875rem;
-}
-
-.text-3xl {
-  font-size: 2.25rem;
 }
 
 .text-5xl {
@@ -2881,10 +2852,6 @@ input::placeholder {
 
 @media (min-width: 640px) {
 
-  .sm\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2895,10 +2862,6 @@ input::placeholder {
 
   .sm\:text-left {
     text-align: left;
-  }
-
-  .sm\:text-right {
-    text-align: right;
   }
 }
 
@@ -3002,10 +2965,6 @@ input::placeholder {
     visibility: visible;
   }
 
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:left-auto {
     left: auto;
   }
@@ -3038,10 +2997,6 @@ input::placeholder {
     margin-top: 0px;
   }
 
-  .lg\:ml-\[15\.625rem\] {
-    margin-left: 15.625rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -3052,10 +3007,6 @@ input::placeholder {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-screen {
-    height: 100vh;
   }
 
   .lg\:w-\[1200px\] {
@@ -3072,10 +3023,6 @@ input::placeholder {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:max-w-6xl {
-    max-width: 72rem;
   }
 
   .lg\:max-w-screen-xl {

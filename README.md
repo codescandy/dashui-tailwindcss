@@ -1,10 +1,10 @@
 # [Dash UI - TailwindCSS HTML Admin Template Free](https://dashui.codescandy.com/) [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fcodescandy%2FDash-UI)](https://twitter.com/intent/tweet?text=Dash%20-%20UI%20Bootstrap%205%20Theme&url=https%3A%2F%2Fgithub.com%2Fcodescandy%2FDash-UI&via=getcodescandy)
 
 <a href="https://dashui.codescandy.com/">
- <img src="https://github.com/codescandy/Dash-UI/blob/main/src/assets/images/marketing/hero-img.jpg" alt="Dash UI TailwindCSS Theme"/>
+ <img src="https://github.com/codescandy/Dash-UI/blob/main/src/assets/images/marketing/hero-img.jpg" alt="Dash UI - TailwindCSS HTML Admin Template Free"/>
 </a>
  <br />
-  <br />
+<br />
 
 ![Static Badge](https://img.shields.io/badge/tags-v1.0.0-blue) ![Static Badge](https://img.shields.io/badge/License-MIT-blue) ![Static Badge](https://img.shields.io/badge/issue-0%20open-green) ![Static Badge](https://img.shields.io/badge/forks-1-blue) ![Static Badge](https://img.shields.io/badge/starts-2-blue)
 
@@ -14,8 +14,9 @@ Dash-UI is a TailwindCSS Admin & Dashboard Theme. Dash UI Kit a free & Pro templ
 
 This product is built using the following widely used technologies:
 
--  Most popular CSS Framework TailwindCSS
+-  Most popular CSS Framework [TailwindCSS](https://tailwindcss.com/)
 -  Productive workflow tool Gulp
+-  Figma File [Demo](https://www.figma.com/community/file/1259105309122518026/dash-ui-admin-dashboard-template)
 
 ## Table of Contents
 
@@ -99,6 +100,7 @@ At present, we officially aim to support the last two versions of the following 
 <img src="https://github.com/codescandy/Dash-UI/blob/main/src/assets/images/marketing/safari.png" width="64" height="64">
 <img src="https://github.com/codescandy/Dash-UI/blob/main/src/assets/images/marketing/opera.png" width="64" height="64">
 </div>
+
 ## Technical Support or Questions
 
 If you have questions or need help integrating the product please [contact us](https://codescandy.com/contact-us/). [Support](https://github.com/codescandy/Dash-UI/discussions)
