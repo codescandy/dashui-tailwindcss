@@ -14,19 +14,16 @@
                Dashboard
             </a>
          </li>
-
          <!-- nav item -->
          <li class="nav-item">
             <div class="navbar-heading">Layouts & Pages</div>
          </li>
-
          <!-- nav item -->
          <li class="nav-item">
             <a class="nav-link @@if (context.page_group !== 'pages') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navPages" aria-expanded="false" aria-controls="navPages">
                <i data-feather="layers" class="w-4 h-4 mr-2"></i>
                Pages
             </a>
-
             <div id="navPages" class="collapse @@if (context.page_group === 'pages') { show }" data-bs-parent="#sideNavbar">
                <ul class="nav flex-col">
                   <li class="nav-item">
@@ -82,7 +79,6 @@
                Layouts
             </a>
          </li>
-
          <!-- nav heading -->
          <li class="nav-item">
             <div class="navbar-heading">UI Components</div>
@@ -219,7 +215,6 @@
                </ul>
             </div>
          </li>
-
          <!-- nav item -->
          <li class="nav-item">
             <div class="navbar-heading">Documentation</div>
@@ -237,6 +232,13 @@
             <a class="nav-link @@if (context.page === 'changelog') { active }" href="@@webRoot/changelog.html">
                <i data-feather="git-pull-request" class="w-4 h-4 mr-2"></i>
                Changelog
+            </a>
+         </li>
+         <!-- nav heading -->
+         <li class="nav-item">
+            <a class="nav-link" href="#!">
+               <i data-feather="download" class="w-4 h-4 mr-2"></i>
+               Download
             </a>
          </li>
       </ul>

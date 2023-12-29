@@ -915,6 +915,10 @@ input::placeholder {
   grid-column: span 3 / span 3;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -963,6 +967,16 @@ input::placeholder {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .-mb-px {
@@ -1745,6 +1759,11 @@ input::placeholder {
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
 }
 
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(69 79 91 / var(--tw-border-opacity));
+}
+
 .border-t-transparent {
   border-top-color: transparent;
 }
@@ -1908,6 +1927,16 @@ input::placeholder {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 79 91 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -1918,6 +1947,10 @@ input::placeholder {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.fill-gray-800 {
+  fill: #212b36;
 }
 
 .object-cover {
@@ -2848,6 +2881,10 @@ input::placeholder {
 
 @media (min-width: 640px) {
 
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2858,6 +2895,10 @@ input::placeholder {
 
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:text-right {
+    text-align: right;
   }
 }
 
@@ -2961,6 +3002,10 @@ input::placeholder {
     visibility: visible;
   }
 
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:left-auto {
     left: auto;
   }
@@ -2993,6 +3038,10 @@ input::placeholder {
     margin-top: 0px;
   }
 
+  .lg\:ml-\[15\.625rem\] {
+    margin-left: 15.625rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3003,6 +3052,10 @@ input::placeholder {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:w-\[1200px\] {
@@ -3019,6 +3072,14 @@ input::placeholder {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:max-w-6xl {
+    max-width: 72rem;
+  }
+
+  .lg\:max-w-screen-xl {
+    max-width: 1280px;
   }
 
   .lg\:flex-auto {
@@ -3227,12 +3288,6 @@ button[aria-expanded="true"] .collapse-icon {
    border-right: 0.3em solid transparent;
    border-bottom: 0;
    border-left: 0.3em solid transparent;
-}
-
-/* App layout CSS */
-
-.app-content {
-   padding: 1.5rem;
 }
 
 /* Nav */

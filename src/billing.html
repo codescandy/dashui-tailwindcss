@@ -14,7 +14,7 @@
             <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
                @@include("partials/top-navbar.html")
                <!-- start billing section -->
-               <div class="app-content">
+               <div class="p-6">
                   <!-- title -->
                   <div class="flex items-center mb-4 border-b border-gray-300 pb-4">
                      <h1 class="inline-block text-xl font-semibold leading-6">Billing</h1>
@@ -95,7 +95,7 @@
                      <!-- card -->
                      <div class="card shadow lg:w-[1200px] mx-auto w-full">
                         <div class="border-b border-gray-300 px-5 py-4 flex justify-between items-center">
-                           <h4 class="">Billing Address</h4>
+                           <h4>Billing Address</h4>
                         </div>
                         <!-- card body -->
                         <div class="card-body">
@@ -181,6 +181,7 @@
                   </div>
                </div>
                <!-- end of billing section -->
+               @@include("partials/footer.html")
             </div>
          </div>
          <!-- end of billing page -->

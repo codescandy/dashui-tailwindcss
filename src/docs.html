@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
    <head>
+      <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
       @@include("partials/head.html")
       <title>Documentation - TailwindCSS HTML Admin Template Free - Dash UI</title>
    </head>
@@ -13,7 +14,7 @@
             <!-- app layout content -->
             <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
                @@include("partials/top-navbar.html")
-               <div class="app-content">
+               <div class="p-6">
                   <div class="flex">
                      <div class="w-full lg:w-[1300px] lg:pr-24">
                         <div class="tab-content" id="pills-tabSecondContent">
@@ -114,7 +115,7 @@
                                     </div>
                                  </div>
 
-                                 <p class="">This will take some time and install all necessary dependencies into the node_modules directory in order for you to start developing.</p>
+                                 <p>This will take some time and install all necessary dependencies into the node_modules directory in order for you to start developing.</p>
                               </div>
                            </div>
                            <div class="tab-pane fade" id="pills-tailwind-tabs" role="tabpanel" aria-labelledby="pills-tailwind-tabs-tab" tabindex="0">
@@ -156,7 +157,7 @@
                                  <!-- title -->
                                  <h3 class="mb-3 text-xl">Starter</h3>
 
-                                 <p class="">
+                                 <p>
                                     As we mentioned in Installation section, we have provided a starter version with minimum core components and functionality setup, we strongly recommend developer
                                     use this version to build the app on top.
                                  </p>
@@ -232,7 +233,7 @@
                               <div>
                                  <!-- title -->
                                  <h3 class="mb-3 text-xl">Resources & Assets</h3>
-                                 <div class="">
+                                 <div>
                                     <div class="bg-white border border-gray-300 relative overflow-x-auto">
                                        <!-- table -->
                                        <table class="table text-left w-full">
@@ -393,10 +394,15 @@
                      </div>
                   </div>
                </div>
+               @@include("partials/footer.html")
             </div>
          </div>
          <!-- end of introduction -->
       </main>
       @@include("partials/scripts.html")
+      <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
+      <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
+      <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+      <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
    </body>
 </html>
