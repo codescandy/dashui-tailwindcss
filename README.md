@@ -57,7 +57,7 @@ gulp build
 
 ## Documentation
 
-The documentation for Dash UI is provide on our [website](https://codescandy.com/dashui/docs/gulp.html).
+The documentation for Dash UI is provide on our [website](https://dashui.codescandy.com/tailwindcss/docs.html).
 
 ## File Structure
 
