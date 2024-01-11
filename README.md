@@ -1,7 +1,7 @@
 # [Dash UI - TailwindCSS HTML Admin Template Free](https://dashui.codescandy.com/) [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fcodescandy%2FDash-UI)](https://twitter.com/intent/tweet?text=Dash%20-%20UI%20Bootstrap%205%20Theme&url=https%3A%2F%2Fgithub.com%2Fcodescandy%2FDash-UI&via=getcodescandy)
 
 <a href="https://dashui.codescandy.com/">
- <img src="https://github.com/codescandy/Dash-UI/blob/main/src/assets/images/marketing/hero-img.jpg" alt="Dash UI - TailwindCSS HTML Admin Template Free"/>
+ <img src="https://github.com/codescandy/dashui-tailwindcss/blob/main/src/assets/images/marketing/hero-img.jpg" alt="Dash UI - TailwindCSS HTML Admin Template Free"/>
 </a>
  <br />
 <br />
