@@ -2079,8 +2079,8 @@ input::placeholder {
   padding-inline-start: 1.25rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-2 {
@@ -2093,14 +2093,6 @@ input::placeholder {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-left {
