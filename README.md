@@ -67,8 +67,6 @@ Within the download you'll find the following directories and files:
 
 Dash UI TailwindCSS Theme
 
-
-
 ├── src
 │   ├── assets                       # The output css directory
 │       ├── css                      # Compiled CSS
@@ -104,3 +102,25 @@ At present, we officially aim to support the last two versions of the following 
 ## Technical Support or Questions
 
 If you have questions or need help integrating the product please [contact us](https://codescandy.com/contact-us/). [Support](https://github.com/codescandy/Dash-UI/discussions)
+
+## Useful Links
+
+-  [Bootstrap Template](https://dashui.codescandy.com/free-bootstrap-5-admin-dashboard-template.html)
+-  [React Template](https://dashui.codescandy.com/free-reactjs-admin-dashboard-template.html)
+-  [Next.js Template](https://dashui.codescandy.com/free-next-js-admin-dashboard-template.html)
+-  [Nuxt.js Template](https://dashui.codescandy.com/free-nuxt-js-admin-dashboard-template.html)
+-  [Tailwind Template](https://dashui.codescandy.com/free-tailwindcss-admin-dashboard-html-template.html)
+
+## Figma Design File
+
+Ready to use [Figma File](https://www.figma.com/community/file/1259105309122518026/dash-ui-admin-dashboard-template).
+
+## Upgrade to PRO
+
+Get more power with [Dash UI pro](https://dashui.codescandy.com/) featuring bunch of UI components, forms, tables, charts, pages, and icons.
+
+| Free Version        | [DashUI PRO]      |
+| ------------------- | ----------------- |
+| 11 Demo Pages       | 100+ pages        |
+| Includine Docs      | App pages         |
+| Libraries & Plugins | Dark / Light Mode |
