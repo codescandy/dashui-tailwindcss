@@ -1,413 +1,432 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
-      @@include("partials/head.html") @@include("partials/analytics.html")
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Documentation - TailwindCSS HTML Admin Template Free - Dash UI" />
-      <title>Documentation - TailwindCSS HTML Admin Template Free - Dash UI</title>
-   </head>
-   <body>
-      <main>
-         <!-- start introduction -->
-         <!-- app layout -->
-         <div id="app-layout" class="overflow-x-hidden flex">
-            @@include("partials/navbar-vertical.html", { "page": "docs" })
-            <!-- app layout content -->
-            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-               @@include("partials/top-navbar.html")
-               <div class="p-6">
-                  <div class="flex">
-                     <div class="w-full lg:w-[1300px] lg:pr-24">
-                        <div class="tab-content" id="pills-tabSecondContent">
-                           <div class="tab-pane fade show active" id="pills-intro-tabs" role="tabpanel" aria-labelledby="pills-intro-tabs-tab" tabindex="0">
-                              <div>
-                                 <!-- title -->
-                                 <h1 class="inline-block text-xl font-semibold leading-6 mb-3">Introduction</h1>
-                                 <p class="mb-6">
-                                    Dash UI is beautifully designed, expertly crafted components UI kit for building a high-quality website and web apps using web technologies — HTML, TailwindCSS, and
-                                    JavaScript.
-                                 </p>
-                                 <h2 class="text-lg font-semibold">Core libraries used</h2>
-                                 <p class="mb-8">Here is a list of some core libraries that we use in Dash UI:</p>
-                                 <!-- list -->
-                                 <ul class="list-disc pl-4 mt-4 flex flex-col gap-4">
-                                    <li>
-                                       <a class="font-semibold text-gray-800 text-md" href="https://tailwindcss.com/" target="_blank" rel="noreferrer">TailwindCSS</a>
-                                       <p class="mt-1">A utility-first CSS framework packed with classes.</p>
-                                    </li>
-                                    <li>
-                                       <a class="font-semibold text-gray-800 text-md" href="https://gulpjs.com/" target="_blank" rel="noreferrer">Gulp</a>
-                                       <p class="mt-1">We use Gulp as our build tool to bundle JavaScript &amp; Css.</p>
-                                    </li>
-                                    <li>
-                                       <a class="font-semibold text-gray-800 text-md" href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap(Javascript)</a>
-                                       <p class="mt-1">We included Bootstrap, but only javascript part for the ease of some component functionality.</p>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="pills-installation-tabs" role="tabpanel" aria-labelledby="pills-installation-tabs-tab" tabindex="0">
-                              <div>
-                                 <!-- text -->
-                                 <h3 class="mb-3 text-xl">Installation</h3>
-                                 <h4 class="mb-4">Prerequisites</h4>
-                                 <p class="mb-6">Before you begin with Dash UI, you may need to install the following tools make sure your development environment able to run the template.</p>
-                                 <!-- list -->
-                                 <ul class="list-disc pl-4 my-8 flex flex-col gap-4">
-                                    <li>
-                                       <a href="https://nodejs.org" target="_blank" rel="noreferrer" class="text-gray-800 font-semibold">Node.js</a>
-                                    </li>
-                                    <li>
-                                       <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer" class="text-gray-800 font-semibold">npm</a>
-                                    </li>
-                                    <li>
-                                       <a href="https://gulpjs.com/" target="_blank" rel="noreferrer" class="text-gray-800 font-semibold">gulp</a>
-                                    </li>
-                                 </ul>
-                                 <!-- content -->
-                                 <p class="mb-6">
-                                    After choosing the package you want to install, navigate to project root directory, where the
-                                    <code class="text-red-600">package.json</code>
-                                    located and run the command below in console:
-                                 </p>
 
-                                 <pre class="language-js"><code class=" language-js">node --version</code></pre>
-                                 <pre class="language-js"><code class=" language-js">npm --version</code></pre>
-                                 <div class="mt-10">
-                                    <h4 class="font-semibold">Installing Gulp.js</h4>
-                                    <p class="mb-4">Please note, first Gulp should be installed globally and for that reason -g command is used.</p>
-                                    <pre class="language-js"><code class="language-js">$ npm install --global gulp-cli</code></pre>
+<head>
+   <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
+   @@include("partials/head.html") @@include("partials/analytics.html")
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Documentation - TailwindCSS HTML Admin Template Free - Dash UI" />
+   <title>Documentation - TailwindCSS HTML Admin Template Free - Dash UI</title>
+</head>
+
+<body>
+   <main>
+      <!-- start introduction -->
+      <!-- app layout -->
+      <div id="app-layout" class="overflow-x-hidden flex">
+         @@include("partials/navbar-vertical.html", { "page": "docs" })
+         <!-- app layout content -->
+         <div id="app-layout-content"
+            class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+            @@include("partials/top-navbar.html")
+            <div class="p-6">
+               <div class="flex">
+                  <div class="w-full lg:w-[1300px] lg:pr-24">
+                     <div class="tab-content" id="pills-tabSecondContent">
+                        <div class="tab-pane fade show active" id="pills-intro-tabs" role="tabpanel"
+                           aria-labelledby="pills-intro-tabs-tab" tabindex="0">
+                           <div>
+                              <!-- title -->
+                              <h1 class="inline-block text-xl font-semibold leading-6 mb-3">Introduction</h1>
+                              <p class="mb-6">
+                                 Dash UI is beautifully designed, expertly crafted components UI kit for building a
+                                 high-quality website and web apps using web technologies — HTML, TailwindCSS, and
+                                 JavaScript.
+                              </p>
+                              <h2 class="text-lg font-semibold">Core libraries used</h2>
+                              <p class="mb-8">Here is a list of some core libraries that we use in Dash UI:</p>
+                              <!-- list -->
+                              <ul class="list-disc pl-4 mt-4 flex flex-col gap-4">
+                                 <li>
+                                    <a class="font-semibold text-gray-800 text-md" href="https://tailwindcss.com/"
+                                       target="_blank" rel="noreferrer">TailwindCSS</a>
+                                    <p class="mt-1">A utility-first CSS framework packed with classes.</p>
+                                 </li>
+                                 <li>
+                                    <a class="font-semibold text-gray-800 text-md" href="https://gulpjs.com/"
+                                       target="_blank" rel="noreferrer">Gulp</a>
+                                    <p class="mt-1">We use Gulp as our build tool to bundle JavaScript &amp; Css.</p>
+                                 </li>
+                                 <li>
+                                    <a class="font-semibold text-gray-800 text-md" href="https://getbootstrap.com/"
+                                       target="_blank" rel="noreferrer">Bootstrap(Javascript)</a>
+                                    <p class="mt-1">We included Bootstrap, but only javascript part for the ease of some
+                                       component functionality.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-installation-tabs" role="tabpanel"
+                           aria-labelledby="pills-installation-tabs-tab" tabindex="0">
+                           <div>
+                              <!-- text -->
+                              <h3 class="mb-3 text-xl">Installation</h3>
+                              <h4 class="mb-4">Prerequisites</h4>
+                              <p class="mb-6">Before you begin with Dash UI, you may need to install the following tools
+                                 make sure your development environment able to run the template.</p>
+                              <!-- list -->
+                              <ul class="list-disc pl-4 my-8 flex flex-col gap-4">
+                                 <li>
+                                    <a href="https://nodejs.org" target="_blank" rel="noreferrer"
+                                       class="text-gray-800 font-semibold">Node.js</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer"
+                                       class="text-gray-800 font-semibold">npm</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://gulpjs.com/" target="_blank" rel="noreferrer"
+                                       class="text-gray-800 font-semibold">gulp</a>
+                                 </li>
+                              </ul>
+                              <!-- content -->
+                              <p class="mb-6">
+                                 After choosing the package you want to install, navigate to project root directory,
+                                 where the
+                                 <code class="text-red-600">package.json</code>
+                                 located and run the command below in console:
+                              </p>
+
+                              <pre class="language-js"><code class=" language-js">node --version</code></pre>
+                              <pre class="language-js"><code class=" language-js">npm --version</code></pre>
+                              <div class="mt-10">
+                                 <h4 class="font-semibold">Installing Gulp.js</h4>
+                                 <p class="mb-4">Please note, first Gulp should be installed globally and for that
+                                    reason -g command is used.</p>
+                                 <pre class="language-js"><code class="language-js">$ npm install --global
+                                       gulp-cli</code></pre>
+                              </div>
+                              <!-- content -->
+                              <div class="mt-10">
+                                 <h4 class="font-semibold">Now Working with Theme Folder</h4>
+                                 <p class="mb-4">
+                                    Navigate to the root
+                                    <code class="text-red-600">/Dash UI</code>
+                                    directory and run
+                                    <code class="text-red-600">npm install</code>
+                                    to install our local dependencies listed in package.json.
+                                 </p>
+                                 <div class="mb-6">
+                                    <h5 class="mb-2 font-semibold">1. Installing NPM modules</h5>
+                                    <pre class="language-js"><code class="language-js">$ npm i</code></pre>
+                                    <p class="mt-3">
+                                       If you check the project folder when the command has finished executing, you
+                                       should see that Gulp has created a
+                                       <code class="text-red-600">node_modules</code>
+                                       folder
+                                    </p>
                                  </div>
-                                 <!-- content -->
-                                 <div class="mt-10">
-                                    <h4 class="font-semibold">Now Working with Theme Folder</h4>
+                                 <div class="mb-6">
+                                    <h5 class="mb-2 font-semibold">2. Run Gulp</h5>
                                     <p class="mb-4">
-                                       Navigate to the root
-                                       <code class="text-red-600">/Dash UI</code>
-                                       directory and run
-                                       <code class="text-red-600">npm install</code>
-                                       to install our local dependencies listed in package.json.
+                                       Compile and watch the SCSS/JS/HTML, use Live Reload to update browsers instantly,
+                                       start a server, and pop a tab in your default browser. Any changes made to
+                                       the source files will be compiled as soon as you save the file. To try it out
+                                       run:
                                     </p>
-                                    <div class="mb-6">
-                                       <h5 class="mb-2 font-semibold">1. Installing NPM modules</h5>
-                                       <pre class="language-js"><code class="language-js">$ npm i</code></pre>
-                                       <p class="mt-3">
-                                          If you check the project folder when the command has finished executing, you should see that Gulp has created a
-                                          <code class="text-red-600">node_modules</code>
-                                          folder
-                                       </p>
-                                    </div>
-                                    <div class="mb-6">
-                                       <h5 class="mb-2 font-semibold">2. Run Gulp</h5>
-                                       <p class="mb-4">
-                                          Compile and watch the SCSS/JS/HTML, use Live Reload to update browsers instantly, start a server, and pop a tab in your default browser. Any changes made to
-                                          the source files will be compiled as soon as you save the file. To try it out run:
-                                       </p>
-                                       <pre class="language-js"><code class="language-js">$ gulp</code></pre>
-                                    </div>
-                                    <div class="mb-6">
-                                       <h5 class="mb-2 font-semibold">3. Build Production Files</h5>
-                                       <p class="mb-4">
-                                          Generates a
-                                          <code class="text-red-600">/dist</code>
-                                          with all the production files.
-                                       </p>
-                                       <pre class="language-js"><code class="language-js">$ gulp build</code></pre>
-                                    </div>
+                                    <pre class="language-js"><code class="language-js">$ gulp</code></pre>
                                  </div>
-
-                                 <p>This will take some time and install all necessary dependencies into the node_modules directory in order for you to start developing.</p>
-                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="pills-tailwind-tabs" role="tabpanel" aria-labelledby="pills-tailwind-tabs-tab" tabindex="0">
-                              <div>
-                                 <!-- title -->
-                                 <h3 class="mb-3 text-xl">TailwindCSS</h3>
-                                 <!-- paragraph -->
-                                 <p>
-                                    Tailwind CSS is a utility-first CSS framework with predefined classes that you can use to build and design the UI directly in the HTML. We use Tailwind as our core
-                                    CSS framework, most of the UI in Elstar is built entirely with it features, so you can easily update the theme &amp; base by altering
-                                    <code class="text-gray-900">`tailwind.config.js`</code>
-                                    under the root directory.
-                                 </p>
-
-                                 <div class="mt-4 mb-6">
-                                    <!-- title -->
-                                    <h3>Tooling</h3>
-                                    <p class="mt-1">
-                                       If you are using VS Code as your IDE, we suggest to install
-                                       <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" rel="noreferrer" target="_blank" class="text-indigo-600">
-                                          Tailwind CSS IntelliSense
-                                       </a>
-                                       plugin, it provides autocomplete, syntax highlighting, and linting based on your Tailwind config which can speed up your development.
+                                 <div class="mb-6">
+                                    <h5 class="mb-2 font-semibold">3. Build Production Files</h5>
+                                    <p class="mb-4">
+                                       Generates a
+                                       <code class="text-red-600">/dist</code>
+                                       with all the production files.
                                     </p>
-                                 </div>
-                                 <!-- content -->
-                                 <p class="mt-6 mb-3">You can make any your own utility to the beginning, E.g:</p>
-                                 <pre
-                                    class="language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn bg-indigo-600 text-white border-indigo-600 disabled:opacity-50 disabled:pointer-events-none hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800 active:border-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
-
-                                 <p class="mt-4">
-                                    You can always visit the official doc to find out classes usage &amp; Tailwind configuration:
-                                    <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank" class="text-indigo-600">https://tailwindcss.com/</a>
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="pills-starter-tabs" role="tabpanel" aria-labelledby="pills-starter-tabs-tab" tabindex="0">
-                              <div>
-                                 <!-- title -->
-                                 <h3 class="mb-3 text-xl">Starter</h3>
-
-                                 <p>
-                                    As we mentioned in Installation section, we have provided a starter version with minimum core components and functionality setup, we strongly recommend developer
-                                    use this version to build the app on top.
-                                 </p>
-
-                                 <div class="mt-6">
-                                    <div class="bg-white border border-gray-300 relative overflow-x-auto">
-                                       <!-- table -->
-                                       <table class="table text-left">
-                                          <thead class="text-gray-700">
-                                             <tr>
-                                                <th class="border-b bg-gray-100 px-6 py-3">COMMAND</th>
-                                                <th class="border-b bg-gray-100 px-6 py-3">DESCRIPTION</th>
-                                             </tr>
-                                          </thead>
-                                          <tbody>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>gulp</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   Compile and watch the
-                                                   <code class="text-red-600">SCSS/JS/HTML</code>
-                                                   , use Live Reload to update browsers instantly, start a server, and pop a tab in your default browser. Any changes made to the source files will be
-                                                   compiled as soon as you save the file. To try it out run:
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>gulp build</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   Generates a
-                                                   <code class="text-red-600">`/dist`</code>
-                                                   with all the production files.
-                                                </td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </div>
+                                    <pre class="language-js"><code class="language-js">$ gulp build</code></pre>
                                  </div>
                               </div>
+
+                              <p>This will take some time and install all necessary dependencies into the node_modules
+                                 directory in order for you to start developing.</p>
                            </div>
-                           <div class="tab-pane fade" id="pills-folder-tabs" role="tabpanel" aria-labelledby="pills-folder-tabs-tab" tabindex="0">
-                              <div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-tailwind-tabs" role="tabpanel"
+                           aria-labelledby="pills-tailwind-tabs-tab" tabindex="0">
+                           <div>
+                              <!-- title -->
+                              <h3 class="mb-3 text-xl">TailwindCSS</h3>
+                              <!-- paragraph -->
+                              <p>
+                                 Tailwind CSS is a utility-first CSS framework with predefined classes that you can use
+                                 to build and design the UI directly in the HTML. We use Tailwind as our core
+                                 CSS framework, most of the UI in Elstar is built entirely with it features, so you can
+                                 easily update the theme &amp; base by altering
+                                 <code class="text-gray-900">`tailwind.config.js`</code>
+                                 under the root directory.
+                              </p>
+
+                              <div class="mt-4 mb-6">
                                  <!-- title -->
-                                 <h3 class="mb-3 text-xl">Folder Structure</h3>
-                                 <!-- paragraph -->
-                                 <p class="mb-6">
-                                    This section will show you how to keep your files organized. Our theme file structure that looks like this.As mentioned previously, the default Geeks themes are
-                                    some of the best examples of good theme development.
+                                 <h3>Tooling</h3>
+                                 <p class="mt-1">
+                                    If you are using VS Code as your IDE, we suggest to install
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+                                       rel="noreferrer" target="_blank" class="text-indigo-600">
+                                       Tailwind CSS IntelliSense
+                                    </a>
+                                    plugin, it provides autocomplete, syntax highlighting, and linting based on your
+                                    Tailwind config which can speed up your development.
                                  </p>
-                                 <pre class="language-md"><code class=" language-md">
-├── src
-│   ├── assets                       # The output css directory
-│       ├── css                      # Compiled CSS
-│       ├── fonts                    # All fonts are used in the theme.
-│       ├── images                   # All the images are used in the theme
-|       ├── js                       # All Javascript source files used in theme.
-│       ├── tailwind                 # CSS files
-│   ├── components                   # All Components for theme.
-│   ├── partials                     # A specific loop header and footer files for the templating.
-│   ├── index.html                   # Index and All HTML file is start file run when the gulp
-├── .gitignore                       # Ignore file for git
-├── gulpfile.js                      # Gulp setup file
-├── package.json
-├── package.lock.json
-├── README.md
-└── tailwind.config.js               # TailwindCSS configuration file
-												</code></pre>
+                              </div>
+                              <!-- content -->
+                              <p class="mt-6 mb-3">You can make any your own utility to the beginning, E.g:</p>
+                              <pre class="language-html"><code class=" language-html"><span class="token tag"><span
+                                          class="token tag"><span class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation">=</span><span
+                                             class="token punctuation">"</span>btn bg-indigo-600 text-white
+                                          border-indigo-600 disabled:opacity-50 disabled:pointer-events-none
+                                          hover:bg-indigo-800 hover:border-indigo-800 active:bg-indigo-800
+                                          active:border-indigo-800 focus:outline-none focus:ring-4
+                                          focus:ring-indigo-300<span class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Button<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
+
+                              <p class="mt-4">
+                                 You can always visit the official doc to find out classes usage &amp; Tailwind
+                                 configuration:
+                                 <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank"
+                                    class="text-indigo-600">https://tailwindcss.com/</a>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-starter-tabs" role="tabpanel"
+                           aria-labelledby="pills-starter-tabs-tab" tabindex="0">
+                           <div>
+                              <!-- title -->
+                              <h3 class="mb-3 text-xl">Starter</h3>
+
+                              <p>
+                                 As we mentioned in Installation section, we have provided a starter version with
+                                 minimum core components and functionality setup, we strongly recommend developer
+                                 use this version to build the app on top.
+                              </p>
+
+                              <div class="mt-6">
+                                 <div class="bg-white border border-gray-300 relative overflow-x-auto">
+                                    <!-- table -->
+                                    <table class="table text-left">
+                                       <thead class="text-gray-700">
+                                          <tr>
+                                             <th class="border-b bg-gray-100 px-6 py-3">COMMAND</th>
+                                             <th class="border-b bg-gray-100 px-6 py-3">DESCRIPTION</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>gulp</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                Compile and watch the
+                                                <code class="text-red-600">SCSS/JS/HTML</code>
+                                                , use Live Reload to update browsers instantly, start a server, and pop
+                                                a tab in your default browser. Any changes made to the source files will
+                                                be
+                                                compiled as soon as you save the file. To try it out run:
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>gulp build</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                Generates a
+                                                <code class="text-red-600">`/dist`</code>
+                                                with all the production files.
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
                               </div>
                            </div>
-                           <div class="tab-pane fade" id="pills-sources-credits-tabs" role="tabpanel" aria-labelledby="pills-sources-credits-tabs-tab" tabindex="0">
+                        </div>
+                        <div class="tab-pane fade" id="pills-folder-tabs" role="tabpanel"
+                           aria-labelledby="pills-folder-tabs-tab" tabindex="0">
+                           <div>
+                              <!-- title -->
+                              <h3 class="mb-3 text-xl">Folder Structure</h3>
+                              <!-- paragraph -->
+                              <p class="mb-6">
+                                 This section will show you how to keep your files organized. Our theme file structure
+                                 that looks like this.As mentioned previously, the default Geeks themes are
+                                 some of the best examples of good theme development.
+                              </p>
+                              <pre class="language-md"><code class=" language-md">
+                                    ├── src
+                                    │ ├── assets # The output css directory
+                                    │ ├── css # Compiled CSS
+                                    │ ├── fonts # All fonts are used in the theme.
+                                    │ ├── images # All the images are used in the theme
+                                    | ├── js # All Javascript source files used in theme.
+                                    │ ├── tailwind # CSS files
+                                    │ ├── components # All Components for theme.
+                                    │ ├── partials # A specific loop header and footer files for the templating.
+                                    │ ├── index.html # Index and All HTML file is start file run when the gulp
+                                    ├── .gitignore # Ignore file for git
+                                    ├── gulpfile.js # Gulp setup file
+                                    ├── package.json
+                                    ├── package.lock.json
+                                    ├── README.md
+                                    └── tailwind.config.js # TailwindCSS configuration file
+                                 </code></pre>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-sources-credits-tabs" role="tabpanel"
+                           aria-labelledby="pills-sources-credits-tabs-tab" tabindex="0">
+                           <div>
+                              <!-- title -->
+                              <h3 class="mb-3 text-xl">Resources & Assets</h3>
                               <div>
-                                 <!-- title -->
-                                 <h3 class="mb-3 text-xl">Resources & Assets</h3>
-                                 <div>
-                                    <div class="bg-white border border-gray-300 relative overflow-x-auto">
-                                       <!-- table -->
-                                       <table class="table text-left w-full">
-                                          <thead class="text-gray-700">
-                                             <tr>
-                                                <th class="border-b bg-gray-100 px-6 py-3">Plugins</th>
-                                                <th class="border-b bg-gray-100 px-6 py-3">URL</th>
-                                             </tr>
-                                          </thead>
-                                          <tbody>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>Apexcharts</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <a href="https://apexcharts.com/" target="_blank" class="text-indigo-600">https://apexcharts.com/</a>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>Bootstrap</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <a href="https://getbootstrap.com/" target="_blank" class="text-indigo-600">https://getbootstrap.com/</a>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>Dropzone</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <a href="https://www.dropzonejs.com/" target="_blank" class="text-indigo-600">https://www.dropzonejs.com/</a>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>Prismjs</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <a href="https://prismjs.com/" target="_blank" class="text-indigo-600">https://prismjs.com/</a>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>Feather Icons</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <a href="https://feathericons.com/" target="_blank" class="text-indigo-600">https://feathericons.com/</a>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <code>Simplebar</code>
-                                                </td>
-                                                <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
-                                                   <a href="https://github.com/Grsmto/simplebar" target="_blank" class="text-indigo-600">https://github.com/Grsmto/simplebar</a>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td class="font-medium py-3 px-6 text-left">
-                                                   <code>TailwindCSS</code>
-                                                </td>
-                                                <td class="font-medium py-3 px-6 text-left">
-                                                   <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="text-indigo-600">https://github.com/tailwindlabs/tailwindcss</a>
-                                                </td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </div>
+                                 <div class="bg-white border border-gray-300 relative overflow-x-auto">
+                                    <!-- table -->
+                                    <table class="table text-left w-full">
+                                       <thead class="text-gray-700">
+                                          <tr>
+                                             <th class="border-b bg-gray-100 px-6 py-3">Plugins</th>
+                                             <th class="border-b bg-gray-100 px-6 py-3">URL</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>Apexcharts</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <a href="https://apexcharts.com/" target="_blank"
+                                                   class="text-indigo-600">https://apexcharts.com/</a>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>Bootstrap</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <a href="https://getbootstrap.com/" target="_blank"
+                                                   class="text-indigo-600">https://getbootstrap.com/</a>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>Dropzone</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <a href="https://www.dropzonejs.com/" target="_blank"
+                                                   class="text-indigo-600">https://www.dropzonejs.com/</a>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>Prismjs</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <a href="https://prismjs.com/" target="_blank"
+                                                   class="text-indigo-600">https://prismjs.com/</a>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>Feather Icons</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <a href="https://feathericons.com/" target="_blank"
+                                                   class="text-indigo-600">https://feathericons.com/</a>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <code>Simplebar</code>
+                                             </td>
+                                             <td class="border-b border-gray-300 font-medium py-3 px-6 text-left">
+                                                <a href="https://github.com/Grsmto/simplebar" target="_blank"
+                                                   class="text-indigo-600">https://github.com/Grsmto/simplebar</a>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="font-medium py-3 px-6 text-left">
+                                                <code>TailwindCSS</code>
+                                             </td>
+                                             <td class="font-medium py-3 px-6 text-left">
+                                                <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank"
+                                                   class="text-indigo-600">https://github.com/tailwindlabs/tailwindcss</a>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="lg:w-[280px] w-0 lg:px-4 lg:visible invisible">
-                        <div class="font-semibold text-gray-900 mb-8 mt-2 text-lg">Getting Started</div>
-                        <!-- list -->
-                        <ul class="nav flex flex-col gap-2 nav-standalone" id="pills-tabSecond" role="tablist">
-                           <li class="nav-item" role="presentation">
-                              <button
-                                 class="nav-link active px-4"
-                                 id="pills-intro-tabs-tab"
-                                 data-bs-toggle="pill"
-                                 data-bs-target="#pills-intro-tabs"
-                                 type="button"
-                                 role="tab"
-                                 aria-controls="pills-intro-tabs"
-                                 aria-selected="true">
-                                 Introduction
-                              </button>
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <button
-                                 class="nav-link px-4"
-                                 id="pills-installation-tabs-tab"
-                                 data-bs-toggle="pill"
-                                 data-bs-target="#pills-installation-tabs"
-                                 type="button"
-                                 role="tab"
-                                 aria-controls="pills-installation-tabs"
-                                 aria-selected="false">
-                                 Installation
-                              </button>
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <button
-                                 class="nav-link px-4"
-                                 id="pills-tailwind-tabs-tab"
-                                 data-bs-toggle="pill"
-                                 data-bs-target="#pills-tailwind-tabs"
-                                 type="button"
-                                 role="tab"
-                                 aria-controls="pills-tailwind-tabs"
-                                 aria-selected="false">
-                                 TailwindCSS
-                              </button>
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <button
-                                 class="nav-link px-4"
-                                 id="pills-starter-tabs-tab"
-                                 data-bs-toggle="pill"
-                                 data-bs-target="#pills-starter-tabs"
-                                 type="button"
-                                 role="tab"
-                                 aria-controls="pills-starter-tabs"
-                                 aria-selected="false">
-                                 Starter
-                              </button>
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <button
-                                 class="nav-link px-4"
-                                 id="pills-folder-tabs-tab"
-                                 data-bs-toggle="pill"
-                                 data-bs-target="#pills-folder-tabs"
-                                 type="button"
-                                 role="tab"
-                                 aria-controls="pills-folder-tabs"
-                                 aria-selected="false">
-                                 Folder Structure
-                              </button>
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <button
-                                 class="nav-link px-4"
-                                 id="pills-sources-credits-tabs-tab"
-                                 data-bs-toggle="pill"
-                                 data-bs-target="#pills-sources-credits-tabs"
-                                 type="button"
-                                 role="tab"
-                                 aria-controls="pills-sources-credits-tabs"
-                                 aria-selected="false">
-                                 Source Credits
-                              </button>
-                           </li>
-                        </ul>
-                     </div>
+                  </div>
+                  <div class="lg:w-[280px] w-0 lg:px-4 lg:visible invisible">
+                     <div class="font-semibold text-gray-900 mb-8 mt-2 text-lg">Getting Started</div>
+                     <!-- list -->
+                     <ul class="nav flex flex-col gap-2 nav-standalone" id="pills-tabSecond" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link active px-4" id="pills-intro-tabs-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-intro-tabs" type="button" role="tab"
+                              aria-controls="pills-intro-tabs" aria-selected="true">
+                              Introduction
+                           </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-4" id="pills-installation-tabs-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-installation-tabs" type="button" role="tab"
+                              aria-controls="pills-installation-tabs" aria-selected="false">
+                              Installation
+                           </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-4" id="pills-tailwind-tabs-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-tailwind-tabs" type="button" role="tab"
+                              aria-controls="pills-tailwind-tabs" aria-selected="false">
+                              TailwindCSS
+                           </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-4" id="pills-starter-tabs-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-starter-tabs" type="button" role="tab"
+                              aria-controls="pills-starter-tabs" aria-selected="false">
+                              Starter
+                           </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-4" id="pills-folder-tabs-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-folder-tabs" type="button" role="tab"
+                              aria-controls="pills-folder-tabs" aria-selected="false">
+                              Folder Structure
+                           </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-4" id="pills-sources-credits-tabs-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-sources-credits-tabs" type="button" role="tab"
+                              aria-controls="pills-sources-credits-tabs" aria-selected="false">
+                              Source Credits
+                           </button>
+                        </li>
+                     </ul>
                   </div>
                </div>
-               @@include("partials/footer.html")
             </div>
+            @@include("partials/footer.html")
          </div>
-         <!-- end of introduction -->
-      </main>
-      @@include("partials/scripts.html")
-      <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-   </body>
+      </div>
+      <!-- end of introduction -->
+   </main>
+   @@include("partials/buy-template.html")
+   @@include("partials/scripts.html")
+   <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+</body>
+
 </html>

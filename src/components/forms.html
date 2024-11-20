@@ -1,824 +1,1121 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
-      @@include("../partials/head.html") @@include("../partials/analytics.html")
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Forms - TailwindCSS HTML Admin Template Free - Dash UI" />
-      <title>Forms - TailwindCSS HTML Admin Template Free - Dash UI</title>
-   </head>
-   <body>
-      <main>
-         <!-- start forms page -->
-         <div id="app-layout" class="overflow-x-hidden flex">
-            @@include("../partials/navbar-vertical.html", { "page": "forms", "page_group": "components" })
-            <!-- app layout content -->
-            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-               @@include("../partials/top-navbar.html")
-               <div class="p-6">
-                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
-                     <h1 class="block font-semibold leading-6 text-xl mb-1">Forms</h1>
-                     <p class="text-lg">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+
+<head>
+   <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
+   @@include("../partials/head.html") @@include("../partials/analytics.html")
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Forms - TailwindCSS HTML Admin Template Free - Dash UI" />
+   <title>Forms - TailwindCSS HTML Admin Template Free - Dash UI</title>
+</head>
+
+<body>
+   <main>
+      <!-- start forms page -->
+      <div id="app-layout" class="overflow-x-hidden flex">
+         @@include("../partials/navbar-vertical.html", { "page": "forms", "page_group": "components" })
+         <!-- app layout content -->
+         <div id="app-layout-content"
+            class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+            @@include("../partials/top-navbar.html")
+            <div class="p-6">
+               <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                  <h1 class="block font-semibold leading-6 text-xl mb-1">Forms</h1>
+                  <p class="text-lg">Examples and usage guidelines for form control styles, layout options, and custom
+                     components for creating a wide variety of forms.</p>
+               </div>
+               <div class="flex flex-col gap-8">
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Form Control</h2>
+                        <p>
+                           Textual form controls—like
+                           <code class="text-red-600">&lt;input&gt;</code>
+                           s,
+                           <code class="text-red-600">&lt;select&gt;</code>
+                           s, and
+                           <code class="text-red-600">&lt;textarea&gt;</code>
+                           s—are styled with the
+                           <code class="text-red-600">.form-control</code>
+                           class. Included are styles for general appearance, focus state, sizing, and more.
+                        </p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-input-tab" data-bs-toggle="pill" data-bs-target="#pills-design-input"
+                                 type="button" role="tab" aria-controls="pills-design-input" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-input-tab" data-bs-toggle="pill" data-bs-target="#pills-html-input"
+                                 type="button" role="tab" aria-controls="pills-html-input" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-input" role="tabpanel"
+                              aria-labelledby="pills-design-input-tab" tabindex="0">
+                              <input type="text"
+                                 class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                                 placeholder="This is Placeholder" />
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-input" role="tabpanel"
+                              aria-labelledby="pills-html-input-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"> <span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>text<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span> border border-gray-300 text-gray-900
+                                          rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">placeholder</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>This is Placeholder<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">/&gt;</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="flex flex-col gap-8">
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Form Control</h2>
-                           <p>
-                              Textual form controls—like
-                              <code class="text-red-600">&lt;input&gt;</code>
-                              s,
-                              <code class="text-red-600">&lt;select&gt;</code>
-                              s, and
-                              <code class="text-red-600">&lt;textarea&gt;</code>
-                              s—are styled with the
-                              <code class="text-red-600">.form-control</code>
-                              class. Included are styles for general appearance, focus state, sizing, and more.
-                           </p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-input-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-input"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-input"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-input-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-input"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-input"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-input" role="tabpanel" aria-labelledby="pills-design-input-tab" tabindex="0">
-                                 <input
-                                    type="text"
-                                    class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
-                                    placeholder="This is Placeholder" />
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-input" role="tabpanel" aria-labelledby="pills-html-input-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
-<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>This is Placeholder<span class="token punctuation">"</span></span>
-<span class="token punctuation">/&gt;</span></span></code></pre>
-                              </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Label</h2>
+                        <p>Basic input example with label.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-input-with-label-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-input-with-label" type="button" role="tab"
+                                 aria-controls="pills-design-input-with-label" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-input-with-label-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-input-with-label" type="button" role="tab"
+                                 aria-controls="pills-html-input-with-label" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-input-with-label" role="tabpanel"
+                              aria-labelledby="pills-design-input-with-label-tab" tabindex="0">
+                              <label for="withLabel" class="mb-2 block text-gray-800">Email</label>
+                              <input type="email" id="withLabel"
+                                 class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                                 placeholder="Email" />
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-input-with-label" role="tabpanel"
+                              aria-labelledby="pills-html-input-with-label-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>withLabel<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>mb-2 block text-gray-800<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Email<span class="token tag"><span
+                                          class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>email<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>withLabel<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span> border border-gray-300 text-gray-900
+                                          rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">placeholder</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>Email<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">/&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Label</h2>
-                           <p>Basic input example with label.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-input-with-label-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-input-with-label"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-input-with-label"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-input-with-label-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-input-with-label"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-input-with-label"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-input-with-label" role="tabpanel" aria-labelledby="pills-design-input-with-label-tab" tabindex="0">
-                                 <label for="withLabel" class="mb-2 block text-gray-800">Email</label>
-                                 <input
-                                    type="email"
-                                    id="withLabel"
-                                    class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
-                                    placeholder="Email" />
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-input-with-label" role="tabpanel" aria-labelledby="pills-html-input-with-label-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>withLabel<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-2 block text-gray-800<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Email<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span>
-<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>withLabel<span class="token punctuation">"</span></span>
-<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Email<span class="token punctuation">"</span></span>
-<span class="token punctuation">/&gt;</span></span></code></pre>
-                              </div>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Hidden Label</h2>
+                        <p>
+                           <code class="text-red-500">&lt;label&gt;</code>
+                           elements hidden using the
+                           <code class="text-red-500">.sr-only</code>
+                           class
+                        </p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-input-hidden-label-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-input-hidden-label" type="button" role="tab"
+                                 aria-controls="pills-design-input-hidden-label" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-input-hidden-label-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-input-hidden-label" type="button" role="tab"
+                                 aria-controls="pills-html-input-hidden-label" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-input-hidden-label" role="tabpanel"
+                              aria-labelledby="pills-design-input-hidden-label-tab" tabindex="0">
+                              <label for="withLabel" class="mb-2 block text-gray-800 sr-only">Email</label>
+                              <input type="email" id="withLabel"
+                                 class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                                 placeholder="Email" />
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-input-hidden-label" role="tabpanel"
+                              aria-labelledby="pills-html-input-hidden-label-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>withLabel<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>mb-2 block text-gray-800 sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Email<span class="token tag"><span
+                                          class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>email<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>withLabel<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span> border border-gray-300 text-gray-900
+                                          rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">placeholder</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>Email<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">/&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Hidden Label</h2>
-                           <p>
-                              <code class="text-red-500">&lt;label&gt;</code>
-                              elements hidden using the
-                              <code class="text-red-500">.sr-only</code>
-                              class
-                           </p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-input-hidden-label-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-input-hidden-label"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-input-hidden-label"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-input-hidden-label-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-input-hidden-label"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-input-hidden-label"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-input-hidden-label" role="tabpanel" aria-labelledby="pills-design-input-hidden-label-tab" tabindex="0">
-                                 <label for="withLabel" class="mb-2 block text-gray-800 sr-only">Email</label>
-                                 <input
-                                    type="email"
-                                    id="withLabel"
-                                    class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
-                                    placeholder="Email" />
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-input-hidden-label" role="tabpanel" aria-labelledby="pills-html-input-hidden-label-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>withLabel<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-2 block text-gray-800  sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Email<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span>
-<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>withLabel<span class="token punctuation">"</span></span>
-<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Email<span class="token punctuation">"</span></span>
-<span class="token punctuation">/&gt;</span></span></code></pre>
-                              </div>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg mb-0">Textarea</h2>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-input-textarea-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-input-textarea" type="button" role="tab"
+                                 aria-controls="pills-design-input-textarea" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-input-textarea-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-input-textarea" type="button" role="tab"
+                                 aria-controls="pills-html-input-textarea" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-input-textarea" role="tabpanel"
+                              aria-labelledby="pills-design-input-textarea-tab" tabindex="0">
+                              <textarea rows="4"
+                                 class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                                 placeholder="Hello World"></textarea>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-input-textarea" role="tabpanel"
+                              aria-labelledby="pills-html-input-textarea-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>textarea</span>
+                                       <span class="token attr-name">rows</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>4<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span> border border-gray-300 text-gray-900
+                                          rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">placeholder</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>Hello World<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span><span class="token tag"><span
+                                          class="token tag"><span
+                                             class="token punctuation">&lt;/</span>textarea</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg mb-0">Textarea</h2>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-input-textarea-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-input-textarea"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-input-textarea"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-input-textarea-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-input-textarea"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-input-textarea"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-input-textarea" role="tabpanel" aria-labelledby="pills-design-input-textarea-tab" tabindex="0">
-                                 <textarea
-                                    rows="4"
-                                    class="border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
-                                    placeholder="Hello World"></textarea>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg mb-0">Sizing</h2>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-input-sizing-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-input-sizing" type="button" role="tab"
+                                 aria-controls="pills-design-input-sizing" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-input-sizing-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-input-sizing" type="button" role="tab"
+                                 aria-controls="pills-html-input-sizing" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-input-sizing" role="tabpanel"
+                              aria-labelledby="pills-design-input-sizing-tab" tabindex="0">
+                              <div class="flex flex-col gap-3">
+                                 <input type="text"
+                                    class="py-1 px-3 block w-full text-sm border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none"
+                                    placeholder="Small size" />
+                                 <input type="text"
+                                    class="py-2 px-4 block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none"
+                                    placeholder="Default size" />
+                                 <input type="text"
+                                    class="py-3 px-4 text-lg block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none"
+                                    placeholder="Large size" />
                               </div>
-                              <div class="tab-pane fade" id="pills-html-input-textarea" role="tabpanel" aria-labelledby="pills-html-input-textarea-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span>
-<span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>4<span class="token punctuation">"</span></span>
-<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> border border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Hello World<span class="token punctuation">"</span></span>
-<span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-input-sizing" role="tabpanel"
+                              aria-labelledby="pills-html-input-sizing-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>text<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>py-1 px-3 block w-full text-sm
+                                          border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">placeholder</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>Small size<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>text<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>py-2 px-4 block w-full border-gray-300
+                                          rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50
+                                          disabled:pointer-events-none<span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">placeholder</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>Default size<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>text<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>py-3 px-4 text-lg block w-full
+                                          border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">placeholder</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>Large size<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">/&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg mb-0">Sizing</h2>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-input-sizing-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-input-sizing"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-input-sizing"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-input-sizing-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-input-sizing"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-input-sizing"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-input-sizing" role="tabpanel" aria-labelledby="pills-design-input-sizing-tab" tabindex="0">
-                                 <div class="flex flex-col gap-3">
-                                    <input
-                                       type="text"
-                                       class="py-1 px-3 block w-full text-sm border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none"
-                                       placeholder="Small size" />
-                                    <input
-                                       type="text"
-                                       class="py-2 px-4 block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none"
-                                       placeholder="Default size" />
-                                    <input
-                                       type="text"
-                                       class="py-3 px-4 text-lg block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none"
-                                       placeholder="Large size" />
-                                 </div>
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-input-sizing" role="tabpanel" aria-labelledby="pills-html-input-sizing-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-	<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
-	<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>py-1 px-3 block w-full text-sm border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-	<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Small size<span class="token punctuation">"</span></span>
-<span class="token punctuation">/&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-	<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
-	<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>py-2 px-4 block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-	<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Default size<span class="token punctuation">"</span></span>
-<span class="token punctuation">/&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-	<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
-	<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>py-3 px-4 text-lg block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-	<span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Large size<span class="token punctuation">"</span></span>
-<span class="token punctuation">/&gt;</span></span></code></pre>
-                              </div>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg mb-0">Select</h2>
+                        <p>
+                           Customize the native
+                           <code class="text-red-600">&lt;select&gt;</code>
+                           s with custom CSS that changes the element’s initial appearance.
+                        </p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-input-select-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-input-select" type="button" role="tab"
+                                 aria-controls="pills-design-input-select" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-input-select-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-input-select" type="button" role="tab"
+                                 aria-controls="pills-html-input-select" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-input-select" role="tabpanel"
+                              aria-labelledby="pills-design-input-select-tab" tabindex="0">
+                              <select
+                                 class="py-2 px-4 block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none">
+                                 <option selected>Open this select menu</option>
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                              </select>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-input-select" role="tabpanel"
+                              aria-labelledby="pills-html-input-select-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"> <span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>select</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>py-2 px-4 pe-9 block w-full
+                                          border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>option</span> <span
+                                          class="token attr-name">selected</span><span
+                                          class="token punctuation">&gt;</span></span>Open this select menu<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>option</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>option</span><span
+                                          class="token punctuation">&gt;</span></span>1<span class="token tag"><span
+                                          class="token tag"><span
+                                             class="token punctuation">&lt;/</span>option</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>option</span><span
+                                          class="token punctuation">&gt;</span></span>2<span class="token tag"><span
+                                          class="token tag"><span
+                                             class="token punctuation">&lt;/</span>option</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>option</span><span
+                                          class="token punctuation">&gt;</span></span>3<span class="token tag"><span
+                                          class="token tag"><span
+                                             class="token punctuation">&lt;/</span>option</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>select</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg mb-0">Select</h2>
-                           <p>
-                              Customize the native
-                              <code class="text-red-600">&lt;select&gt;</code>
-                              s with custom CSS that changes the element’s initial appearance.
-                           </p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-input-select-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-input-select"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-input-select"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-input-select-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-input-select"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-input-select"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-input-select" role="tabpanel" aria-labelledby="pills-design-input-select-tab" tabindex="0">
-                                 <select class="py-2 px-4 block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none">
-                                    <option selected>Open this select menu</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                 </select>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg mb-0">Checks and radios</h2>
+                        <p>Create consistent cross-browser and cross-device checkboxes and radios with our completely
+                           rewritten checks component.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card mb-6">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-checkbox-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-checkbox" type="button" role="tab"
+                                 aria-controls="pills-design-checkbox" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-checkbox-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-checkbox" type="button" role="tab"
+                                 aria-controls="pills-html-checkbox" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-checkbox" role="tabpanel"
+                              aria-labelledby="pills-design-checkbox-tab" tabindex="0">
+                              <div class="flex items-center mb-1">
+                                 <input type="checkbox"
+                                    class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="default-checkbox" />
+                                 <label for="default-checkbox" class="ms-3">Default checkbox</label>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-input-select" role="tabpanel" aria-labelledby="pills-html-input-select-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>py-2 px-4 pe-9 block w-full border-gray-300 rounded focus:border-indigo-600 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token punctuation">&gt;</span></span>Open this select menu<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span></code></pre>
+                              <div class="flex items-center mb-1">
+                                 <input type="checkbox"
+                                    class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="checked-checkbox" checked />
+                                 <label for="checked-checkbox" class="ms-3">Checked checkbox</label>
                               </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-checkbox" role="tabpanel"
+                              aria-labelledby="pills-html-checkbox-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span> <span
+                                          class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checkbox<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white
+                                          border-gray-300 rounded focus:ring-indigo-600 focus:outline-none
+                                          focus:ring-2<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-checkbox<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-checkbox<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>text-gray-500 ms-3 <span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Default checkbox<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span> <span
+                                          class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checkbox<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white
+                                          border-gray-300 rounded focus:ring-indigo-600 focus:outline-none
+                                          focus:ring-2<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checked-checkbox<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">checked</span> <span
+                                          class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checked-checkbox<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>text-gray-500 ms-3 <span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Checked checkbox<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg mb-0">Checks and radios</h2>
-                           <p>Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card mb-6">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-checkbox-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-checkbox"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-checkbox"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-checkbox-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-checkbox"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-checkbox"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-checkbox" role="tabpanel" aria-labelledby="pills-design-checkbox-tab" tabindex="0">
-                                 <div class="flex items-center mb-1">
-                                    <input
-                                       type="checkbox"
-                                       class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="default-checkbox" />
-                                    <label for="default-checkbox" class="ms-3">Default checkbox</label>
-                                 </div>
-                                 <div class="flex items-center mb-1">
-                                    <input
-                                       type="checkbox"
-                                       class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="checked-checkbox"
-                                       checked />
-                                    <label for="checked-checkbox" class="ms-3">Checked checkbox</label>
-                                 </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-radio-tab" data-bs-toggle="pill" data-bs-target="#pills-design-radio"
+                                 type="button" role="tab" aria-controls="pills-design-radio" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-radio-tab" data-bs-toggle="pill" data-bs-target="#pills-html-radio"
+                                 type="button" role="tab" aria-controls="pills-html-radio" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-radio" role="tabpanel"
+                              aria-labelledby="pills-design-radio-tab" tabindex="0">
+                              <div class="flex items-center mb-1">
+                                 <input type="radio" name="default-radio"
+                                    class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="default-radio" />
+                                 <label for="default-radio" class="ms-2">Default radio</label>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-checkbox" role="tabpanel" aria-labelledby="pills-html-checkbox-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-checkbox<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-gray-500 ms-3 <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Default checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked-checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span> <span class="token punctuation">/&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked-checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-gray-500 ms-3 <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Checked checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-radio-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-radio"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-radio"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-radio-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-radio"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-radio"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-radio" role="tabpanel" aria-labelledby="pills-design-radio-tab" tabindex="0">
-                                 <div class="flex items-center mb-1">
-                                    <input
-                                       type="radio"
-                                       name="default-radio"
-                                       class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="default-radio" />
-                                    <label for="default-radio" class="ms-2">Default radio</label>
-                                 </div>
 
-                                 <div class="flex items-center">
-                                    <input
-                                       type="radio"
-                                       name="default-radio"
-                                       class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="checked-radio"
-                                       checked />
-                                    <label for="checked-radio" class="ms-2">Checked radio</label>
-                                 </div>
+                              <div class="flex items-center">
+                                 <input type="radio" name="default-radio"
+                                    class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="checked-radio" checked />
+                                 <label for="checked-radio" class="ms-2">Checked radio</label>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-radio" role="tabpanel" aria-labelledby="pills-html-radio-tab" tabindex="0"></div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-radio" role="tabpanel"
+                              aria-labelledby="pills-html-radio-tab" tabindex="0"></div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg mb-0">Disabled State Checks and radios</h2>
+                        <p>Disabled checkboxes and radios.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card mb-6">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-checkbox-disabled-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-checkbox-disabled" type="button" role="tab"
+                                 aria-controls="pills-design-checkbox-disabled" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-checkbox-disabled-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-checkbox-disabled" type="button" role="tab"
+                                 aria-controls="pills-html-checkbox-disabled" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-checkbox-disabled" role="tabpanel"
+                              aria-labelledby="pills-design-checkbox-disabled-tab" tabindex="0">
+                              <div class="flex items-center mb-1">
+                                 <input type="checkbox"
+                                    class="w-4 h-4 text-indigo-600 bg-white disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="default-checkbox-disabled" disabled />
+                                 <label for="default-checkbox-disabled" class="ms-3">Default checkbox</label>
+                              </div>
+                              <div class="flex items-center mb-1">
+                                 <input type="checkbox"
+                                    class="w-4 h-4 text-indigo-600 bg-white disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="checked-checkbox-disabled" checked disabled />
+                                 <label for="checked-checkbox-disabled" class="ms-3">Checked checkbox</label>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-checkbox-disabled" role="tabpanel"
+                              aria-labelledby="pills-html-checkbox-disabled-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center mb-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checkbox<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white
+                                          disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600
+                                          focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-checkbox-disabled<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">disabled</span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-checkbox-disabled<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>ms-3<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Default checkbox<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center mb-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checkbox<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white
+                                          disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600
+                                          focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checked-checkbox-disabled<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">checked</span>
+                                       <span class="token attr-name">disabled</span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checked-checkbox-disabled<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>ms-3<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Checked checkbox<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg mb-0">Disabled State Checks and radios</h2>
-                           <p>Disabled checkboxes and radios.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card mb-6">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-checkbox-disabled-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-checkbox-disabled"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-checkbox-disabled"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-checkbox-disabled-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-checkbox-disabled"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-checkbox-disabled"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-checkbox-disabled" role="tabpanel" aria-labelledby="pills-design-checkbox-disabled-tab" tabindex="0">
-                                 <div class="flex items-center mb-1">
-                                    <input
-                                       type="checkbox"
-                                       class="w-4 h-4 text-indigo-600 bg-white disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="default-checkbox-disabled"
-                                       disabled />
-                                    <label for="default-checkbox-disabled" class="ms-3">Default checkbox</label>
-                                 </div>
-                                 <div class="flex items-center mb-1">
-                                    <input
-                                       type="checkbox"
-                                       class="w-4 h-4 text-indigo-600 bg-white disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="checked-checkbox-disabled"
-                                       checked
-                                       disabled />
-                                    <label for="checked-checkbox-disabled" class="ms-3">Checked checkbox</label>
-                                 </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-radio-disabled-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-radio-disabled" type="button" role="tab"
+                                 aria-controls="pills-design-radio-disabled" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-radio-disabled-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-radio-disabled" type="button" role="tab"
+                                 aria-controls="pills-html-radio-disabled" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-radio-disabled" role="tabpanel"
+                              aria-labelledby="pills-design-radio-disabled-tab" tabindex="0">
+                              <div class="flex items-center mb-1">
+                                 <input type="radio" name="default-radio"
+                                    class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="default-radio-disabled" disabled />
+                                 <label for="default-radio-disabled" class="ms-2">Default radio</label>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-checkbox-disabled" role="tabpanel" aria-labelledby="pills-html-checkbox-disabled-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-		<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span>
-		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
-		<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-checkbox-disabled<span class="token punctuation">"</span></span>
-		<span class="token attr-name">disabled</span>
-	<span class="token punctuation">/&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-checkbox-disabled<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ms-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Default checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-		<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span>
-		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white disabled:opacity-50 border-gray-300 rounded focus:ring-indigo-600 focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
-		<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked-checkbox-disabled<span class="token punctuation">"</span></span>
-		<span class="token attr-name">checked</span>
-		<span class="token attr-name">disabled</span>
-	<span class="token punctuation">/&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked-checkbox-disabled<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ms-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Checked checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+                              <div class="flex items-center">
+                                 <input type="radio" name="default-radio"
+                                    class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600 focus:outline-none focus:ring-2"
+                                    id="checked-radio-disabled" checked disabled />
+                                 <label for="checked-radio-disabled" class="ms-2">Checked radio</label>
                               </div>
                            </div>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-radio-disabled-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-radio-disabled"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-radio-disabled"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-radio-disabled-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-radio-disabled"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-radio-disabled"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-radio-disabled" role="tabpanel" aria-labelledby="pills-design-radio-disabled-tab" tabindex="0">
-                                 <div class="flex items-center mb-1">
-                                    <input
-                                       type="radio"
-                                       name="default-radio"
-                                       class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="default-radio-disabled"
-                                       disabled />
-                                    <label for="default-radio-disabled" class="ms-2">Default radio</label>
-                                 </div>
-
-                                 <div class="flex items-center">
-                                    <input
-                                       type="radio"
-                                       name="default-radio"
-                                       class="w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600 focus:outline-none focus:ring-2"
-                                       id="checked-radio-disabled"
-                                       checked
-                                       disabled />
-                                    <label for="checked-radio-disabled" class="ms-2">Checked radio</label>
-                                 </div>
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-radio-disabled" role="tabpanel" aria-labelledby="pills-html-radio-disabled-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-		<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span>
-		<span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-radio<span class="token punctuation">"</span></span>
-		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600 focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
-		<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-radio-disabled<span class="token punctuation">"</span></span>
-		<span class="token attr-name">disabled</span>
-	<span class="token punctuation">/&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-radio-disabled<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ms-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Default radio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-			<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span>
-			<span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>default-radio<span class="token punctuation">"</span></span>
-			<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600 focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
-			<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked-radio-disabled<span class="token punctuation">"</span></span>
-			<span class="token attr-name">checked</span>
-			<span class="token attr-name">disabled</span>
-		<span class="token punctuation">/&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked-radio-disabled<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ms-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Checked radio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
+                           <div class="tab-pane fade" id="pills-html-radio-disabled" role="tabpanel"
+                              aria-labelledby="pills-html-radio-disabled-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center mb-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>radio<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">name</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-radio<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white
+                                          border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600
+                                          focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-radio-disabled<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">disabled</span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-radio-disabled<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>ms-2<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Default radio<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>radio<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">name</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>default-radio<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>w-4 h-4 text-indigo-600 bg-white
+                                          border-gray-300 rounded-full disabled:opacity-50 focus:ring-indigo-600
+                                          focus:outline-none focus:ring-2<span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checked-radio-disabled<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">checked</span>
+                                       <span class="token attr-name">disabled</span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checked-radio-disabled<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>ms-2<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Checked radio<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg mb-0">Switches</h2>
-                           <p>The default form of a toggle.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card mb-6">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-switch-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-switch"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-switch"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-switch-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-switch"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-switch"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-switch" role="tabpanel" aria-labelledby="pills-design-switch-tab" tabindex="0">
-                                 <div class="mb-2">
-                                    <input
-                                       type="checkbox"
-                                       id="switch-default1"
-                                       class="relative w-[2.3rem] h-5 p-px bg-gray-200 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-indigo-600 checked:border-indigo-600 focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4 before:bg-white checked:before:bg-indigo-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200"
-                                       checked />
-                                    <label for="switch-default1" class="sr-only">switch</label>
-                                 </div>
-                                 <div>
-                                    <input
-                                       type="checkbox"
-                                       id="switch-default2"
-                                       class="relative w-[2.3rem] h-5 p-px bg-gray-200 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-indigo-600 checked:border-indigo-600 focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4 before:bg-white checked:before:bg-indigo-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200" />
-                                    <label for="switch-default2" class="sr-only">switch</label>
-                                 </div>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg mb-0">Switches</h2>
+                        <p>The default form of a toggle.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card mb-6">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-switch-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-switch" type="button" role="tab"
+                                 aria-controls="pills-design-switch" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-switch-tab" data-bs-toggle="pill" data-bs-target="#pills-html-switch"
+                                 type="button" role="tab" aria-controls="pills-html-switch" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-switch" role="tabpanel"
+                              aria-labelledby="pills-design-switch-tab" tabindex="0">
+                              <div class="mb-2">
+                                 <input type="checkbox" id="switch-default1"
+                                    class="relative w-[2.3rem] h-5 p-px bg-gray-200 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-indigo-600 checked:border-indigo-600 focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4 before:bg-white checked:before:bg-indigo-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200"
+                                    checked />
+                                 <label for="switch-default1" class="sr-only">switch</label>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-switch" role="tabpanel" aria-labelledby="pills-html-switch-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-	<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span>
-	<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>switch-default1<span class="token punctuation">"</span></span>
-	<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-[2.3rem] h-5 p-px bg-gray-200 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-indigo-600 checked:border-indigo-600 focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4 before:bg-white checked:before:bg-indigo-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200<span class="token punctuation">"</span></span>
-	<span class="token attr-name">checked</span>
-	<span class="token punctuation">/&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>switch-default1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>switch<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
-		<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span>
-		<span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>switch-default2<span class="token punctuation">"</span></span>
-		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative w-[2.3rem] h-5 p-px bg-gray-200 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-indigo-600 checked:border-indigo-600 focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4 before:bg-white checked:before:bg-indigo-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200<span class="token punctuation">"</span></span>
-	<span class="token punctuation">/&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>switch-default2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>switch<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span></code></pre>
+                              <div>
+                                 <input type="checkbox" id="switch-default2"
+                                    class="relative w-[2.3rem] h-5 p-px bg-gray-200 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-indigo-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-indigo-600 checked:border-indigo-600 focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4 before:bg-white checked:before:bg-indigo-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200" />
+                                 <label for="switch-default2" class="sr-only">switch</label>
                               </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-switch" role="tabpanel"
+                              aria-labelledby="pills-html-switch-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"> <span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checkbox<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>switch-default1<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>relative w-[2.3rem] h-5 p-px bg-gray-200
+                                          border-transparent text-transparent rounded-full cursor-pointer
+                                          transition-colors ease-in-out duration-200 focus:ring-indigo-600
+                                          disabled:opacity-50 disabled:pointer-events-none checked:bg-none
+                                          checked:text-indigo-600 checked:border-indigo-600
+                                          focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4
+                                          before:bg-white checked:before:bg-indigo-200 before:translate-x-0
+                                          checked:before:translate-x-full before:rounded-full before:shadow
+                                          before:transform before:ring-0 before:transition before:ease-in-out
+                                          before:duration-200<span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">checked</span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>switch-default1<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>switch<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>input</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>checkbox<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">id</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>switch-default2<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>relative w-[2.3rem] h-5 p-px bg-gray-200
+                                          border-transparent text-transparent rounded-full cursor-pointer
+                                          transition-colors ease-in-out duration-200 focus:ring-indigo-600
+                                          disabled:opacity-50 disabled:pointer-events-none checked:bg-none
+                                          checked:text-indigo-600 checked:border-indigo-600
+                                          focus:checked:border-indigo-600 before:inline-block before:w-4 before:h-4
+                                          before:bg-white checked:before:bg-indigo-200 before:translate-x-0
+                                          checked:before:translate-x-full before:rounded-full before:shadow
+                                          before:transform before:ring-0 before:transition before:ease-in-out
+                                          before:duration-200<span class="token punctuation">"</span></span>
+                                       <span class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>label</span> <span
+                                          class="token attr-name">for</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>switch-default2<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>switch<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>label</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               @@include("../partials/footer.html")
             </div>
+            @@include("../partials/footer.html")
          </div>
-      </main>
+      </div>
+   </main>
 
-      <!-- end forms page -->
-      @@include("../partials/scripts.html")
-      <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-   </body>
+   <!-- end forms page -->
+   @@include("../partials/buy-template.html")
+   @@include("../partials/scripts.html")
+   <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+</body>
+
 </html>

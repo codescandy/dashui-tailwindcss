@@ -1,499 +1,875 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
-      @@include("../partials/head.html") @@include("../partials/analytics.html")
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Pagination - Dash UI - TailwindCSS HTML Admin Template Free" />
-      <title>Pagination - Dash UI - TailwindCSS HTML Admin Template Free</title>
-   </head>
-   <body>
-      <main>
-         <!-- start pagiantion page -->
-         <!-- app layout -->
-         <div id="app-layout" class="overflow-x-hidden flex">
-            @@include("../partials/navbar-vertical.html", { "page": "pagination", "page_group": "components" })
-            <!-- app layout content -->
-            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-               @@include("../partials/top-navbar.html")
 
-               <div class="p-6">
-                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
-                     <h1 class="block font-semibold leading-6 text-xl mb-1">Pagination</h1>
-                     <p class="text-lg">Pagination allows you to divide large amounts of content into smaller chunks across multiple pages.</p>
-                  </div>
-                  <div class="flex flex-col gap-8">
-                     <!-- navbar start -->
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Basic Example</h2>
-                           <p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-basic-pagination-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-basic-pagination"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-basic-pagination"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-basic-pagination-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-basic-pagination"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-basic-pagination"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-basic-pagination" role="tabpanel" aria-labelledby="pills-design-basic-pagination-tab" tabindex="0">
-                                 <!-- pagination start -->
-                                 <nav class="flex items-center gap-x-1">
-                                    <button
-                                       type="button"
-                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                       <span>Previous</span>
-                                    </button>
-                                    <div class="flex items-center gap-x-1">
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
-                                          aria-current="page">
-                                          1
-                                       </button>
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                          2
-                                       </button>
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                          3
-                                       </button>
-                                    </div>
-                                    <button
-                                       type="button"
-                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                       <span>Next</span>
-                                    </button>
-                                 </nav>
-                                 <!-- pagination end -->
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-basic-pagination" role="tabpanel" aria-labelledby="pills-html-basic-pagination-tab" tabindex="0">
-                                 <pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- pagination start --&gt;</span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-       <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-       <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-       <span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Previous<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-          <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-       1
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-       2
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-       3
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-       <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-       <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-       <span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Next<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
-<span class="token comment">&lt;!-- pagination end --&gt;</span></code></pre>
-                              </div>
-                           </div>
-                        </div>
+<head>
+   <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
+   @@include("../partials/head.html") @@include("../partials/analytics.html")
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Pagination - Dash UI - TailwindCSS HTML Admin Template Free" />
+   <title>Pagination - Dash UI - TailwindCSS HTML Admin Template Free</title>
+</head>
+
+<body>
+   <main>
+      <!-- start pagiantion page -->
+      <!-- app layout -->
+      <div id="app-layout" class="overflow-x-hidden flex">
+         @@include("../partials/navbar-vertical.html", { "page": "pagination", "page_group": "components" })
+         <!-- app layout content -->
+         <div id="app-layout-content"
+            class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+            @@include("../partials/top-navbar.html")
+
+            <div class="p-6">
+               <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                  <h1 class="block font-semibold leading-6 text-xl mb-1">Pagination</h1>
+                  <p class="text-lg">Pagination allows you to divide large amounts of content into smaller chunks across
+                     multiple pages.</p>
+               </div>
+               <div class="flex flex-col gap-8">
+                  <!-- navbar start -->
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Basic Example</h2>
+                        <p>We use a large block of connected links for our pagination, making links hard to miss and
+                           easily scalable—all while providing large hit areas.</p>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">With Icons</h2>
-                           <p>The following pagination component example shows how you can use SVG icons instead of text to show the previous and next pages.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-icon-pagination-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-icon-pagination"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-icon-pagination"
-                                    aria-selected="true">
-                                    Design
+                     <!-- card -->
+                     <div class="card shadow">
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-basic-pagination-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-basic-pagination" type="button" role="tab"
+                                 aria-controls="pills-design-basic-pagination" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-basic-pagination-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-basic-pagination" type="button" role="tab"
+                                 aria-controls="pills-html-basic-pagination" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-basic-pagination" role="tabpanel"
+                              aria-labelledby="pills-design-basic-pagination-tab" tabindex="0">
+                              <!-- pagination start -->
+                              <nav class="flex items-center gap-x-1">
+                                 <button type="button"
+                                    class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                    <span>Previous</span>
                                  </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-icon-pagination-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-icon-pagination"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-icon-pagination"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- content -->
-                           <div class="tab-content p-6" id="pills-tabSecondContent">
-                              <div class="tab-pane fade show active" id="pills-design-icon-pagination" role="tabpanel" aria-labelledby="pills-design-icon-pagination-tab" tabindex="0">
-                                 <!-- pagination start -->
-                                 <nav class="flex items-center gap-x-1">
-                                    <button
-                                       type="button"
-                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                       <svg
-                                          class="flex-shrink-0 w-3.5 h-3.5"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 24 24"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          stroke-width="2"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round">
-                                          <path d="m15 18-6-6 6-6" />
-                                       </svg>
-                                       <span>Previous</span>
-                                    </button>
-                                    <div class="flex items-center gap-x-1">
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
-                                          aria-current="page">
-                                          1
-                                       </button>
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                          2
-                                       </button>
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                          3
-                                       </button>
-                                    </div>
-                                    <button
-                                       type="button"
-                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                       <span>Next</span>
-                                       <svg
-                                          class="flex-shrink-0 w-3.5 h-3.5"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 24 24"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          stroke-width="2"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round">
-                                          <path d="m9 18 6-6-6-6" />
-                                       </svg>
-                                    </button>
-                                 </nav>
-                                 <!-- pagination end -->
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-icon-pagination" role="tabpanel" aria-labelledby="pills-html-icon-pagination-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- pagination start --&gt;</span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-       <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-       <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-       <span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span class="token punctuation">"</span></span>
-          <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
-          <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-          <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-          <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
-          <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m15 18-6-6 6-6<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Previous<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-          <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-       1
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-       2
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-       3
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-       <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-       <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-       <span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Next<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
-          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span class="token punctuation">"</span></span>
-          <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
-          <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-          <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-          <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
-          <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-          <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-          <span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m9 18 6-6-6-6<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
- <span class="token comment">&lt;!-- pagination end --&gt;</span></code></pre>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Disabled and active states</h2>
-                           <p>Use the following list of pagination items based on two sizes powered by Tailwind CSS utility classes to indicate a series of content for your website.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-disabled-pagination-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-disabled-pagination"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-disabled-pagination"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-disabled-pagination-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-disabled-pagination"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-disabled-pagination"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabThirdContent">
-                              <div class="tab-pane fade show active" id="pills-design-disabled-pagination" role="tabpanel" aria-labelledby="pills-design-disabled-pagination-tab" tabindex="0">
-                                 <!-- pagination start -->
-                                 <nav class="flex items-center gap-x-1">
-                                    <button
-                                       type="button"
+                                 <div class="flex items-center gap-x-1">
+                                    <button type="button"
                                        class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
-                                       disabled>
-                                       <svg
-                                          class="flex-shrink-0 w-3.5 h-3.5"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 24 24"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          stroke-width="2"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round">
-                                          <path d="m15 18-6-6 6-6" />
-                                       </svg>
-                                       <span>Previous</span>
+                                       aria-current="page">
+                                       1
                                     </button>
-                                    <div class="flex items-center gap-x-1">
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
-                                          aria-current="page">
-                                          1
-                                       </button>
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md text-white border bg-indigo-600 border-indigo-600 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600 disabled:opacity-50 disabled:pointer-events-none">
-                                          2
-                                       </button>
-                                       <button
-                                          type="button"
-                                          class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                          3
-                                       </button>
-                                    </div>
-                                    <button
-                                       type="button"
+                                    <button type="button"
                                        class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                       <span>Next</span>
-                                       <svg
-                                          class="flex-shrink-0 w-3.5 h-3.5"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 24 24"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          stroke-width="2"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round">
-                                          <path d="m9 18 6-6-6-6" />
-                                       </svg>
+                                       2
                                     </button>
-                                 </nav>
-                                 <!-- pagination end -->
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-disabled-pagination" role="tabpanel" aria-labelledby="pills-html-disabled-pagination-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- pagination start --&gt;</span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-        <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-        <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-        <span class="token attr-name">disabled</span>
-        <span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
-           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span class="token punctuation">"</span></span>
-           <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
-           <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-           <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-           <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
-           <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-           <span class="token punctuation">&gt;</span></span>
-           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m15 18-6-6 6-6<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Previous<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center gap-x-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-           <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-           <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span>
-           <span class="token punctuation">&gt;</span></span>
-        1
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-           <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md text-white border bg-indigo-600 border-indigo-600 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-           <span class="token punctuation">&gt;</span></span>
-        2
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-           <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-           <span class="token punctuation">&gt;</span></span>
-        3
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-        <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-        <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-        <span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Next<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
-           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span class="token punctuation">"</span></span>
-           <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
-           <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-           <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span>
-           <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
-           <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-           <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span>
-           <span class="token punctuation">&gt;</span></span>
-           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m9 18 6-6-6-6<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
-  <span class="token comment">&lt;!-- pagination end --&gt;</span></code></pre>
-                              </div>
+                                    <button type="button"
+                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                       3
+                                    </button>
+                                 </div>
+                                 <button type="button"
+                                    class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                    <span>Next</span>
+                                 </button>
+                              </nav>
+                              <!-- pagination end -->
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-basic-pagination" role="tabpanel"
+                              aria-labelledby="pills-html-basic-pagination-tab" tabindex="0">
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token comment">&lt;!-- pagination start --&gt;</span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>nav</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center gap-x-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>Previous<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center gap-x-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">aria-current</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>page<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    1
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    2
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    3
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>Next<span class="token tag"><span
+                                          class="token tag"><span class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>nav</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token comment">&lt;!-- pagination end --&gt;</span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">With Icons</h2>
+                        <p>The following pagination component example shows how you can use SVG icons instead of text to
+                           show the previous and next pages.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-icon-pagination-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-icon-pagination" type="button" role="tab"
+                                 aria-controls="pills-design-icon-pagination" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-icon-pagination-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-icon-pagination" type="button" role="tab"
+                                 aria-controls="pills-html-icon-pagination" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- content -->
+                        <div class="tab-content p-6" id="pills-tabSecondContent">
+                           <div class="tab-pane fade show active" id="pills-design-icon-pagination" role="tabpanel"
+                              aria-labelledby="pills-design-icon-pagination-tab" tabindex="0">
+                              <!-- pagination start -->
+                              <nav class="flex items-center gap-x-1">
+                                 <button type="button"
+                                    class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                    <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                       <path d="m15 18-6-6 6-6" />
+                                    </svg>
+                                    <span>Previous</span>
+                                 </button>
+                                 <div class="flex items-center gap-x-1">
+                                    <button type="button"
+                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
+                                       aria-current="page">
+                                       1
+                                    </button>
+                                    <button type="button"
+                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                       2
+                                    </button>
+                                    <button type="button"
+                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                       3
+                                    </button>
+                                 </div>
+                                 <button type="button"
+                                    class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                    <span>Next</span>
+                                    <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                       <path d="m9 18 6-6-6-6" />
+                                    </svg>
+                                 </button>
+                              </nav>
+                              <!-- pagination end -->
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-icon-pagination" role="tabpanel"
+                              aria-labelledby="pills-html-icon-pagination-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token comment">&lt;!-- pagination start --&gt;</span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>nav</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center gap-x-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>svg</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">xmlns</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>http://www.w3.org/2000/svg<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">width</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">height</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">viewBox</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>0 0 24 24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">fill</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>currentColor<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-width</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>2<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linecap</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linejoin</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>path</span> <span
+                                          class="token attr-name">d</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>m15 18-6-6 6-6<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>svg</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>Previous<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center gap-x-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">aria-current</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>page<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    1
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    2
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    3
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>Next<span class="token tag"><span
+                                          class="token tag"><span class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>svg</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">xmlns</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>http://www.w3.org/2000/svg<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">width</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">height</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">viewBox</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>0 0 24 24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">fill</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>currentColor<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-width</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>2<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linecap</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linejoin</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>path</span> <span
+                                          class="token attr-name">d</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>m9 18 6-6-6-6<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>svg</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>nav</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token comment">&lt;!-- pagination end --&gt;</span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Disabled and active states</h2>
+                        <p>Use the following list of pagination items based on two sizes powered by Tailwind CSS utility
+                           classes to indicate a series of content for your website.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-disabled-pagination-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-disabled-pagination" type="button" role="tab"
+                                 aria-controls="pills-design-disabled-pagination" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-disabled-pagination-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-disabled-pagination" type="button" role="tab"
+                                 aria-controls="pills-html-disabled-pagination" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabThirdContent">
+                           <div class="tab-pane fade show active" id="pills-design-disabled-pagination" role="tabpanel"
+                              aria-labelledby="pills-design-disabled-pagination-tab" tabindex="0">
+                              <!-- pagination start -->
+                              <nav class="flex items-center gap-x-1">
+                                 <button type="button"
+                                    class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
+                                    disabled>
+                                    <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                       <path d="m15 18-6-6 6-6" />
+                                    </svg>
+                                    <span>Previous</span>
+                                 </button>
+                                 <div class="flex items-center gap-x-1">
+                                    <button type="button"
+                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
+                                       aria-current="page">
+                                       1
+                                    </button>
+                                    <button type="button"
+                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md text-white border bg-indigo-600 border-indigo-600 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600 disabled:opacity-50 disabled:pointer-events-none">
+                                       2
+                                    </button>
+                                    <button type="button"
+                                       class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                       3
+                                    </button>
+                                 </div>
+                                 <button type="button"
+                                    class="min-h-[36px] min-w-[36px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                    <span>Next</span>
+                                    <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                       <path d="m9 18 6-6-6-6" />
+                                    </svg>
+                                 </button>
+                              </nav>
+                              <!-- pagination end -->
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-disabled-pagination" role="tabpanel"
+                              aria-labelledby="pills-html-disabled-pagination-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token comment">&lt;!-- pagination start --&gt;</span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>nav</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center gap-x-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">disabled</span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>svg</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">xmlns</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>http://www.w3.org/2000/svg<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">width</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">height</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">viewBox</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>0 0 24 24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">fill</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>currentColor<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-width</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>2<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linecap</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linejoin</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>path</span> <span
+                                          class="token attr-name">d</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>m15 18-6-6 6-6<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>svg</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>Previous<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex items-center gap-x-1<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">aria-current</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>page<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    1
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md text-white border
+                                          bg-indigo-600 border-indigo-600 hover:bg-indigo-600 focus:outline-none
+                                          focus:bg-indigo-600 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    2
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    3
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>min-h-[36px] min-w-[36px] py-2 px-2.5
+                                          inline-flex justify-center items-center gap-x-1.5 rounded-md border bg-white
+                                          border-gray-300 text-gray-800 hover:bg-gray-300 focus:outline-none
+                                          focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>Next<span class="token tag"><span
+                                          class="token tag"><span class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>svg</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>flex-shrink-0 w-3.5 h-3.5<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">xmlns</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>http://www.w3.org/2000/svg<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">width</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">height</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">viewBox</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>0 0 24 24<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">fill</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>currentColor<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-width</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>2<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linecap</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">stroke-linejoin</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>round<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>path</span> <span
+                                          class="token attr-name">d</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>m9 18 6-6-6-6<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token punctuation">/&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>svg</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>nav</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token comment">&lt;!-- pagination end --&gt;</span></code></pre>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               @@include("../partials/footer.html")
             </div>
+            @@include("../partials/footer.html")
          </div>
-      </main>
+      </div>
+   </main>
 
-      <!-- end pagiantion page -->
-      @@include("../partials/scripts.html")
-      <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-   </body>
+   <!-- end pagiantion page -->
+   @@include("../partials/buy-template.html")
+   @@include("../partials/scripts.html")
+   <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+</body>
+
 </html>

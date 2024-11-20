@@ -1,45 +1,51 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      @@include("partials/head.html") @@include("partials/analytics.html")
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Changelog - TailwindCSS HTML Admin Template Free - Dash UI" />
-      <title>Changelog - TailwindCSS HTML Admin Template Free - Dash UI</title>
-   </head>
-   <body>
-      <main>
-         <!-- start changelog -->
-         <!-- app layout -->
-         <div id="app-layout" class="overflow-x-hidden flex">
-            @@include("partials/navbar-vertical.html", { "page": "changelog" })
-            <!-- app layout cotnent -->
-            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-               @@include("partials/top-navbar.html")
-               <div class="p-6">
-                  <!-- changelog content -->
-                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
-                     <!-- title -->
-                     <h1 class="block font-semibold leading-6 text-xl mb-1">Changelog</h1>
-                     <p class="text-lg">Keep a changelog. All notable changes to this project will be documented in this file.</p>
+
+<head>
+   @@include("partials/head.html") @@include("partials/analytics.html")
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Changelog - TailwindCSS HTML Admin Template Free - Dash UI" />
+   <title>Changelog - TailwindCSS HTML Admin Template Free - Dash UI</title>
+</head>
+
+<body>
+   <main>
+      <!-- start changelog -->
+      <!-- app layout -->
+      <div id="app-layout" class="overflow-x-hidden flex">
+         @@include("partials/navbar-vertical.html", { "page": "changelog" })
+         <!-- app layout cotnent -->
+         <div id="app-layout-content"
+            class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+            @@include("partials/top-navbar.html")
+            <div class="p-6">
+               <!-- changelog content -->
+               <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                  <!-- title -->
+                  <h1 class="block font-semibold leading-6 text-xl mb-1">Changelog</h1>
+                  <p class="text-lg">Keep a changelog. All notable changes to this project will be documented in this
+                     file.</p>
+               </div>
+               <div class="grid lg:grid-cols-9 gap-4 grid-cols-2 md:grid-cols-4">
+                  <div class="md:col-span-2 col-span-1">
+                     <code class="text-red-600">v1.1.0 - January 1, 2024</code>
                   </div>
-                  <div class="grid lg:grid-cols-9 gap-4 grid-cols-2 md:grid-cols-4">
-                     <div class="md:col-span-2 col-span-1">
-                        <code class="text-red-600">v1.1.0 - January 1, 2024</code>
-                     </div>
-                     <div class="md:col-span-2 col-span-1">
-                        <span>Intial Release</span>
-                     </div>
+                  <div class="md:col-span-2 col-span-1">
+                     <span>Intial Release</span>
                   </div>
                </div>
-               @@include("partials/footer.html")
             </div>
+            @@include("partials/footer.html")
          </div>
-         <!-- end of changelog -->
-      </main>
+      </div>
+      <!-- end of changelog -->
+   </main>
 
-      @@include("partials/scripts.html")
-   </body>
+   @@include("partials/buy-template.html")
+   @@include("partials/scripts.html")
+</body>
+
 </html>

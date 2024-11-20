@@ -1,503 +1,747 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
-      @@include("../partials/head.html")@@include("../partials/analytics.html")
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Button Group - TailwindCSS HTML Admin Template Free - Dash UI" />
-      <title>Button Group - TailwindCSS HTML Admin Template Free - Dash UI</title>
-   </head>
-   <body>
-      <main>
-         <!-- start button group page -->
-         <!-- app layout -->
-         <div id="app-layout" class="overflow-x-hidden flex">
-            @@include("../partials/navbar-vertical.html", { "page": "button-group", "page_group": "components" })
-            <!-- app layout content -->
-            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-               @@include("../partials/top-navbar.html")
-               <div class="p-6">
-                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
-                     <h1 class="block font-semibold leading-6 text-xl mb-1">Button Group</h1>
-                     <p class="text-lg">Group a series of buttons together on a single line or stack them in a vertical column.</p>
+
+<head>
+   <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
+   @@include("../partials/head.html")@@include("../partials/analytics.html")
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Button Group - TailwindCSS HTML Admin Template Free - Dash UI" />
+   <title>Button Group - TailwindCSS HTML Admin Template Free - Dash UI</title>
+</head>
+
+<body>
+   <main>
+      <!-- start button group page -->
+      <!-- app layout -->
+      <div id="app-layout" class="overflow-x-hidden flex">
+         @@include("../partials/navbar-vertical.html", { "page": "button-group", "page_group": "components" })
+         <!-- app layout content -->
+         <div id="app-layout-content"
+            class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+            @@include("../partials/top-navbar.html")
+            <div class="p-6">
+               <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                  <h1 class="block font-semibold leading-6 text-xl mb-1">Button Group</h1>
+                  <p class="text-lg">Group a series of buttons together on a single line or stack them in a vertical
+                     column.</p>
+               </div>
+               <div class="flex flex-col gap-8">
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Basic example</h2>
+                        <p>A button group displays multiple buttons together.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-button-group-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-button-group" type="button" role="tab"
+                                 aria-controls="pills-design-button-group" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-button-group-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-button-group" type="button" role="tab"
+                                 aria-controls="pills-html-button-group" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-button-group" role="tabpanel"
+                              aria-labelledby="pills-design-button-group-tab" tabindex="0">
+                              <div class="inline-flex">
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Left
+                                 </button>
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Middle
+                                 </button>
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Right
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-button-group" role="tabpanel"
+                              aria-labelledby="pills-html-button-group-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>inline-flex <span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Left
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none
+                                          rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white
+                                          shadow-sm hover:bg-indigo-800 disabled:opacity-50
+                                          disabled:pointer-events-none<span class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Middle
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Right
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="flex flex-col gap-8">
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Basic example</h2>
-                           <p>A button group displays multiple buttons together.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-button-group-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-button-group"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-button-group"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-button-group-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-button-group"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-button-group"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-button-group" role="tabpanel" aria-labelledby="pills-design-button-group-tab" tabindex="0">
-                                 <div class="inline-flex">
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Left
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Middle
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Right
-                                    </button>
-                                 </div>
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-button-group" role="tabpanel" aria-labelledby="pills-html-button-group-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Left
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Middle
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Right
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
-                           </div>
-                        </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Sizes</h2>
+                        <p>A button group displays multiple buttons together.</p>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Sizes</h2>
-                           <p>A button group displays multiple buttons together.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-button-group-size-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-button-group-size"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-button-group-size"
-                                    aria-selected="true">
-                                    Design
+                     <!-- card -->
+                     <div class="card shadow">
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-button-group-size-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-button-group-size" type="button" role="tab"
+                                 aria-controls="pills-design-button-group-size" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-button-group-size-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-button-group-size" type="button" role="tab"
+                                 aria-controls="pills-html-button-group-size" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabSecondContent">
+                           <div class="tab-pane fade show active" id="pills-design-button-group-size" role="tabpanel"
+                              aria-labelledby="pills-design-button-group-size-tab" tabindex="0">
+                              <div class="inline-flex mb-2">
+                                 <button type="button"
+                                    class="btn btn-sm gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Left
                                  </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-button-group-size-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-button-group-size"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-button-group-size"
-                                    aria-selected="false">
-                                    HTML
+                                 <button type="button"
+                                    class="btn btn-sm gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Middle
                                  </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabSecondContent">
-                              <div class="tab-pane fade show active" id="pills-design-button-group-size" role="tabpanel" aria-labelledby="pills-design-button-group-size-tab" tabindex="0">
-                                 <div class="inline-flex mb-2">
-                                    <button
-                                       type="button"
-                                       class="btn btn-sm gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Left
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn btn-sm gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Middle
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn btn-sm gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Right
-                                    </button>
-                                 </div>
-                                 <br />
+                                 <button type="button"
+                                    class="btn btn-sm gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Right
+                                 </button>
+                              </div>
+                              <br />
 
-                                 <div class="inline-flex mb-2">
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Left
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Middle
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Right
-                                    </button>
-                                 </div>
-                                 <br />
+                              <div class="inline-flex mb-2">
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Left
+                                 </button>
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Middle
+                                 </button>
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Right
+                                 </button>
+                              </div>
+                              <br />
 
-                                 <div class="inline-flex mb-2">
-                                    <button
-                                       type="button"
-                                       class="btn btn-lg gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Left
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn btn-lg gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Middle
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn btn-lg gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Right
-                                    </button>
-                                 </div>
+                              <div class="inline-flex mb-2">
+                                 <button type="button"
+                                    class="btn btn-lg gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Left
+                                 </button>
+                                 <button type="button"
+                                    class="btn btn-lg gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Middle
+                                 </button>
+                                 <button type="button"
+                                    class="btn btn-lg gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Right
+                                 </button>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-button-group-size" role="tabpanel" aria-labelledby="pills-html-button-group-size-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex  mb-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Left
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Middle
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Right
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex  mb-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Left
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Middle
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Right
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex  mb-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-lg gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Left
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-lg gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Middle
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-lg gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Right
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-button-group-size" role="tabpanel"
+                              aria-labelledby="pills-html-button-group-size-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>inline-flex mb-2<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn btn-sm gap-x-2 -ms-px rounded-r-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Left
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn btn-sm gap-x-2 -ms-px rounded-r-none
+                                          rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white
+                                          shadow-sm hover:bg-indigo-800 disabled:opacity-50
+                                          disabled:pointer-events-none<span class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Middle
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn btn-sm gap-x-2 -ms-px rounded-l-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Right
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>inline-flex mb-2<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Left
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none
+                                          rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white
+                                          shadow-sm hover:bg-indigo-800 disabled:opacity-50
+                                          disabled:pointer-events-none<span class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Middle
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Right
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>inline-flex mb-2<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn btn-lg gap-x-2 -ms-px rounded-r-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Left
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn btn-lg gap-x-2 -ms-px rounded-r-none
+                                          rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white
+                                          shadow-sm hover:bg-indigo-800 disabled:opacity-50
+                                          disabled:pointer-events-none<span class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Middle
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn btn-lg gap-x-2 -ms-px rounded-l-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Right
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Verticle</h2>
-                           <p>A button group displays multiple buttons together.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-button-group-verticle-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-button-group-verticle"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-button-group-verticle"
-                                    aria-selected="true">
-                                    Design
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Verticle</h2>
+                        <p>A button group displays multiple buttons together.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-button-group-verticle-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-button-group-verticle" type="button" role="tab"
+                                 aria-controls="pills-design-button-group-verticle" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-button-group-verticle-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-button-group-verticle" type="button" role="tab"
+                                 aria-controls="pills-html-button-group-verticle" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabThirdContent">
+                           <div class="tab-pane fade show active" id="pills-design-button-group-verticle"
+                              role="tabpanel" aria-labelledby="pills-design-button-group-verticle-tab" tabindex="0">
+                              <div class="max-w-xs flex flex-col">
+                                 <button type="button"
+                                    class="btn gap-x-2 rounded-b-none border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Item 1
                                  </button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-button-group-verticle-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-button-group-verticle"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-button-group-verticle"
-                                    aria-selected="false">
-                                    HTML
+                                 <button type="button"
+                                    class="-mt-px btn gap-x-2 border rounded-none border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Item 2
                                  </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabThirdContent">
-                              <div class="tab-pane fade show active" id="pills-design-button-group-verticle" role="tabpanel" aria-labelledby="pills-design-button-group-verticle-tab" tabindex="0">
-                                 <div class="max-w-xs flex flex-col">
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 rounded-b-none border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Item 1
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="-mt-px btn gap-x-2 border rounded-none border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Item 2
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="-mt-px btn gap-x-2 rounded-t-none border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       Item 3
-                                    </button>
-                                 </div>
+                                 <button type="button"
+                                    class="-mt-px btn gap-x-2 rounded-t-none border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    Item 3
+                                 </button>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-button-group-verticle" role="tabpanel" aria-labelledby="pills-html-button-group-verticle-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>max-w-xs flex flex-col <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 rounded-b-none border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Item 1
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-mt-px btn gap-x-2 border rounded-none border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Item 2
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-mt-px btn gap-x-2 rounded-t-none border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          Item 3
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-button-group-verticle" role="tabpanel"
+                              aria-labelledby="pills-html-button-group-verticle-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>max-w-xs flex flex-col <span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 rounded-b-none border
+                                          border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Item 1
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>-mt-px btn gap-x-2 border rounded-none
+                                          border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Item 2
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>-mt-px btn gap-x-2 rounded-t-none border
+                                          border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    Item 3
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Button Toolbar</h2>
-                           <p>Editor toolbar button group.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-button-group-toolbar-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-button-group-toolbar"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-button-group-toolbar"
-                                    aria-selected="true">
-                                    Design
+                  </div>
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Button Toolbar</h2>
+                        <p>Editor toolbar button group.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabFourth" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-button-group-toolbar-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-button-group-toolbar" type="button" role="tab"
+                                 aria-controls="pills-design-button-group-toolbar" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-button-group-toolbar-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-button-group-toolbar" type="button" role="tab"
+                                 aria-controls="pills-html-button-group-toolbar" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabFourthContent">
+                           <div class="tab-pane fade show active" id="pills-design-button-group-toolbar" role="tabpanel"
+                              aria-labelledby="pills-design-button-group-toolbar-tab" tabindex="0">
+                              <div class="inline-flex">
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    1
                                  </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-button-group-toolbar-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-button-group-toolbar"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-button-group-toolbar"
-                                    aria-selected="false">
-                                    HTML
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    2
                                  </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabFourthContent">
-                              <div class="tab-pane fade show active" id="pills-design-button-group-toolbar" role="tabpanel" aria-labelledby="pills-design-button-group-toolbar-tab" tabindex="0">
-                                 <div class="inline-flex">
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       1
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       2
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       3
-                                    </button>
-                                 </div>
-                                 <div class="inline-flex">
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       4
-                                    </button>
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       5
-                                    </button>
-                                 </div>
-                                 <div class="inline-flex">
-                                    <button
-                                       type="button"
-                                       class="btn gap-x-2 -ms-px focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
-                                       6
-                                    </button>
-                                 </div>
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    3
+                                 </button>
                               </div>
-                              <div class="tab-pane fade" id="pills-html-button-group-toolbar" role="tabpanel" aria-labelledby="pills-html-button-group-toolbar-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          1
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          2
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          3
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          4
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          5
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
-                             <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span>
-                             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn gap-x-2 -ms-px focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span class="token punctuation">"</span></span>
-                             <span class="token punctuation">&gt;</span></span>
-                          6
-                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-                       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                              <div class="inline-flex">
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-r-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    4
+                                 </button>
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    5
+                                 </button>
                               </div>
+                              <div class="inline-flex">
+                                 <button type="button"
+                                    class="btn gap-x-2 -ms-px focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none">
+                                    6
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-button-group-toolbar" role="tabpanel"
+                              aria-labelledby="pills-html-button-group-toolbar-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>inline-flex<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    1
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none
+                                          rounded-l-none focus:z-10 border border-indigo-600 bg-indigo-600 text-white
+                                          shadow-sm hover:bg-indigo-800 disabled:opacity-50
+                                          disabled:pointer-events-none<span class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    2
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    3
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>inline-flex<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-r-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    4
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px rounded-l-none
+                                          focus:z-10 border border-indigo-600 bg-indigo-600 text-white shadow-sm
+                                          hover:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    5
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>inline-flex<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>button</span>
+                                       <span class="token attr-name">type</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>button<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>btn gap-x-2 -ms-px focus:z-10 border
+                                          border-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-800
+                                          disabled:opacity-50 disabled:pointer-events-none<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    6
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>button</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               @@include("../partials/footer.html")
             </div>
+            @@include("../partials/footer.html")
          </div>
-      </main>
+      </div>
+   </main>
 
-      <!-- end button group page -->
-      @@include("../partials/scripts.html")
-      <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-   </body>
+   <!-- end button group page -->
+   @@include("../partials/buy-template.html")
+   @@include("../partials/scripts.html")
+   <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+</body>
+
 </html>

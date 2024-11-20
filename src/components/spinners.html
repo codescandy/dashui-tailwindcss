@@ -1,310 +1,669 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
-      @@include("../partials/head.html") @@include("../partials/analytics.html")
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Spinners - TailwindCSS HTML Admin Template Free - Dash UI" />
-      <title>Spinners - Dash UI - TailwindCSS HTML Admin Template Free</title>
-   </head>
-   <body>
-      <main>
-         <!-- start spinner page -->
-         <!-- app layout -->
-         <div id="app-layout" class="overflow-x-hidden flex">
-            <!-- app layout content -->
-            @@include("../partials/navbar-vertical.html", { "page": "spinners", "page_group": "components" })
-            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-               @@include("../partials/top-navbar.html")
 
-               <div class="p-6">
-                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
-                     <h1 class="block font-semibold leading-6 text-xl mb-1">Spinners</h1>
-                     <p class="text-lg">A spinner for displaying loading state of a page or a component.</p>
-                  </div>
-                  <div class="flex flex-col gap-8">
-                     <!-- spinner start -->
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Basic Example</h2>
-                           <p>A simple loading status.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-basic-spinners-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-basic-spinners"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-basic-spinners"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-basic-spinners-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-basic-spinners"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-basic-spinners"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-design-basic-spinners" role="tabpanel" aria-labelledby="pills-design-basic-spinners-tab" tabindex="0">
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-basic-spinners" role="tabpanel" aria-labelledby="pills-html-basic-spinners-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
-	<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full <span class="token punctuation">"</span></span>
-	<span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span>
-	<span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span>
-	<span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- spinner end -->
-                     <!-- spinner color varients start -->
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Color variants</h2>
-                           <p>Predefined spinner color styles.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-color-spinners-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-color-spinners"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-color-spinners"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-color-spinners-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-color-spinners"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-color-spinners"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabSecondContent">
-                              <div class="tab-pane fade show active" id="pills-design-color-spinners" role="tabpanel" aria-labelledby="pills-design-color-spinners-tab" tabindex="0">
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-800 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
+<head>
+   <link rel="stylesheet" href="@@webRoot/node_modules/prismjs/themes/prism-okaidia.min.css" />
+   @@include("../partials/head.html") @@include("../partials/analytics.html")
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Spinners - TailwindCSS HTML Admin Template Free - Dash UI" />
+   <title>Spinners - Dash UI - TailwindCSS HTML Admin Template Free</title>
+</head>
 
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-400 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
+<body>
+   <main>
+      <!-- start spinner page -->
+      <!-- app layout -->
+      <div id="app-layout" class="overflow-x-hidden flex">
+         <!-- app layout content -->
+         @@include("../partials/navbar-vertical.html", { "page": "spinners", "page_group": "components" })
+         <div id="app-layout-content"
+            class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+            @@include("../partials/top-navbar.html")
 
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-red-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-yellow-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-green-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-purple-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-pink-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-orange-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-color-spinners" role="tabpanel" aria-labelledby="pills-html-color-spinners-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-800 rounded-full <span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-400 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-red-600 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-yellow-600 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-green-600 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full <span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-purple-600 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-pink-600 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-orange-600 rounded-full<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- spinner color varients end -->
-
-                     <!-- spinner color varients start -->
-                     <div>
-                        <div class="mb-4">
-                           <h2 class="text-lg">Sizes</h2>
-                           <p>A small size is good for loading text, default sized spin for loading a card-level block, and large spin used for loading a page.</p>
-                        </div>
-                        <!-- card -->
-                        <div class="card shadow">
-                           <!-- nav item -->
-                           <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 border-b nav-link font-semibold active"
-                                    id="pills-design-size-spinners-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-design-size-spinners"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-design-size-spinners"
-                                    aria-selected="true">
-                                    Design
-                                 </button>
-                              </li>
-                              <!-- nav item -->
-                              <li class="nav-item" role="presentation">
-                                 <button
-                                    class="p-3 px-6 font-semibold border-b border-transparent nav-link"
-                                    id="pills-html-size-spinners-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-html-size-spinners"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-html-size-spinners"
-                                    aria-selected="false">
-                                    HTML
-                                 </button>
-                              </li>
-                           </ul>
-                           <!-- tab content -->
-                           <div class="tab-content p-6" id="pills-tabThirdContent">
-                              <div class="tab-pane fade show active" id="pills-design-size-spinners" role="tabpanel" aria-labelledby="pills-design-size-spinners-tab" tabindex="0">
-                                 <div class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-
-                                 <div class="animate-spin inline-block w-8 h-8 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full" role="status" aria-label="loading">
-                                    <span class="sr-only">Loading...</span>
-                                 </div>
-                              </div>
-                              <div class="tab-pane fade" id="pills-html-size-spinners" role="tabpanel" aria-labelledby="pills-html-size-spinners-tab" tabindex="0">
-                                 <!-- code -->
-                                 <pre
-                                    class="language-markup"
-                                    tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
-		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full <span class="token punctuation">"</span></span>
-		<span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span>
-		<span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span>
-		<span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
-		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full <span class="token punctuation">"</span></span>
-		<span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span>
-		<span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span>
-		<span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
-		<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animate-spin inline-block w-8 h-8 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full <span class="token punctuation">"</span></span>
-		<span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>status<span class="token punctuation">"</span></span>
-		<span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span>
-		<span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- spinner color varients end -->
-                  </div>
+            <div class="p-6">
+               <div class="flex flex-col mb-4 border-b border-gray-300 pb-4">
+                  <h1 class="block font-semibold leading-6 text-xl mb-1">Spinners</h1>
+                  <p class="text-lg">A spinner for displaying loading state of a page or a component.</p>
                </div>
-               @@include("../partials/footer.html")
-            </div>
-         </div>
-      </main>
+               <div class="flex flex-col gap-8">
+                  <!-- spinner start -->
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Basic Example</h2>
+                        <p>A simple loading status.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tab" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-basic-spinners-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-basic-spinners" type="button" role="tab"
+                                 aria-controls="pills-design-basic-spinners" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-basic-spinners-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-basic-spinners" type="button" role="tab"
+                                 aria-controls="pills-html-basic-spinners" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-design-basic-spinners" role="tabpanel"
+                              aria-labelledby="pills-design-basic-spinners-tab" tabindex="0">
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-basic-spinners" role="tabpanel"
+                              aria-labelledby="pills-html-basic-spinners-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-indigo-600 rounded-full
+                                          <span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">aria-label</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- spinner end -->
+                  <!-- spinner color varients start -->
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Color variants</h2>
+                        <p>Predefined spinner color styles.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabSecond" role="tablist">
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-color-spinners-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-color-spinners" type="button" role="tab"
+                                 aria-controls="pills-design-color-spinners" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-color-spinners-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-color-spinners" type="button" role="tab"
+                                 aria-controls="pills-html-color-spinners" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabSecondContent">
+                           <div class="tab-pane fade show active" id="pills-design-color-spinners" role="tabpanel"
+                              aria-labelledby="pills-design-color-spinners-tab" tabindex="0">
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-800 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
 
-      <!-- end spinner page -->
-      @@include("../partials/scripts.html")
-      <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-      <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-   </body>
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-gray-400 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-red-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-yellow-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-green-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-purple-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-pink-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-orange-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-color-spinners" role="tabpanel"
+                              aria-labelledby="pills-html-color-spinners-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-gray-800 rounded-full
+                                          <span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-gray-400
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-red-600
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-yellow-600
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-green-600
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-blue-600 rounded-full
+                                          <span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-indigo-600
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-purple-600
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-pink-600
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-orange-600
+                                          rounded-full<span class="token punctuation">"</span></span> <span
+                                          class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span> <span
+                                          class="token attr-name">aria-label</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- spinner color varients end -->
+
+                  <!-- spinner color varients start -->
+                  <div>
+                     <div class="mb-4">
+                        <h2 class="text-lg">Sizes</h2>
+                        <p>A small size is good for loading text, default sized spin for loading a card-level block, and
+                           large spin used for loading a page.</p>
+                     </div>
+                     <!-- card -->
+                     <div class="card shadow">
+                        <!-- nav item -->
+                        <ul class="nav nav-line-bottom mb-3 border-b" id="pills-tabThird" role="tablist">
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 border-b nav-link font-semibold active"
+                                 id="pills-design-size-spinners-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-design-size-spinners" type="button" role="tab"
+                                 aria-controls="pills-design-size-spinners" aria-selected="true">
+                                 Design
+                              </button>
+                           </li>
+                           <!-- nav item -->
+                           <li class="nav-item" role="presentation">
+                              <button class="p-3 px-6 font-semibold border-b border-transparent nav-link"
+                                 id="pills-html-size-spinners-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-html-size-spinners" type="button" role="tab"
+                                 aria-controls="pills-html-size-spinners" aria-selected="false">
+                                 HTML
+                              </button>
+                           </li>
+                        </ul>
+                        <!-- tab content -->
+                        <div class="tab-content p-6" id="pills-tabThirdContent">
+                           <div class="tab-pane fade show active" id="pills-design-size-spinners" role="tabpanel"
+                              aria-labelledby="pills-design-size-spinners-tab" tabindex="0">
+                              <div
+                                 class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+
+                              <div
+                                 class="animate-spin inline-block w-8 h-8 border-[3px] border-current border-t-transparent text-indigo-600 rounded-full"
+                                 role="status" aria-label="loading">
+                                 <span class="sr-only">Loading...</span>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-html-size-spinners" role="tabpanel"
+                              aria-labelledby="pills-html-size-spinners-tab" tabindex="0">
+                              <!-- code -->
+                              <pre class="language-markup" tabindex="0"><code class="language-markup"><span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-4 h-4
+                                          border-[3px] border-current border-t-transparent text-indigo-600 rounded-full
+                                          <span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">aria-label</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-6 h-6
+                                          border-[3px] border-current border-t-transparent text-indigo-600 rounded-full
+                                          <span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">aria-label</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>div</span>
+                                       <span class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>animate-spin inline-block w-8 h-8
+                                          border-[3px] border-current border-t-transparent text-indigo-600 rounded-full
+                                          <span class="token punctuation">"</span></span>
+                                       <span class="token attr-name">role</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>status<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token attr-name">aria-label</span><span
+                                          class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>loading<span
+                                             class="token punctuation">"</span></span>
+                                       <span class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;</span>span</span> <span
+                                          class="token attr-name">class</span><span class="token attr-value"><span
+                                             class="token punctuation attr-equals">=</span><span
+                                             class="token punctuation">"</span>sr-only<span
+                                             class="token punctuation">"</span></span><span
+                                          class="token punctuation">&gt;</span></span>Loading...<span
+                                       class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>span</span><span
+                                          class="token punctuation">&gt;</span></span>
+                                    <span class="token tag"><span class="token tag"><span
+                                             class="token punctuation">&lt;/</span>div</span><span
+                                          class="token punctuation">&gt;</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- spinner color varients end -->
+               </div>
+            </div>
+            @@include("../partials/footer.html")
+         </div>
+      </div>
+   </main>
+
+   <!-- end spinner page -->
+   @@include("../partials/buy-template.html")
+   @@include("../partials/scripts.html")
+   <script src="@@webRoot/node_modules/prismjs/prism.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/components/prism-scss.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+   <script src="@@webRoot/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+</body>
+
 </html>

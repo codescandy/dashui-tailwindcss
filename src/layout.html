@@ -1,45 +1,51 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      @@include("partials/head.html") @@include("partials/analytics.html")
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Layouts - TailwindCSS HTML Admin Template Free - Dash UI" />
-      <title>Layouts - TailwindCSS HTML Admin Template Free - Dash UI</title>
-   </head>
-   <body>
-      <main>
-         <!-- start layouts -->
-         <!-- app layout -->
-         <div id="app-layout" class="overflow-x-hidden flex">
-            @@include("partials/navbar-vertical.html", { "page": "layout" })
-            <!-- app layout content -->
-            <div id="app-layout-content" class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
-               @@include("partials/top-navbar.html")
-               <div class="p-6">
-                  <div class="flex flex-col mb-4 border-b border-gray-300 pb-4 text-center">
-                     <!-- title -->
-                     <h1 class="block font-semibold leading-6 mb-3">Layouts</h1>
-                     <p class="text-lg">Customize your overview page layout. Choose the one that best fits your needs.</p>
-                  </div>
-                  <div class="grid lg:grid-cols-9 gap-4">
-                     <!-- content -->
-                     <div class="lg:col-start-4 col-span-3">
-                        <a class="bg-white rounded-md overflow-hidden flex flex-col relative shadow" href="../index.html">
-                           <img class="img-fluid" src="./assets/images/layouts/default-classic.svg" alt="Image Description" />
-                           <span class="p-4 text-center">Classic</span>
-                        </a>
-                     </div>
+
+<head>
+   @@include("partials/head.html") @@include("partials/analytics.html")
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Layouts - TailwindCSS HTML Admin Template Free - Dash UI" />
+   <title>Layouts - TailwindCSS HTML Admin Template Free - Dash UI</title>
+</head>
+
+<body>
+   <main>
+      <!-- start layouts -->
+      <!-- app layout -->
+      <div id="app-layout" class="overflow-x-hidden flex">
+         @@include("partials/navbar-vertical.html", { "page": "layout" })
+         <!-- app layout content -->
+         <div id="app-layout-content"
+            class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+            @@include("partials/top-navbar.html")
+            <div class="p-6">
+               <div class="flex flex-col mb-4 border-b border-gray-300 pb-4 text-center">
+                  <!-- title -->
+                  <h1 class="block font-semibold leading-6 mb-3">Layouts</h1>
+                  <p class="text-lg">Customize your overview page layout. Choose the one that best fits your needs.</p>
+               </div>
+               <div class="grid lg:grid-cols-9 gap-4">
+                  <!-- content -->
+                  <div class="lg:col-start-4 col-span-3">
+                     <a class="bg-white rounded-md overflow-hidden flex flex-col relative shadow" href="../index.html">
+                        <img class="img-fluid" src="./assets/images/layouts/default-classic.svg"
+                           alt="Image Description" />
+                        <span class="p-4 text-center">Classic</span>
+                     </a>
                   </div>
                </div>
-               @@include("partials/footer.html")
             </div>
+            @@include("partials/footer.html")
          </div>
-         <!-- end of layouts -->
-      </main>
+      </div>
+      <!-- end of layouts -->
+   </main>
 
-      @@include("partials/scripts.html")
-   </body>
+   @@include("partials/buy-template.html")
+   @@include("partials/scripts.html")
+</body>
+
 </html>
